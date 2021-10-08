@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\BotManController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,10 +14,14 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::get('/bot_test', function () {
+    return view('bot_test');
+});
+
+Route::match(['get', 'post'], 'botman', [BotManController::class, 'handle']);
 Route::view('/', 'index');
 
 // Routes to pages for web services validation
-Route::view('/bot_test', 'bot_test');
 Route::view('/facebook_test', 'facebook_test');
 Route::view('/medium_test', 'medium_test');
 Route::view('/paypal_test', 'paypal_test');
