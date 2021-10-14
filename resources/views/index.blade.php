@@ -1,5 +1,6 @@
 {{-- extends indica que la vista hereda de otra y va a inyectar contenidos de ella--}}
 @extends('layouts.app')
+{{-- section indica lo que se va a ver en la página --}}
 @section('content')
 <!DOCTYPE html>
 <html lang="en">
