@@ -1,5 +1,16 @@
+:root {
+  --trans-purple: rgba(177, 123, 235, 0.250);
+  --white: #ffffff;
+}
+
 h1 {
   font-size: 3rem;
+}
+
+.underline {
+  position: relative;
+  background: linear-gradient(var(--trans-purple), var(--trans-purple))left bottom repeat-x;
+  background-size: 100% 4 0%;
 }
 
 .subtitle {
