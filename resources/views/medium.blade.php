@@ -14,7 +14,7 @@
     <div class="container">
         <!-- Mediums posts section -->
         <section>
-            <h1 class="text-center font-weight-bold">
+            <h1 class="medium-posts-header text-center font-weight-bold">
                 <span class="underline">&nbsp;&nbsp;Acercando la locura&nbsp;&nbsp;</span>
             </h1>
             <p class="text-center subtitle pb-3">Explora nuestra colección de articulos de divulgación, producciones literarias, producciones narrativas, proyectos e historias de vida de nuestra comunidad</p>   
