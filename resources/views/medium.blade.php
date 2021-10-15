@@ -19,12 +19,22 @@
             </h1>
             <p class="text-center subtitle pb-3">Explora nuestra colección de articulos de divulgación, producciones literarias, producciones narrativas, proyectos e historias de vida de nuestra comunidad</p>   
             <div class="row">
-                <div class="col-lg" data-medium-post-id="1"></div>
+                <div class="col-lg" >
+                    <div data-medium-post-id="1"></div>
+                    <hr class="mb-4 d-lg-none">
+                </div>
                 <div class="col-lg">
                     <div data-medium-post-id="2"></div>
+                    <hr class="mb-4">
                     <div class="row">
-                        <div class="col" data-medium-post-id="3"></div>
-                        <div class="col" data-medium-post-id="4"></div>
+                        <div class="col-sm" >
+                            <div data-medium-post-id="3"></div>
+                            <hr class="mb-4 d-sm-none">
+                        </div>
+                        <div class="col-sm" >
+                            <div data-medium-post-id="4"></div>
+                            <hr class="mb-4 d-sm-none">
+                        </div>
                     </div>
                 </div>
             </div>
