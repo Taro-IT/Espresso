@@ -19,9 +19,9 @@ function getPostHtml(link, thumbnail, title, author) {
       <div class="medium_post">
          <a href="${link}">
             <img src="${thumbnail}" class="medium_post_img rounded-lg"></img>
-            <h2 class="medium_post_title text-center ">${title}</h2>
+            <p class="medium_post_title text-center font-weight-bold">${title}</p>
          <a/>
-         <p class="medium_post_author text-center ">${author}</p>
+         <p class="medium_post_author text-center">${author}</p>
       </div>`;
    return postsHtml;
 }

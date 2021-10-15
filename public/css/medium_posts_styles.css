@@ -1,3 +1,7 @@
+h1 {
+  font-size: 3rem;
+}
+
 a {
   color: inherit;
   text-decoration: none;
@@ -9,12 +13,38 @@ a {
 }
 
 .medium_post_img {
-  max-width: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 
-.medium_post_title {
-  font-size: 3rem;
-}
 .medium_post_author {
   font-size: 1rem;
+}
+
+/* Style the font size of each article title */
+div[data-medium-post-id='1'] > .medium_post > a > .medium_post_title{
+  font-size: 2.7rem;
+}
+
+div[data-medium-post-id='2'] > .medium_post > a > .medium_post_title{
+  font-size: 2rem;
+}
+
+div[data-medium-post-id='3'] > .medium_post > a > .medium_post_title,
+div[data-medium-post-id='4'] > .medium_post > a > .medium_post_title{
+  font-size: 1.2rem;
+}
+
+/* Style the image size of each article title */
+div[data-medium-post-id='1'] > .medium_post > a > .medium_post_img{
+  height: 400px;
+}
+
+div[data-medium-post-id='2'] > .medium_post > a > .medium_post_img{
+  height: 200px;
+}
+
+div[data-medium-post-id='3'] > .medium_post > a > .medium_post_img,
+div[data-medium-post-id='4'] > .medium_post > a > .medium_post_img{
+  height: 150px;
 }
