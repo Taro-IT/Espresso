@@ -17,7 +17,7 @@ fetch('https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@sab
 function getPostHtml(link, thumbnail, title, author) {
    postsHtml = `
       <div class="medium_post">
-         <a href="${link}">
+         <a href="${link}" class="medium_post_link texft-reset">
             <img src="${thumbnail}" class="medium_post_img rounded-lg"></img>
             <p class="medium_post_title text-center font-weight-bold">${title}</p>
          <a/>

@@ -15,7 +15,7 @@
         <!-- Mediums posts section -->
         <section>
             <h1 class="text-center font-weight-bold">Acercando la locura</h1>
-            <p class="text-center pb-3">Explora nuestra colección de articulos de divulgación, producciones literarias, producciones narrativas, proyectos e historias de vida de nuestra comunidad</p>   
+            <p class="text-center subtitle pb-3">Explora nuestra colección de articulos de divulgación, producciones literarias, producciones narrativas, proyectos e historias de vida de nuestra comunidad</p>   
             <div class="row">
                 <div class="col-lg" data-medium-post-id="1"></div>
                 <div class="col-lg">
