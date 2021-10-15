@@ -1,64 +1,163 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
+# Espresso
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+![alt text](http://casademediocamino.com/images/casalogo_2x.jpg) 
 
-## About Laravel
+_Pagina web para la organizacion sin fines de lucro Casa Medio camino "Casa Loohl"_
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## Comenzando 🚀
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+_Estas instrucciones te permitirán obtener una copia del proyecto en funcionamiento en tu máquina local para propósitos de desarrollo y pruebas._
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+Mira **Deployment** para conocer como desplegar el proyecto.
 
-## Learning Laravel
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+### Pre-requisitos 📋
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+_Para poder instalar el proyecto de manera local será necesario contar con las siguentes cosas en tu computadora_
 
-## Laravel Sponsors
+```
+php 7.3^|8.0^
+```
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+```
+Composer 2.0^
+```
 
-### Premium Partners
+```
+MySQL / MariaDB 10.4^
+```
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[CMS Max](https://www.cmsmax.com/)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
+```
+NOTA: Se recomiendo usar XAMPP o MAMP como paquete en la versión
+ 7.4.24 / PHP 7.4.24, puedes mirar "Construido con" para encontrar los enlaces.
+```
 
-## Contributing
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+### Instalación 🔧
 
-## Code of Conduct
+_Para instalar el proyecto de forma local sigue los siguientes pasos y comandos_
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+_Descarga el proyecto via git o desde el enlace de <a href="https://github.com/Taro-IT/Espresso/archive/refs/heads/main.zip">Descarga</a>_
 
-## Security Vulnerabilities
+```
+cd /path-de-tu-eleccion/
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+git clone https://github.com/Taro-IT/Espresso.git
 
-## License
+cd /Espresso/
+```
+_Instalaremos las dependencias de Laravel/composer_
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+```
+composer install
+```
+
+_Copiaremos el contenido archivo .env.example en un nuevo archivo llamado .env en el mismo path en el que se encuetra_
+
+```
+cp .env.example .env
+```
+
+_Agregaremos la llave única de proyecto_
+
+```
+php artisan key:generate
+```
+
+_Configuraremos la base de datos y las migraciones_
+
+```
+Ve a tu aplicacion de XAMP / MAMP o tu gestor de Base de datos e inicia los servicios de MYSQL /MariaDB
+
+En el archivo .env ubica las variables:
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=casamediocamino
+DB_USERNAME=root
+DB_PASSWORD=
+
+
+ya sea en localhost/phpmyadmin o en el gestor, crea una base de datos con el nombre "casamediocamino"
+
+
+En el archivo .env modifica segun sea nesecario asegurandote que tengas el puerto, host, nombre de usuario y contraseña
+correctas 
+
+
+```
+
+_Finalmente correremos las migraciones y seeders_
+```
+php artisan migrate:fresh --seed
+```
+
+_Para correr laravel ejecuta el comando_
+
+```
+php artisan serve
+
+Debera mandarte al link http://127.0.0.1:8000
+```
+
+
+## Ejecutando las pruebas ⚙️
+
+_Dentro del sistema se configuraron pruebas automaticas sigue los sigueintes pasos para correr ya sean 
+generales o individuales_
+
+### Analice las pruebas end-to-end 🔩
+
+_Explica que verifican estas pruebas y por qué_
+
+```
+Da un ejemplo
+```
+
+### Y las pruebas de estilo de codificación ⌨️
+
+_Explica que verifican estas pruebas y por qué_
+
+```
+Da un ejemplo
+```
+
+## Despliegue 📦
+
+_Para poder hacer un despliegue sigue los siguientes pasos_
+
+## Construido con 🛠️
+
+_Para este proyecto se utilizaron los siguientes recursos_
+
+* [Laravel](https://laravel.com/) - Laravel 
+* [XAMPP](https://www.apachefriends.org/download.html) - Manejador de PHP y MySQL
+* [Composer](https://getcomposer.org/) - Manejador de dependencias
+* [PHPStorm](https://www.jetbrains.com/phpstorm/) - IDE preferido (opcional)
+* [ROME](https://rometools.github.io/rome/) - Usado para generar RSS
+
+## Contribuyendo 🖇️
+
+Por favor lee la [Guía para manejar ramas](https://taro-it.github.io/docs/guias/G13-guia-para-manejo-de-ramas) y [Estándar de codificación]() para detalles de nuestro código de conducta, y el proceso para enviarnos pull requests.
+
+## Wiki 📖
+
+Puedes encontrar mucho más de cómo utilizar este proyecto en nuestra [Wiki Departamental](https://taro-it.github.io/docs/) y en nuestra [Wiki Espresso]()
+
+## Versionado 📌
+
+Usamos [SemVer](http://semver.org/) para el versionado. Para todas las versiones disponibles, mira los [tags en este repositorio](https://github.com/Taro-IT/Espresso/tags).
+
+## Autores ✒️
+
+* **Sebastian Tafoya** - *Trabajo Inicial* - [sebastafoya](https://github.com/sebastafoya)
+* **Juan Jose Díaz** - *Trabajo Inicial* - [JJDiazAndre](https://github.com/JJDiazAndre)
+* **Jorge Lopez** - *Trabajo Inicial* - [JorgeLpz](https://github.com/JorgeLpz)
+* **Juan Manuel Amador** - *Trabajo Inicial* - [JuanManuelAmador](https://github.com/JuanManuelAmador)
+* **Angélica Anaya** - *Trabajo Inicial* - [angieanaya](https://github.com/angieanaya)
+* **Eduardo Guzman** - *Trabajo Inicial* - [a01209519](https://github.com/a01209519)
+* **Saul** - *Trabajo Inicial* - [A01208320](https://github.com/A01208320)
+* **Adolfo Acosta Castro** - *Trabajo Inicial* - [AAcostac](https://github.com/AAcostac)
+* **Jose Carlos Pacheco** - *Trabajo Inicial* - [JoseCarlosPa](https://github.com/JoseCarlosPa)
+
+También puedes mirar la lista de todos los [contribuyentes](https://github.com/your/project/contributors) quíenes han participado en este proyecto.
