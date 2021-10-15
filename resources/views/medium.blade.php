@@ -27,7 +27,7 @@
                 </div>
             </div>
             <div class="d-flex justify-content-center">
-                <button type="button" class="btn btn-outline-info btn-lg mb-5">Descubre mas artículos</button>
+                <button type="button" class="btn btn-custom-purple btn-lg mb-5">Descubre mas artículos</button>
             </div>
         </section>
     </div>

@@ -48,3 +48,38 @@ div[data-medium-post-id='3'] > .medium_post > a > .medium_post_img,
 div[data-medium-post-id='4'] > .medium_post > a > .medium_post_img{
   height: 150px;
 }
+
+/*.btn-outline-purple {
+  color: #a282c4;
+  background-color: #ffffff;
+  border-color: #a282c4;
+  font-weight: bold;
+}
+
+.btn-outline-purple:hover,
+.btn-outline-purple:active,
+.btn-outline-purple:focus,
+.btn-outline-purple.active {
+  background: #a282c4;
+  color: #ffffff;
+  border-color: #a282c4;
+}*/
+.btn-custom-purple {
+  color: #ffffff;
+  background-color: #a282c4;
+  border-color: #a282c4;
+  font-weight: bold;
+}
+
+.btn-custom-purple:hover,
+.btn-custom-purple:active,
+.btn-custom-purple:focus,
+.btn-custom-purple.active {
+  background: #ffffff;
+  color: #a282c4;
+  border-color: #a282c4;
+}
+
+.btn-custom-purple:focus {
+  box-shadow:0 0 0 .2rem rgb(177, 123, 235, 0.5);
+}
