@@ -39,9 +39,9 @@
                 </div>
             </div>
             <div class="d-flex justify-content-center">
-                <button type="button" class="btn btn-custom-purple btn-lg mb-5" id="medium-posts-more-button">
+                <a class="btn btn-custom-purple btn-lg mb-5" id="medium-posts-more-button" href="https://medium.com/@Casademediocamino/following" role="button">
                     Descubre más artículos
-                </button>
+                </a>
             </div>
         </section>
     </div>

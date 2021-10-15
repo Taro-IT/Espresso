@@ -10,7 +10,7 @@ function loadMediumPosts() {
       if(posts.length >= 4) {
          // Format post values as html and insert them in page
          for(let i = 0; i < 4; i++) {
-            const post = posts[i];
+            const post = posts[i+1];
             const postHtml = getPostHtml(post.link, post.thumbnail, post.title, post.author);
             document.querySelector(`[data-medium-post-id='${i+1}']`).innerHTML = postHtml;
          }   
