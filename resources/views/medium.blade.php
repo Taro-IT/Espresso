@@ -18,7 +18,7 @@
                 <span class="underline">&nbsp;&nbsp;Acercando la locura&nbsp;&nbsp;</span>
             </h1>
             <p class="text-center subtitle pb-3">Explora nuestra colección de articulos de divulgación, producciones literarias, producciones narrativas, proyectos e historias de vida de nuestra comunidad</p>   
-            <div class="row">
+            <div class="row" id="medium-posts-container">
                 <div class="col-lg" >
                     <div data-medium-post-id="1"></div>
                     <hr class="mb-4 d-lg-none">
@@ -39,13 +39,18 @@
                 </div>
             </div>
             <div class="d-flex justify-content-center">
-                <button type="button" class="btn btn-custom-purple btn-lg mb-5">Descubre mas artículos</button>
+                <button type="button" class="btn btn-custom-purple btn-lg mb-5" id="medium-posts-more-button">
+                    Descubre más artículos
+                </button>
             </div>
         </section>
     </div>
     
     <!-- Load medium posts -->
     <script src="{{ asset('/js/load_medium_posts.js') }}"></script>
+    <script>
+        loadMediumPosts();
+    </script>
 
     <!-- Bootstrap js -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
