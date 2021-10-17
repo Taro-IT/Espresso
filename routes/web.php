@@ -25,3 +25,13 @@ Route::view('/', 'index');
 Route::view('/facebook_test', 'facebook_test');
 Route::view('/medium_test', 'medium_test');
 Route::view('/paypal_test', 'paypal_test');
+
+
+// Route to page Que Hacemos.
+Route::resource('/que-hacemos', PageController::class)->only(
+    [
+        "index"
+        //"store"
+        //"create"
+    ]
+);
