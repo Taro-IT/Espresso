@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\BotManController;
+use App\Http\Controllers\PageInfoController;
 
 /*
 |--------------------------------------------------------------------------
@@ -28,10 +29,8 @@ Route::view('/paypal_test', 'paypal_test');
 
 
 // Route to page Que Hacemos.
-Route::resource('/que-hacemos', PageController::class)->only(
+Route::resource('/{name}', PageInfoController::class)->only(
     [
         "index"
-        //"store"
-        //"create"
     ]
 );
