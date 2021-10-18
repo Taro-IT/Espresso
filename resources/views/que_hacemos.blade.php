@@ -262,32 +262,71 @@
 
     {{-- Start Un dia en casa Loohl--}}
     <div class="container " style="margin-top:1em">
-        <div class="row">
-            <div class="col-4">
-            </div>
-            <div class="col-4">
-                <div class="border border-secondary border-2 rounded" style="background:#EAE3F2;  ">
-                    <h3 style="text-align:center; margin-top:.25em "> UN DÍA EN CASA LOOHL</h3>
+        <div class="row"><div class="col-4">
+                <div style="background: linear-gradient(180deg, #ffffff 85%, #EAE3F2 15%); width:10em:">
+                    <h3 style="text-align:left; margin-top:.25em "> UN DÍA EN CASA LOOHL</h3>
                 </div>
-            </div>
-            <div class="col-4">
-            </div>
+            </div>  
         </div>
 
-        <div class="container" style="margin: 2em;">
+        <div class="container" style="margin: 1em;">
             <div class="row">
-                <div class="col-12">
-                    <p style="text-align: center; margin-top:1em;"><strong>Casa Loohl </strong> resindencia con <strong>atención personalizada</strong> y <strong>seguimiento</strong> por parte de profesionales de la salud las<strong> 24 horas del dia los 7 dias de la semana</strong>.</p>
-                    <strong><p>Características: </p></strong>           
-                </div>
                 {{-- List Items --}}
-                <div class="col-12">
-                    <ul>
-                        <li> Modalidad proyectada para periodos prolongados, con un periodo minimo sugerido de 4 meses de estadia. </li>
-                        <li> El huésped realiza actividades en comunidad para fortalecer sus habilidades interpersonales. </li>
-                        <li> El huésped realiza actividades de manera individual que le pemiten sentise independiente y enfoca su enegia en cosas de su total agrado. </li>
-                        <li> En la casa se cuentan con reglas definidas paa lograr un ambiente armonioso y una sana convicencia. </li> 
-                    </ul> 
+                <div class="border-start border-secondary border-2 col-6">
+                        <div class="row">
+                            <div class="col-6">
+                                <ul style="list-style: none;">
+                                    <li style="margin:1em; "> <a class="border border-secondary border-2 rounded" style="background-color: #EAE3F2; padding-left:2em; padding-right:2em; text-decoration:none; color:black;"> <strong>8:00 - 9:00</strong></a> </li>
+                                    <li style="margin:1em;" > <a class="border border-secondary border-2 rounded" style="background-color: #EAE3F2; padding-left:2em; padding-right:2em; text-decoration:none; color:black;"> <strong>9:00 - 9:30</strong></a> </li>
+                                    <li style="margin:1em;" > <a class="border border-secondary border-2 rounded" style="background-color: #EAE3F2; padding-left:1.7em; padding-right:1.7em; text-decoration:none; color:black;"> <strong>9:30 - 10:00</strong></a> </li>
+                                    <li style="margin:1em; margin-top:2em;" > <a class="border border-secondary border-2 rounded" style="background-color: #EAE3F2; padding-left:2em; padding-right:2em; text-decoration:none; color:black;"> <strong>10:30 - 11:00</strong></a> </li>
+                                    <li style="margin:1em; margin-top:2em;" > <a class="border border-secondary border-2 rounded" style="background-color: #EAE3F2; padding-left:2em; padding-right:2em; text-decoration:none; color:black;"> <strong>11:00 - 13:00</strong></a> </li>
+                                    <li style="margin:1em; margin-top:2em;" > <a class="border border-secondary border-2 rounded" style="background-color: #EAE3F2; padding-left:2em; padding-right:2em; text-decoration:none; color:black;"> <strong>13:00 - 14:00</strong></a> </li>
+                                    <li style="margin:1em; margin-top:1em;"> <a class="border border-secondary border-2 rounded" style="background-color: #EAE3F2; padding-left:2em; padding-right:2em; text-decoration:none; color:black;"> <strong>14:00 - 15:00</strong></a> </li>  
+                                </ul>
+                            </div>
+                            <div class="col-6">
+                                <ul style="list-style: none;">
+                                    <li style="margin:1em; "> Higiene personal</li>
+                                    <li style="margin:1em; "> Preparación de alimentos</li>
+                                    <li style="margin:1em; "> Desayuno</li>
+                                    <li style="margin:1em; "> Apoyo en actividades de limpieza</li>
+                                    <li style="margin:1em; "> <strong>Talleres de la comunidad</strong> Espacio para actividades individuales.</li>
+                                    <li style="margin:1em; "> Preparación de alimentos</li>
+                                    <li style="margin:1em; "> Comida</li>
+                                </ul>
+                            </div>
+                        
+                    </div> 
+                             
+                </div>
+                
+                <div class="border-start border-secondary border-2 col-6">
+                   
+                        <div class="row">
+                            <div class="col-6">
+                                <ul style="list-style: none;">
+                                    <li style="margin:1em; margin-top:2em;"> <a class="border border-secondary border-2 rounded" style="background-color: #EAE3F2; padding-left:2em; padding-right:2em; text-decoration:none; color:black;"> <strong>15:00 - 16:00</strong></a> </li>
+                                    <li style="margin:1em; margin-top:3em;" > <a class="border border-secondary border-2 rounded" style="background-color: #EAE3F2; padding-left:2em; padding-right:2em; text-decoration:none; color:black;"> <strong>16:00 - 19:00</strong></a> </li>
+                                    <li style="margin:1em;margin-top:3em;" > <a class="border border-secondary border-2 rounded" style="background-color: #EAE3F2; padding-left:2em; padding-right:2em; text-decoration:none; color:black;"> <strong>19:00 - 19:45</strong></a> </li>
+                                    <li style="margin:1em;margin-top:1em;" > <a class="border border-secondary border-2 rounded" style="background-color: #EAE3F2; padding-left:2em; padding-right:2em; text-decoration:none; color:black;"> <strong>19:45 - 20:15</strong></a> </li>
+                                    <li style="margin:1em;" > <a class="border border-secondary border-2 rounded" style="background-color: #EAE3F2; padding-left:2em; padding-right:2em; text-decoration:none; color:black;"> <strong>20:15 - 21:30</strong></a> </li>
+                                    <li style="margin:1em;" > <a class="border border-secondary border-2 rounded" style="background-color: #EAE3F2; padding-left:2em; padding-right:2em; text-decoration:none; color:black;"> <strong>21:30 - 22:00</strong></a> </li> 
+                                </ul>
+                            </div>
+                            <div class="col-6">
+                                <ul style="list-style: none;">
+                                    <li style="margin:1em; "> Apoyo en actividades de limpieza</li>
+                                    <li style="margin:1em; "> <strong>Talleres de la comunidad</strong> Espacio para actividades individuales. Salidas grupales.</li>
+                                    <li style="margin:1em; "> Preparación de alimentos</li>
+                                    <li style="margin:1em; "> Cena</li>
+                                    <li style="margin:1em; "> Actividades de ocio</li>
+                                    <li style="margin:1em; "> Higiene personal</li>
+                                </ul>
+                            </div>
+                        
+                    </div> 
+                             
                 </div>
                 {{-- End List Items --}}
 
