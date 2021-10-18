@@ -6,41 +6,38 @@
 
 {{-- Start the image carousel --}}
 
-<div class="row">
-    <div class="col-12">
-    {{-- Code for carousel --}}
-        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-            {{--<div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            </div>--}}
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                <img src="img/que_hacemos/cmc3.png" height="500px" class="d-block w-100 img-fluid" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>First slide label</h5>
-                    <p>Some representative placeholder content for the first slide.</p>
-                </div>
-                </div>
-                <div class="carousel-item">
-                <img src="img/que_hacemos/moa2.jpg" height="500px" class="d-block w-100 img-fluid" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>Second slide label</h5>
-                    <p>Some representative placeholder content for the second slide.</p>
-                </div>
-                </div>
-                <div class="carousel-item">
-                <img src="img/que_hacemos/moa2b.jpg" height="500px" class="d-block w-100 img-fluid" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>Third slide label</h5>
-                    <p>Some representative placeholder content for the third slide.</p>
-                </div>
-                </div>
-            </div>
+{{-- Code for carousel --}}
+<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+    {{--<div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>--}}
+    <div class="carousel-inner">
+        <div class="carousel-item">
+        <img src="img/que_hacemos/cmc3.png" height="500px" class="d-block w-100 img-fluid" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+            <h5>First slide label</h5>
+            <p>Some representative placeholder content for the first slide.</p>
+        </div>
+        </div>
+        <div class="carousel-item active">
+        <img src="img/que_hacemos/moa2.jpg" height="500px" class="d-block w-100 img-fluid" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+            <h5>Second slide label</h5>
+            <p>Some representative placeholder content for the second slide.</p>
+        </div>
+        </div>
+        <div class="carousel-item">
+        <img src="img/que_hacemos/moa2b.jpg" height="500px" class="d-block w-100 img-fluid" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+            <h5>Third slide label</h5>
+            <p>Some representative placeholder content for the third slide.</p>
+        </div>
         </div>
     </div>
 </div>
+
 {{--End Carousel--}}
 
 {{-- Start of the main content --}}
@@ -87,7 +84,7 @@
             <div class="col-3">
                 <div class="container">
                    <button class="btn" onclick="QuePersonasNoAtendemos()" style="
-                                    font-size: 11px; 
+                                    font-size: 13px; 
                                     background-color:#EAE3F2;
                                     text-align:center; 
                                     display:inline-block; 
@@ -96,7 +93,7 @@
                                     text-decoration: none;  
                                     box-shadow: 3.5px 2px;
                                     padding:.2em"
-                                    ><strong>¿A qué personas no atendemos?</strong>
+                                    ><strong><i>¿A qué personas no atendemos?</i></strong>
                     </button>
                 </div>
             </div>
@@ -176,7 +173,133 @@
     {{-- End section personas que no atendemos--}}
 
 
+    {{-- Start Nuestras Formas de trabajo--}}
+    <div class="container" style="background-color: blue;">
+        <br>
+        <br>
+    </div>
+    {{-- End Nuestras Formas de trabajo--}}
+
+    {{-- Start Nuestros Servicios--}}
+    <div class="container " style="margin-top:1em">
+        <div class="row">
+            <div class="col-4">
+            </div>
+            <div class="col-4">
+                <div class="border border-secondary border-2 rounded" style="background:#EAE3F2;  ">
+                    <h3 style="text-align:center; margin-top:.25em "> NUESTROS SERVICIOS </h3>
+                </div>
+            </div>
+            <div class="col-4">
+            </div>
+        </div>
+
+        <div class="container" style="margin: 2em;">
+            <div class="row">
+                <div class="col-12">
+                    <p style="text-align: center; margin-top:1em;"><strong>Casa Loohl </strong> resindencia con <strong>atención personalizada</strong> y <strong>seguimiento</strong> por parte de profesionales de la salud las<strong> 24 horas del dia los 7 dias de la semana</strong>.</p>
+                    <strong><p>Características: </p></strong>           
+                </div>
+                {{-- List Items --}}
+                <div class="col-12">
+                    <ul>
+                        <li> Modalidad proyectada para periodos prolongados, con un periodo minimo sugerido de 4 meses de estadia. </li>
+                        <li> El huésped realiza actividades en comunidad para fortalecer sus habilidades interpersonales. </li>
+                        <li> El huésped realiza actividades de manera individual que le pemiten sentise independiente y enfoca su enegia en cosas de su total agrado. </li>
+                        <li> En la casa se cuentan con reglas definidas paa lograr un ambiente armonioso y una sana convicencia. </li> 
+                    </ul> 
+                </div>
+                {{-- End List Items --}}
+
+            </div>
+        </div>
+
+        {{-- Carousel of Images & description --}}
+        <div class="container" style="margin: 2em;">
+            <div class="row">
+                {{-- Carousel --}}
+                <div class="col-6">
+                    <div id="nuestrosservicios" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                            <img src="img/que_hacemos/cmc3.png" height="500px" class="d-block w-100 img-fluid" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                            <img src="img/que_hacemos/moa2.jpg" height="500px" class="d-block w-100 img-fluid" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                            <img src="img/que_hacemos/moa2b.jpg" height="500px" class="d-block w-100 img-fluid" alt="...">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#nuestrosservicios" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#nuestrosservicios" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>          
+                </div>
+                 {{-- End Carousel --}}
+
+                {{-- Description --}}
+                <div class="col-6">
+                    <h5 style="text-align: center; margin:5em; margin-top:3em;">Todos los espacios de Casa Loohl están diseñados para brindar comodidad y seguridad a los pacientes haciéndolos sentir como si estuvieran en casa.</h5>
+                </div>
+                {{-- End Description --}}
+
+                {{-- Info Point --}}
+                <div class="col-12">
+                    <p><img src="img/que_hacemos/info.png" style="width:2%; align:right;"><span style="margin-left: 1em"></span> <i>Actualmente, Casa Loohl está acondicionada paa recibir un máximo de 12 huéspedes.</i> </p>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    {{-- End Nuestros Servicios--}}
+
+    {{-- Start Un dia en casa Loohl--}}
+    <div class="container " style="margin-top:1em">
+        <div class="row">
+            <div class="col-4">
+            </div>
+            <div class="col-4">
+                <div class="border border-secondary border-2 rounded" style="background:#EAE3F2;  ">
+                    <h3 style="text-align:center; margin-top:.25em "> UN DÍA EN CASA LOOHL</h3>
+                </div>
+            </div>
+            <div class="col-4">
+            </div>
+        </div>
+
+        <div class="container" style="margin: 2em;">
+            <div class="row">
+                <div class="col-12">
+                    <p style="text-align: center; margin-top:1em;"><strong>Casa Loohl </strong> resindencia con <strong>atención personalizada</strong> y <strong>seguimiento</strong> por parte de profesionales de la salud las<strong> 24 horas del dia los 7 dias de la semana</strong>.</p>
+                    <strong><p>Características: </p></strong>           
+                </div>
+                {{-- List Items --}}
+                <div class="col-12">
+                    <ul>
+                        <li> Modalidad proyectada para periodos prolongados, con un periodo minimo sugerido de 4 meses de estadia. </li>
+                        <li> El huésped realiza actividades en comunidad para fortalecer sus habilidades interpersonales. </li>
+                        <li> El huésped realiza actividades de manera individual que le pemiten sentise independiente y enfoca su enegia en cosas de su total agrado. </li>
+                        <li> En la casa se cuentan con reglas definidas paa lograr un ambiente armonioso y una sana convicencia. </li> 
+                    </ul> 
+                </div>
+                {{-- End List Items --}}
+
+            </div>
+        </div>
+
     
+    </div>
+    {{-- End Un dia en casa Loohl--}}
+
+    {{-- Start Talleres y actividades--}}
+    {{-- End Talleres y actividades--}}
    
 
 
