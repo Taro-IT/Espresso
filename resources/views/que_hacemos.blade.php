@@ -336,7 +336,9 @@
                              
                 </div>
                 {{-- End List Items --}}
-
+                <div class="d-flex justify-content-end">
+                    <img class="img-fluid" src="img/que_hacemos/info.png" style="width:2%;" data-bs-toggle="tooltip" data-bs-placement="top" title="Los horarios pueden varia según sea agendado.">
+                </div>
             </div>
         </div>
 
@@ -345,6 +347,141 @@
     {{-- End Un dia en casa Loohl--}}
 
     {{-- Start Talleres y actividades--}}
+    <div class="container" style="margin-top: 1em;">
+        <div class="row">
+            <div class="col-3">
+            </div>
+            <div class="col-6">
+                <div style="background: linear-gradient(180deg, #ffffff 85%, #EAE3F2 15%);">
+                    <h3 style="text-align:center; padding-top:1em;"> TALLERES Y ACTIVIDADES </h3>
+                </div>
+            </div>
+            <div class="col-3">
+            </div>
+        </div>
+        
+        <div class="container" style="margin: 1em;">
+            <div class="row">
+                <div class="col-12">
+                    <p style="text-align:center; padding-top:1em;">
+                        Los tallerres que realizamos en Casa Loohl están dirigidos a contrarestar la sintomatología negativa que presentan los huéspedes, guiándolos en el fortalecimiento de sus habilidades sociales y cognitivas que le permita tener un mejor funcionamiento en su ámbito familiar y social. 
+                    </p>            
+                </div>
+
+                {{-- Carousel of Activities --}}
+                <div class="col-12">
+                    <section class="pt-5 pb-5">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div id="talleresActividades" class="carousel slide" data-ride="carousel">
+                    
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                                <div class="row">
+                    
+                                                    <div class="col-md-4 mb-3">
+                                                        <div class="card" style="background-color: #EAE3F2">
+                                                            <h4 class="card-title d-flex justify-content-center">Taller 1</h4>
+                                                            <img class="img-fluid" alt="100%x280" src="https://images.unsplash.com/photo-1532781914607-2031eca2f00d?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=7c625ea379640da3ef2e24f20df7ce8d">
+                                                            <div class="card-body">
+                                                                
+                                                                <p class="card-text">descripción breve del taller</p>
+                    
+                                                            </div>
+                    
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4 mb-3">
+                                                        <div class="card" style="background-color: #EAE3F2">
+                                                            <h4 class="card-title d-flex justify-content-center">Taller 2</h4>
+                                                            <img class="img-fluid" alt="100%x280" src="https://images.unsplash.com/photo-1532781914607-2031eca2f00d?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=7c625ea379640da3ef2e24f20df7ce8d">
+                                                            <div class="card-body">
+                                                                
+                                                                <p class="card-text">descripción breve del taller</p>
+                    
+                                                            </div>
+                    
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4 mb-3">
+                                                        <div class="card" style="background-color: #EAE3F2">
+                                                            <h4 class="card-title d-flex justify-content-center">Taller 3</h4>
+                                                            <img class="img-fluid" alt="100%x280" src="https://images.unsplash.com/photo-1532781914607-2031eca2f00d?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=7c625ea379640da3ef2e24f20df7ce8d">
+                                                            <div class="card-body">
+                                                                
+                                                                <p class="card-text">descripción breve del taller</p>
+                    
+                                                            </div>
+                    
+                                                        </div>
+                                                    </div>
+                    
+                                                </div>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <div class="row">
+                    
+                                                    <div class="col-md-4 mb-3">
+                                                        <div class="card" style="background-color: #EAE3F2">
+                                                            <h4 class="card-title d-flex justify-content-center">Taller 4</h4>
+                                                            <img class="img-fluid" alt="100%x280" src="https://images.unsplash.com/photo-1532781914607-2031eca2f00d?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=7c625ea379640da3ef2e24f20df7ce8d">
+                                                            <div class="card-body">
+                                                                
+                                                                <p class="card-text">descripción breve del taller</p>
+                    
+                                                            </div>
+                    
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4 mb-3">
+                                                        <div class="card" style="background-color: #EAE3F2">
+                                                            <h4 class="card-title d-flex justify-content-center">Taller 5</h4>
+                                                            <img class="img-fluid" alt="100%x280" src="https://images.unsplash.com/photo-1532781914607-2031eca2f00d?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=7c625ea379640da3ef2e24f20df7ce8d">
+                                                            <div class="card-body">
+                                                                
+                                                                <p class="card-text">descripción breve del taller</p>
+                    
+                                                            </div>
+                    
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4 mb-3">
+                                                        <div class="card" style="background-color: #EAE3F2">
+                                                            <h4 class="card-title d-flex justify-content-center">Taller 6</h4>
+                                                            <img class="img-fluid" alt="100%x280" src="https://images.unsplash.com/photo-1532781914607-2031eca2f00d?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=7c625ea379640da3ef2e24f20df7ce8d">
+                                                            <div class="card-body">
+                                                                
+                                                                <p class="card-text">descripción breve del taller</p>
+                    
+                                                            </div>
+                    
+                                                        </div>
+                                                    </div>
+                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <button class="carousel-control-prev" type="button" data-bs-target="#talleresActividades" data-bs-slide="prev">
+                                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                <span class="visually-hidden">Previous</span>
+                                            </button>
+        
+                                            <button class="carousel-control-next" type="button" data-bs-target="#talleresActividades" data-bs-slide="next">
+                                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                <span class="visually-hidden">Next</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
     {{-- End Talleres y actividades--}}
    
 
