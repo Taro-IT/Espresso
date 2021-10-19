@@ -763,17 +763,17 @@ section {
     background: #e9222c;
 }
 .services .service-box.purple {
-    border-bottom: 3px solid #b50edf;
+    border-bottom: 3px solid #652D90;
 }
 .services .service-box.purple .icon {
-    color: #b50edf;
+    color: #652D90;
     background: #f8e4fd;
 }
 .services .service-box.purple .read-more {
-    color: #b50edf;
+    color: #652D90;
 }
 .services .service-box.purple:hover {
-    background: #b50edf;
+    background: #A282C4;
 }
 .services .service-box.pink {
     border-bottom: 3px solid #f51f9c;
@@ -2041,3 +2041,22 @@ section {
 .text-purple{
     color: #A282C4;
 }
+.margin-top{
+    margin-top: 25%;
+}
+
+.btn-purple{
+    border: none;
+    color: white;
+    background-color: #652D90;
+    height: 5rem;
+    width: 25rem;
+    border-radius: 15px;
+    transition: 0.5s;
+}
+
+.btn-purple:hover{
+    transition: 0.5s;
+    background-color: #A282C4;
+}
+
