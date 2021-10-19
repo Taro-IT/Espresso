@@ -34,3 +34,4 @@ Route::resource('/{name}', PageInfoController::class)->only(
         "index"
     ]
 );
+Route::view('/medium', 'medium');
