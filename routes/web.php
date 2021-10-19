@@ -25,5 +25,5 @@ Route::view('/', 'index');
 Route::view('/facebook_test', 'facebook_test');
 Route::view('/medium_test', 'medium_test');
 Route::view('/paypal_test', 'paypal_test');
-Route::view('/quienes-somos', 'about_us');
+Route::view('/quienes-somos', 'about_us')->name('quienes-somos');
 Route::view('/medium', 'medium');

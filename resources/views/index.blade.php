@@ -18,7 +18,7 @@
                         reinserción social </h2>
                     <div data-aos="fade-up" data-aos-delay="600">
                         <div class="text-center text-lg-start">
-                            <a href="#about"
+                            <a href="{{route('quienes-somos')}}"
                                class="btn-get-started scrollto d-inline-flex align-items-center justify-content-center align-self-center">
                                 <span>¿Quiénes somos?</span>
                                 <i class="bi bi-arrow-right"></i>

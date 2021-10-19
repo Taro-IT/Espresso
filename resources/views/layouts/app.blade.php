@@ -52,7 +52,7 @@
 
         <nav id="navbar" class="navbar">
             <ul>
-                <li class="dropdown"><a href="#"><span>¿Quiénes somos?</span> <i class="bi bi-chevron-down"></i></a>
+                <li class="dropdown"><a href="{{route('quienes-somos')}}"><span>¿Quiénes somos?</span> <i class="bi bi-chevron-down"></i></a>
                     <ul>
                         <li><a href="#">Drop Down 1</a></li>
                         <li><a href="#">Drop Down 2</a></li>
@@ -103,8 +103,8 @@
                 <div class="col-lg-3 col-6 footer-links">
                     <h4>Secciones</h4>
                     <ul>
-                        <li><i class="bi bi-chevron-right"></i> <a href="#">Inicio</a></li>
-                        <li><i class="bi bi-chevron-right"></i> <a href="#">¿Quienes somos?</a></li>
+                        <li><i class="bi bi-chevron-right"></i> <a href="/">Inicio</a></li>
+                        <li><i class="bi bi-chevron-right"></i> <a href="{{route('quienes-somos')}}">¿Quienes somos?</a></li>
                         <li><i class="bi bi-chevron-right"></i> <a href="#">¿Que hacemos?</a></li>
                         <li><i class="bi bi-chevron-right"></i> <a href="#">Involucrate</a></li>
                         <li><i class="bi bi-chevron-right"></i> <a href="#">Dona</a></li>
