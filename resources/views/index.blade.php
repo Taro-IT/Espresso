@@ -2,40 +2,6 @@
 
 @section('content')
 
-    <!-- ======= Header ======= -->
-    <header id="header" class="header fixed-top">
-        <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
-
-            <a href="/" class="logo d-flex align-items-center">
-                <img src="{{asset('images/logo.jpg')}}" alt="Casa Medio Camino Loohl">
-            </a>
-
-            <nav id="navbar" class="navbar">
-                <ul>
-                    <li class="dropdown"><a href="#"><span>¿Quiénes somos?</span> <i class="bi bi-chevron-down"></i></a>
-                        <ul>
-                            <li><a href="#">Drop Down 1</a></li>
-                            <li><a href="#">Drop Down 2</a></li>
-                            <li><a href="#">Drop Down 3</a></li>
-                        </ul>
-                    </li>
-                    <li class="dropdown"><a href="#about"><span>¿Que hacemos?</span> <i class="bi bi-chevron-down"></i></a>
-                        <ul>
-                            <li><a href="#">Drop Down 1</a></li>
-                            <li><a href="#">Drop Down 2</a></li>
-                            <li><a href="#">Drop Down 3</a></li>
-                        </ul>
-                    </li>
-                    <li><a class="nav-link scrollto" href="#services">Involucrate</a></li>
-                    <li><a class="nav-link scrollto" href="#contact">Contactanos</a></li>
-                    <li><a class="getstarted scrollto" href="#about">Donar</a></li>
-                </ul>
-                <i class="bi bi-list mobile-nav-toggle"></i>
-            </nav><!-- .navbar -->
-
-        </div>
-    </header><!-- End Header -->
-
     <!-- ======= Hero Section ======= -->
     <section id="hero" class="hero d-flex align-items-center">
 
@@ -227,9 +193,15 @@
                 <div class="row" data-aos="fade-up" data-aos-delay="100">
                     <div class="col-lg-12 d-flex justify-content-center">
                         <ul id="portfolio-flters">
-                            <li data-filter=".filter-app">HAZ UNA DONACIÓN</li>
-                            <li data-filter=".filter-card">COMPRA EN TIENDA FÍSICA</li>
-                            <li data-filter=".filter-web">COMPRA EN LÍNEA</li>
+                            <li class="card-contribution">
+                                <p class="text-card">HAZ UNA DONACIÓN</p>
+                            </li>
+                            <li class="card-contribution">
+                                <p class="text-card">COMPRA EN TIENDA FÍSICA</p>
+                            </li>
+                            <li class="card-contribution">
+                                <p class="text-card">COMPRA EN LÍNEA</p>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -238,61 +210,102 @@
 
         </section><!-- End Portfolio Section -->
 
-        <!-- ======= Testimonials Section ======= -->
+        <!-- ======= Mantente al día Section ======= -->
+        <section id="recent-blog-posts" class="recent-blog-posts">
 
+            <div class="container" data-aos="fade-up">
 
-    <!-- ======= Footer ======= -->
-    <footer id="footer" class="footer">
+                <header class="section-header">
+                    <p>MANTENTE AL DÍA</p>
+                </header>
 
-        <div class="footer-top">
-            <div class="container">
-                <div class="row gy-4">
-                    <div class="col-lg-5 col-md-12 footer-info">
-                        <a href="index.html" class="logo d-flex align-items-center">
-                            <img src="assets/img/logo.png" alt="">
-                            <span>Casa Medio Camino Loohl</span>
-                        </a>
-                        <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita
-                            valies darta donna mare fermentum iaculis eu non diam phasellus.</p>
-                        <div class="social-links mt-3">
-                            <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
-                            <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-                            <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-                            <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+                <div class="row">
+
+                    <div class="col-lg-4">
+                        <div class="post-box">
+                            <div class="post-img"><img src="{{asset('images/img-sala.jpg')}}" class="img-fluid" alt=""></div>
+                            <h3 class="post-title">Eum ad dolor et. Autem aut fugiat debitis voluptatem consequuntur sit</h3>
+                            <span class="post-date">Tue, September 15</span>
+                            <a href="blog-singe.html" class="readmore stretched-link mt-auto"><span>Ver post</span><i class="bi bi-arrow-right"></i></a>
                         </div>
                     </div>
 
-                    <div class="col-lg-2 col-6 footer-links">
-                        <h4>Secciones</h4>
-                        <ul>
-                            <li><i class="bi bi-chevron-right"></i> <a href="#">Inicio</a></li>
-                            <li><i class="bi bi-chevron-right"></i> <a href="#">¿Quienes somos?</a></li>
-                            <li><i class="bi bi-chevron-right"></i> <a href="#">¿Que hacemos?</a></li>
-                            <li><i class="bi bi-chevron-right"></i> <a href="#">Involucrate</a></li>
-                            <li><i class="bi bi-chevron-right"></i> <a href="#">Dona</a></li>
-                        </ul>
+                    <div class="col-lg-4">
+                        <div class="post-box">
+                            <div class="post-img"><img src="{{asset('images/img-sala.jpg')}}" class="img-fluid" alt=""></div>
+                            <h3 class="post-title">Et repellendus molestiae qui est sed omnis voluptates magnam</h3>
+                            <span class="post-date">Fri, August 28</span>
+                            <a href="blog-singe.html" class="readmore stretched-link mt-auto"><span>Ver post</span><i class="bi bi-arrow-right"></i></a>
+                        </div>
                     </div>
 
-
-                    <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
-                        <h4>Contactanos</h4>
-                        <a>
-                            A108 Adam Street <br>
-                            New York, NY 535022<br>
-                            United States <br><br>
-                            <strong>Teléfono:</strong><a href="tel:4422561353">442 254 13 53</a><br>
-                            <strong>Email:</strong><a href="mailto:contacto@casademediocamino.com"> contacto@casademediocamino.com</a><br>
-                        </p>
-
+                    <div class="col-lg-4">
+                        <div class="post-box">
+                            <div class="post-img"><img src="{{asset('images/img-sala.jpg')}}" class="img-fluid" alt=""></div>
+                            <h3 class="post-title">Quia assumenda est et veritatis aut quae</h3>
+                            <span class="post-date">Mon, July 11</span>
+                            <a href="blog-singe.html" class="readmore stretched-link mt-auto"><span>Ver post</span><i class="bi bi-arrow-right"></i></a>
+                        </div>
                     </div>
 
                 </div>
-            </div>
-        </div>
-    </footer><!-- End Footer -->
 
-    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
-            class="bi bi-arrow-up-short"></i></a>
+            </div>
+
+        </section><!-- End Recent Blog Posts Section -->
+
+
+        <section id="contact" class="contact">
+
+            <div class="container" data-aos="fade-up">
+
+                <header class="section-header">
+                    <p>CONTACTANOS</p>
+                </header>
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <p>Ponte en contacto con nosotros, nos encantaría saber de ti y apoyarte en lo que necesites</p>
+                    </div>
+                </div>
+
+                <div class="row gy-4 text-center">
+
+                    <div class="col-lg-12">
+                        <div class="row gy-4">
+                            <div class="col-md-4">
+                                <div class="info-box">
+                                    <i class="bi bi-telephone"></i>
+                                    <br><br>
+                                    <p><a href="tel:4422541353">4422541353</a><br><a href="tel:4422539374">4422539374</a> </p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="info-box">
+                                    <i class="bi bi-phone"></i>
+                                    <br><br>
+                                    <p><a href="tel:+524425268903">+52 442 526 8903</a><br><a href="+524424231742">+52 442 423 1742</a></p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="info-box">
+                                    <i class="bi bi-envelope"></i>
+                                    <br><br>
+                                    <p><a href="mailto:contacto@casamediocamino.com">contacto@casamediocamino.com</a></p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </section><!-- End Contact Section -->
+
+
+
+        <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+                class="bi bi-arrow-up-short"></i></a>
 
 
 

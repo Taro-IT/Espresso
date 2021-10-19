@@ -918,7 +918,6 @@ section {
     list-style: none;
     text-align: center;
     background: white;
-    border-radius: 50px;
     padding: 2px 15px;
 }
 .portfolio #portfolio-flters li {
@@ -931,7 +930,6 @@ section {
     color: #444444;
     margin: 0 4px 8px 4px;
     transition: 0.3s;
-    border-radius: 50px;
     border: 1px solid #fff;
 }
 .portfolio #portfolio-flters li:hover, .portfolio #portfolio-flters li.filter-active {
@@ -2060,3 +2058,16 @@ section {
     background-color: #A282C4;
 }
 
+.card-contribution{
+    background-color: #A282C4;
+    border-radius: 2px;
+    color: black;
+    text-align: center;
+    height: 10vh;
+    width: 13vw;
+
+}
+
+.text-card{
+    margin-top: 15%;
+}
