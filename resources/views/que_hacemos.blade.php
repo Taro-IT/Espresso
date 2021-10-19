@@ -173,15 +173,22 @@
     {{-- End section personas que no atendemos--}}
 
 
-    {{-- Start Nuestras Formas de trabajo--}}
-    <div class="container" style="background-color: blue;">
-        <br>
-        <br>
+    {{-- Start Nuestras Formas de trabajo --}}
+    <div class="container" style="background: #ffffff url('img/que_hacemos/tarosquare.png') no-repeat right bottom; padding-bottom:3em">
+        <h3 style="margin-left:6em;">NUESTRA FORMA DE TRABAJO</h3>
+        <div class="container border border-2 " style="width:80%;">
+            <br>
+            <p style="text-align: justify; margin-left:4em; margin-right:4em;">Utilizamos el modelo terapeútico Casa de Medio Camino, un modelo integral para el tratamiento de la salud mental. En este modelo el paciente vive en una comunidad que les permite establecer puentes de interacción de manera controlada y segura, aprender de manera colaborativa y hacerse responsable de sus acciones.  </p>
+            <p style="text-align: justify; margin-top:2em; margin-left:4em; margin-right:4em;">Esta forma de atención es una alternativa que se distingue de las instituciones de hospitalización psquiátrica convencionales por el seguimiento continuo y personalizado al tratamiento de cada paciente, así como por la introducción a una comunidad terapeútica.</p>
+            <br>
+           
+        </div>
+        
     </div>
     {{-- End Nuestras Formas de trabajo--}}
 
     {{-- Start Nuestros Servicios--}}
-    <div class="container " style="margin-top:1em">
+    <div class="container " style="margin-top:3em">
         <div class="row">
             <div class="col-4">
             </div>
