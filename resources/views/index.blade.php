@@ -15,7 +15,7 @@
                         <l class="text-purple">experiencias psiquiátricas</l>
                     </h1>
                     <h2 data-aos="fade-up" data-aos-delay="400">Somos un puente entre la hospitalización y la
-                        reinserción social </h2>
+                        reinserción social. </h2>
                     <div data-aos="fade-up" data-aos-delay="600">
                         <div class="text-center text-lg-start">
                             <a href="{{route('quienes-somos')}}"
@@ -56,7 +56,7 @@
                             <div class="text-center text-lg-start">
                                 <a href="#"
                                    class="btn-read-more d-inline-flex align-items-center justify-content-center align-self-center">
-                                    <span>¿Que Hacemos?</span>
+                                    <span>¿QUÉ HACEMOS?</span>
                                     <i class="bi bi-arrow-right"></i>
                                 </a>
                             </div>
@@ -78,102 +78,63 @@
             <div class="container" data-aos="fade-up">
                 <div class="row">
                     <div class="col-lg-12">
-                        <div class="box" data-aos="fade-up" data-aos-delay="200">
-                            <h3>NUESTRA MISIÓN</h3>
-                            <p>Restablecer los vínculos interpersonales,sociales y ocupacionales de los huéspedes y
-                                bridarles herramientas que
-                                les
-                                permitan
-                                sobrellevar sus padecimientos permitiéndoles alcanzar una mejor calidad de vida</p>
+                        <div data-aos="fade-up" data-aos-delay="200">
+                            <h1 class="header text-center font-weight-bold">
+                                <span class="underline">&nbsp;&nbsp;NUESTRA MISIÓN&nbsp;&nbsp;</span>
+                            </h1>
+                            <p class="subtitle text-center">Restablecer los vínculos interpersonales,sociales y ocupacionales de los huéspedes y brindarles herramientas que les permitan sobrellevar sus padecimientos permitiéndoles alcanzar una mejor calidad de vida.</p>
                         </div>
                     </div>
                     <div class="col-lg-12 mt-12 mt-lg-12">
-                        <div class="box" data-aos="fade-up" data-aos-delay="400">
-
-                            <h3>COMUNIDAD TERAPÉUTICA</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum a egestas turpis,
+                        <div data-aos="fade-up" data-aos-delay="400">
+                            <h1 class="header text-center font-weight-bold">
+                                <span class="underline">&nbsp;&nbsp;COMUNIDAD TERAPEÚTICA&nbsp;&nbsp;</span>
+                            </h1>
+                            <p class="subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum a egestas turpis,
                                 quis
                                 commodo ante. Pellentesque habitant morbi tristique senectus et netus et malesuada fames
                                 ac
                                 turpis egestas.</p>
                         </div>
                     </div>
-                    <div class="col-lg-12 mt-12 mt-lg-12">
-                        <div class="box" data-aos="fade-up" data-aos-delay="600">
-
-                            <h3>ACERCANDO LA LOCURA</h3>
-                            <p>Explore nuestra colección de artículos de divulgación, producciones literarias,
-                                producciones
-                                narrativas, proyectos e historias de éxito de nuestra comunidad.</p>
-                        </div>
-                    </div>
                 </div>
             </div>
         </section><!-- End Values Section -->
 
-        <section id="services" class="services">
-
-            <div class="container" data-aos="fade-up">
-
-                <div class="row gy-4">
-
-                    <div class="col-lg-6 col-md-6" data-aos="fade-up" data-aos-delay="200">
-                        <div class="service-box purple">
-                            <div class="margin-top">
-                                <i class="ri-discuss-line icon"></i>
-                                <h3>Titulo Articulo</h3>
-                                <p>Autores.</p>
-                                <a href="#" class="read-more"><span>Ver más</span> <i class="bi bi-arrow-right"></i></a>
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <div class="col-lg-6 col-md-6" data-aos="fade-up" data-aos-delay="300">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="service-box purple">
-                                    <i class="ri-discuss-line icon"></i>
-                                    <h3>Titulo Articulo</h3>
-                                    <p>Autores.</p>
-                                    <a href="#" class="read-more"><span>Read More</span> <i
-                                            class="bi bi-arrow-right"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <br>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="service-box purple">
-                                    <i class="ri-discuss-line icon"></i>
-                                    <h3>Titulo Articulo</h3>
-                                    <p>Autores.</p>
-                                    <a href="#" class="read-more"><span>Read More</span> <i
-                                            class="bi bi-arrow-right"></i></a>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="service-box purple">
-                                    <i class="ri-discuss-line icon"></i>
-                                    <h3>Titulo Articulo</h3>
-                                    <p>Autores.</p>
-                                    <a href="#" class="read-more"><span>Read More</span> <i
-                                            class="bi bi-arrow-right"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
+        
+        <section class="container">
+            <h1 class="header text-center font-weight-bold">
+                <span class="underline">&nbsp;&nbsp;ACERCANDO LA LOCURA&nbsp;&nbsp;</span>
+            </h1>
+            <p class="text-center subtitle pb-3">Explora nuestra colección de artículos de divulgación, producciones literarias, producciones narrativas, proyectos e historias de vida de nuestra comunidad.</p>   
+            <div class="row" id="medium-posts-container">
+                <div class="col-lg" >
+                    <div data-medium-post-id="1"></div>
+                    <hr class="mb-4 d-lg-none">
                 </div>
-
+                <div class="col-lg">
+                    <div data-medium-post-id="2"></div>
+                    <hr class="mb-4">
+                    <div class="row">
+                        <div class="col-sm" >
+                            <div data-medium-post-id="3"></div>
+                            <hr class="mb-4 d-sm-none">
+                        </div>
+                        <div class="col-sm" >
+                            <div data-medium-post-id="4"></div>
+                            <hr class="mb-4 d-sm-none">
+                        </div>
+                    </div>
+                </div>
             </div>
-
-        </section><!-- End Services Section -->
-        <div class="row" data-aos="fade-up" data-aos-delay="200">
-            <div class="col-md-12 text-center">
-                <button class="btn-purple">Descubre mas!</button>
+            <div class="d-flex justify-content-center">
+                <a class="btn btn-custom-purple btn-lg mb-5" id="medium-posts-more-button" href="https://medium.com/@Casademediocamino/following" role="button">
+                    Descubre más artículos
+                </a>
             </div>
-        </div>
+        </section>
+
+
         <!-- ======= Portfolio Section ======= -->
         <section id="portfolio" class="portfolio">
 
@@ -185,8 +146,8 @@
                 <div class="row">
                     <div class="col-md-12 text-center">
                         Todas las contribuciones recibidas se dedican al beneficio de la comunidad, tu contribución nos
-                        hace posibles dar vida a proyectos de huéspedes y realizar eventos, tanto internos como
-                        externos, donde se demuestra el crecimiento de cada uno de ellos
+                        hace posible dar vida a proyectos de huéspedes y realizar eventos, tanto internos como
+                        externos, donde se demuestra el crecimiento de cada uno de ellos.
                     </div>
                 </div>
                 <br><br><br>
@@ -260,7 +221,7 @@
             <div class="container" data-aos="fade-up">
 
                 <header class="section-header">
-                    <p>CONTACTANOS</p>
+                    <p>CONTÁCTANOS</p>
                 </header>
                 <div class="row">
                     <div class="col-md-12 text-center">
@@ -308,5 +269,9 @@
                 class="bi bi-arrow-up-short"></i></a>
 
 
-
+    <script src="{{ asset('/js/load_medium_posts.js') }}"></script>
+    <script>
+        loadMediumPosts();
+    </script>
+    
 @endsection

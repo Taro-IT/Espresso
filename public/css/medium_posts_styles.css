@@ -1,8 +1,12 @@
 :root {
-  --purple: rgb(162, 130, 196);
-  --underline-purple: rgba(177, 123, 235, 0.250);
-  --outline-purple: rgb(177, 123, 235, 0.5);
+  --purple: #a282c4;
+  --dark-purple: #652d90;
+  --underline-purple: #eae3f2;
+  --outline-purple: #b17beb80;
   --transparent: rgba(255, 255, 255, 0);
+  --red: #ff5e6b;
+  --green: #9ee6b8;
+  --yellow: #fcf89c;
 }
 
 .underline {
@@ -12,10 +16,10 @@
 }
 
 .subtitle {
-  font-size: 1.1rem;
+  font-size: 1.5rem;
 }
 
-.medium-posts-header {
+.header {
   font-size: 3rem;
 }
 
@@ -64,8 +68,8 @@ div[data-medium-post-id='4'] > .medium-post > a > .medium-post-img{
 /* Make a custom color button */
 .btn-custom-purple {
   color: #ffffff;
-  background-color: var(--purple);
-  border-color: var(--purple);
+  background-color: var(--dark-purple);
+  border-color: var(--dark-purple);
   font-weight: bold;
 }
 

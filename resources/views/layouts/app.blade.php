@@ -27,12 +27,14 @@
     <link href="{{asset('vendor')}}/remixicon/remixicon.css" rel="stylesheet">
     <link href="{{asset('vendor')}}/swiper/swiper-bundle.min.css" rel="stylesheet">
     <link href="{{asset('vendor')}}/glightbox/css/glightbox.min.css" rel="stylesheet">
-
+    
     <!-- Materialize Icons -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     <!--CSS Personalizado por blade-->
     <link rel="stylesheet" href="{{asset('css/main.css')}}" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ asset('/css/medium_posts_styles.css') }}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 @stack('css')
 
 <!-- Titulo-->
@@ -52,22 +54,22 @@
 
         <nav id="navbar" class="navbar">
             <ul>
-                <li class="dropdown"><a href="{{route('quienes-somos')}}"><span>¿Quiénes somos?</span> <i class="bi bi-chevron-down"></i></a>
+                <li class="dropdown"><a href="{{route('quienes-somos')}}"><span>¿QUIÉNES SOMOS?</span> <i class="bi bi-chevron-down"></i></a>
                     <ul>
                         <li><a href="#">Drop Down 1</a></li>
                         <li><a href="#">Drop Down 2</a></li>
                         <li><a href="#">Drop Down 3</a></li>
                     </ul>
                 </li>
-                <li class="dropdown"><a href="#about"><span>¿Que hacemos?</span> <i class="bi bi-chevron-down"></i></a>
+                <li class="dropdown"><a href="#about"><span>¿QUÉ HACEMOS?</span> <i class="bi bi-chevron-down"></i></a>
                     <ul>
                         <li><a href="#">Drop Down 1</a></li>
                         <li><a href="#">Drop Down 2</a></li>
                         <li><a href="#">Drop Down 3</a></li>
                     </ul>
                 </li>
-                <li><a class="nav-link scrollto" href="#services">Involucrate</a></li>
-                <li><a class="nav-link scrollto" href="#contact">Contactanos</a></li>
+                <li><a class="nav-link scrollto" href="#services">Involúcrate</a></li>
+                <li><a class="nav-link scrollto" href="#contact">Contáctanos</a></li>
                 <li><a class="getstarted scrollto" href="#about">Donar</a></li>
             </ul>
             <i class="bi bi-list mobile-nav-toggle"></i>
@@ -141,5 +143,10 @@
 <!-- JS Personalizado-->
 <script rel="script" src="{{asset('js/main.js')}}" crossorigin="anonymous"></script>
 @stack('scripts')
+
+<!-- Bootstrap js -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
 
 </html>
