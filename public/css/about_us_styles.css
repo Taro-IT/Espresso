@@ -1,0 +1,62 @@
+:root {
+    --purple: rgb(162, 130, 196);
+    --underline-purple: rgba(177, 123, 235, 0.250);
+    --outline-purple: rgb(177, 123, 235, 0.5);
+    --transparent: rgba(255, 255, 255, 0);
+  }
+  
+  .underline {
+    position: relative;
+    background: linear-gradient(var(--underline-purple), var(--underline-purple))left bottom repeat-x;
+    background-size: 100% 40%;
+  }
+  
+  p {
+    font-size: 1.3rem;
+  }
+  
+  .header {
+    font-size: 3rem;
+  }
+  .carrousel-sizing{
+    width: 80%;
+    margin-left: 8vw;
+  }
+/* Custom title */
+.custom-title {
+  color: #ffffff;
+  background-color: var(--outline-purple);
+  font-weight: bold;
+  color: black;
+  font-size: 1em;
+}
+  
+/* Custom section */
+#info-block section {
+  border: 3px solid black;
+}
+
+.file-marker > div {
+    height: auto;
+    margin-top: -2em;
+    padding-left: 1em;
+    padding-right: 1em;
+    
+}
+.box-title {
+    background: white none repeat scroll 0 0;
+    display: inline-block;
+    padding: 0 1px;
+    margin-left: 1em;
+}
+
+/* Custom size for images */
+.principal{
+  height: 50vh;
+  width: 100vw;
+}
+
+.wide{
+  width: 80vw;
+  height: 50vh;
+}
