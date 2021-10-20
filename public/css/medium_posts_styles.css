@@ -1,7 +1,7 @@
 :root {
   --purple: #a282c4;
   --dark-purple: #652d90;
-  --underline-purple: #eae3f2;
+  --underline-purple: #e2cef8;
   --outline-purple: #b17beb80;
   --transparent: rgba(255, 255, 255, 0);
   --red: #ff5e6b;
@@ -16,11 +16,11 @@
 }
 
 .subtitle {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 
 .header {
-  font-size: 3rem;
+  font-size: 2rem;
 }
 
 /* Style posts links */

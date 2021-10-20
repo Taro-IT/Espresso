@@ -21,20 +21,22 @@
     <link rel="icon" href="{{asset('images/logo.jpg')}}" type="image/x-icon">
 
     <!-- Vendor CSS Files -->
-    <link href="{{asset('vendor')}}/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- <link href="{{asset('vendor')}}/bootstrap/css/bootstrap.min.css" rel="stylesheet"> -->
     <link href="{{asset('vendor')}}/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
     <link href="{{asset('vendor')}}/aos/aos.css" rel="stylesheet">
-    <link href="{{asset('vendor')}}/remixicon/remixicon.css" rel="stylesheet">
+    <!-- <link href="{{asset('vendor')}}/remixicon/remixicon.css" rel="stylesheet">
     <link href="{{asset('vendor')}}/swiper/swiper-bundle.min.css" rel="stylesheet">
-    <link href="{{asset('vendor')}}/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="{{asset('vendor')}}/glightbox/css/glightbox.min.css" rel="stylesheet"> -->
     
     <!-- Materialize Icons -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     <!--CSS Personalizado por blade-->
-    <link rel="stylesheet" href="{{asset('css/main.css')}}" crossorigin="anonymous">
-    <link rel="stylesheet" href="{{ asset('/css/medium_posts_styles.css') }}">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ asset('/css/main.css') }}" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ asset('/css/medium_posts_styles.css') }}">
+    <link rel="stylesheet" href="{{ asset('/css/index.css') }}">
+    
 @stack('css')
 
 <!-- Titulo-->
@@ -49,28 +51,28 @@
     <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
 
         <a href="/" class="logo d-flex align-items-center">
-            <img src="{{asset('images/logo.jpg')}}" alt="Casa Medio Camino Loohl">
+            <img src="{{asset('images/logo.jpg')}}" alt="Casa Loohl: Casa de Medio Camino">
         </a>
 
         <nav id="navbar" class="navbar">
             <ul>
                 <li class="dropdown"><a href="{{route('quienes-somos')}}"><span>¿QUIÉNES SOMOS?</span> <i class="bi bi-chevron-down"></i></a>
                     <ul>
-                        <li><a href="#">Drop Down 1</a></li>
-                        <li><a href="#">Drop Down 2</a></li>
-                        <li><a href="#">Drop Down 3</a></li>
+                        <li><a href="#">FILOSOFÍA</a></li>
+                        <li><a href="#">HISTORIA</a></li>
+                        <li><a href="#">EQUIPO</a></li>
                     </ul>
                 </li>
                 <li class="dropdown"><a href="#about"><span>¿QUÉ HACEMOS?</span> <i class="bi bi-chevron-down"></i></a>
                     <ul>
-                        <li><a href="#">Drop Down 1</a></li>
-                        <li><a href="#">Drop Down 2</a></li>
-                        <li><a href="#">Drop Down 3</a></li>
+                        <li><a href="#">FORMA DE TRABAJO</a></li>
+                        <li><a href="#">SERVICIOS</a></li>
+                        <li><a href="#">ACTIVIDADES</a></li>
                     </ul>
                 </li>
-                <li><a class="nav-link scrollto" href="#services">Involúcrate</a></li>
-                <li><a class="nav-link scrollto" href="#contact">Contáctanos</a></li>
-                <li><a class="getstarted scrollto" href="#about">Donar</a></li>
+                <li><a class="nav-link scrollto" href="#get-involved">INVOLÚCRATE</a></li>
+                <li><a class="nav-link scrollto" href="#contact">CONTÁCTANOS</a></li>
+                <li><a class="getstarted scrollto" href="#about">DONAR</a></li>
             </ul>
             <i class="bi bi-list mobile-nav-toggle"></i>
         </nav><!-- .navbar -->
@@ -84,42 +86,28 @@
 
 <!-- ======= Footer ======= -->
 <footer id="footer" class="footer">
-
     <div class="footer-top">
         <div class="container">
             <div class="row gy-4">
                 <div class="col-lg-5 col-md-12 footer-info">
                     <a href="index.html" class="logo d-flex align-items-center">
                         <img src="{{asset('images/logo.jpg')}}" alt="">
-                        <span>Casa Medio Camino Loohl</span>
                     </a>
 
                     <div class="social-links mt-3">
                         <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
                         <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-                        <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+                        <a href="#" class="spotify"><i class="bi bi-spotify"></i></a>
                         <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
                     </div>
                 </div>
 
-                <div class="col-lg-3 col-6 footer-links">
-                    <h4>Secciones</h4>
-                    <ul>
-                        <li><i class="bi bi-chevron-right"></i> <a href="/">Inicio</a></li>
-                        <li><i class="bi bi-chevron-right"></i> <a href="{{route('quienes-somos')}}">¿Quienes somos?</a></li>
-                        <li><i class="bi bi-chevron-right"></i> <a href="#">¿Que hacemos?</a></li>
-                        <li><i class="bi bi-chevron-right"></i> <a href="#">Involucrate</a></li>
-                        <li><i class="bi bi-chevron-right"></i> <a href="#">Dona</a></li>
-                    </ul>
-                </div>
-
-
                 <div class="col-lg-4 col-md-12 footer-contact text-center text-md-start">
-                    <p>Casa Loohl es una organización benéfica sin fines de lucro, exenta de impuestos , las donaciones son deducible de impuestos según lo permita la ley</p>
+                    <p>Casa Loohl es una organización benéfica sin fines de lucro, exenta de impuestos, las donaciones son deducible de impuestos según lo permita la ley.</p>
                 </div>
 
                 <br><br>
-                <p class="text-center">© 2021 Casa Loohl Casa de medio camino, Todos los derechos reservados</p>
+                <p class="text-center">© 2021 Casa Loohl Casa de medio camino. Todos los derechos reservados</p>
             </div>
         </div>
     </div>
@@ -127,9 +115,9 @@
 </body>
 
 <!-- Boostrap 5 JS -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-        crossorigin="anonymous"></script>
+        crossorigin="anonymous"></script> -->
 
 <!-- Vendor JS Files -->
 
