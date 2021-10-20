@@ -147,7 +147,7 @@
         <br><br><br>
 
         {{-- Start Nuestras Formas de trabajo --}}
-        <div class="container" style="background: #ffffff url('img/que_hacemos/tarosquare.png') no-repeat right bottom; padding-bottom:3em">
+        <div class="container" style="background: #ffffff url('que_hacemos/bg.png') no-repeat right bottom; padding-bottom:3em;">
             <aside id="info-block">
                 <section class="file-marker">
                     <div>
