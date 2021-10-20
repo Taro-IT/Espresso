@@ -7,7 +7,7 @@
 
         <div class="container-fluid" data-aos="fade-up">
             <div class="row">
-                <div class="col-lg d-flex flex-column justify-content-center" data-aos="fade-up">
+                <div class="col-lg-6 d-flex flex-column justify-content-center" data-aos="fade-up">
                     <h1>Ofreciendo
                     <l class="text-purple">atención</l>
                     y seguimiento al proceso de inclusión social de personas con

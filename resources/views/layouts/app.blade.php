@@ -24,23 +24,28 @@
     <!-- <link href="{{asset('vendor')}}/bootstrap/css/bootstrap.min.css" rel="stylesheet"> -->
     <link href="{{asset('vendor')}}/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
     <link href="{{asset('vendor')}}/aos/aos.css" rel="stylesheet">
-    <!-- <link href="{{asset('vendor')}}/remixicon/remixicon.css" rel="stylesheet">
+    <link href="{{asset('vendor')}}/remixicon/remixicon.css" rel="stylesheet">
     <link href="{{asset('vendor')}}/swiper/swiper-bundle.min.css" rel="stylesheet">
-    <link href="{{asset('vendor')}}/glightbox/css/glightbox.min.css" rel="stylesheet"> -->
+    <link href="{{asset('vendor')}}/glightbox/css/glightbox.min.css" rel="stylesheet">
     
     <!-- Materialize Icons -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-    <!--CSS Personalizado por blade-->
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+
+    <!--CSS Personalizado por blade -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link rel="stylesheet" href="{{ asset('/css/main.css') }}" crossorigin="anonymous">
     <link rel="stylesheet" href="{{ asset('/css/medium_posts_styles.css') }}">
     <link rel="stylesheet" href="{{ asset('/css/index.css') }}">
-    
+
 @stack('css')
 
 <!-- Titulo-->
-    <title>@yield('title','Casa Medio camino Loohl | Inicio')</title>
+    <title>@yield('title','Casa Medio Camino Loohl | Inicio')</title>
 
 </head>
 
