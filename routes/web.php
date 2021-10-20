@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\BotManController;
+use App\Http\Controllers\PageInfoController;
 
 /*
 |--------------------------------------------------------------------------
@@ -27,3 +28,10 @@ Route::view('/medium_test', 'medium_test');
 Route::view('/paypal_test', 'paypal_test');
 Route::view('/quienes-somos', 'about_us');
 Route::view('/medium', 'medium');
+
+// Route to page Que Hacemos.
+Route::resource('/{name}', PageInfoController::class)->only(
+    [
+        "index"
+    ]
+);
