@@ -1,9 +1,46 @@
-.donation-btn {
-    padding: 10% 0; 
-}
-
+/* Seccion about us */
 @media query and (max-width:992px) {
     .top-section-with-fixed-bg {
         background-attachment:fixed;
+    }
+}
+@media only screen and (min-width: 992px) {
+    .fixed-img {
+        position: fixed;
+        top: 120px;
+        right: 0px;
+        width: 50vw;
+        height: calc(100vh - 120px);
+        object-fit: cover;
+    }
+    
+    .unfixed-img {
+        position: absolute;
+        bottom: 0px;
+        right: 0px;
+        width: 50vw;
+        height: calc(100vh - 120px);
+        object-fit: cover;
+    }
+
+    .intro-text {
+        height: calc(100vh - 120px);
+        padding-top: 120px;
+        padding-bottom: 100px;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    
+}
+@media only screen and (max-width: 991px) {
+    .main-img {
+        margin-left: -15px;
+        width: 100vw;
+        height: 400px;
+        object-fit: cover;
+    }
+
+    .intro-text {
+        padding: 70px 50px;
     }
 }
