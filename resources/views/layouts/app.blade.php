@@ -63,21 +63,20 @@
             <ul>
                 <li class="dropdown"><a href="{{route('quienes-somos')}}"><span>¿QUIÉNES SOMOS?</span> <i class="bi bi-chevron-down"></i></a>
                     <ul>
-                        <li><a href="#">FILOSOFÍA</a></li>
-                        <li><a href="#">HISTORIA</a></li>
-                        <li><a href="#">EQUIPO</a></li>
+                        <li><a href="{{route('quienes-somos')}}#philosophy">FILOSOFÍA</a></li>
+                        <li><a href="{{route('quienes-somos')}}#history">HISTORIA</a></li>
                     </ul>
                 </li>
                 <li class="dropdown"><a href="#about"><span>¿QUÉ HACEMOS?</span> <i class="bi bi-chevron-down"></i></a>
                     <ul>
-                        <li><a href="#">FORMA DE TRABAJO</a></li>
-                        <li><a href="#">SERVICIOS</a></li>
-                        <li><a href="#">ACTIVIDADES</a></li>
+                        <li><a href="{{route('que-hacemos')}}#wow">FORMA DE TRABAJO</a></li>
+                        <li><a href="{{route('que-hacemos')}}#services">SERVICIOS</a></li>
+                        <li><a href="{{route('que-hacemos')}}#activities">ACTIVIDADES</a></li>
                     </ul>
                 </li>
-                <li><a class="nav-link scrollto" href="#get-involved">INVOLÚCRATE</a></li>
+                <li><a class="nav-link scrollto" href="#contribute">INVOLÚCRATE</a></li>
                 <li><a class="nav-link scrollto" href="#contact">CONTÁCTANOS</a></li>
-                <li><a class="getstarted scrollto" href="#about">DONAR</a></li>
+                <li><a class="getstarted scrollto" href="#">DONAR</a></li>
             </ul>
             <i class="bi bi-list mobile-nav-toggle"></i>
         </nav><!-- .navbar -->
