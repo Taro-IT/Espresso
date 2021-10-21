@@ -302,7 +302,7 @@ section {
     color: #fff;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 1077px) {
     .mobile-nav-toggle {
         display: block;
     }
