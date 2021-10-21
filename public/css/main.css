@@ -14,6 +14,7 @@
     --underline-purple: rgba(177, 123, 235, 0.250);
     --outline-purple: rgb(177, 123, 235, 0.5);
     --transparent: rgba(255, 255, 255, 0);
+    --dark-purple: #652d90;
 }
 
 body {
@@ -459,85 +460,90 @@ section {
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
-.about .content {
+.about-us .content {
     background-color: #f6f9ff;
     padding: 40px;
 }
-.about h3 {
-    font-size: 14px;
-    font-weight: 700;
-    color: #652D90;
-    text-transform: uppercase;
-}
-.about h1 {
+.about-us h1 {
     font-weight: 650;
 }
-.about h2 {
+.about-us h2 {
     font-size: 24px;
     font-weight: 500;
     color: black;
 }
-.about p {
+.about-us p {
     margin: 15px 0 30px 0;
     line-height: 24px;
 }
-.about .btn-read-more {
+.btn-read-more {
+    margin-top: 20px;
     line-height: 0;
     padding: 15px 40px;
     border-radius: 4px;
     transition: 0.5s;
     color: #fff;
-    background: #652D90;
-    box-shadow: 0px 5px 25px rgba(65, 84, 241, 0.3);
+    background: var(--dark-purple);
+    box-shadow: 0px 5px 25px rgba(179, 154, 255, 0.516);
 }
-.about .btn-read-more span {
+.btn-read-more span {
     font-family: "Nunito", sans-serif;
     font-weight: 600;
     font-size: 16px;
     letter-spacing: 1px;
 }
-.about .btn-read-more i {
+.btn-read-more i {
     margin-left: 5px;
     font-size: 18px;
     transition: 0.3s;
 }
-.about .btn-read-more:hover i {
+.btn-read-more:hover i {
     transform: translateX(5px);
+    color: white;
 }
 
-.about .about-img {
+.btn-read-more:hover {
+    box-shadow: 0px 5px 25px rgba(99, 49, 249, 0.605);
+}
+
+.about-us-img {
     text-align: right;
 }
+
+.about-us a{
+    color: white;
+}
+
 @media (min-width: 1024px) {
-    .about {
+    .about-us {
         margin-top: 120px;
         background-attachment: fixed;
     }
 }
 @media (max-width: 991px) {
-    .about {
+    .about-us {
         height: auto;
         padding: 120px 0 60px 0;
     }
-    .about .about-img {
+    .about-us .about-us-img {
         text-align: center;
         margin-top: 80px;
     }
-    .about .about-img img {
+    .about-us .about-us-img img {
         width: 80%;
     }
 }
 @media (max-width: 768px) {
-    .about {
+    .about-us {
         text-align: center;
     }
-    .about h1 {
+    .about-us h1 {
         font-size: 32px;
     }
-    .about h2 {
+    .about-us h2 {
         font-size: 24px;
     }
-    .about .about-img img {
+    .about-us .about-us-img img {
         width: 100%;
     }
 }
