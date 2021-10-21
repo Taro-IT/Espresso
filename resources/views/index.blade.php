@@ -2,69 +2,60 @@
 
 @section('content')
 
-    <!-- ======= Hero Section ======= -->
-    <section id="hero" class="about">
-
-        <div class="container-fluid" data-aos="fade-up">
-            <div class="row">
-                <div class="col-lg-6 d-flex flex-column justify-content-center" data-aos="fade-up">
-                    <h1>Ofreciendo
-                    <l class="text-purple">atención</l>
-                    y seguimiento al proceso de inclusión social de personas con
+    <!-- ======= About us section ======= -->
+    <div class="container-fluid" id="about-us">
+        <div class="row about position-relative">
+            <div class="col-lg-6">
+                <div class="intro-text a">
+                    <h1 class="mb-4">
+                        Ofreciendo
+                        <l class="text-purple">atención</l>
+                        y seguimiento al proceso de inclusión social de personas con
                         <l class="text-purple">experiencias psiquiátricas.</l>
                     </h1>
-                    <h2 data-aos="fade-up" data-aos-delay="400">Somos un puente entre la hospitalización y la
-                        reinserción social. </h2>
-                    <div data-aos="fade-up" data-aos-delay="600">
-                            <div class="text-center text-lg-start">
-                                <a href="#"
-                                   class="btn-read-more d-inline-flex align-items-center justify-content-center align-self-center">
-                                    <span>¿QUIÉNES SOMOS?</span>
-                                    <i class="bi bi-arrow-right"></i>
-                                </a>
-                        </div>
+                    <h2 class="mb-4" data-aos="fade-left" data-aos-delay="400">
+                        Somos un puente entre la hospitalización y la reinserción social. 
+                    </h2>
+                    <div data-aos="fade-left" data-aos-delay="600" class="text-center text-lg-start">
+                        <a href="#"
+                            class="btn-read-more d-inline-flex align-items-center justify-content-center align-self-center">
+                            <span>¿QUIÉNES SOMOS?</span>
+                            <i class="bi bi-arrow-right"></i>
+                        </a>
                     </div>
                 </div>
-                <div class="col-lg about-img" data-aos="zoom-out" data-aos-delay="200">
-                    <img src="{{asset('images/img-sala.jpg')}}" class="img-fluid"
-                         alt="Imagen de sala casa medio camino">
+            </div>
+            <div class="col-lg-6 position-static">
+                <img src="{{asset('images/img-sala.jpg')}}" class="main-img fixed-img" id="home-img"
+                    alt="Imagen de sala casa medio camino">
+            </div>
+            <div class="col-lg-6">
+                <div class="intro-text b">
+                    <h1 class="mb-4">
+                        Brindamos un espacio apto para el
+                        <l class="text-purple">crecimiento personal</l>
+                        de personas con trastornos psicosociales.
+                    </h1>
+                    <h2 class="mb-4" data-aos="fade-left" data-aos-delay="400">
+                        Ayudamos a nuestros huéspedes a tener una mejor calidad de vida con un modelo terapéutico
+                        innovador.
+                    </h2>
+                    <div data-aos="fade-left" data-aos-delay="600" class="text-center text-lg-start">
+                        <a href="#"
+                            class="btn-read-more d-inline-flex align-items-center justify-content-center align-self-center">
+                            <span>¿QUÉ HACEMOS?</span>
+                            <i class="bi bi-arrow-right"></i>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="container" data-aos="fade-up">
-            <div class="row">
-                <div class="col-lg-6 d-flex flex-column justify-content-center" data-aos="fade-up"
-                        data-aos-delay="200">
-                        <h1>Brindamos un espacio apto para el
-                            <l class="text-purple">crecimiento personal</l>
-                            de personas con trastornos psicosociales.
-                        </h1>
-                        <h2>
-                            Ayudamos a nuestros huéspedes a tener una mejor calidad de vida con modelo terapéutico
-                            innovador.
-                        </h2>
-                        <div class="text-center text-lg-start">
-                            <a href="#"
-                                class="btn-read-more d-inline-flex align-items-center justify-content-center align-self-center">
-                                <span>¿QUÉ HACEMOS?</span>
-                                <i class="bi bi-arrow-right"></i>
-                            </a>
-                    </div>
-                </div>
-
-                <div class="col-lg-6 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="200">
-                    <img src="{{asset('images/img-sala-2.png')}}" class="img-fluid" alt="">
-                </div>
-
-            </div>
-        </div>
-
-    </section><!-- End Hero -->
-
+    </div><!-- End About Us Section -->
+        
     <main id="main">
 
         <!-- ======= Values Section ======= -->
-        <section id="values" class="values">
+        <section id="values" class="values c">
 
             <div class="container" data-aos="fade-up">
                 <div class="row">
@@ -245,6 +236,7 @@
 
 
     <script src="{{ asset('/js/load_medium_posts.js') }}"></script>
+    <script src="{{ asset('/js/scroll.js') }}"></script>
     <script>
         loadMediumPosts();
     </script>
