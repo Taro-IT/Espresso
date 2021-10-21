@@ -32,7 +32,6 @@ jobs:
       env:
         DB_CONNECTION: sqlite
         DB_DATABASE: database/database.sqlite
-      run: php artisan test
      - name: Deploy to production
        uses: appleboy/ssh-action@master
        with:
