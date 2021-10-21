@@ -17,7 +17,7 @@
 }
 
 body {
-    font-family: "Open Sans", sans-serif;
+    font-family: "Raleway", sans-serif;
     color: #444444;
 }
 
@@ -33,6 +33,7 @@ a:hover {
 
 h1, h2, h3, h4, h5, h6 {
     font-family: "Nunito", sans-serif;
+    font-family: "Raleway", sans-serif;
 }
 
 /*--------------------------------------------------------------
@@ -221,7 +222,7 @@ section {
     color: #652D90;
 }
 .navbar .getstarted, .navbar .getstarted:focus {
-    background: #652D90;
+    background: #ff5e6b;
     padding: 8px 20px;
     margin-left: 30px;
     border-radius: 4px;
@@ -229,7 +230,7 @@ section {
 }
 .navbar .getstarted:hover, .navbar .getstarted:focus:hover {
     color: #fff;
-    background: #A282C4FF;
+    background: #fe707c;
 }
 .navbar .dropdown ul {
     display: block;
@@ -385,15 +386,12 @@ section {
     background-size: cover;
 }
 .hero h1 {
-    margin: 0;
-    font-size: 48px;
-    font-weight: 700;
-    color: #652D90;
+    font-weight: 650;
 }
 .hero h2 {
-    color: #444444;
-    margin: 15px 0 0 0;
-    font-size: 26px;
+    font-size: 24px;
+    font-weight: 500;
+    color: black;
 }
 .hero .btn-get-started {
     margin-top: 30px;
@@ -471,10 +469,13 @@ section {
     color: #652D90;
     text-transform: uppercase;
 }
+.about h1 {
+    font-weight: 650;
+}
 .about h2 {
     font-size: 24px;
-    font-weight: 700;
-    color: #652D90;
+    font-weight: 500;
+    color: black;
 }
 .about p {
     margin: 15px 0 30px 0;
@@ -502,6 +503,43 @@ section {
 }
 .about .btn-read-more:hover i {
     transform: translateX(5px);
+}
+
+.about .about-img {
+    text-align: right;
+}
+@media (min-width: 1024px) {
+    .about {
+        margin-top: 120px;
+        background-attachment: fixed;
+    }
+}
+@media (max-width: 991px) {
+    .about {
+        height: auto;
+        padding: 120px 0 60px 0;
+    }
+    .about .about-img {
+        text-align: center;
+        margin-top: 80px;
+    }
+    .about .about-img img {
+        width: 80%;
+    }
+}
+@media (max-width: 768px) {
+    .about {
+        text-align: center;
+    }
+    .about h1 {
+        font-size: 32px;
+    }
+    .about h2 {
+        font-size: 24px;
+    }
+    .about .about-img img {
+        width: 100%;
+    }
 }
 
 /*--------------------------------------------------------------
@@ -1886,13 +1924,13 @@ section {
 # Footer
 --------------------------------------------------------------*/
 .footer {
-    background: #f6f9ff;
+    background: whitesmoke;
     padding: 0 0 30px 0;
     font-size: 14px;
 }
 .footer .footer-newsletter {
     padding: 50px 0;
-    background: #f6f9ff;
+    background: whitesmoke;
     border-top: 1px solid #e1ecff;
 }
 .footer .footer-newsletter h4 {
@@ -1935,10 +1973,8 @@ section {
     background: #A282C4FF;
 }
 .footer .footer-top {
-    background: white url(../images/footer-bg.png) no-repeat right top;
+
     background-size: contain;
-    border-top: 1px solid #e1ecff;
-    border-bottom: 1px solid #e1ecff;
     padding: 60px 0 30px 0;
 }
 @media (max-width: 992px) {
@@ -1974,7 +2010,7 @@ section {
 .footer .footer-top .social-links a {
     font-size: 20px;
     display: inline-block;
-    color: rgba(1, 41, 112, 0.5);
+    color:#652D90;
     line-height: 0;
     margin-right: 10px;
     transition: 0.3s;
@@ -2071,3 +2107,12 @@ section {
 .text-card{
     margin-top: 15%;
 }
+
+.margin-navbar{
+    margin-top: 6%;
+}
+
+.img-carrousel{
+    width: 100%;
+}
+

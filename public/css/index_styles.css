@@ -1,0 +1,9 @@
+.donation-btn {
+    padding: 10% 0; 
+}
+
+@media query and (max-width:992px) {
+    .top-section-with-fixed-bg {
+        background-attachment:fixed;
+    }
+}
