@@ -33,3 +33,10 @@ jobs:
         DB_CONNECTION: sqlite
         DB_DATABASE: database/database.sqlite
       run: vendor/bin/phpunit
+    - name: Deploy to production
+      uses: appleboy/ssh-action@master
+      with:
+        username: "espresso"
+        host: "147.182.180.196"
+        password: "s9A76h8Dr=@i$r9cratr"
+        script: 'cd /var/www/Espresso && ./server_deploy.sh'
