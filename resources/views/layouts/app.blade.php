@@ -93,10 +93,10 @@
   <footer class="footer bg-light">
     <div class="container">
       <div class="row">
-        <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
+        <div class="col-md-4 mb-2">
             <img src="images/logo.jpg" alt="" width="180" class="mb-3">
         </div>
-        <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+        <div class="col-lg-4 col-md-6">
             <h6 class="font-weight-bold">CONÉCTATE</h6>
             <ul class="list-inline mt-4">
                 <li class="list-inline-item"><a href="https://www.facebook.com/Casa-de-Medio-Camino-Quer%C3%A9taro-Casa-Loohl-313251725496600" target="_blank" title="facebook"><i class="bi bi-facebook" style="font-size: 2rem;"></i></a></li>
@@ -105,7 +105,7 @@
                 <li class="list-inline-item"><a href="https://medium.com/@Casademediocamino/following" target="_blank" title="medium"><i class="bi bi-medium" style="font-size: 2rem;"></i></a></li>
             </ul>
         </div>
-        <div class="col-lg-6 col-md-6 mb-lg-0">
+        <div class="col-lg-4 col-md-6 mb-lg-0">
           <p class="mb-4">Casa Loohl es una organización benéfica sin fines de lucro y exenta de impuestos. Las donaciones son deducibles de impuesto según lo permita la ley.</p>
         </div>
       </div>
