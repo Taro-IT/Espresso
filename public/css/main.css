@@ -534,6 +534,14 @@ section {
 /*--------------------------------------------------------------
 # FOOTER
 --------------------------------------------------------------*/
+.footer{
+    padding-top: 15px;
+}
+.copyrights{
+    background-color:var(--dark-purple);
+    color: white;
+    padding: 5px;
+}
 .footer a{
     color: var(--purple);
 }

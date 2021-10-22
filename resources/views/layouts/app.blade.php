@@ -91,14 +91,14 @@
 
 <!-- ======= Footer ======= -->
   <!-- Footer -->
-  <footer class="bg-white footer">
+  <footer class="footer bg-light">
     <div class="container">
       <div class="row">
         <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
             <img src="images/logo.jpg" alt="" width="180" class="mb-3">
         </div>
         <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
-            <h6 class="font-weight-bold mb-4">CONÉCTATE</h6>
+            <h6 class="font-weight-bold">CONÉCTATE</h6>
             <ul class="list-inline mt-4">
                 <li class="list-inline-item"><a href="#" target="_blank" title="facebook"><i class="bi bi-facebook" style="font-size: 2rem;"></i></a></li>
                 <li class="list-inline-item"><a href="#" target="_blank" title="instagram"><i class="bi bi-instagram" style="font-size: 2rem;"></i></a></li>
@@ -107,15 +107,15 @@
             </ul>
         </div>
         <div class="col-lg-6 col-md-6 mb-lg-0">
-          <p class="text-muted mb-4">Casa Loohl es una organización benéfica sin fines de lucro y exenta de impuestos. Las donaciones son deducibles de impuesto según lo permita la ley.</p>
+          <p class="mb-4">Casa Loohl es una organización benéfica sin fines de lucro y exenta de impuestos. Las donaciones son deducibles de impuesto según lo permita la ley.</p>
         </div>
       </div>
     </div>
 
     <!-- Copyrights -->
-    <div class="bg-light py-4">
+    <div class="copyrights">
       <div class="container text-center">
-        <p class="text-muted mb-0 py-2">© 2021 Casa Loohl: Casa de medio camino. Todos los derechos reservados.</p>
+        <p class="mb-0">© 2021 Casa Loohl: Casa de medio camino. Todos los derechos reservados.</p>
       </div>
     </div>
   </footer>
