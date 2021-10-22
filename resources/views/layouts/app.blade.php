@@ -53,8 +53,9 @@
 
 <!-- ======= Header ======= -->
 <header id="header" class="header fixed-top">
-    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+    <div class="container-fluid d-flex align-items-center justify-content-between">
 
+        <!-- ======= Navbar ======= -->
         <a href="/" class="logo d-flex align-items-center">
             <img src="{{asset('images/logo.jpg')}}" alt="Casa Loohl: Casa de Medio Camino">
         </a>
@@ -79,7 +80,7 @@
                 <li><a class="getstarted scrollto" href="#">DONAR</a></li>
             </ul>
             <i class="bi bi-list mobile-nav-toggle"></i>
-        </nav><!-- .navbar -->
+        </nav><!-- End Navbar -->
 
     </div>
 </header><!-- End Header -->
