@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title') Casa Medio Camino | ¿Quiénes somos? @endsection
+@section('title') Casa Medio Camino | Tienda @endsection
 @section('content')
 
 <section id="carrousel" class="margin-navbar">
@@ -92,3 +92,4 @@
             </div>
           </div>
 </div>
+@endsection

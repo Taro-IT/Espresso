@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title') Casa Medio Camino | ¿Quiénes somos? @endsection
+@section('title') Casa Medio Camino | Puntos de venta @endsection
 @section('content')
 
 <section id="carrousel" class="margin-navbar">
@@ -16,3 +16,4 @@
         Las ganancias de cada artículo nos permiten seguir con nuestra labor, motivar a los huéspeded y eliminar poco a poco el estigme sobre las enfermedades mentales.
     </p>  
 </section>
+@endsection

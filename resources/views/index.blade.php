@@ -91,7 +91,7 @@
     </section>
 
     <!-- ======= CONTRIBUTE SECTION ======= -->
-    <section class="container" data-aos="fade-up">
+    <section class="container" data-aos="fade-up" id="contribute">
         <h1 class="header text-center" data-aos="fade-up" data-aos-delay="100">
             <span class="underline">&nbsp;&nbsp;¿PORQUÉ CONTRIBUIR?&nbsp;&nbsp;</span>
         </h1>

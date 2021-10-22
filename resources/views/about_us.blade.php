@@ -7,7 +7,7 @@
     <img class="d-block w-100" src="{{asset('images/slider-1.png')}}" alt="First slide">
 </section>
 
-<!-- =======  MISSION SECTION ======= -->
+<!-- =======  WHO WE ARE SECTION ======= -->
 <div class="container">
 <section id="quienes-somos">
     <div class="row justify-content-center">

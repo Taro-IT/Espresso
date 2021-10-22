@@ -67,7 +67,7 @@
                         <li><a href="{{route('quienes-somos')}}#history">HISTORIA</a></li>
                     </ul>
                 </li>
-                <li class="dropdown"><a href="#about"><span>¿QUÉ HACEMOS?</span> <i class="bi bi-chevron-down"></i></a>
+                <li class="dropdown"><a href="{{route('que-hacemos')}}"><span>¿QUÉ HACEMOS?</span> <i class="bi bi-chevron-down"></i></a>
                     <ul>
                         <li><a href="{{route('que-hacemos')}}#wow">FORMA DE TRABAJO</a></li>
                         <li><a href="{{route('que-hacemos')}}#services">SERVICIOS</a></li>
