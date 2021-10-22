@@ -48,7 +48,7 @@
     <!-- =======  TERAPEUTIC COMMUNITY SECTION ======= -->
     <section class="container">
             <div class="row justify-content-center">
-                    <h1 class="header" data-aos="fade-up" data-aos-delay="200">
+                    <h1 class="header text-center" data-aos="fade-up" data-aos-delay="200">
                         <span class="underline">&nbsp;&nbsp;COMUNIDAD TERAPEÚTICA&nbsp;&nbsp;</span>
                     </h1>
                     <p class="subtitle text-center" data-aos="fade-up" data-aos-delay="400">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum a egestas turpis, quis commodo ante. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>

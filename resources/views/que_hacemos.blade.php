@@ -184,7 +184,7 @@
 <!-- =======  OUR DAY SECTION ======= -->
         <section id="activities">
             <h1 class="medium-posts-header font-weight-bold">
-                <span class="underline">&nbsp;&nbsp;Un día en Casa Loohl&nbsp;&nbsp;</span>
+                <span class="underline">&nbsp;&nbsp;UN DÍA EN CASA LOOHL&nbsp;&nbsp;</span>
             </h1>
             <br>
             <div class="row">
@@ -232,10 +232,9 @@
         {{-- End Nuestros Servicios--}}
 
 <!-- =======  ACTIVITIES SECTION ======= -->
-<!-- =======  MISSION SECTION ======= -->
 <section class="container" id="activities">
             <div class="row justify-content-center">
-                    <h1 class="header" data-aos="fade-up" data-aos-delay="200">
+                    <h1 class="section-header" data-aos="fade-up" data-aos-delay="200">
                         <span class="underline">&nbsp;&nbsp;TALLERES & ACTIVIDADES&nbsp;&nbsp;</span>
                     </h1>
                     <p class="subtitle text-center" data-aos="fade-up" data-aos-delay="300">Los talleres que realizamos en Casa Loohl están dirigidos a contrarestar la sintomatología negativa que presentan los huéspedes, guiándolos en el fortalecimiento de sus habilidades sociales y cognitivas que le permita tener un mejor funcionamiento en su ámbito familiar y social.</p>
