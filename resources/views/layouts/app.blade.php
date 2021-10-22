@@ -25,7 +25,6 @@
     <link href="{{asset('vendor')}}/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css">
     <link href="{{asset('vendor')}}/aos/aos.css" rel="stylesheet">
-    <link href="{{asset('vendor')}}/remixicon/remixicon.css" rel="stylesheet">
     <link href="{{asset('vendor')}}/swiper/swiper-bundle.min.css" rel="stylesheet">
     <link href="{{asset('vendor')}}/glightbox/css/glightbox.min.css" rel="stylesheet">
     
@@ -100,8 +99,8 @@
         <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
             <h6 class="font-weight-bold">CONÉCTATE</h6>
             <ul class="list-inline mt-4">
-                <li class="list-inline-item"><a href="#" target="_blank" title="facebook"><i class="bi bi-facebook" style="font-size: 2rem;"></i></a></li>
-                <li class="list-inline-item"><a href="#" target="_blank" title="instagram"><i class="bi bi-instagram" style="font-size: 2rem;"></i></a></li>
+                <li class="list-inline-item"><a href="https://www.facebook.com/Casa-de-Medio-Camino-Quer%C3%A9taro-Casa-Loohl-313251725496600" target="_blank" title="facebook"><i class="bi bi-facebook" style="font-size: 2rem;"></i></a></li>
+                <li class="list-inline-item"><a href="https://www.instagram.com/casa_loohl/?hl=es-la" target="_blank" title="instagram"><i class="bi bi-instagram" style="font-size: 2rem;"></i></a></li>
                 <li class="list-inline-item"><a href="#" target="_blank" title="spotify"><i class="bi bi-spotify" style="font-size: 2rem;"></i></a></li>
                 <li class="list-inline-item"><a href="https://medium.com/@Casademediocamino/following" target="_blank" title="medium"><i class="bi bi-medium" style="font-size: 2rem;"></i></a></li>
             </ul>
@@ -132,7 +131,6 @@
 <script src="{{asset('vendor')}}/aos/aos.js"></script>
 <script src="{{asset('vendor')}}/php-email-form/validate.js"></script>
 <script src="{{asset('vendor')}}/swiper/swiper-bundle.min.js"></script>
-<script src="{{asset('vendor')}}/purecounter/purecounter.js"></script>
 <script src="{{asset('vendor')}}/isotope-layout/isotope.pkgd.min.js"></script>
 <script src="{{asset('vendor')}}/glightbox/js/glightbox.min.js"></script>
 
