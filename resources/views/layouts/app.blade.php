@@ -51,7 +51,7 @@
 <body>
 
 <!-- ======= Header ======= -->
-<header id="header" class="header fixed-top">
+<header id="header" class="header-nav fixed-top">
     <div class="container-fluid d-flex align-items-center justify-content-between">
 
         <!-- ======= Navbar ======= -->
