@@ -16,8 +16,11 @@
     --transparent: rgba(255, 255, 255, 0);
 }
 
-body {
+* {
     font-family: "Raleway", sans-serif;
+}
+
+body {
     color: #444444;
 }
 
@@ -32,7 +35,6 @@ a:hover {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: "Nunito", sans-serif;
     font-family: "Raleway", sans-serif;
 }
 
@@ -178,7 +180,6 @@ section {
     font-weight: 700;
     letter-spacing: 1px;
     color: #652D90;
-    font-family: "Nunito", sans-serif;
     margin-top: 3px;
 }
 
@@ -206,7 +207,6 @@ section {
     align-items: center;
     justify-content: space-between;
     padding: 10px 0 10px 30px;
-    font-family: "Nunito", sans-serif;
     font-size: 16px;
     font-weight: 700;
     color: #A282C4;
@@ -302,7 +302,7 @@ section {
     color: #fff;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 1077px) {
     .mobile-nav-toggle {
         display: block;
     }
@@ -404,7 +404,6 @@ section {
     box-shadow: 0px 5px 30px rgba(65, 84, 241, 0.4);
 }
 .hero .btn-get-started span {
-    font-family: "Nunito", sans-serif;
     font-weight: 600;
     font-size: 16px;
     letter-spacing: 1px;
@@ -459,6 +458,10 @@ section {
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
+.about {
+    margin-top: 120px;
+    padding-bottom: 60px;
+}
 .about .content {
     background-color: #f6f9ff;
     padding: 40px;
@@ -491,7 +494,6 @@ section {
     box-shadow: 0px 5px 25px rgba(65, 84, 241, 0.3);
 }
 .about .btn-read-more span {
-    font-family: "Nunito", sans-serif;
     font-weight: 600;
     font-size: 16px;
     letter-spacing: 1px;
@@ -508,17 +510,17 @@ section {
 .about .about-img {
     text-align: right;
 }
-@media (min-width: 1024px) {
-    .about {
+@media (min-width: 992px) {
+    /* .about {
         margin-top: 120px;
         background-attachment: fixed;
-    }
+    } */
 }
 @media (max-width: 991px) {
-    .about {
+    /* .about {
         height: auto;
         padding: 120px 0 60px 0;
-    }
+    } */
     .about .about-img {
         text-align: center;
         margin-top: 80px;
@@ -599,7 +601,6 @@ section {
 .counts .count-box p {
     padding: 0;
     margin: 0;
-    font-family: "Nunito", sans-serif;
     font-size: 14px;
 }
 
@@ -898,7 +899,6 @@ section {
     transition: none;
     font-size: 16px;
     font-weight: 400;
-    font-family: "Nunito", sans-serif;
     font-weight: 600;
     transition: 0.3s;
     border: 1px solid #652D90;
@@ -1998,14 +1998,12 @@ section {
     font-weight: 700;
     letter-spacing: 1px;
     color: #652D90;
-    font-family: "Nunito", sans-serif;
     margin-top: 3px;
 }
 .footer .footer-top .footer-info p {
     font-size: 14px;
     line-height: 24px;
     margin-bottom: 0;
-    font-family: "Nunito", sans-serif;
 }
 .footer .footer-top .social-links a {
     font-size: 20px;
