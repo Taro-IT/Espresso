@@ -1,20 +1,16 @@
-/**
-* Template Name: FlexStart - v1.7.0
-* Template URL: https://bootstrapmade.com/flexstart-bootstrap-startup-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
-
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
 :root {
     scroll-behavior: smooth;
-    --purple: #a282c4;
-    --underline-purple: rgba(177, 123, 235, 0.250);
-    --outline-purple: rgb(177, 123, 235, 0.5);
-    --transparent: rgba(255, 255, 255, 0);
     --dark-purple: #652d90;
+    --purple: #a282c4;
+    --light-purple: #eae3f2;
+    --underline-purple: #e2cef8;
+    --transparent: rgba(255, 255, 255, 0);
+    --red: #ff5e6b;
+    --green: #9ee6b8;
+    --yellow: #fcf89c;
 }
 
 * {
@@ -606,3 +602,48 @@ section {
   .list {
     font-size: 1.2rem;
   }
+
+.activities ul {
+    color:black;
+    list-style: none;
+    background: white;
+    border-radius: 5px;
+    padding: 6px;
+}
+.activities ul li {
+    background:white;
+    border-radius: 3px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding: 5px 10px 5px 5px;
+    margin: 5px;
+}
+.activities span {
+    padding: 5px;
+    color: white;
+    font-size: 15px;
+    background: var(--dark-purple);
+    border-radius: 4px;
+    letter-spacing: 1px;
+}
+
+.noAttendTitle{
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.noAttend{
+  text-align: center;
+  font-size: 1em;
+}
+
+.card-title{
+    color: var(--dark-purple);
+    font-weight:bolder;
+    text-transform: uppercase;
+}
+
+.carrousel-sizing{
+    width: 100%;
+}
