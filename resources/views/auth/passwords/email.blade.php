@@ -23,19 +23,27 @@
                 <br>
             </div>
 
-            <!-- Login Form -->
-            <form method="POST" action="{{ route('password.email') }}">
+            <form method="POST" action="{{ route('password.email') }}" class="login100-form validate-form">
                 @csrf
-                <input id="email" type="email" class="fadeIn second" name="email" placeholder="Correo electrónico" class="@error('email') is-invalid @enderror" value="{{ old('email') }}" required autocomplete="email" autofocus>
-                @error('email')
-                <span class="invalid-feedback" role="alert">
+
+                <div class="wrap-input100 validate-input" data-validate="Valid email is required: ex@abc.xyz">
+                    <input id="email" type="email" class="@error('email') is-invalid @enderror"
+                           name="email" value="{{ old('email') }}" placeholder="Correo electrónico" required autocomplete="email" autofocus>
+
+
+
+                    @error('email')
+                    <span class="invalid-feedback" role="alert">
                         <strong>{{ $message }}</strong>
                     </span>
-                @enderror
-                <br><br><br>
-                <input type="submit" class="fadeIn fourth" value="Enviar Link">
-            </form>
+                    @enderror
+                </div>
 
+                <div class="container-login100-form-btn">
+                    <input type="submit" class="fadeIn fourth" value="Enviar Link">
+                </div>
+
+            </form>
         </div>
 
     </div>
