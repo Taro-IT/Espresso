@@ -36,79 +36,55 @@
     </section>
 
     <!-- =======  PEOPLE WE CAN NOT ADMIT ======= -->
-    <div id="NoAtendemos" class="col-12" style="display: none; margin-top:2em;">
-        <h3 class="subheader text-left font-weight-bold">
-            <span class="underline">&nbsp;&nbsp;Personas que no podemos atender&nbsp;&nbsp;</span>
+    <section id="NoAtendemos">
+        <h3 class="subheader text-left">
+            &nbsp;&nbsp;Personas que no podemos atender&nbsp;&nbsp;</span>
         </h3>
-        <div class="row" style="margin-top:2em;">
-            <div class="col-sm-12 col-md-6 col-lg-3">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-6">
-                            <img class="img-fluid" src="que_hacemos/no1.png" style="height: 50px; margin-bottom:1em;">
-                        </div>
-                        <div class="col-6">
-                            <img class="img-fluid" src="que_hacemos/no2.png" style="height: 50px; margin-bottom:1em;">
-                        </div>
-                    </div>
-                </div>
-                <p class="noAttendTitle"><strong> Personas con adicción</strong></p>
-                <p class="noAttend"> Las adicciones y enfermedades mentales se tratan de distinta manera.</p>
+        <div class="row">
+            <div class="col-md-3 text-center">
+                <i class="bi bi-x-circle-fill mr-2 inadmissible"></i>
+                <p class="subtitle">Personas con adicción</p>
+                <p class="">Las adicciones y las enfermedades mentales se tratan de diferente manera.</p>
             </div>
-            <div class="col-sm-12 col-md-6 col-lg-3">
-                <div class="container">
-                    <img class="img-fluid" src="que_hacemos/no2.png" style="height: 50px; margin-bottom:1em;">
-                </div>
-                <p class="noAttendTitle"><strong> Personas agresivas </strong></p>
-                <p class="noAttend"> Ponen en peligro la seguridad de los huéspedes y todas las personas dentro de la casa.</p>
+            <div class="col-md-3 text-center">
+                <i class="bi bi-x-circle-fill mr-2 inadmissible"></i>
+                <p class="subtitle">Personas agresivas</p>
+                <p class="">Ponen en peligro la seguridad de los huéspedes y todas las personas dentro de la casa.</p>
             </div>
-            <div class="col-sm-12 col-md-6 col-lg-3">
-                <div class="container">
-                    <img class="img-fluid" src="que_hacemos/no2.png" style="height: 50px; margin-bottom:1em;">
+            <div class="col-md-3 text-center">
+                <i class="bi bi-x-circle-fill mr-2 inadmissible"></i>
+                <p class="subtitle">Personas menores a 18 años</p>
+                <p class="">El tratamiento y seguimiento para personas en estas edades difiere del que se estila en Casa Loohl.</p>
             </div>
-            <p class="noAttendTitle"><strong> Personas que requieren infraestructura hospitalaria </strong></p>
-            <p class="noAttend"> No se cuenta con infraestructura hospitalaria.</p>
+            <div class="col-md-3 text-center">
+                <i class="bi bi-x-circle-fill mr-2 inadmissible"></i>
+                <p class="subtitle">Personas mayores a 60 años</p>
+                <p class="">El tratamiento y seguimiento para personas en estas edades difiere del que se estila en Casa Loohl.</p>
+            </div>
         </div>
-        <div class="col-sm-12 col-md-6 col-lg-3">
-            <div class="container">
-                <img class="img-fluid" src="que_hacemos/no2.png" style="height: 50px; margin-bottom:1em;">
-            </div>
-            <p class="noAttendTitle"><strong> Personas menores a 18 años </strong></p>
-            <p class="noAttend"> El tratamiento y seguimiento para personas en estas edades difiere del estilo en Casa Loohl. </p>
-        </div>
-    </div>
 
-    <div class="row" style="margin-top:2em;">
-        <div class="col-sm-12 col-md-6 col-lg-3">
-            <div class="container">
-                <img class="img-fluid" src="que_hacemos/no3.png" style="height: 50px; margin-bottom:1em;">
+        <div class="row">
+            <div class="col-md-3 text-center">
+                <i class="bi bi-x-circle-fill mr-2 inadmissible"></i>
+                <p class="subtitle">Personas en situaciones de crisis</p>
+                <p class="">No contamos con el personal y espacio necesario para estbailizarlos y evitar quebrar el ambiente armonioso.</p>
             </div>
-            <p class="noAttendTitle"><strong> Personas con situaciones en crisis </strong></p>
-            <p class="noAttend">No contamos con el personal y espacio necesario para estabilizarlos y asi evitar el ambiente armonioso.</p>
-        </div>
-        <div class="col-sm-12 col-md-6 col-lg-3">
-            <div class="container">
-                <img class="img-fluid" src="que_hacemos/no3.png" style="height: 50px; margin-bottom:1em;">
+            <div class="col-md-3 text-center">
+                <i class="bi bi-x-circle-fill mr-2 inadmissible"></i>
+                <p class="subtitle">Personas con Síndrome de Down</p>
+                <p class="">El Síndrome de Down es una condición de salud por afección genética, no una enfermedad mental.</p>
             </div>
-            <p class="noAttendTitle"><strong> Personas con Síndrome de Down </strong></p>
-            <p class="noAttend"> El Síndrome de Down es una condición de salud por afección genético, no una enferemdad mental.</p>
-        </div>
-        <div class="col-sm-12 col-md-6 col-lg-3">
-            <div class="container">
-                <img class="img-fluid" src="que_hacemos/no3.png" style="height: 50px; margin-bottom:1em;">
+            <div class="col-md-3 text-center">
+                <i class="bi bi-x-circle-fill mr-2 inadmissible"></i>
+                <p class="subtitle">Personas sin diagnóstico</p>
+                <p class="">Para un correcto seguimiento necesitamos que el médico de cabecera haga el diagnóstico.</p>
             </div>
-            <p class="noAttendTitle"><strong> Personas sin diagnóstico </strong></p>
-            <p class="noAttend"> Para un correcto segumiento y tratamiento farmacológico para la estabilidad del paciente.</p>
-        </div>
-        <div class="col-sm-12 col-md-6 col-lg-3">
-            <div class="container">
-                <img class="img-fluid" src="que_hacemos/no3.png" style="height: 50px; margin-bottom:1em;">
+            <div class="col-md-3 text-center">
+                <i class="bi bi-x-circle-fill mr-2 inadmissible"></i>
+                <p class="subtitle">Personas que requieren de infraestructura hospitalaria</p>
+                <p class="">No contamos con dicha infraestructura.</p>
             </div>
-            <p class="noAttendTitle"><strong> Personas mayores a 60 años </strong></p>
-            <p class="noAttend"> El tratamiento y seguimiento para personas en estas edades no se puede dar debido que requieren de una infraestructura y cuidados especializados que no forman parte del servicio que maneja la Comunidad. </p>
         </div>
-    </div>
-    </div>
     </section>
 
 <!-- =======  WOW SECTION ======= -->

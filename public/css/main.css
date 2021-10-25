@@ -72,50 +72,6 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Breadcrumbs
---------------------------------------------------------------*/
-.breadcrumbs {
-    padding: 15px 0;
-    background: #652D90;
-    min-height: 40px;
-    margin-top: 82px;
-    color: #fff;
-}
-@media (max-width: 992px) {
-    .breadcrumbs {
-        margin-top: 57px;
-    }
-}
-.breadcrumbs h2 {
-    font-size: 28px;
-    font-weight: 500;
-}
-.breadcrumbs ol {
-    display: flex;
-    flex-wrap: wrap;
-    list-style: none;
-    padding: 0 0 10px 0;
-    margin: 0;
-    font-size: 14px;
-}
-.breadcrumbs ol a {
-    color: #fff;
-    transition: 0.3s;
-}
-.breadcrumbs ol a:hover {
-    text-decoration: underline;
-}
-.breadcrumbs ol li + li {
-    padding-left: 10px;
-}
-.breadcrumbs ol li + li::before {
-    display: inline-block;
-    padding-right: 10px;
-    color: #8894f6;
-    content: "/";
-}
-
-/*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
 .back-to-top {
@@ -166,8 +122,6 @@ section {
     padding: 15px 0;
     box-shadow: 0px 2px 20px rgba(1, 41, 112, 0.1);
 }
-
-
 
 /*--------------------------------------------------------------
 # Navigation Menu
@@ -564,7 +518,6 @@ section {
     text-align: center;
     height: 10vh;
     width: 13vw;
-
 }
 
 .text-card{
@@ -628,16 +581,6 @@ section {
     letter-spacing: 1px;
 }
 
-.noAttendTitle{
-    text-align: center;
-    font-size: 1.2em;
-}
-
-.noAttend{
-  text-align: center;
-  font-size: 1em;
-}
-
 .card-title{
     color: var(--dark-purple);
     font-weight:bolder;
@@ -646,4 +589,13 @@ section {
 
 .carrousel-sizing{
     width: 100%;
+}
+
+.inadmissible{
+    color: var(--red);
+    font-size: 4rem;
+}
+
+#NoAtendemos{
+    display: none;
 }

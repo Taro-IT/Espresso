@@ -98,7 +98,7 @@
         </div>
         <div class="col-lg-4 col-md-6">
             <h6 class="font-weight-bold">CONÉCTATE</h6>
-            <ul class="list-inline mt-4">
+            <ul class="list-inline mt-1">
                 <li class="list-inline-item"><a href="https://www.facebook.com/Casa-de-Medio-Camino-Quer%C3%A9taro-Casa-Loohl-313251725496600" target="_blank" title="facebook"><i class="bi bi-facebook" style="font-size: 2rem;"></i></a></li>
                 <li class="list-inline-item"><a href="https://www.instagram.com/casa_loohl/?hl=es-la" target="_blank" title="instagram"><i class="bi bi-instagram" style="font-size: 2rem;"></i></a></li>
                 <li class="list-inline-item"><a href="#" target="_blank" title="spotify"><i class="bi bi-spotify" style="font-size: 2rem;"></i></a></li>
@@ -136,6 +136,7 @@
 
 <!-- JS Personalizado-->
 <script rel="script" src="{{asset('js/main.js')}}" crossorigin="anonymous"></script>
+<script rel="script" src="{{asset('js/display_section.js')}}" crossorigin="anonymous"></script>
 @stack('scripts')
 
 <!-- Bootstrap js -->
