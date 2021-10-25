@@ -43,12 +43,6 @@
                 @endif
                 <input type="submit" class="fadeIn fourth" value="Iniciar Sesión">
             </form>
-
-            <!-- Remind Passowrd -->
-            <div id="formFooter">
-                <a class="underlineHover" href="#">Go to the Site</a>
-            </div>
-
         </div>
     </div>
 </div>
