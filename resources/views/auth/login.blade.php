@@ -20,29 +20,37 @@
                 <h1>Administración</h1>
             </div>
 
-            <!-- Login Form -->
-            <form method="POST" action="{{ route('login') }}">
+
+            <form method="POST" action="{{ route('login') }}" class="login100-form validate-form">
                 @csrf
-                <input id="email" type="email" class="fadeIn second" name="email" placeholder="Correo electrónico" class="@error('email') is-invalid @enderror" value="{{ old('email') }}" required autocomplete="email" autofocus>
-                @error('email')
+
+                <div class="wrap-input100 validate-input" data-validate="Valid email is required: ex@abc.xyz">
+                    <input id="email" type="email" class="@error('email') is-invalid @enderror"
+                           name="email" value="{{ old('email') }}" placeholder="Correo electrónico" required autocomplete="email" autofocus>
+
+                    @error('email')
                     <span class="invalid-feedback" role="alert">
                         <strong>{{ $message }}</strong>
                     </span>
-                @enderror
-                <input type="password" id="password" name="password" class="fadeIn third @error('password') is-invalid @enderror" name="login" placeholder="Contraseña" required autocomplete="current-password">
-                @error('password')
+                    @enderror
+                    <input type="password" id="password" name="password" class="fadeIn third @error('password') is-invalid @enderror" name="login" placeholder="Contraseña" required autocomplete="current-password">
+                    @error('password')
                     <span class="invalid-feedback" role="alert">
                         <strong>{{ $message }}</strong>
                     </span>
-                @enderror
-                <br><br>
-                @if (Route::has('password.request'))
-                    <a class="btn btn-link" href="{{ route('password.request') }}">
-                        ¿Olvidaste la contraseña?
-                    </a>
-                @endif
-                <input type="submit" class="fadeIn fourth" value="Iniciar Sesión">
+                    @enderror
+                    <br><br>
+                    @if (Route::has('password.request'))
+                        <a class="btn btn-link" href="{{ route('password.request') }}">
+                            ¿Olvidaste la contraseña?
+                        </a>
+                    @endif
+                </div>
+                <div class="container-login100-form-btn">
+                    <input type="submit" class="fadeIn fourth" value="Enviar Link">
+                </div>
             </form>
+
         </div>
     </div>
 </div>
