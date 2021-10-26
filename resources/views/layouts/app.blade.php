@@ -136,7 +136,6 @@
 
 <!-- JS Personalizado-->
 <script rel="script" src="{{asset('js/main.js')}}" crossorigin="anonymous"></script>
-<script rel="script" src="{{asset('js/display_section.js')}}" crossorigin="anonymous"></script>
 @stack('scripts')
 
 <!-- Bootstrap js -->

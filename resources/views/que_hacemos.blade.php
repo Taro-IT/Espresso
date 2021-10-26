@@ -29,14 +29,14 @@
             </ul>
         </div>
         <div class="container d-flex justify-content-end" data-aos="fade-left" data-aos-delay="600">
-            <button class="btn btn-read-more" onclick="QuePersonasNoAtendemos()">
+            <button data-toggle="collapse" href="#NoAtendemos" class="btn btn-read-more" onclick="QufePersonasNoAtendemos()">
                 <i>¿A qué personas no atendemos?</i>
             </button>
         </div>
     </section>
 
     <!-- =======  PEOPLE WE CAN NOT ADMIT ======= -->
-    <section id="NoAtendemos">
+    <div class="collapse" id="NoAtendemos">
         <h3 class="subheader text-left">
             &nbsp;&nbsp;Personas que no podemos atender&nbsp;&nbsp;</span>
         </h3>
