@@ -16,7 +16,7 @@
     <meta name="keywords"
           content="Pacientes, Ayuda, ayuda, pacientes, alternativa, psicólogos,Psicólogos,salud mental,necesidades,
           psiquiatra,afectivos,">
-    
+
     <!-- Favicon de Pagina web-->
     <link rel="icon" href="{{asset('images/logo.jpg')}}" type="image/x-icon">
 
@@ -27,7 +27,7 @@
     <link href="{{asset('vendor')}}/aos/aos.css" rel="stylesheet">
     <link href="{{asset('vendor')}}/swiper/swiper-bundle.min.css" rel="stylesheet">
     <link href="{{asset('vendor')}}/glightbox/css/glightbox.min.css" rel="stylesheet">
-    
+
     <!-- Materialize Icons -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
@@ -75,7 +75,7 @@
                 </li>
                 <li><a class="nav-link scrollto" href="#contribute">INVOLÚCRATE</a></li>
                 <li><a class="nav-link scrollto" href="#contact">CONTÁCTANOS</a></li>
-                <li><a class="getstarted scrollto" href="#">DONAR</a></li>
+                <li><a class="getstarted scrollto" href="{{route('donation.index')}}">DONAR</a></li>
             </ul>
             <i class="bi bi-list mobile-nav-toggle"></i>
         </nav><!-- End Navbar -->
