@@ -64,9 +64,9 @@ class PayPalService
         if (session()->has('approvalId')) {
             $approvalId = session()->get('approvalId');
             $payment = $this->capturePayment($approvalId);
-            return redirect('/home')->with('status', 'Se realizo tu compra exitosamente');
+            return redirect('/hacer-una-donacion')->with('status', 'Muchas Gracias por tu donación');
         }
-        return redirect('/home')->withErrors('No pudimos capturar tu pedido');
+        return redirect('/hacer-una-donacion')->withErrors('No pudimos capturar tu donación :c');
     }
 
     public function createOrder($value, $currency)
