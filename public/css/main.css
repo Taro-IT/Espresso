@@ -588,7 +588,7 @@ section {
     height: 50vh;
     width: 100vw;
   }
-  
+
   .wide{
     width: 80vw;
     height: 50vh;
@@ -606,3 +606,10 @@ section {
   .list {
     font-size: 1.2rem;
   }
+
+.margin-login{
+    margin-top: 8%;
+    margin-bottom: 6%;
+}
+
+
