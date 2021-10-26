@@ -85,7 +85,7 @@
                 <p class="">No contamos con dicha infraestructura.</p>
             </div>
         </div>
-    </section>
+    </div>
 
 <!-- =======  WOW SECTION ======= -->
     <section class="container" id="wow">
