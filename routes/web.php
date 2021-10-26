@@ -31,7 +31,11 @@ Route::view('/que-hacemos', 'que_hacemos')->name('que-hacemos');
 Route::view('/tienda' , 'tienda')->name('tienda');
 Route::view('/puntos-venta', 'puntos_venta')->name('puntos-venta');
 Route::view('/medium', 'medium');
-Route::get('/hacer-una-donacion',[\App\Http\Controllers\DonationsController::class,'index'])->name('donation');
+//Rutas para acciones de donaciones
+Route::get('/hacer-una-donacion',[\App\Http\Controllers\DonationsController::class,'index'])->name('donation.index');
+Route::post('/donaciones/donativo',[\App\Http\Controllers\PaymentController::class,'pay'])->name('donation.pay');
+Route::post('/donaciones/aprovado',[\App\Http\Controllers\PaymentController::class,'approval'])->name('donation.approval');
+Route::post('/donaciones/cancelado',[\App\Http\Controllers\PaymentController::class,'cancelled'])->name('donation.cancelled');
 
 Auth::routes();
 
