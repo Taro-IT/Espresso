@@ -51,8 +51,8 @@
                         <span class="sr-only" aria-hidden="true">Next</span>
                     </a>
                 </div><!-- /.carousel -->
-                <div>
-            </div><!-- /.container -->
+        <div>
+    </div><!-- /.container -->
 </section>
 
 <!-- =======  OUR PHILOSOPHY SECTION ======= -->
