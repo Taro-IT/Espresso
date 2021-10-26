@@ -31,6 +31,7 @@ Route::view('/que-hacemos', 'que_hacemos')->name('que-hacemos');
 Route::view('/tienda' , 'tienda')->name('tienda');
 Route::view('/puntos-venta', 'puntos_venta')->name('puntos-venta');
 Route::view('/medium', 'medium');
+Route::get('/hacer-una-donacion',[\App\Http\Controllers\DonationsController::class,'index'])->name('donation');
 
 Auth::routes();
 
