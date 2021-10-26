@@ -31,3 +31,7 @@ Route::view('/que-hacemos', 'que_hacemos')->name('que-hacemos');
 Route::view('/tienda' , 'tienda')->name('tienda');
 Route::view('/puntos-venta', 'puntos_venta')->name('puntos-venta');
 Route::view('/medium', 'medium');
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
