@@ -1,4 +1,6 @@
-/* Seccion about us */
+/*--------------------------------------------------------------
+# About
+--------------------------------------------------------------*/
 @media query and (max-width:992px) {
     .top-section-with-fixed-bg {
         background-attachment:fixed;

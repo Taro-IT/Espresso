@@ -1,5 +1,5 @@
 /**
-* Template Name: FlexStart - v1.7.0
+* Adapted from template: FlexStart - v1.7.0
 * Template URL: https://bootstrapmade.com/flexstart-bootstrap-startup-template/
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
@@ -10,11 +10,14 @@
 --------------------------------------------------------------*/
 :root {
     scroll-behavior: smooth;
-    --purple: #a282c4;
-    --underline-purple: rgba(177, 123, 235, 0.250);
-    --outline-purple: rgb(177, 123, 235, 0.5);
-    --transparent: rgba(255, 255, 255, 0);
     --dark-purple: #652d90;
+    --purple: #a282c4;
+    --light-purple: #eae3f2;
+    --underline-purple: #e2cef8;
+    --transparent: rgba(255, 255, 255, 0);
+    --red: #ff5e6b;
+    --green: #9ee6b8;
+    --yellow: #fcf89c;
 }
 
 * {
@@ -76,50 +79,6 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Breadcrumbs
---------------------------------------------------------------*/
-.breadcrumbs {
-    padding: 15px 0;
-    background: #652D90;
-    min-height: 40px;
-    margin-top: 82px;
-    color: #fff;
-}
-@media (max-width: 992px) {
-    .breadcrumbs {
-        margin-top: 57px;
-    }
-}
-.breadcrumbs h2 {
-    font-size: 28px;
-    font-weight: 500;
-}
-.breadcrumbs ol {
-    display: flex;
-    flex-wrap: wrap;
-    list-style: none;
-    padding: 0 0 10px 0;
-    margin: 0;
-    font-size: 14px;
-}
-.breadcrumbs ol a {
-    color: #fff;
-    transition: 0.3s;
-}
-.breadcrumbs ol a:hover {
-    text-decoration: underline;
-}
-.breadcrumbs ol li + li {
-    padding-left: 10px;
-}
-.breadcrumbs ol li + li::before {
-    display: inline-block;
-    padding-right: 10px;
-    color: #8894f6;
-    content: "/";
-}
-
-/*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
 .back-to-top {
@@ -157,6 +116,7 @@ section {
         transition-delay: 0 !important;
     }
 }
+
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
@@ -170,8 +130,6 @@ section {
     padding: 15px 0;
     box-shadow: 0px 2px 20px rgba(1, 41, 112, 0.1);
 }
-
-
 
 /*--------------------------------------------------------------
 # Navigation Menu
@@ -430,17 +388,7 @@ section {
 .about-us-img {
     text-align: right;
 }
-@media (min-width: 992px) {
-    /* .about {
-        margin-top: 120px;
-        background-attachment: fixed;
-    } */
-}
 @media (max-width: 991px) {
-    /* .about {
-        height: auto;
-        padding: 120px 0 60px 0;
-    } */
     .about-us .about-us-img {
         text-align: center;
         margin-top: 80px;
@@ -568,7 +516,6 @@ section {
     text-align: center;
     height: 10vh;
     width: 13vw;
-
 }
 
 .text-card{
@@ -607,9 +554,47 @@ section {
     font-size: 1.2rem;
   }
 
+.activities ul {
+    color:black;
+    list-style: none;
+    background: white;
+    border-radius: 5px;
+    padding: 6px;
+}
+.activities ul li {
+    background:white;
+    border-radius: 3px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding: 5px 10px 5px 5px;
+    margin: 5px;
+}
+.activities span {
+    padding: 5px;
+    color: white;
+    font-size: 15px;
+    background: var(--dark-purple);
+    border-radius: 4px;
+    letter-spacing: 1px;
+}
+
+.card-title{
+    color: var(--dark-purple);
+    font-weight:bolder;
+    text-transform: uppercase;
+}
+
+.carrousel-sizing{
+    width: 100%;
+}
+
+.inadmissible{
+    color: var(--red);
+    font-size: 4rem;
+}
+
 .margin-login{
     margin-top: 8%;
     margin-bottom: 6%;
 }
-
-
