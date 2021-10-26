@@ -23,9 +23,16 @@ class MainPageTest extends TestCase
         $response->assertStatus(200);
     }
 
-    public function test_pagina_medium()
+    public function test_pagina_puntos_de_venta()
     {
-        $response = $this->get('/medium');
+        $response = $this->get('/puntos-venta');
+
+        $response->assertStatus(200);
+    }
+
+    public function test_pagina_tienda()
+    {
+        $response = $this->get('/tienda');
 
         $response->assertStatus(200);
     }
