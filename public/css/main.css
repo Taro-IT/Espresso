@@ -1,3 +1,10 @@
+/**
+* Adapted from template: FlexStart - v1.7.0
+* Template URL: https://bootstrapmade.com/flexstart-bootstrap-startup-template/
+* Author: BootstrapMade.com
+* License: https://bootstrapmade.com/license/
+*/
+
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
@@ -109,6 +116,7 @@ section {
         transition-delay: 0 !important;
     }
 }
+
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
@@ -380,17 +388,7 @@ section {
 .about-us-img {
     text-align: right;
 }
-@media (min-width: 992px) {
-    /* .about {
-        margin-top: 120px;
-        background-attachment: fixed;
-    } */
-}
 @media (max-width: 991px) {
-    /* .about {
-        height: auto;
-        padding: 120px 0 60px 0;
-    } */
     .about-us .about-us-img {
         text-align: center;
         margin-top: 80px;
