@@ -16,74 +16,101 @@
         Las ganancias de cada artículo nos permiten seguir con nuestra labor, motivar a los huéspeded y eliminar poco a poco el estigme sobre las enfermedades mentales.
     </p>  
     
-    <div class="row-md">
-                <div class="col-md-4">
-                    <div class="card" style="width: 18rem;">
-                        <img src="..." class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Nombre del artículo</h5>
-                            <p class="card-text">Autor</p>
-                            <a href="#" class="btn btn-primary">VER DETALLE</a>
-                        </div>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card">
+                <img class="card-img-top" src="/about_us/test_image_2.jpg" alt="">
+                <div class="card-body">
+                    <h5 class="card-title">Nombre del artículo</h5>
+                    <div class="row card-text ml-1">
+                        <i class="bi bi-person-circle mr-2" style="font-size: 1rem;"></i>
+                        <p>Nombre del autor</p>
                     </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card" style="width: 18rem;">
-                        <img src="..." class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Nombre del artículo</h5>
-                            <p class="card-text">Autor</p>
-                            <a href="#" class="btn btn-primary">VER DETALLE</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card" style="width: 18rem;">
-                        <img src="..." class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Nombre del artículo</h5>
-                            <p class="card-text">Autor</p>
-                            <!-- Button trigger modal -->
-                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                              VER DETALLE
-                            </button>
-                        </div>
+                    <div class="d-flex justify-content-center">
+                        <a href="#exampleModal" data-toggle="modal" class="btn-read-more">
+                            <span>VER DETALLE</span>
+                        </a>
                     </div>
                 </div>
             </div>
-        </section>
-        <!-- Modal -->
-        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-              </div>
-              <div class="modal-body">
-                <div class="row-md">
-                    <div class="col-md-5">
-                        <img class="d-block img-fluid" src="/about_us/test_image_1.jpg" alt="">
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <img class="card-img-top" src="/about_us/test_image_2.jpg" alt="">
+                <div class="card-body">
+                    <h5 class="card-title">Nombre del artículo</h5>
+                    <div class="row card-text ml-1">
+                        <i class="bi bi-person-circle mr-2" style="font-size: 1rem;"></i>
+                        <p>Nombre del autor</p>
                     </div>
-                    <div class="col-md-7">
-                        <div class="row">
-                            Nombre del artículo
-                        </div>
-                        <div class="row">
-                            Autor o autores.
-                        </div>
-                        <div class="row text-center">
-                            Descripción o historia del producto digital.
-                        </div>
+                    <div class="d-flex justify-content-center">
+                        <a href="#exampleModal" data-toggle="modal" class="btn-read-more">
+                            <span>VER DETALLE</span>
+                        </a>
                     </div>
                 </div>
-                <div class="row-md">
-                    <p><a href="#" class="tooltip-test" title="Una vez realizado el pago se te enviará a tu correo una URL para la descarga de tu artículo digital.">This link</a></p>
-                    <div class="input-group mb-3">
-                      <span class="input-group-text">$</span>
-                      <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)" value="100" min="100">
-                      <span class="input-group-text">.00</span>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <img class="card-img-top" src="/about_us/test_image_2.jpg" alt="">
+                <div class="card-body">
+                    <h5 class="card-title">Nombre del artículo</h5>
+                    <div class="row card-text ml-1">
+                        <i class="bi bi-person-circle mr-2" style="font-size: 1rem;"></i>
+                        <p>Nombre del autor</p>
                     </div>
-                    <button>Pagar con PayPal</button>
+                    <div class="d-flex justify-content-center">
+                        <a href="#exampleModal" data-toggle="modal" class="btn-read-more">
+                            <span>VER DETALLE</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <a href="" class="close d-inline-flex" data-dismiss="modal">
+                        <i class="bi bi-x-circle-fill" style="color:black; font-size: 1rem;"></i>
+                </a>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-5">
+                        <img class="img-fluid" src="/about_us/test_image_1.jpg" alt="">
+                    </div>
+                    <div class="col-md-7">
+                        <p class="subtitle mb-0">Nombre del artículo</p>
+                        <div class="row card-text ml-1 mb-0">
+                            <i class="bi bi-person-circle mr-2" style="font-size: 1rem;"></i>
+                            <p>Nombre del autor</p>
+                        </div>
+                        <p>Descripción o historia del producto digital.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-5 ml-1 mt-2">
+                        <a data-toggle="tooltip" data-placement="right" title="Una vez realizado el pago se te enviará a tu correo una URL para la descarga de tu artículo digital."><i class="bi bi-info-circle-fill mr-2" style="font-size: 1rem; color:black;"></i></a>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="input-group mb-3">
+                        <span class="input-group-text">$</span>
+                        <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)" value="100" min="100">
+                        <span class="input-group-text">.00</span>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mt-2">
+                        <a href="" class="btn-read-more pl-3 pr-3 pt-2 pb-2">
+                            <span>Pagar</span>
+                            <i class="bi bi-paypal"></i>
+                        </a>
+                    </div>
                 </div>
                 <div class="row-md">
                     <p>Este artículo tiene un precio mínimo de $100.00, pero puedes apoyar el trabajo de los huéspedes pagando otra cantidad que creas justa.</p>
