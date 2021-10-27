@@ -320,7 +320,9 @@ h1, h2, h3, h4, h5, h6 {
     .margin-right{
         margin-left: 75vw;
     }
-
 }
 
+.margin-home{
+    margin-top: 5%;
+}
 
