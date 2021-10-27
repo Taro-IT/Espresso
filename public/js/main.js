@@ -298,16 +298,3 @@ $(function() {
     $expand = $(this).find(">:first-child");
   });
 });
-
-$(function() {
-    $(".toogle-icon").on( "click", function() {
-      if($(this).hasClass("bi-caret-up-square-fill")) {
-        $(this).removeClass("bi-caret-up-square-fill");
-        $(this).addClass("bi-caret-down-square-fill");
-      }
-      else {
-        $(this).removeClass("bi-caret-down-square-fill");
-        $(this).addClass("bi-caret-up-square-fill");
-      }
-    });
-  });

@@ -26,7 +26,7 @@
                 </div>
                 <div class="d-flex justify-content-end">
                     <a data-toggle="collapse" href="#detail1">
-                        <i class="bi bi-caret-down-square-fill pr-0 purple-icon toogle-icon"></i>
+                        <i class="bi bi-caret-down-square-fill pr-0 purple-icon"></i>
                     </a>
                 </div>
                 <div class="collapse" id="detail1">
@@ -50,7 +50,7 @@
                 </div>
                 <div class="d-flex justify-content-end">
                     <a data-toggle="collapse" href="#detail2">
-                        <i class="bi bi-caret-down-square-fill pr-0 purple-icon toogle-icon"></i>
+                        <i class="bi bi-caret-down-square-fill pr-0 purple-icon"></i>
                     </a>
                 </div>
                 <div class="collapse" id="detail2">
