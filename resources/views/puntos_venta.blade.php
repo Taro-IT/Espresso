@@ -13,7 +13,7 @@
     </h1>
     <p class="subtitle text-center pb-3" data-aos="fade-up" data-aos-delay="200">
         Apoya a nuestros huéspedes y sus familiares comprando productos físicos en cualquiera de nuestros puntos de venta.
-        Las ganancias de cada artículo nos permiten seguir con nuestra labor, motivar a los huéspeded y eliminar poco a poco el estigme sobre las enfermedades mentales.
+        Las ganancias de cada artículo nos permiten seguir con nuestra labor, motivar a los huéspeded y eliminar poco a poco el estigma sobre las enfermedades mentales.
     </p>
     <div id="salespoint">
         <ul>
@@ -24,12 +24,12 @@
                     <i class="bi bi-geo-alt-fill mr-2" style="font-size: 1rem;"></i>
                     <p>Querétaro, Qro.</p>
                 </div>
-                <a class="expand">
-                    <div class="right-arrow">
-                        <i class="bi bi-caret-down-square-fill mr-2" style="font-size: 1rem; color:black;"></i>
-                    </div>
-                </a>
-                <div class="detail">
+                <div class="d-flex justify-content-end">
+                    <a data-toggle="collapse" href="#detail1">
+                        <i class="bi bi-caret-down-square-fill pr-0 purple-icon toogle-icon"></i>
+                    </a>
+                </div>
+                <div class="collapse" id="detail1">
                     <div class="row">
                         <div class="col-md-6 more-text">
                             <p><l class="text-purple">Dirección:</l> Rafael Osuna #245, El Salitre. C.P. 24676 <br>
@@ -48,12 +48,12 @@
                     <i class="bi bi-geo-alt-fill mr-2" style="font-size: 1rem;"></i>
                     <p>Querétaro, Qro.</p>
                 </div>
-                <a class="expand">
-                    <div class="right-arrow">
-                        <i class="bi bi-caret-down-square-fill mr-2" style="font-size: 1rem; color:black;"></i>
-                    </div>
-                </a>
-                <div class="detail">
+                <div class="d-flex justify-content-end">
+                    <a data-toggle="collapse" href="#detail2">
+                        <i class="bi bi-caret-down-square-fill pr-0 purple-icon toogle-icon"></i>
+                    </a>
+                </div>
+                <div class="collapse" id="detail2">
                     <div class="row">
                         <div class="col-md-6 more-text">
                             <p><l class="text-purple">Dirección:</l> Rafael Osuna #245, El Salitre. C.P. 24676 <br>

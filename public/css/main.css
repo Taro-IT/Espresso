@@ -685,3 +685,9 @@ section {
     display: flex;
     align-items: center;
   }
+
+  /* Icons on salespoint page */
+  .purple-icon {
+      font-size: 1.5rem;
+      color: var(--dark-purple);
+  }
