@@ -37,6 +37,13 @@ class MainPageTest extends TestCase
         $response->assertStatus(200);
     }
 
+    public function test_pagina_donaciones()
+    {
+        $response = $this->get('/hacer-una-donacion');
+
+        $response->assertStatus(200);
+    }
+
 
 
 
