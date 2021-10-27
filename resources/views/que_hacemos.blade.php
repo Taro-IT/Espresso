@@ -29,7 +29,7 @@
             </ul>
         </div>
         <div class="container d-flex justify-content-end" data-aos="fade-left" data-aos-delay="600">
-            <button data-toggle="collapse" href="#NoAtendemos" class="btn btn-read-more" onclick="QufePersonasNoAtendemos()">
+            <button data-toggle="collapse" href="#NoAtendemos" class="btn btn-read-more">
                 <i>¿A qué personas no atendemos?</i>
             </button>
         </div>
