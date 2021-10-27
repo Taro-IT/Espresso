@@ -124,32 +124,14 @@
                 </h1>
             </header>
             <div class="row">
-                <div class="col-lg-4">
-                    <div class="post-box">
-                        <div class="post-img"><img src="{{asset('images/img-sala.jpg')}}" class="img-fluid" alt=""></div>
-                        <h3 class="post-title">Eum ad dolor et. Autem aut fugiat debitis voluptatem consequuntur sit</h3>
-                        <span class="post-date">Tue, September 15</span>
-                        <a href="blog-singe.html" class="readmore stretched-link mt-auto"><span>Ver post</span><i class="bi bi-arrow-right"></i></a>
+                @foreach($fb_posts as $post)
+                    <div class="col-lg-4">
+                        <div class="post-box p-0">
+                            <div id="fb-root"></div>
+                            {!!$post !!}
+                        </div>
                     </div>
-                </div>
-
-                <div class="col-lg-4">
-                    <div class="post-box">
-                        <div class="post-img"><img src="{{asset('images/img-sala.jpg')}}" class="img-fluid" alt=""></div>
-                        <h3 class="post-title">Et repellendus molestiae qui est sed omnis voluptates magnam</h3>
-                        <span class="post-date">Fri, August 28</span>                            
-                        <a href="blog-singe.html" class="readmore stretched-link mt-auto"><span>Ver post</span><i class="bi bi-arrow-right"></i></a>
-                    </div>
-                </div>
-
-                <div class="col-lg-4">
-                    <div class="post-box">
-                        <div class="post-img"><img src="{{asset('images/img-sala.jpg')}}" class="img-fluid" alt=""></div>
-                        <h3 class="post-title">Quia assumenda est et veritatis aut quae</h3>
-                        <span class="post-date">Mon, July 11</span>
-                        <a href="blog-singe.html" class="readmore stretched-link mt-auto"><span>Ver post</span><i class="bi bi-arrow-right"></i></a>
-                    </div>
-                </div>
+                @endforeach
             </div>
         </div>
     </section>
