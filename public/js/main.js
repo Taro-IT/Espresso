@@ -291,3 +291,10 @@
 $(function () {
     $('[data-toggle="tooltip"]').tooltip()
   })
+
+$(function() {
+  $(".expand").on( "click", function() {
+    $(this).next().toggle(100);
+    $expand = $(this).find(">:first-child");
+  });
+});
