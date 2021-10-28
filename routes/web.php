@@ -22,7 +22,7 @@ Route::get('/bot_test', function () {
 Route::match(['get', 'post'], 'botman', [BotManController::class, 'handle']);
 
 
-Route::get('/', [PageInfoController::class, 'main']);
+Route::get('/', [PageInfoController::class, 'main'])->name('index');;
 // Route::match(['get', 'post'], 'index', [PageInfoController::class, 'main']);
 
 
