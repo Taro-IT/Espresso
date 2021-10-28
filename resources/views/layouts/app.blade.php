@@ -73,8 +73,8 @@
                         <li><a href="{{route('que-hacemos')}}#activities">ACTIVIDADES</a></li>
                     </ul>
                 </li>
-                <li><a class="nav-link scrollto" href="#contribute">INVOLÚCRATE</a></li>
-                <li><a class="nav-link scrollto" href="#contact">CONTÁCTANOS</a></li>
+                <li><a class="nav-link scrollto" href="{{route('index')}}#contribute">INVOLÚCRATE</a></li>
+                <li><a class="nav-link scrollto" href="{{route('index')}}#contact">CONTÁCTANOS</a></li>
                 <li><a class="getstarted scrollto" href="{{route('donation.index')}}">DONAR</a></li>
             </ul>
             <i class="bi bi-list mobile-nav-toggle"></i>

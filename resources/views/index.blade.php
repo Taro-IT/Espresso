@@ -182,7 +182,6 @@
                     </div>
                 </div>
             </div>
-        </div>
     </section>
 
     <a href="#" class="back-to-top d-flex align-items-center justify-content-center">
