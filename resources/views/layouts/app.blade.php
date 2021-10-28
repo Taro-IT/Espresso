@@ -18,7 +18,7 @@
           psiquiatra,afectivos,">
 
     <!-- Favicon de Pagina web-->
-    <link rel="icon" href="{{asset('images/logo.jpg')}}" type="image/x-icon">
+    <link rel="icon" href="{{asset('favicon.ico')}}" type="image/x-icon">
 
     <!-- Vendor CSS Files -->
     <link href="{{asset('vendor')}}/bootstrap-4.6.0/css/bootstrap.min.css" rel="stylesheet">
@@ -62,20 +62,25 @@
             <ul>
                 <li class="dropdown"><a href="{{route('quienes-somos')}}"><span>¿QUIÉNES SOMOS?</span> <i class="bi bi-chevron-down"></i></a>
                     <ul>
-                        <li><a href="{{route('quienes-somos')}}#philosophy">FILOSOFÍA</a></li>
-                        <li><a href="{{route('quienes-somos')}}#history">HISTORIA</a></li>
+                        <li><a class="nav-link scrollto" href="{{route('quienes-somos')}}#philosophy">FILOSOFÍA</a></li>
+                        <li><a class="nav-link scrollto" href="{{route('quienes-somos')}}#history">HISTORIA</a></li>
                     </ul>
                 </li>
                 <li class="dropdown"><a href="{{route('que-hacemos')}}"><span>¿QUÉ HACEMOS?</span> <i class="bi bi-chevron-down"></i></a>
                     <ul>
-                        <li><a href="{{route('que-hacemos')}}#wow">FORMA DE TRABAJO</a></li>
-                        <li><a href="{{route('que-hacemos')}}#services">SERVICIOS</a></li>
-                        <li><a href="{{route('que-hacemos')}}#activities">ACTIVIDADES</a></li>
+                        <li><a class="nav-link scrollto" href="{{route('que-hacemos')}}#wow">FORMA DE TRABAJO</a></li>
+                        <li><a class="nav-link scrollto" href="{{route('que-hacemos')}}#services">SERVICIOS</a></li>
+                        <li><a class="nav-link scrollto" href="{{route('que-hacemos')}}#activities">ACTIVIDADES</a></li>
                     </ul>
                 </li>
-                <li><a class="nav-link scrollto" href="#contribute">INVOLÚCRATE</a></li>
-                <li><a class="nav-link scrollto" href="#contact">CONTÁCTANOS</a></li>
-                <li><a class="getstarted scrollto" href="{{route('donation.index')}}">DONAR</a></li>
+                <li class="dropdown"><a class="nav-link scrollto" href="{{route('index')}}#contribute"><span>INVOLÚCRATE</span><i class="bi bi-chevron-down"></i></a>
+                    <ul>
+                        <li><a href="{{route('tienda')}}">TIENDA EN LINEA</a></li>
+                        <li><a href="{{route('puntos-venta')}}">TIENDAS FISICAS</a></li>
+                    </ul>
+                </li>
+                <li><a class="nav-link scrollto" href="{{route('index')}}#contact">CONTÁCTANOS</a></li>
+                <li><a class="getstarted" href="{{route('donation.index')}}">DONAR</a></li>
             </ul>
             <i class="bi bi-list mobile-nav-toggle"></i>
         </nav><!-- End Navbar -->
@@ -100,12 +105,12 @@
             <ul class="list-inline mt-1">
                 <li class="list-inline-item"><a href="https://www.facebook.com/Casa-de-Medio-Camino-Quer%C3%A9taro-Casa-Loohl-313251725496600" target="_blank" title="facebook"><i class="bi bi-facebook" style="font-size: 2rem;"></i></a></li>
                 <li class="list-inline-item"><a href="https://www.instagram.com/casa_loohl/?hl=es-la" target="_blank" title="instagram"><i class="bi bi-instagram" style="font-size: 2rem;"></i></a></li>
-                <li class="list-inline-item"><a href="#" target="_blank" title="spotify"><i class="bi bi-spotify" style="font-size: 2rem;"></i></a></li>
+                <li class="list-inline-item"><a href="https://open.spotify.com/show/1tB5CIsUPNtc9y0Q7GuqF3?si=GyvAbp1yRQ-q08HLzaI_nw&nd=1" target="_blank" title="spotify"><i class="bi bi-spotify" style="font-size: 2rem;"></i></a></li>
                 <li class="list-inline-item"><a href="https://medium.com/@Casademediocamino/following" target="_blank" title="medium"><i class="bi bi-medium" style="font-size: 2rem;"></i></a></li>
             </ul>
         </div>
         <div class="col-lg-4 col-md-6 mb-lg-0">
-          <p class="mb-4">Casa Loohl es una organización benéfica sin fines de lucro y exenta de impuestos. Las donaciones son deducibles de impuesto según lo permita la ley.</p>
+          <p class="mb-4">Casa Loohl es una asociación civil sin fines de lucro. Las donaciones son deducibles de impuesto según lo permita la ley.</p>
         </div>
       </div>
     </div>

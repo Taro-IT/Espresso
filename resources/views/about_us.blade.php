@@ -14,17 +14,15 @@
         <h1 class="section-header" data-aos="fade-up" data-aos-delay="200">
             <span class="underline">&nbsp;&nbsp;¿QUIÉNES SOMOS?&nbsp;&nbsp;</span>
         </h1>
-        <p class="subtitle text-center" data-aos="fade-up" data-aos-delay="400">Somos un grupo de psicólogos con experiencia en las áreas de trabajo social, clínico y de
-                        investigación
-                        sobre el trabajo y seguimiento a pacientes con enfermedades mentales quienes tomamos iniciativa
-                        frente a
-                        la realidad social en México de las personas que han sido diagnosticadas con padecimientos
-                        psiquiátricos
-                        o que han tenido dificultades para reintegrarse a sus actividades sociales, familiares,
-                        ocupacionales
-                        después de una crisis. Con ello buscamos brindar un espacio de integración, interacción y de
-                        inclusión
-                        en un ambiente de aceptación y comunidad.
+        <p class="subtitle text-center" data-aos="fade-up" data-aos-delay="400">
+            Somos un grupo de psicólogos con experiencia en las áreas de trabajo social, 
+            clínico y de investigación sobre el trabajo y seguimiento de pacientes con 
+            experiencias psiquiátricas quienes tomamos iniciativa frente a la realidad 
+            social en México de las personas que han sido diagnosticadas con padecimientos 
+            psiquiátricos o que han tenido dificultades para reintegrarse a sus actividades 
+            sociales, familiares y ocupacionales después de una crisis. Con ello buscamos 
+            brindar un espacio de integración, interacción y de inclusión en un ambiente 
+            de aceptación y comunidad.
         </p>
     </div>
     <div class="container" data-aos="fade-up" data-aos-delay="600">
@@ -62,16 +60,22 @@
             <span class="underline">&nbsp;&nbsp;NUESTRA FILOSOFÍA&nbsp;&nbsp;</span>
         </h1>
         <div data-aos="fade-up" data-aos-delay="400" >
-            <p class="subtitle text-center" >Brindamos a los pacientes de las herramientas necesarias para que estos sean capaces de
-                            restablecer los vínculos sociales con familiares y amigos, a través de una atmósfera
-                            comunitaria, cuyo pilar de trabajo es el de generar un espacio de bienestar y comodidad para
-                            el huésped. </p>
-            <p class="subtitle text-center">Por lo tanto, quienes integran la comunidad terapéutica tenemos la firme convicción de que el
-                            trabajo dirigido y centrado en el paciente, debe ser interdisciplinario e integral para el
-                            beneficio de éste y su familia. </p>
-            <p class="subtitle text-center">Al ser un programa integral, contamos con talleres dirigidos para el huésped, que le permiten
-                            revitalizar sus habilidades cognitivas, psicomotrices, intelectuales, afectivas y sociales,
-                            lo que deriva en una reinserción social total.</p>
+            <p class="subtitle text-center" >
+                En este modelo el paciente vive en una comunidad que les permite establecer puentes 
+                de interacción de manera controlada y segura, y aprender de manera colaborativa con 
+                el objetivo de brindarle herramientas para su autonomía a través de un proceso 
+                personal que le permita hacerse responsable de sus acciones.
+            </p>
+            <p class="subtitle text-center">
+                Por lo tanto, quienes integran la comunidad terapéutica tenemos la firme convicción de que el
+                trabajo dirigido y centrado en el paciente, debe ser interdisciplinario e integral para el
+                beneficio de éste y su familia. 
+            </p>
+            <p class="subtitle text-center">
+                Al ser un programa integral, contamos con talleres dirigidos para el huésped, que le permiten
+                revitalizar sus habilidades cognitivas, psicomotrices, intelectuales, afectivas y sociales,
+                lo que deriva en una reinserción social total.
+            </p>
         </div>
     </div>
 </section>

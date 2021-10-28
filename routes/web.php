@@ -20,7 +20,7 @@ Route::get('/bot_test', function () {
 });
 
 Route::match(['get', 'post'], 'botman', [BotManController::class, 'handle']);
-Route::view('/', 'index');
+Route::view('/', 'index')->name('index');
 
 // Routes to pages for web services validation
 Route::view('/facebook_test', 'facebook_test');
