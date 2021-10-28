@@ -412,6 +412,10 @@ section {
     }
 }
 
+.mission-section {
+    background-color: var(--underline-purple);
+}
+
 /*--------------------------------------------------------------
 # FACEBOOK RECENT POSTS
 --------------------------------------------------------------*/

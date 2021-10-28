@@ -36,24 +36,31 @@
 </div>
 
     <!-- =======  MISSION SECTION ======= -->
-    <section class="container">
-            <div class="row justify-content-center">
-                    <h1 class="header" data-aos="fade-up" data-aos-delay="200">
-                        <span class="underline">&nbsp;&nbsp;NUESTRA MISIÓN&nbsp;&nbsp;</span>
+    <section class="container-fluid mission-section">
+        <div class="row">
+            <div class="col-lg pb-5 pb-lg-0 px-5">
+                <div class="row justify-content-center">
+                    <h1 class="header text-center" data-aos="fade-up" data-aos-delay="200">
+                        <span>&nbsp;&nbsp;COMUNIDAD TERAPEÚTICA&nbsp;&nbsp;</span>
                     </h1>
-                    <p class="subtitle text-center" data-aos="fade-up" data-aos-delay="200">Restablecer los vínculos interpersonales,sociales y ocupacionales de los huéspedes y brindarles herramientas que les permitan sobrellevar sus padecimientos permitiéndoles alcanzar una mejor calidad de vida.</p>
+                    <p class="subtitle text-center" data-aos="fade-up" data-aos-delay="400">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum a egestas turpis, quis commodo ante. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+                </div>
             </div>
+            <div class="col-lg px-5">
+                <div class="row justify-content-center">
+                    <h1 class="header" data-aos="fade-up" data-aos-delay="200">
+                        <span>&nbsp;&nbsp;NUESTRA MISIÓN&nbsp;&nbsp;</span>
+                    </h1>
+                    <p class="subtitle text-center" data-aos="fade-up" data-aos-delay="200">Restablecer los vínculos interpersonales, sociales y ocupacionales de los huéspedes y brindarles herramientas que les permitan sobrellevar sus padecimientos permitiéndoles alcanzar una mejor calidad de vida.</p>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- =======  TERAPEUTIC COMMUNITY SECTION ======= -->
-    <section class="container">
-            <div class="row justify-content-center">
-                    <h1 class="header text-center" data-aos="fade-up" data-aos-delay="200">
-                        <span class="underline">&nbsp;&nbsp;COMUNIDAD TERAPEÚTICA&nbsp;&nbsp;</span>
-                    </h1>
-                    <p class="subtitle text-center" data-aos="fade-up" data-aos-delay="400">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum a egestas turpis, quis commodo ante. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
-            </div>
-    </section>
+    <!-- <section class="container">
+            
+    </section> -->
 
     <!-- ======= MEDIUM ARTICLES SECTION ======= -->
     <section class="container" >
