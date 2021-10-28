@@ -107,7 +107,7 @@
                     <span class="align-middle">COMPRA EN TIENDA FÍSICA</span> 
                 </a>
             </div>
-            <div class="col-smmb-3 mb-sm-0" data-aos="fade-up" data-aos-delay="300"> 
+            <div class="col-sm mb-3 mb-sm-0" data-aos="fade-up" data-aos-delay="300"> 
                 <a class="btn btn-read-more btn-lg btn-block py-sm-5 h-100 d-flex justify-content-center align-items-center" href="{{route('tienda')}}" role="button">
                     <span class="align-middle">COMPRA EN LÍNEA</span> 
                 </a>
