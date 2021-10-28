@@ -16,7 +16,7 @@ class PageInfoController extends Controller
 
     public function index($url)
     {
-        // Check the url & redirect to the page. 
+        // Check the url & redirect to the page.
         if($url == "que-hacemos"){
             return view('que_hacemos');
         }
@@ -24,7 +24,7 @@ class PageInfoController extends Controller
         /*if($url == "quien-somos"){
             return view('quien_somos');
         }
-        
+
         * Info Pages
         *
         *
@@ -37,8 +37,8 @@ class PageInfoController extends Controller
     {
 
         $post_ids = array(
-            "https://www.facebook.com/permalink.php?story_fbid=1977799792375110&id=313251725496600",
             "https://www.facebook.com/permalink.php?story_fbid=1975493025939120&id=313251725496600",
+            "https://www.facebook.com/permalink.php?story_fbid=1977799792375110&id=313251725496600",
             "https://www.facebook.com/permalink.php?story_fbid=1952226838265739&id=313251725496600"
         );
 
