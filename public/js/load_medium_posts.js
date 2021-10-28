@@ -14,13 +14,17 @@ function loadMediumPosts() {
             const postHtml = getPostHtml(post.link, post.thumbnail, post.title, post.author);
             document.querySelector(`[data-medium-post-id='${i+1}']`).innerHTML = postHtml;
          }   
+         
+         // Move to the page section with hash links in the url after 
+         // loading posts to correct the scroll position
+         scrollToUrlHash();
       }
       else {
          hidePosts();
       }
       
    })
-   .catch((() => hidePosts()));
+   .catch(((e) => {console.log(e);hidePosts()}));
 }
 
 function getPostHtml(link, thumbnail, title, author) {

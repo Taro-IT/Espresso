@@ -188,10 +188,16 @@
         <i class="bi bi-arrow-up-short"></i>
     </a>
 
+    
+
+    
+    
+@endsection
+
+@push('scripts')
     <script src="{{ asset('/js/load_medium_posts.js') }}"></script>
     <script src="{{ asset('/js/scroll.js') }}"></script>
     <script>
         loadMediumPosts();
     </script>
-    
-@endsection
+@endpush
