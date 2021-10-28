@@ -13,7 +13,7 @@
     </h1>
     <p class="subtitle text-center pb-3" data-aos="fade-up" data-aos-delay="200">
         Apoya a nuestros huéspedes y sus familiares comprando productos que demuestran el valor y la unicidad de cada uno de ellos.
-        Las ganancias de cada artículo nos permiten seguir con nuestra labor, motivar a los huéspeded y eliminar poco a poco el estigme sobre las enfermedades mentales.
+        Las ganancias de cada artículo nos permiten seguir con nuestra labor, motivar a los huéspeded y eliminar poco a poco el estigma sobre las enfermedades mentales.
     </p>  
     
     <div class="row">
