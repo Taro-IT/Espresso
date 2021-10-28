@@ -27,13 +27,16 @@
 .medium-post-link {
   color: inherit;
   transition: 0.15s;
+  text-decoration: underline;
   text-decoration-color: var(--transparent);
 }
 .medium-post-link:hover {
   color: inherit;
+  text-decoration: underline;
   text-decoration-color: var(--purple);
 }
 .medium-post-link:active {
+  text-decoration: underline;
   text-decoration-color: inherit;
 }
 

@@ -26,7 +26,7 @@ function loadMediumPosts() {
 function getPostHtml(link, thumbnail, title, author) {
    postsHtml = `
       <div class="medium-post">
-         <a href="${link}" class="medium-post-link texft-reset">
+         <a href="${link}" class="medium-post-link texst-reset">
             <img src="${thumbnail}" class="medium-post-img rounded-lg"></img>
             <p class="medium-post-title text-center font-weight-bold">${title}</p>
          <a/>
