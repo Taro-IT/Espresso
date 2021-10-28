@@ -354,7 +354,7 @@ section {
 }
 .btn-read-more {
     margin-top: 20px;
-    line-height: 0;
+    line-height: 1;
     padding: 15px 40px;
     border-radius: 5px;
     transition: 0.5s;
