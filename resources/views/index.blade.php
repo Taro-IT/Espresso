@@ -124,14 +124,20 @@
                 </h1>
             </header>
             <div class="row">
-                @foreach($fb_posts as $post)
+                {{-- @foreach($fb_posts as $post)
                     <div class="col-lg-4">
                         <div class="post-box p-0">
                             <div id="fb-root"></div>
                             {!!$post !!}
                         </div>
                     </div>
-                @endforeach
+                @endforeach -->--}}
+                <div class="col-lg-12">
+                    <div class="post-box p-0 text-center">
+                        <div id="fb-root"></div>
+                        {!! $fb_page !!}
+                    </div>
+                </div>
             </div>
         </div>
     </section>
