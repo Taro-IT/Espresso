@@ -105,7 +105,7 @@
             </ul>
         </div>
         <div class="col-lg-4 col-md-6 mb-lg-0">
-          <p class="mb-4">Casa Loohl es una organización benéfica sin fines de lucro y exenta de impuestos. Las donaciones son deducibles de impuesto según lo permita la ley.</p>
+          <p class="mb-4">Casa Loohl es una asociación civil sin fines de lucro. Las donaciones son deducibles de impuesto según lo permita la ley.</p>
         </div>
       </div>
     </div>
