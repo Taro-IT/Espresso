@@ -37,5 +37,5 @@ function getPostHtml(link, thumbnail, title, author) {
 
 function hidePosts() {
    document.getElementById("medium-posts-container").classList.add("d-none");
-   document.getElementById("medium-posts-more-button").innerText = "Descubre nuestros artículos";
+   document.getElementById("medium-posts-see-more").innerText = "DESCUBRE NUESTROS ARTÍCULOS";
 }

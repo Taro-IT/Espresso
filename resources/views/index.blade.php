@@ -83,7 +83,7 @@
             </div>
             <div data-aos="fade-left" data-aos-delay="400" class="d-flex justify-content-center" data-aos="zoom-out" data-aos-delay="250">
                 <a href="https://medium.com/@Casademediocamino/following" class="btn-read-more d-inline-flex align-items-center justify-content-center align-self-center">
-                    <span>DESCUBRE MÁS ARTÍCULOS</span>
+                    <span id="medium-posts-see-more">DESCUBRE MÁS ARTÍCULOS</span>
                     <i class="bi bi-arrow-right"></i>
                 </a>
             </div>
