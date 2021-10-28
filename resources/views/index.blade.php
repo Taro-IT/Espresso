@@ -7,7 +7,7 @@
     <div class="row about-us position-relative">
         <div class="col-lg-6">
             <div class="intro-text a">
-                <h1 class="mb-4" data-aos="fade-left" data-aos-delay="200">Ofreciendo<l class="text-purple"> atención </l>y seguimiento al proceso de inclusión social de personas con<l class="text-purple"> experiencias psiquiátricas.</l></h1>
+                <h1 class="mb-4" data-aos="fade-left" data-aos-delay="200">Ofreciendo<l class="text-purple"> atención y seguimiento</l> al proceso de inclusión social de personas con<l class="text-purple"> experiencias psiquiátricas.</l></h1>
                 <h2 class="mb-4" data-aos="fade-left" data-aos-delay="400">Somos un puente entre la hospitalización y la reinserción social. </h2>
                 <div data-aos="fade-left" data-aos-delay="600" class="text-center text-lg-start">
                     <a href="{{route('quienes-somos')}}" class="btn-read-more d-inline-flex align-items-center justify-content-center align-self-center">
