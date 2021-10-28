@@ -7,7 +7,7 @@
     <div class="row about-us position-relative">
         <div class="col-lg-6">
             <div class="intro-text a">
-                <h1 class="mb-4" data-aos="fade-left" data-aos-delay="200">Ofreciendo<l class="text-purple"> atención </l>y seguimiento al proceso de inclusión social de personas con<l class="text-purple"> experiencias psiquiátricas.</l></h1>
+                <h1 class="mb-4" data-aos="fade-left" data-aos-delay="200">Ofreciendo<l class="text-purple"> atención y seguimiento</l> al proceso de inclusión social de personas con<l class="text-purple"> experiencias psiquiátricas.</l></h1>
                 <h2 class="mb-4" data-aos="fade-left" data-aos-delay="400">Somos un puente entre la hospitalización y la reinserción social. </h2>
                 <div data-aos="fade-left" data-aos-delay="600" class="text-center text-lg-start">
                     <a href="{{route('quienes-somos')}}" class="btn-read-more d-inline-flex align-items-center justify-content-center align-self-center">
@@ -35,24 +35,24 @@
     </div>
 </div>
 
-    <!-- =======  MISSION SECTION ======= -->
-    <section class="container">
-            <div class="row justify-content-center">
-                    <h1 class="header" data-aos="fade-up" data-aos-delay="200">
-                        <span class="underline">&nbsp;&nbsp;NUESTRA MISIÓN&nbsp;&nbsp;</span>
-                    </h1>
-                    <p class="subtitle text-center" data-aos="fade-up" data-aos-delay="200">Restablecer los vínculos interpersonales,sociales y ocupacionales de los huéspedes y brindarles herramientas que les permitan sobrellevar sus padecimientos permitiéndoles alcanzar una mejor calidad de vida.</p>
+    <!-- =======  MISSION AND TERAPEUTIC COMMUNITY SECTION ======= -->
+    <section class="container-fluid mission-section">
+        <div class="row">
+            <div class="col-lg pb-5 pb-lg-0 px-5 text-center">
+                <h1 class="header text-center" data-aos="fade-up" data-aos-delay="200">
+                    <span>COMUNIDAD TERAPEÚTICA</span>
+                    <i class="bi bi-house-fill" style="font-size: 2rem;"></i>
+                </h1>
+                <p class="subtitle text-center" data-aos="fade-up" data-aos-delay="400">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum a egestas turpis, quis commodo ante. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
             </div>
-    </section>
-
-    <!-- =======  TERAPEUTIC COMMUNITY SECTION ======= -->
-    <section class="container">
-            <div class="row justify-content-center">
-                    <h1 class="header text-center" data-aos="fade-up" data-aos-delay="200">
-                        <span class="underline">&nbsp;&nbsp;COMUNIDAD TERAPEÚTICA&nbsp;&nbsp;</span>
-                    </h1>
-                    <p class="subtitle text-center" data-aos="fade-up" data-aos-delay="400">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum a egestas turpis, quis commodo ante. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+            <div class="col-lg px-5 text-center">
+                <h1 class="header" data-aos="fade-up" data-aos-delay="200">
+                    <span>NUESTRA MISIÓN</span>
+                    <i class="bi bi-flag-fill" style="font-size: 2rem;"></i>
+                </h1>
+                <p class="subtitle text-center" data-aos="fade-up" data-aos-delay="200">Restablecer los vínculos interpersonales, sociales y ocupacionales de los huéspedes y brindarles herramientas que les permitan sobrellevar sus padecimientos permitiéndoles alcanzar una mejor calidad de vida.</p>
             </div>
+        </div>
     </section>
 
     <!-- ======= MEDIUM ARTICLES SECTION ======= -->
@@ -97,24 +97,24 @@
         </h1>
         <p class="text-center subtitle" data-aos="fade-up" data-aos-delay="200">Todas las contribuciones recibidas se dedican al beneficio de la comunidad, tu contribución nos hace posible dar vida a proyectos de huéspedes y realizar eventos, tanto internos como externos, donde se demuestra el crecimiento de cada uno de ellos.</p>
         <div class="row">
-            <div class="col-sm mb-3 mb-sm-0" data-aos="fade-up" data-aos-delay="300">
-                <a class="btn btn-read-more btn-lg btn-block  py-sm-5 h-100 d-flex justify-content-center align-items-center" href="" role="button">
-                    <span class="align-middle">HAZ UNA DONACIÓN</span>
+
+            <div class="col-md mb-3 mb-md-0" data-aos="fade-up" data-aos-delay="300">
+                <a class="btn btn-read-more py-md-5 h-100 d-flex justify-content-center align-items-center" href="{{route('donation.index')}}" role="button">
+                    <span class="white-text">HAZ UNA DONACIÓN</span>
                 </a>
             </div>
-            <div class="col-sm mb-3 mb-sm-0" data-aos="fade-up" data-aos-delay="300">
-                <a class="btn btn-read-more btn-lg btn-block  py-sm-5 h-100 d-flex justify-content-center align-items-center" href="{{route('puntos-venta')}}" role="button">
-                    <span class="align-middle">COMPRA EN TIENDA FÍSICA</span>
+            <div class="col-md mb-3 mb-md-0" data-aos="fade-up" data-aos-delay="300">
+                <a class="btn btn-read-more py-md-5 h-100 d-flex justify-content-center align-items-center" href="{{route('puntos-venta')}}" role="button">
+                    <span class="white-text">COMPRA EN TIENDA FÍSICA</span>
                 </a>
             </div>
-            <div class="col-smmb-3 mb-sm-0" data-aos="fade-up" data-aos-delay="300">
-                <a class="btn btn-read-more btn-lg btn-block py-sm-5 h-100 d-flex justify-content-center align-items-center" href="{{route('tienda')}}" role="button">
-                    <span class="align-middle">COMPRA EN LÍNEA</span>
+            <div class="col-md mb-3 mb-md-0" data-aos="fade-up" data-aos-delay="300">
+                <a class="btn btn-read-more py-md-5 h-100 d-flex justify-content-center align-items-center" href="{{route('tienda')}}" role="button">
+                    <span class="white-text">COMPRA EN LÍNEA</span>
                 </a>
             </div>
         </div>
     </section>
-
     <!-- ======= FACEBOOK POSTS SECTION ======= -->
     <section class="recent-blog-posts">
         <div class="container" data-aos="fade-up">
@@ -164,7 +164,6 @@
                     </div>
                 </div>
             </div>
-        </div>
     </section>
 
     <a href="#" class="back-to-top d-flex align-items-center justify-content-center">

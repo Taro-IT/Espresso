@@ -59,7 +59,7 @@
             <div class="col-md-3 text-center">
                 <i class="bi bi-x-circle-fill mr-2 inadmissible"></i>
                 <p class="subtitle">Personas mayores a 60 años</p>
-                <p class="">El tratamiento y seguimiento para personas en estas edades difiere del que se estila en Casa Loohl.</p>
+                <p class="">Las personas en estas edades requieren de infraestructura y cuidados especializados fuera del servicio que maneja Casa Loohl.</p>
             </div>
         </div>
 
@@ -67,7 +67,7 @@
             <div class="col-md-3 text-center">
                 <i class="bi bi-x-circle-fill mr-2 inadmissible"></i>
                 <p class="subtitle">Personas en situaciones de crisis</p>
-                <p class="">No contamos con el personal y espacio necesario para estbailizarlos y evitar quebrar el ambiente armonioso.</p>
+                <p class="">No contamos con el personal y espacio necesario para estabilizarlos y evitar quebrar el ambiente armonioso.</p>
             </div>
             <div class="col-md-3 text-center">
                 <i class="bi bi-x-circle-fill mr-2 inadmissible"></i>
@@ -77,12 +77,12 @@
             <div class="col-md-3 text-center">
                 <i class="bi bi-x-circle-fill mr-2 inadmissible"></i>
                 <p class="subtitle">Personas sin diagnóstico</p>
-                <p class="">Para un correcto seguimiento necesitamos que el médico de cabecera haga el diagnóstico.</p>
+                <p class="">Es necesario que el médico de cabecera haga el diagnóstico y de un tratamiento farmacológico para la estabilidad del paciente.</p>
             </div>
             <div class="col-md-3 text-center">
                 <i class="bi bi-x-circle-fill mr-2 inadmissible"></i>
                 <p class="subtitle">Personas que requieren de infraestructura hospitalaria</p>
-                <p class="">No contamos con dicha infraestructura.</p>
+                <p class="">No contamos con dicha infraestructura especializada.</p>
             </div>
         </div>
     </div>

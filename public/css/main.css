@@ -354,7 +354,8 @@ section {
 }
 .btn-read-more {
     margin-top: 20px;
-    line-height: 0;
+    color: white;
+    line-height: 1;
     padding: 15px 40px;
     border-radius: 5px;
     transition: 0.5s;
@@ -380,11 +381,12 @@ section {
     transform: translateX(7px);
     color: white;
 }
-
 .btn-read-more:hover {
     box-shadow: 0px 5px 25px rgba(99, 49, 249, 0.605);
 }
-
+.white-text {
+    color: white;
+}
 .about-us-img {
     text-align: right;
 }
@@ -410,6 +412,10 @@ section {
     .about-us .about-us-img img {
         width: 100%;
     }
+}
+
+.mission-section {
+    background-color: var(--underline-purple);
 }
 
 /*--------------------------------------------------------------
@@ -491,11 +497,33 @@ section {
     color: var(--purple);
 }
 
-.store{
+.store-name {
+    margin-bottom: 0px;
     color: var(--purple);
     font-size: 18px;
     font-weight: bold;
+    transition: 0.15s;
 }
+
+.store-link {
+    color: var(--purple);
+    font-size: 18px;
+    font-weight: bold;
+    padding-bottom: 15px;
+    transition: 0.15s;
+    text-decoration: underline;
+    text-decoration-color: var(--transparent);
+}
+.store-link:hover {
+    color: inherit;
+    text-decoration: underline;
+    text-decoration-color: var(--purple);
+}
+.store-link:active {
+    text-decoration: underline;
+    text-decoration-color: inherit;
+}
+
 .margin-top{
     margin-top: 25%;
 }
@@ -633,7 +661,6 @@ section {
 
 .my-card{
     height: 40vh;
-
 }
 
  #salespoint ul {
@@ -641,9 +668,9 @@ section {
     margin: 20px 0;
     color: black;
   }
-  #salespoint a {
+  /* #salespoint a {
     color: black;
-  }
+  } */
   
   #salespoint ul > li {
     list-style: none;
@@ -675,8 +702,8 @@ section {
   }
   
   .icon {
-    height: 75px;
-    width: 75px;
+    max-height: 75px;
+    max-width: 75px;
     float: left;
     margin: 0 15px 0 0;
   }
