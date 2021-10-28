@@ -98,18 +98,18 @@
         <p class="text-center subtitle" data-aos="fade-up" data-aos-delay="200">Todas las contribuciones recibidas se dedican al beneficio de la comunidad, tu contribución nos hace posible dar vida a proyectos de huéspedes y realizar eventos, tanto internos como externos, donde se demuestra el crecimiento de cada uno de ellos.</p>
         <div class="row">
             <div class="col-md mb-3 mb-md-0" data-aos="fade-up" data-aos-delay="300"> 
-                <a class="btn btn-read-more btn-lg btn-block py-md-5 h-100 d-flex justify-content-center align-items-center" href="" role="button"> 
-                    <span class="align-middle">HAZ UNA DONACIÓN</span> 
+                <a class="btn btn-read-more py-md-5 h-100 d-flex justify-content-center align-items-center" href="" role="button"> 
+                    <span class="white-text">HAZ UNA DONACIÓN</span> 
                 </a>
             </div>
             <div class="col-md mb-3 mb-md-0" data-aos="fade-up" data-aos-delay="300"> 
-                <a class="btn btn-read-more btn-lg btn-block py-md-5 h-100 d-flex justify-content-center align-items-center" href="{{route('puntos-venta')}}" role="button">
-                    <span class="align-middle">COMPRA EN TIENDA FÍSICA</span> 
+                <a class="btn btn-read-more py-md-5 h-100 d-flex justify-content-center align-items-center" href="{{route('puntos-venta')}}" role="button">
+                    <span class="white-text">COMPRA EN TIENDA FÍSICA</span> 
                 </a>
             </div>
             <div class="col-md mb-3 mb-md-0" data-aos="fade-up" data-aos-delay="300"> 
-                <a class="btn btn-read-more btn-lg btn-block py-md-5 h-100 d-flex justify-content-center align-items-center" href="{{route('tienda')}}" role="button">
-                    <span class="align-middle">COMPRA EN LÍNEA</span> 
+                <a class="btn btn-read-more py-md-5 h-100 d-flex justify-content-center align-items-center" href="{{route('tienda')}}" role="button">
+                    <span class="white-text">COMPRA EN LÍNEA</span> 
                 </a>
             </div>
         </div>

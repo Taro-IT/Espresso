@@ -354,6 +354,7 @@ section {
 }
 .btn-read-more {
     margin-top: 20px;
+    color: white;
     line-height: 1;
     padding: 15px 40px;
     border-radius: 5px;
@@ -380,11 +381,12 @@ section {
     transform: translateX(7px);
     color: white;
 }
-
 .btn-read-more:hover {
     box-shadow: 0px 5px 25px rgba(99, 49, 249, 0.605);
 }
-
+.white-text {
+    color: white;
+}
 .about-us-img {
     text-align: right;
 }
