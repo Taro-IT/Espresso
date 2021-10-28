@@ -1,5 +1,5 @@
 /**
-* Template Name: FlexStart - v1.7.0
+* Adapted from template: FlexStart - v1.7.0
 * Template URL: https://bootstrapmade.com/flexstart-bootstrap-startup-template/
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
@@ -10,11 +10,14 @@
 --------------------------------------------------------------*/
 :root {
     scroll-behavior: smooth;
-    --purple: #a282c4;
-    --underline-purple: rgba(177, 123, 235, 0.250);
-    --outline-purple: rgb(177, 123, 235, 0.5);
-    --transparent: rgba(255, 255, 255, 0);
     --dark-purple: #652d90;
+    --purple: #a282c4;
+    --light-purple: #eae3f2;
+    --underline-purple: #e2cef8;
+    --transparent: rgba(255, 255, 255, 0);
+    --red: #ff5e6b;
+    --green: #9ee6b8;
+    --yellow: #fcf89c;
 }
 
 * {
@@ -57,7 +60,7 @@ section {
     font-size: 30;
     font-weight: bold;
     margin: 0;
-    color: #652D90;
+    color: var(--dark-purple);
     text-transform: uppercase;
 }
 .section-header p {
@@ -66,57 +69,13 @@ section {
     font-size: 38px;
     line-height: 42px;
     font-weight: 700;
-    color: #652D90;
+    color: var(--dark-purple);
 }
 @media (max-width: 768px) {
     .section-header p {
         font-size: 28px;
         line-height: 32px;
     }
-}
-
-/*--------------------------------------------------------------
-# Breadcrumbs
---------------------------------------------------------------*/
-.breadcrumbs {
-    padding: 15px 0;
-    background: #652D90;
-    min-height: 40px;
-    margin-top: 82px;
-    color: #fff;
-}
-@media (max-width: 992px) {
-    .breadcrumbs {
-        margin-top: 57px;
-    }
-}
-.breadcrumbs h2 {
-    font-size: 28px;
-    font-weight: 500;
-}
-.breadcrumbs ol {
-    display: flex;
-    flex-wrap: wrap;
-    list-style: none;
-    padding: 0 0 10px 0;
-    margin: 0;
-    font-size: 14px;
-}
-.breadcrumbs ol a {
-    color: #fff;
-    transition: 0.3s;
-}
-.breadcrumbs ol a:hover {
-    text-decoration: underline;
-}
-.breadcrumbs ol li + li {
-    padding-left: 10px;
-}
-.breadcrumbs ol li + li::before {
-    display: inline-block;
-    padding-right: 10px;
-    color: #8894f6;
-    content: "/";
 }
 
 /*--------------------------------------------------------------
@@ -129,7 +88,7 @@ section {
     right: 15px;
     bottom: 15px;
     z-index: 99999;
-    background: #652D90;
+    background: var(--dark-purple);
     width: 40px;
     height: 40px;
     border-radius: 4px;
@@ -157,27 +116,19 @@ section {
         transition-delay: 0 !important;
     }
 }
+
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
-.header.header-scrolled {
-    background: #fff;
+.header-nav {
+    transition: all 0.5s;
+    z-index: 997;
+    padding: 20px 0;
+    background-color: white;
+}
+.header-nav.header-scrolled {
     padding: 15px 0;
     box-shadow: 0px 2px 20px rgba(1, 41, 112, 0.1);
-}
-.header .logo {
-    line-height: 0;
-}
-.header .logo img {
-    max-height: 100px;
-    margin-right: 6px;
-}
-.header .logo span {
-    font-size: 30px;
-    font-weight: 700;
-    letter-spacing: 1px;
-    color: #652D90;
-    margin-top: 3px;
 }
 
 /*--------------------------------------------------------------
@@ -207,7 +158,7 @@ section {
     font-family: "Raleway", sans-serif;
     font-size: 16px;
     font-weight: 700;
-    color: #A282C4;
+    color: var(--purple);
     white-space: nowrap;
     transition: 0.3s;
 }
@@ -217,10 +168,10 @@ section {
     margin-left: 5px;
 }
 .navbar a:hover, .navbar .active, .navbar .active:focus, .navbar li:hover > a {
-    color: #652D90;
+    color: var(--dark-purple);
 }
 .navbar .getstarted, .navbar .getstarted:focus {
-    background: #ff5e6b;
+    background: var(--red);
     padding: 8px 20px;
     margin-left: 30px;
     border-radius: 4px;
@@ -258,7 +209,7 @@ section {
     font-size: 12px;
 }
 .navbar .dropdown ul a:hover, .navbar .dropdown ul .active:hover, .navbar .dropdown ul li:hover > a {
-    color: #652D90;
+    color: var(--dark-purple);
 }
 .navbar .dropdown:hover > ul {
     opacity: 1;
@@ -289,7 +240,7 @@ section {
 * Mobile Navigation
 */
 .mobile-nav-toggle {
-    color: #652D90;
+    color: var(--dark-purple);
     font-size: 28px;
     cursor: pointer;
     display: none;
@@ -340,10 +291,10 @@ section {
 .navbar-mobile a, .navbar-mobile a:focus {
     padding: 10px 20px;
     font-size: 15px;
-    color: #652D90;
+    color: var(--dark-purple);
 }
 .navbar-mobile a:hover, .navbar-mobile .active, .navbar-mobile li:hover > a {
-    color: #652D90;
+    color: var(--dark-purple);
 }
 .navbar-mobile .getstarted, .navbar-mobile .getstarted:focus {
     margin: 15px;
@@ -369,7 +320,7 @@ section {
     font-size: 12px;
 }
 .navbar-mobile .dropdown ul a:hover, .navbar-mobile .dropdown ul .active:hover, .navbar-mobile .dropdown ul li:hover > a {
-    color: #652D90;
+    color: var(--dark-purple);
 }
 .navbar-mobile .dropdown > .dropdown-active {
     display: block;
@@ -437,17 +388,7 @@ section {
 .about-us-img {
     text-align: right;
 }
-@media (min-width: 992px) {
-    /* .about {
-        margin-top: 120px;
-        background-attachment: fixed;
-    } */
-}
 @media (max-width: 991px) {
-    /* .about {
-        height: auto;
-        padding: 120px 0 60px 0;
-    } */
     .about-us .about-us-img {
         text-align: center;
         margin-top: 80px;
@@ -502,7 +443,7 @@ section {
 }
 .recent-blog-posts .post-box .post-title {
     font-size: 24px;
-    color: #652D90;
+    color: var(--dark-purple);
     font-weight: 700;
     margin-bottom: 18px;
     position: relative;
@@ -521,7 +462,7 @@ section {
     font-size: 18px;
 }
 .recent-blog-posts .post-box:hover .post-title {
-    color: #652D90;
+    color: var(--dark-purple);
 }
 .recent-blog-posts .post-box:hover .post-img img {
     transform: rotate(6deg) scale(1.2);
@@ -547,7 +488,13 @@ section {
 }
 
 .text-purple{
-    color: #A282C4;
+    color: var(--purple);
+}
+
+.store{
+    color: var(--purple);
+    font-size: 18px;
+    font-weight: bold;
 }
 .margin-top{
     margin-top: 25%;
@@ -556,7 +503,7 @@ section {
 .btn-purple{
     border: none;
     color: white;
-    background-color: #652D90;
+    background-color: var(--dark-purple);
     height: 5rem;
     width: 25rem;
     border-radius: 15px;
@@ -565,17 +512,16 @@ section {
 
 .btn-purple:hover{
     transition: 0.5s;
-    background-color: #A282C4;
+    background-color: var(--purple);
 }
 
 .card-contribution{
-    background-color: #A282C4;
+    background-color: var(--purple);
     border-radius: 2px;
     color: black;
     text-align: center;
     height: 10vh;
     width: 13vw;
-
 }
 
 .text-card{
@@ -595,7 +541,7 @@ section {
     height: 50vh;
     width: 100vw;
   }
-  
+
   .wide{
     width: 80vw;
     height: 50vh;
@@ -612,4 +558,136 @@ section {
   }
   .list {
     font-size: 1.2rem;
+  }
+
+.activities ul {
+    color:black;
+    list-style: none;
+    background: white;
+    border-radius: 5px;
+    padding: 6px;
+}
+.activities ul li {
+    background:white;
+    border-radius: 3px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding: 5px 10px 5px 5px;
+    margin: 5px;
+}
+.activities span {
+    padding: 5px;
+    color: white;
+    font-size: 15px;
+    background: var(--dark-purple);
+    border-radius: 4px;
+    letter-spacing: 1px;
+}
+
+.card-title{
+    color: var(--dark-purple);
+    font-weight:bolder;
+    text-transform: uppercase;
+}
+
+.carrousel-sizing{
+    width: 100%;
+}
+
+.inadmissible{
+    color: var(--red);
+    font-size: 4rem;
+}
+
+.margin-login{
+    margin-top: 8%;
+    margin-bottom: 6%;
+}
+
+.contact .info-box {
+    color: #444444;
+    background: #fafbff;
+    padding: 30px;
+}
+.contact .info-box i {
+    font-size: 38px;
+    line-height: 0;
+    color: var(--dark-purple);
+}
+.contact .info-box h3 {
+    font-size: 20px;
+    color: var(--dark-purple);
+    font-weight: 700;
+    margin: 20px 0 10px 0;
+}
+.contact .info-box p {
+    padding: 0;
+    line-height: 24px;
+    font-size: 14px;
+    margin-bottom: 0;
+}
+.paypal-icon{
+    width: 1.5vw;
+}
+
+.my-card{
+    height: 40vh;
+
+}
+
+ #salespoint ul {
+    padding: 0;
+    margin: 20px 0;
+    color: black;
+  }
+  #salespoint a {
+    color: black;
+  }
+  
+  #salespoint ul > li {
+    list-style: none;
+    border-top: 1px solid var(--dark-purple);
+    display: block;
+    padding: 15px;
+    overflow: hidden;
+  }
+  
+  #salespoint ul:last-child {
+    border-bottom: 1px solid var(--dark-purple);
+  }
+  
+  .expand {
+    display: block;
+  }
+  
+  .detail {
+    display: none;
+  }
+  
+  .right-arrow {
+    width: 10px;
+    height: 10px;
+    float: right;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .icon {
+    height: 75px;
+    width: 75px;
+    float: left;
+    margin: 0 15px 0 0;
+  }
+
+  .more-text{
+    display: flex;
+    align-items: center;
+  }
+
+  /* Icons on salespoint page */
+  .purple-icon {
+      font-size: 1.5rem;
+      color: var(--dark-purple);
   }
