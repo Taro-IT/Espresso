@@ -47,3 +47,6 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 // Cambio de contraseña
 Route::get('/cambiar-contraseña', [App\Http\Controllers\HomeController::class, 'pwdChange'])->name('change_pwd.index');
 Route::put('/actualizar-contraseña', [App\Http\Controllers\HomeController::class, 'updatePwd'])->name('change_pwd.update');
+
+// Sección de productos
+Route::resource('/productos',[\App\Http\Controllers\ProductsController::class]);
