@@ -112,7 +112,7 @@
         <li class="nav-item">
 
         <li class="nav-item">
-            <a class="nav-link collapsed" href="#">
+            <a class="nav-link collapsed" href="{{route('products.index')}}">
                 <i class="bi bi-menu-button-wide"></i>
                 <span>Productos</span>
             </a>
