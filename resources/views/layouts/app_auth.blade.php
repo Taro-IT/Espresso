@@ -25,6 +25,7 @@
     <!-- Vendor CSS Files -->
     <link href="{{asset('vendor')}}/bootstrap-4.6.0/css/bootstrap.min.css" rel="stylesheet">
     <link href="{{asset('vendor')}}/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <script src="{{asset('js/app.js')}}"></script>
 
 
 @stack('css')
@@ -128,7 +129,27 @@
 
 </aside><!-- End Sidebar-->
 <main>
-    @yield('content')
+
+    <div class="container-loohl">
+        @if (session('status'))
+            <div class="alert alert-success">
+                {{ session('status') }}
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+        @endif
+
+        @if (session('error'))
+            <div class="alert alert-danger">
+                {{ session('error') }}
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+        @endif
+        @yield('content')
+    </div>
 </main>
 </body>
 

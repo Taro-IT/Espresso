@@ -50,3 +50,4 @@ Route::put('/actualizar-contraseña', [App\Http\Controllers\HomeController::clas
 
 // Sección de productos
 Route::get('/productos',[\App\Http\Controllers\ProductsController::class,'index'])->name('products.index');
+Route::delete('/productos-eliminar/{id}',[\App\Http\Controllers\ProductsController::class,'destroy'])->name('products.destroy');

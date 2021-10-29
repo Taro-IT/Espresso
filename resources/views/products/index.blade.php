@@ -7,11 +7,13 @@
 
 
 @section('content')
-    <div class="container-loohl">
         <div class="row">
-            <div class="col-m-md-12 text-center">
+            <div class="col-md-6 text-left">
                 <h3>Productos de Casa medio camino Loohl</h3>
                 <hr>
+            </div>
+            <div class="col-md-6 text-right">
+                <button class="btn btn-success" type="button">+ Agregar Producto</button>
             </div>
         </div>
         <br>
@@ -40,28 +42,51 @@
                             <td>{{$product->author}}</td>
                             <td>
                                 <a href="#">
-                                    <button class="btn btn-info">Ver mas</button>
+                                    <button class="btn btn-info" type="button">Ver mas</button>
                                 </a>
                             </td>
                             <td>
                                 <a href="#">
-                                    <button class="btn btn-warning">Editar</button>
+                                    <button class="btn btn-warning" type="button">Editar</button>
                                 </a>
                             </td>
                             <td>
-                                <a href="#">
-                                    <button class="btn btn-danger">Eliminar</button>
-                                </a>
+                                <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#eliminar-{{$product->id}}">Eliminar</button>
                             </td>
                         </tr>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="eliminar-{{$product->id}}" tabindex="-1" role="dialog" aria-labelledby="eliminar-{{$product->id}}-Label" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="eliminar-{{$product->id}}-Label">Eliminar {{$product->title}}</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        ¿Estas segur@ que deseas eliminar el producto {{$product->title}} ?
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">No</button>
+                                        <form action="{{route('products.destroy',$product->id)}}"
+                                              method="post">
+                                            @csrf
+                                            @method('delete')
+                                            <button type="submit" class="btn btn-danger">Si</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                     @endforeach
 
                     </tbody>
                 </table>
             </div>
         </div>
-    </div>
-
 @endsection
 @push('scripts')
     <script
