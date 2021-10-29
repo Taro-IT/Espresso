@@ -108,6 +108,22 @@
     }
 
     /**
+     * Whatsapp bubble
+     */
+     let whats = select('.whatsapp-bubble')
+     if (whats) {
+         const toggleWhats = () => {
+             if (window.scrollY > 1500) {
+                 whats.classList.add('active')
+             } else {
+                 whats.classList.remove('active')
+             }
+         }
+         window.addEventListener('load', toggleWhats)
+         onscroll(document, toggleWhats)
+     }
+
+    /**
      * Mobile nav toggle
      */
     on('click', '.mobile-nav-toggle', function(e) {
