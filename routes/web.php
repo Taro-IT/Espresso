@@ -50,4 +50,8 @@ Route::put('/actualizar-contraseña', [App\Http\Controllers\HomeController::clas
 
 // Sección de productos
 Route::get('/productos',[\App\Http\Controllers\ProductsController::class,'index'])->name('products.index');
+Route::get('/agregar-productos',[\App\Http\Controllers\ProductsController::class,'create'])->name('products.create');
+Route::get('/editar-productos/{id}',[\App\Http\Controllers\ProductsController::class,'edit'])->name('products.edit');
+Route::post('/almacenar-productos',[\App\Http\Controllers\ProductsController::class,'store'])->name('products.store');
+Route::put('/actualizar-productos/{id}',[\App\Http\Controllers\ProductsController::class,'update'])->name('products.update');
 Route::delete('/productos-eliminar/{id}',[\App\Http\Controllers\ProductsController::class,'destroy'])->name('products.destroy');
