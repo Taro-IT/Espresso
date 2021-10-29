@@ -91,6 +91,6 @@ class ProductsController extends Controller
     public function destroy(products $products)
     {
         $deleteProduct = $products->delete();
-        return redirect('productos.index')->with('status','El producto fue eliminado con exito');
+        return redirect(route('products.index'))->with('status','El producto fue eliminado con exito');
     }
 }
