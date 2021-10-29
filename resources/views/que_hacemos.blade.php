@@ -160,26 +160,26 @@
         <div class="row activities">
             <div class="col-md-6">
                 <ul data-aos="fade-up" data-aos-delay="300">
-                    <li>Higiene personal<span>8:00 - 9:00</span></li>
-                    <li>Preparación de alimentos<span>9:00 - 9:30</span></li>
-                    <li>Desayuno<span>9:30 - 10:30</span></li>
-                    <li>Apoyo en actividades de limpieza comunitaria<span>10:30 - 11:00</span></li>
-                    <li>Talleres de la comunidad & actividades individuales<span>11:00 - 13:00</span></li>
-                    <li>Preparación de alimentos<span>13:00 - 14:00</span></li>
-                    <li>Comida<span>14:00 - 15:00</span></li>
-                    <li>Apoyo en actividades de limpieza comunitaria<span>15:00 - 16:00</span></li>
+                    <li class="text-right">Higiene personal<span class="text-center">8:00 - 9:00</span></li>
+                    <li class="text-right">Preparación de alimentos<span class="text-center">9:00 - 9:30</span></li>
+                    <li class="text-right">Desayuno<span class="text-center">9:30 - 10:30</span></li>
+                    <li class="text-right">Apoyo en actividades de limpieza comunitaria<span class="text-center">10:30 - 11:00</span></li>
+                    <li class="text-right">Talleres de la comunidad & actividades individuales<span class="text-center">11:00 - 13:00</span></li>
+                    <li class="text-right">Preparación de alimentos<span class="text-center">13:00 - 14:00</span></li>
+                    <li class="text-right">Comida<span class="text-center">14:00 - 15:00</span></li>
+                    <li class="text-right">Apoyo en actividades de limpieza comunitaria<span class="text-center">15:00 - 16:00</span></li>
                 </ul>
             </div>  
             <div class="col-md-6">
                 <ul data-aos="fade-up" data-aos-delay="300">
-                    <li>Otra actividad<span>16:00 - 17:00</span></li>
-                    <li>Talleres de la comunidad<span>17:00 - 18:00</span></li>
-                    <li>Salidas individuales & grupales<span>18:00 - 19:00</span></li>
-                    <li>Actividades individuales<span>19:00 - 19:30</span></li>
-                    <li>Preparación de alimentos<span>19:30 - 20:00</span></li>
-                    <li>Cena<span>20:00 - 20:30</span></li>
-                    <li>Actividades de ocio<span>20:30 - 21:30</span></li>
-                    <li>Higiene personal<span>21:30 - 22:00</span></li>
+                    <li class="text-right">Otra actividad<span class="text-center">16:00 - 17:00</span></li>
+                    <li class="text-right">Talleres de la comunidad<span class="text-center">17:00 - 18:00</span></li>
+                    <li class="text-right">Salidas individuales & grupales<span class="text-center">18:00 - 19:00</span></li>
+                    <li class="text-right">Actividades individuales<span class="text-center">19:00 - 19:30</span></li>
+                    <li class="text-right">Preparación de alimentos<span class="text-center">19:30 - 20:00</span></li>
+                    <li class="text-right">Cena<span class="text-center">20:00 - 20:30</span></li>
+                    <li class="text-right">Actividades de ocio<span class="text-center">20:30 - 21:30</span></li>
+                    <li class="text-right">Higiene personal<span class="text-center">21:30 - 22:00</span></li>
                 </ul>
             </div>  
         </div>        
