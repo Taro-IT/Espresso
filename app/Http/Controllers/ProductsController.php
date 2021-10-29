@@ -14,7 +14,7 @@ class ProductsController extends Controller
      */
     public function index()
     {
-        //
+        return view('products.index')->with(['products'=>products::get()]);
     }
 
     /**
@@ -24,7 +24,7 @@ class ProductsController extends Controller
      */
     public function create()
     {
-        //
+        return view('products.create');
     }
 
     /**
@@ -35,7 +35,13 @@ class ProductsController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $request->validate([
+            'title'=>'required|max:255',
+            'description' =>'max:1500',
+            'author'=>'required'
+        ]);
+
+        // Código para imágenes y almacenamiento
     }
 
     /**
@@ -69,7 +75,11 @@ class ProductsController extends Controller
      */
     public function update(Request $request, products $products)
     {
-        //
+        $request->validate([
+            'title'=>'required|max:255',
+            'description' =>'max:1500',
+            'author'=>'required'
+        ]);
     }
 
     /**
@@ -80,6 +90,7 @@ class ProductsController extends Controller
      */
     public function destroy(products $products)
     {
-        //
+        $deleteProduct = $products->delete();
+        return redirect('productos.index')->with('status','El producto fue eliminado con exito');
     }
 }
