@@ -10,7 +10,7 @@
 <!-- =======  WHAT WE DO SECTION ======= -->
 <div class="container">
     <section id="quienes-somos">
-        <div class="row justify-content-center">
+        <div class="text-center">
             <h1 class="section-header" data-aos="fade-up" data-aos-delay="200">
                 <span class="underline">&nbsp;&nbsp;¿QUÉ HACEMOS?&nbsp;&nbsp;</span>
             </h1>
@@ -89,7 +89,7 @@
 
 <!-- =======  WOW SECTION ======= -->
     <section class="container" id="wow">
-        <div class="row justify-content-center">
+        <div class="text-center">
             <h1 class="section-header" data-aos="fade-up" data-aos-delay="100">
                 <span class="underline">&nbsp;&nbsp;NUESTRA FORMA DE TRABAJO&nbsp;&nbsp;</span>
             </h1>
@@ -100,7 +100,7 @@
 
 <!-- =======  SERVICES SECTION ======= -->
     <section class="container" id="services">
-        <div class="row justify-content-center">
+        <div class="text-center">
             <h1 class="section-header" data-aos="fade-up" data-aos-delay="100">
                 <span class="underline">&nbsp;&nbsp;NUESTROS SERVICIOS&nbsp;&nbsp;</span>
             </h1>
@@ -192,7 +192,7 @@
 
 <!-- =======  ACTIVITIES SECTION ======= -->
     <section class="container" id="activities">
-        <div class="row justify-content-center">
+        <div class="text-center">
             <h1 class="section-header" data-aos="fade-up" data-aos-delay="200">
                 <span class="underline">&nbsp;&nbsp;TALLERES & ACTIVIDADES&nbsp;&nbsp;</span>
             </h1>
@@ -277,6 +277,58 @@
             </a>
         </div>
     </section>
+
+<!-- =======  FAQ SECTION ======= -->
+    <section class="container" id="faq">
+        <div class="text-center">
+            <h1 class="section-header" data-aos="fade-up" data-aos-delay="200">
+                <span class="underline">&nbsp;&nbsp;PREGUNTAS FRECUENTES&nbsp;&nbsp;</span>
+            </h1>
+            <p class="subtitle text-center" data-aos="fade-up" data-aos-delay="300">Debajo podras encontrar respuestas a las dudas que las personas interesadas en la Casa Loohl suelen tener.</p>
+        </div>
+        <div class="accordion" id="faq-accordion" data-aos="fade-up" data-aos-delay="400">
+            <div class="card faq-card">
+                <div class="card-header faq-header" id="headingOne">
+                    <a class="btn faq-link faq-btn font-weight-bold w-100 text-left" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        ¿Cuánto tiempo puede estar mi familiar en la Casa Loohl?
+                    </a>
+                </div>
+                <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#faq-accordion">
+                <div class="card-body faq-body">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum a egestas turpis, quis commodo ante. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+                </div>
+                </div>
+            </div>
+            <div class="card faq-card">
+                <div class="card-header faq-header" id="headingTwo">
+                    <a class="btn faq-link faq-btn font-weight-bold w-100 text-left" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                        ¿Qué personal atiende a los huéspedes?
+                    </a>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#faq-accordion">
+                <div class="card-body faq-body">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum a egestas turpis, quis commodo ante. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+                </div>
+                </div>
+            </div>
+            <div class="card faq-card">
+                <div class="card-header faq-header" id="headingThree">
+                    <a class="btn faq-link faq-btn font-weight-bold w-100 text-left" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                        ¿Están contratando?
+                    </a>
+                </div>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#faq-accordion">
+                <div class="card-body faq-body">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum a egestas turpis, quis commodo ante. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+                </div>
+                </div>
+            </div>
+        </div>
+    </section>
 </div>
 
 @endsection
+
+@push('css')
+    <link rel="stylesheet" href="{{ asset('/css/que_hacemos.css') }}">
+@endpush
