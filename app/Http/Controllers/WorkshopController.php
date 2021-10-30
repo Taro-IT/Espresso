@@ -2,22 +2,19 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\products;
+use App\Models\Workshop;
 use Illuminate\Http\Request;
 
-class ProductsController extends Controller
+class WorkshopController extends Controller
 {
-    /**
+        /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
      */
     public function index()
-    {   
-        $data = products::obtainProductInfo();
-        dd($data);
-        die();
-        return view('products.index')->with(['products'=>products::get()]);
+    {
+        
     }
 
     /**
@@ -27,7 +24,7 @@ class ProductsController extends Controller
      */
     public function create()
     {
-        return view('products.create');
+        
     }
 
     /**
@@ -38,22 +35,6 @@ class ProductsController extends Controller
      */
     public function store(Request $request)
     {  
-
-        $request->validate([
-            'id_workshop'=> 'required',
-            'title'=>'required|max:255',
-            'description' =>'max:1500',
-            'id_patient'=>'required',
-            'price' => 'required'
-        ]);
-
-        $data = $request->all();
-        unset($data['_token']);
-        unset($data['id_patient']);
-
-        products::create($data);
-
-        return view('products.index')->with(['products'=>products::get()]);
 
     }
 
@@ -88,11 +69,7 @@ class ProductsController extends Controller
      */
     public function update(Request $request, products $products)
     {
-        $request->validate([
-            'title'=>'required|max:255',
-            'description' =>'max:1500',
-            'author'=>'required'
-        ]);
+
     }
 
     /**
@@ -103,8 +80,7 @@ class ProductsController extends Controller
      */
     public function destroy($id)
     {
-        $product = products::find($id);
-        $product->delete();
-        return redirect()->route('products.index')->with('status','El producto fue eliminado con exito');
+
     }
+
 }
