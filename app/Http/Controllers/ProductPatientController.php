@@ -2,21 +2,19 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Workshop;
+use App\Models\ProductPatient;
 use Illuminate\Http\Request;
 
-class WorkshopController extends Controller
+class ProductPatientController extends Controller
 {
-        /**
+    /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
      */
     public function index()
     {
-        return view('workshops.index')->with([
-            'workshops'=>Workshop::get()
-        ]);
+        //
     }
 
     /**
@@ -26,7 +24,7 @@ class WorkshopController extends Controller
      */
     public function create()
     {
-        
+        //
     }
 
     /**
@@ -36,17 +34,17 @@ class WorkshopController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function store(Request $request)
-    {  
-
+    {
+        //
     }
 
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\products  $products
+     * @param  \App\Models\ProductPatient  $productPatient
      * @return \Illuminate\Http\Response
      */
-    public function show(products $products)
+    public function show(ProductPatient $productPatient)
     {
         //
     }
@@ -54,10 +52,10 @@ class WorkshopController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\products  $products
+     * @param  \App\Models\ProductPatient  $productPatient
      * @return \Illuminate\Http\Response
      */
-    public function edit(products $products)
+    public function edit(ProductPatient $productPatient)
     {
         //
     }
@@ -66,25 +64,22 @@ class WorkshopController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\products  $products
+     * @param  \App\Models\ProductPatient  $productPatient
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, products $products)
+    public function update(Request $request, ProductPatient $productPatient)
     {
-
+        //
     }
 
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\products  $products
+     * @param  \App\Models\ProductPatient  $productPatient
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy(ProductPatient $productPatient)
     {
-        $workshop = Workshop::find($id);
-        $workshop->delete();
-        return redirect()->route('workshop.index')->with('status','El taller fue eliminado con exito');
+        //
     }
-
 }

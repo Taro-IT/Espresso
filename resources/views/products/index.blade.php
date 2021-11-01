@@ -89,7 +89,18 @@
                             <td>
                                 <img src="{{asset('storage/'.$product->image)}}" alt="imagen">
                             </td>
-                            <td>{{$product->author}}</td>
+                            <td>
+                            @foreach($authors as $author)
+                            @if ($product->id == $author->id_product)
+                                @foreach($patients as $patient)
+                                @if ($author->id_patient == $patient->id)
+                                {{$patient->name}}
+                                <br>
+                                @endif
+                                @endforeach
+                            @endif
+                            @endforeach
+                        </td>
                             <td>
                                 <a href="#">
                                     <button class="btn btn-info" type="button">Ver mas</button>

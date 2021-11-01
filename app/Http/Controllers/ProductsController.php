@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\Models\products;
+use App\Models\ProductPatient;
+use App\Models\Patient;
 use Illuminate\Http\Request;
 
 class ProductsController extends Controller
@@ -14,10 +16,11 @@ class ProductsController extends Controller
      */
     public function index()
     {   
-        $data = products::obtainProductInfo();
-        dd($data);
-        die();
-        return view('products.index')->with(['products'=>products::get()]);
+        return view('products.index')->with([
+            'products'=>products::get(),
+            'authors'=>ProductPatient::get(),
+            'patients'=>Patient::get()
+        ]);
     }
 
     /**
@@ -49,6 +52,12 @@ class ProductsController extends Controller
 
         $data = $request->all();
         unset($data['_token']);
+        
+        //Store image in variable
+
+        //Save image ui=in route
+
+        //Save url in database
         unset($data['id_patient']);
 
         products::create($data);

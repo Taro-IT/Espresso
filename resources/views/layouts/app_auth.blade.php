@@ -119,7 +119,7 @@
             </a>
         </li>
         <li class="nav-item">
-            <a class="nav-link collapsed" href="#">
+            <a class="nav-link collapsed" href="{{route('workshop.index')}}">
                 <i class="bi bi-journal-text"></i>
                 <span>Talleres</span>
             </a>
