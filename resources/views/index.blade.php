@@ -176,6 +176,10 @@
         <i class="bi bi-arrow-up-short"></i>
     </a>
 
+    <a href="https://wa.me/5214421370222" class="whatsapp-bubble d-flex align-items-center justify-content-center">
+        <i class="bi bi-whatsapp"></i>
+    </a>
+
     <script src="{{ asset('/js/load_medium_posts.js') }}"></script>
     <script src="{{ asset('/js/scroll.js') }}"></script>
     <script>
