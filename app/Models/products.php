@@ -14,8 +14,11 @@ class products extends Model
         'id_workshop',
         'title',
         'description',
-        'price'
+        'price',
+        'id_patient'
     ];
+
+    
 
 
 }

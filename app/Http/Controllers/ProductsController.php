@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\products;
 use App\Models\ProductPatient;
 use App\Models\Patient;
+use App\Models\Workshop;
 use Illuminate\Http\Request;
 
 class ProductsController extends Controller
@@ -19,7 +20,8 @@ class ProductsController extends Controller
         return view('products.index')->with([
             'products'=>products::get(),
             'authors'=>ProductPatient::get(),
-            'patients'=>Patient::get()
+            'patients'=>Patient::get(),
+            'workshops'=>Workshop::get()
         ]);
     }
 
@@ -41,7 +43,7 @@ class ProductsController extends Controller
      */
     public function store(Request $request)
     {  
-
+       
         $request->validate([
             'id_workshop'=> 'required',
             'title'=>'required|max:255',
@@ -51,6 +53,8 @@ class ProductsController extends Controller
         ]);
 
         $data = $request->all();
+        $patient = $data['id_patient'];
+        
         unset($data['_token']);
         
         //Store image in variable
@@ -62,7 +66,19 @@ class ProductsController extends Controller
 
         products::create($data);
 
-        return view('products.index')->with(['products'=>products::get()]);
+        //Obtain the last entry
+        $lastProductId = products::latest()->first()->id;
+        $patient = (int)$patient;
+        $product_patient = array("id_product"=>$lastProductId, "id_patient"=>$patient);
+
+        ProductPatient::create($product_patient);
+
+        return view('products.index')->with([
+            'products'=>products::get(),
+            'authors'=>ProductPatient::get(),
+            'patients'=>Patient::get(),
+            'workshops'=>Workshop::get()
+        ]);
 
     }
 

@@ -38,18 +38,18 @@
                     <label for="author" class="form-label">Autor</label>
                     <select class="form-select" aria-label="Default select example" name="id_patient" required="true">
                       <option selected disabled>Escoge el autor</option>
-                      <option value="1">One</option>
-                      <option value="2">Two</option>
-                      <option value="3">Three</option>
+                      @foreach($patients as $patient)
+                        <option value="{{$patient->id}}">{{$patient->name}}</option>    
+                      @endforeach       
                     </select>
                   </div>
                   <div class="mb-3">
                     <label for="workshop" class="form-label">Taller</label>
                     <select class="form-select" aria-label="Default select example" name="id_workshop" required="true">
                       <option selected disabled>Escoge el taller</option>
-                      <option value="1">One</option>
-                      <option value="2">Two</option>
-                      <option value="3">Three</option>
+                      @foreach($workshops as $workshop)
+                        <option value="{{$workshop->id}}">{{$workshop->name}}</option>    
+                      @endforeach 
                     </select>
                   </div>
                   <div class="mb-3">
