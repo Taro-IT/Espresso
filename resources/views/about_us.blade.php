@@ -119,7 +119,3 @@
 
 </div>
 @endsection
-
-@push('css')
-    <link rel="stylesheet" href="{{ asset('/css/about_us.css') }}">
-@endpush

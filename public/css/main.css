@@ -38,8 +38,22 @@ a:hover {
     text-decoration: none;
 }
 
-h1{
+h1 {
     font-weight: bold;
+}
+
+.underline {
+    position: relative;
+    background: linear-gradient(var(--underline-purple), var(--underline-purple))left bottom repeat-x;
+    background-size: 100% 40%;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+}
+
+.header {
+    font-size: 2rem;
 }
 
 /*--------------------------------------------------------------

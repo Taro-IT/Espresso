@@ -182,6 +182,10 @@
 
 @endsection
 
+@push('css')
+    <link rel="stylesheet" href="{{ asset('/css/index_styles.css') }}">
+@endpush
+
 @push('scripts')
     <script src="{{ asset('/js/load_medium_posts.js') }}"></script>
     <script src="{{ asset('/js/scroll.js') }}"></script>
