@@ -60,7 +60,7 @@
         <h1 class="header text-center" data-aos="fade-up" data-aos-delay="100">
             <span class="underline">&nbsp;&nbsp;ACERCANDO LA LOCURA&nbsp;&nbsp;</span>
         </h1>
-        <p class="text-center subtitle pb-3" data-aos="fade-up" data-aos-delay="200"> Explora nuestra colección de artículos de divulgación, producciones literarias, producciones narrativas, proyectos e historias de vida de nuestra comunidad.</p>   
+        <p class="text-center subtitle pb-3" data-aos="fade-up" data-aos-delay="200"> Explora nuestra colección de artículos de divulgación, producciones literarias, producciones narrativas, proyectos e historias de vida de nuestra comunidad.</p>
         <div class="row" id="medium-posts-container" data-aos="fade-up" data-aos-delay="300">
             <div class="col-lg" >
                 <div data-medium-post-id="1"></div>
@@ -83,7 +83,7 @@
             </div>
             <div data-aos="fade-left" data-aos-delay="400" class="d-flex justify-content-center" data-aos="zoom-out" data-aos-delay="250">
                 <a href="https://medium.com/@Casademediocamino/following" class="btn-read-more d-inline-flex align-items-center justify-content-center align-self-center">
-                    <span>DESCUBRE MÁS ARTÍCULOS</span>
+                    <span id="medium-posts-see-more">DESCUBRE MÁS ARTÍCULOS</span>
                     <i class="bi bi-arrow-right"></i>
                 </a>
             </div>
@@ -97,24 +97,24 @@
         </h1>
         <p class="text-center subtitle" data-aos="fade-up" data-aos-delay="200">Todas las contribuciones recibidas se dedican al beneficio de la comunidad, tu contribución nos hace posible dar vida a proyectos de huéspedes y realizar eventos, tanto internos como externos, donde se demuestra el crecimiento de cada uno de ellos.</p>
         <div class="row">
-            <div class="col-md mb-3 mb-md-0" data-aos="fade-up" data-aos-delay="300"> 
-                <a class="btn btn-read-more py-md-5 h-100 d-flex justify-content-center align-items-center" href="{{route('donation.index')}}" role="button"> 
-                    <span class="white-text">HAZ UNA DONACIÓN</span> 
+
+            <div class="col-md mb-3 mb-md-0" data-aos="fade-up" data-aos-delay="300">
+                <a class="btn btn-read-more py-md-5 h-100 d-flex justify-content-center align-items-center" href="{{route('donation.index')}}" role="button">
+                    <span class="white-text">HAZ UNA DONACIÓN</span>
                 </a>
             </div>
-            <div class="col-md mb-3 mb-md-0" data-aos="fade-up" data-aos-delay="300"> 
+            <div class="col-md mb-3 mb-md-0" data-aos="fade-up" data-aos-delay="300">
                 <a class="btn btn-read-more py-md-5 h-100 d-flex justify-content-center align-items-center" href="{{route('puntos-venta')}}" role="button">
-                    <span class="white-text">COMPRA EN TIENDA FÍSICA</span> 
+                    <span class="white-text">COMPRA EN TIENDA FÍSICA</span>
                 </a>
             </div>
-            <div class="col-md mb-3 mb-md-0" data-aos="fade-up" data-aos-delay="300"> 
+            <div class="col-md mb-3 mb-md-0" data-aos="fade-up" data-aos-delay="300">
                 <a class="btn btn-read-more py-md-5 h-100 d-flex justify-content-center align-items-center" href="{{route('tienda')}}" role="button">
-                    <span class="white-text">COMPRA EN LÍNEA</span> 
+                    <span class="white-text">COMPRA EN LÍNEA</span>
                 </a>
             </div>
         </div>
     </section>
-
     <!-- ======= FACEBOOK POSTS SECTION ======= -->
     <section class="recent-blog-posts">
         <div class="container" data-aos="fade-up">
@@ -124,30 +124,18 @@
                 </h1>
             </header>
             <div class="row">
-                <div class="col-lg-4">
-                    <div class="post-box">
-                        <div class="post-img"><img src="{{asset('images/img-sala.jpg')}}" class="img-fluid" alt=""></div>
-                        <h3 class="post-title">Eum ad dolor et. Autem aut fugiat debitis voluptatem consequuntur sit</h3>
-                        <span class="post-date">Tue, September 15</span>
-                        <a href="blog-singe.html" class="readmore stretched-link mt-auto"><span>Ver post</span><i class="bi bi-arrow-right"></i></a>
+                {{-- @foreach($fb_posts as $post)
+                    <div class="col-lg-4">
+                        <div class="post-box p-0">
+                            <div id="fb-root"></div>
+                            {!!$post !!}
+                        </div>
                     </div>
-                </div>
-
-                <div class="col-lg-4">
-                    <div class="post-box">
-                        <div class="post-img"><img src="{{asset('images/img-sala.jpg')}}" class="img-fluid" alt=""></div>
-                        <h3 class="post-title">Et repellendus molestiae qui est sed omnis voluptates magnam</h3>
-                        <span class="post-date">Fri, August 28</span>                            
-                        <a href="blog-singe.html" class="readmore stretched-link mt-auto"><span>Ver post</span><i class="bi bi-arrow-right"></i></a>
-                    </div>
-                </div>
-
-                <div class="col-lg-4">
-                    <div class="post-box">
-                        <div class="post-img"><img src="{{asset('images/img-sala.jpg')}}" class="img-fluid" alt=""></div>
-                        <h3 class="post-title">Quia assumenda est et veritatis aut quae</h3>
-                        <span class="post-date">Mon, July 11</span>
-                        <a href="blog-singe.html" class="readmore stretched-link mt-auto"><span>Ver post</span><i class="bi bi-arrow-right"></i></a>
+                @endforeach -->--}}
+                <div class="col-lg-12">
+                    <div class="post-box p-0 text-center">
+                        <div id="fb-root"></div>
+                        {!! $fb_page !!}
                     </div>
                 </div>
             </div>
@@ -160,7 +148,7 @@
                 <span class="underline">&nbsp;&nbsp;CONTÁCTANOS&nbsp;&nbsp;</span>
             </h1>
             <p class="subtitle text-center" data-aos="fade-up" data-aos-delay="200">Ponte en contacto con nosotros, nos encantaría saber de ti y apoyarte en lo que necesites.</p>
-            
+
             <div class="row text-center">
                 <div class="col-lg-12">
                     <div class="row">
@@ -187,11 +175,11 @@
     <a href="#" class="back-to-top d-flex align-items-center justify-content-center">
         <i class="bi bi-arrow-up-short"></i>
     </a>
+    
+    <a href="https://wa.me/5214421370222" class="whatsapp-bubble d-flex align-items-center justify-content-center">
+        <i class="bi bi-whatsapp"></i>
+    </a>
 
-    
-
-    
-    
 @endsection
 
 @push('scripts')

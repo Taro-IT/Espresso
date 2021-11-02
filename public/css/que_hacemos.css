@@ -1,0 +1,27 @@
+.faq-header {
+    background-color: var(--underline-purple);
+}
+.faq-body {
+    background-color: #efe1ff;
+}
+.faq-card, .faq-header, .faq-body {
+    border-color: var(--purple);
+}
+.faq-btn {
+    font-size: 1.2rem;
+}
+.faq-link {
+    color: inherit;
+    transition: 0.15s;
+    text-decoration: underline;
+    text-decoration-color: var(--transparent);
+}
+.faq-link:hover {
+    color: inherit;
+    text-decoration: underline;
+    text-decoration-color: var(--dark-purple);
+}
+.faq-link:active {
+    text-decoration: underline;
+    text-decoration-color: inherit;
+}

@@ -20,11 +20,13 @@ Route::get('/bot_test', function () {
 });
 
 Route::match(['get', 'post'], 'botman', [BotManController::class, 'handle']);
-Route::view('/', 'index')->name('index');
+
+
+Route::get('/', [PageInfoController::class, 'main'])->name('index');;
+// Route::match(['get', 'post'], 'index', [PageInfoController::class, 'main']);
+
 
 // Routes to pages for web services validation
-Route::view('/facebook_test', 'facebook_test');
-Route::view('/paypal_test', 'paypal_test');
 Route::view('/quienes-somos', 'about_us')->name('quienes-somos');
 Route::view('/que-hacemos', 'que_hacemos')->name('que-hacemos');
 Route::view('/tienda' , 'tienda')->name('tienda');
@@ -45,3 +47,11 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 // Cambio de contraseña
 Route::get('/cambiar-contraseña', [App\Http\Controllers\HomeController::class, 'pwdChange'])->name('change_pwd.index');
 Route::put('/actualizar-contraseña', [App\Http\Controllers\HomeController::class, 'updatePwd'])->name('change_pwd.update');
+
+// Sección de productos
+Route::get('/productos',[\App\Http\Controllers\ProductsController::class,'index'])->name('products.index');
+Route::get('/agregar-productos',[\App\Http\Controllers\ProductsController::class,'create'])->name('products.create');
+Route::get('/editar-productos/{id}',[\App\Http\Controllers\ProductsController::class,'edit'])->name('products.edit');
+Route::post('/almacenar-productos',[\App\Http\Controllers\ProductsController::class,'store'])->name('products.store');
+Route::put('/actualizar-productos/{id}',[\App\Http\Controllers\ProductsController::class,'update'])->name('products.update');
+Route::delete('/productos-eliminar/{id}',[\App\Http\Controllers\ProductsController::class,'destroy'])->name('products.destroy');
