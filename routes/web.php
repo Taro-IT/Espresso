@@ -55,3 +55,11 @@ Route::get('/editar-productos/{id}',[\App\Http\Controllers\ProductsController::c
 Route::post('/almacenar-productos',[\App\Http\Controllers\ProductsController::class,'store'])->name('products.store');
 Route::put('/actualizar-productos/{id}',[\App\Http\Controllers\ProductsController::class,'update'])->name('products.update');
 Route::delete('/productos-eliminar/{id}',[\App\Http\Controllers\ProductsController::class,'destroy'])->name('products.destroy');
+
+//Seccion de talleres
+Route::get('/talleres',[\App\Http\Controllers\WorkshopController::class,'index'])->name('workshop.index');
+Route::get('/agregar-talleres',[\App\Http\Controllers\WorkshopController::class,'create'])->name('workshop.create');
+Route::get('/editar-talleres/{id}',[\App\Http\Controllers\WorkshopController::class,'edit'])->name('workshop.edit');
+Route::post('/almacenar-talleres',[\App\Http\Controllers\WorkshopController::class,'store'])->name('workshop.store');
+Route::put('/actualizar-talleres/{id}',[\App\Http\Controllers\WorkshopController::class,'update'])->name('workshop.update');
+Route::delete('/talleres-eliminar/{id}',[\App\Http\Controllers\WorkshopController::class,'destroy'])->name('workshop.destroy');

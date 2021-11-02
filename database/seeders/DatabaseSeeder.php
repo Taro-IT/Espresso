@@ -18,7 +18,10 @@ class DatabaseSeeder extends Seeder
                 UserSeeder::class,
                 PaymentPlataformsTableSeeder::class,
                 CurrenciesTableSeeder::class,
-                ProductsSeeder::class,
+                WorkshopSeeder::class,
+                ProductSeeder::class,
+                PatientSeeder::class,
+                PatientProductSeeder::class,
             ]);
     }
 }

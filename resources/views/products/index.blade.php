@@ -4,8 +4,6 @@
 @push('css')
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.css">
 @endpush
-
-
 @section('content')
         <div class="row">
             <div class="col-md-6 text-left">
@@ -13,9 +11,61 @@
                 <hr>
             </div>
             <div class="col-md-6 text-right">
-                <button class="btn btn-success" type="button">+ Agregar Producto</button>
+                <button class="btn btn-success" type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">+ Agregar Producto</button>
             </div>
         </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel">Agregar Nuevo Producto</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <form method="POST" action="{{route('products.store')}}" enctype="multipart/form-data">
+                @csrf
+                  <div class="mb-3">
+                    <label for="title" class="form-label">Título</label>
+                    <input type="text" class="form-control" id="title" name="title" required="true">
+                  </div>
+                  <div class="mb-3">
+                      <label for="description" class="form-label">Descripción</label>
+                      <textarea class="form-control" aria-label="With textarea" name="description" required="true"></textarea>
+                    </div>
+                  <div class="mb-3">
+                    <label for="author" class="form-label">Autor</label>
+                    <select class="form-select" aria-label="Default select example" name="id_patient" required="true">
+                      <option selected disabled>Escoge el autor</option>
+                      @foreach($patients as $patient)
+                        <option value="{{$patient->id}}">{{$patient->name}}</option>    
+                      @endforeach       
+                    </select>
+                  </div>
+                  <div class="mb-3">
+                    <label for="workshop" class="form-label">Taller</label>
+                    <select class="form-select" aria-label="Default select example" name="id_workshop" required="true">
+                      <option selected disabled>Escoge el taller</option>
+                      @foreach($workshops as $workshop)
+                        <option value="{{$workshop->id}}">{{$workshop->name}}</option>    
+                      @endforeach 
+                    </select>
+                  </div>
+                  <div class="mb-3">
+                      <label for="price" class="form-label">Precio Mínimo</label>
+                      <input type="number" class="form-control" name="price" required="true">
+                    </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                <button type="submit" class="btn btn-primary">Agregar Producto</button>
+              </div>
+              </form>
+            </div>
+          </div>
+        </div>
+
         <br>
         <div class="row">
             <div class="col-md-12">
@@ -39,7 +89,18 @@
                             <td>
                                 <img src="{{asset('storage/'.$product->image)}}" alt="imagen">
                             </td>
-                            <td>{{$product->author}}</td>
+                            <td>
+                            @foreach($authors as $author)
+                            @if ($product->id == $author->id_product)
+                                @foreach($patients as $patient)
+                                @if ($author->id_patient == $patient->id)
+                                {{$patient->name}}
+                                <br>
+                                @endif
+                                @endforeach
+                            @endif
+                            @endforeach
+                        </td>
                             <td>
                                 <a href="#">
                                     <button class="btn btn-info" type="button">Ver mas</button>

@@ -3,6 +3,9 @@
 namespace App\Http\Controllers;
 
 use App\Models\products;
+use App\Models\ProductPatient;
+use App\Models\Patient;
+use App\Models\Workshop;
 use Illuminate\Http\Request;
 
 class ProductsController extends Controller
@@ -13,8 +16,13 @@ class ProductsController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function index()
-    {
-        return view('products.index')->with(['products'=>products::get()]);
+    {   
+        return view('products.index')->with([
+            'products'=>products::get(),
+            'authors'=>ProductPatient::get(),
+            'patients'=>Patient::get(),
+            'workshops'=>Workshop::get()
+        ]);
     }
 
     /**
@@ -34,14 +42,44 @@ class ProductsController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function store(Request $request)
-    {
+    {  
+       
         $request->validate([
+            'id_workshop'=> 'required',
             'title'=>'required|max:255',
             'description' =>'max:1500',
-            'author'=>'required'
+            'id_patient'=>'required',
+            'price' => 'required'
         ]);
 
-        // Código para imágenes y almacenamiento
+        $data = $request->all();
+        $patient = $data['id_patient'];
+        
+        unset($data['_token']);
+        
+        //Store image in variable
+
+        //Save image ui=in route
+
+        //Save url in database
+        unset($data['id_patient']);
+
+        products::create($data);
+
+        //Obtain the last entry
+        $lastProductId = products::latest()->first()->id;
+        $patient = (int)$patient;
+        $product_patient = array("id_product"=>$lastProductId, "id_patient"=>$patient);
+
+        ProductPatient::create($product_patient);
+
+        return view('products.index')->with([
+            'products'=>products::get(),
+            'authors'=>ProductPatient::get(),
+            'patients'=>Patient::get(),
+            'workshops'=>Workshop::get()
+        ]);
+
     }
 
     /**
