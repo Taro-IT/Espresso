@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Home;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -26,7 +27,7 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        return view('home')->with(['home'=>Home::get()->first()]);
     }
 
     public function pwdChange(){
@@ -45,5 +46,18 @@ class HomeController extends Controller
 
         return redirect(route('change_pwd.index'))->with('status','Tu contraseña fue cambiada con éxito!');
 
+    }
+
+    public function update(Request $request){
+
+        $request->validate([
+            'name'=> 'required',
+        ]);
+
+        $data = $request->all();
+
+        Home::update($data);
+
+        return redirect()->route('home')->with('status','La información fue actualizada correctamente');
     }
 }

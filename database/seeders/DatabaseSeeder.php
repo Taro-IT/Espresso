@@ -22,6 +22,7 @@ class DatabaseSeeder extends Seeder
                 ProductSeeder::class,
                 PatientSeeder::class,
                 PatientProductSeeder::class,
+                HomeSeeder::class,
             ]);
     }
 }
