@@ -70,5 +70,9 @@ class PageInfoController extends Controller
 
     }
 
-
+    public function getMediumPosts() {
+        $response = Http::get('https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@sabesan96');
+        $posts = json_decode($response);
+        return response()->json($posts);
+    }
 }
