@@ -123,7 +123,7 @@
                     <span class="underline">&nbsp;&nbsp;MANTENTE AL DÍA&nbsp;&nbsp;</span>
                 </h1>
             </header>
-            <div class="row">
+            <div class="row" style="height: 700px">
                 {{-- @foreach($fb_posts as $post)
                     <div class="col-lg-4">
                         <div class="post-box p-0">
@@ -134,7 +134,7 @@
                 @endforeach -->--}}
                 <div class="col-lg-12">
                     <div class="post-box p-0 text-center">
-                        <div id="fb-root"></div>
+                        <!-- <div id="fb-root"></div> -->
                         {!! $fb_page !!}
                     </div>
                 </div>
