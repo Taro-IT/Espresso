@@ -10,7 +10,7 @@
 <!-- =======  WHAT WE DO SECTION ======= -->
 <div class="container">
     <section id="quienes-somos">
-        <div class="row justify-content-center">
+        <div class="text-center">
             <h1 class="section-header" data-aos="fade-up" data-aos-delay="200">
                 <span class="underline">&nbsp;&nbsp;¿QUÉ HACEMOS?&nbsp;&nbsp;</span>
             </h1>
@@ -89,7 +89,7 @@
 
 <!-- =======  WOW SECTION ======= -->
     <section class="container" id="wow">
-        <div class="row justify-content-center">
+        <div class="text-center">
             <h1 class="section-header" data-aos="fade-up" data-aos-delay="100">
                 <span class="underline">&nbsp;&nbsp;NUESTRA FORMA DE TRABAJO&nbsp;&nbsp;</span>
             </h1>
@@ -100,7 +100,7 @@
 
 <!-- =======  SERVICES SECTION ======= -->
     <section class="container" id="services">
-        <div class="row justify-content-center">
+        <div class="text-center">
             <h1 class="section-header" data-aos="fade-up" data-aos-delay="100">
                 <span class="underline">&nbsp;&nbsp;NUESTROS SERVICIOS&nbsp;&nbsp;</span>
             </h1>
@@ -160,26 +160,26 @@
         <div class="row activities">
             <div class="col-md-6">
                 <ul data-aos="fade-up" data-aos-delay="300">
-                    <li>Higiene personal<span>8:00 - 9:00</span></li>
-                    <li>Preparación de alimentos<span>9:00 - 9:30</span></li>
-                    <li>Desayuno<span>9:30 - 10:30</span></li>
-                    <li>Apoyo en actividades de limpieza comunitaria<span>10:30 - 11:00</span></li>
-                    <li>Talleres de la comunidad & actividades individuales<span>11:00 - 13:00</span></li>
-                    <li>Preparación de alimentos<span>13:00 - 14:00</span></li>
-                    <li>Comida<span>14:00 - 15:00</span></li>
-                    <li>Apoyo en actividades de limpieza comunitaria<span>15:00 - 16:00</span></li>
+                    <li class="text-right">Higiene personal<span class="text-center">8:00 - 9:00</span></li>
+                    <li class="text-right">Preparación de alimentos<span class="text-center">9:00 - 9:30</span></li>
+                    <li class="text-right">Desayuno<span class="text-center">9:30 - 10:30</span></li>
+                    <li class="text-right">Apoyo en actividades de limpieza comunitaria<span class="text-center">10:30 - 11:00</span></li>
+                    <li class="text-right">Talleres de la comunidad & actividades individuales<span class="text-center">11:00 - 13:00</span></li>
+                    <li class="text-right">Preparación de alimentos<span class="text-center">13:00 - 14:00</span></li>
+                    <li class="text-right">Comida<span class="text-center">14:00 - 15:00</span></li>
+                    <li class="text-right">Apoyo en actividades de limpieza comunitaria<span class="text-center">15:00 - 16:00</span></li>
                 </ul>
             </div>  
             <div class="col-md-6">
                 <ul data-aos="fade-up" data-aos-delay="300">
-                    <li>Otra actividad<span>16:00 - 17:00</span></li>
-                    <li>Talleres de la comunidad<span>17:00 - 18:00</span></li>
-                    <li>Salidas individuales & grupales<span>18:00 - 19:00</span></li>
-                    <li>Actividades individuales<span>19:00 - 19:30</span></li>
-                    <li>Preparación de alimentos<span>19:30 - 20:00</span></li>
-                    <li>Cena<span>20:00 - 20:30</span></li>
-                    <li>Actividades de ocio<span>20:30 - 21:30</span></li>
-                    <li>Higiene personal<span>21:30 - 22:00</span></li>
+                    <li class="text-right">Otra actividad<span class="text-center">16:00 - 17:00</span></li>
+                    <li class="text-right">Talleres de la comunidad<span class="text-center">17:00 - 18:00</span></li>
+                    <li class="text-right">Salidas individuales & grupales<span class="text-center">18:00 - 19:00</span></li>
+                    <li class="text-right">Actividades individuales<span class="text-center">19:00 - 19:30</span></li>
+                    <li class="text-right">Preparación de alimentos<span class="text-center">19:30 - 20:00</span></li>
+                    <li class="text-right">Cena<span class="text-center">20:00 - 20:30</span></li>
+                    <li class="text-right">Actividades de ocio<span class="text-center">20:30 - 21:30</span></li>
+                    <li class="text-right">Higiene personal<span class="text-center">21:30 - 22:00</span></li>
                 </ul>
             </div>  
         </div>        
@@ -192,7 +192,7 @@
 
 <!-- =======  ACTIVITIES SECTION ======= -->
     <section class="container" id="activities">
-        <div class="row justify-content-center">
+        <div class="text-center">
             <h1 class="section-header" data-aos="fade-up" data-aos-delay="200">
                 <span class="underline">&nbsp;&nbsp;TALLERES & ACTIVIDADES&nbsp;&nbsp;</span>
             </h1>
@@ -277,6 +277,58 @@
             </a>
         </div>
     </section>
+
+<!-- =======  FAQ SECTION ======= -->
+    <section class="container" id="faq">
+        <div class="text-center">
+            <h1 class="section-header" data-aos="fade-up" data-aos-delay="200">
+                <span class="underline">&nbsp;&nbsp;PREGUNTAS FRECUENTES&nbsp;&nbsp;</span>
+            </h1>
+            <p class="subtitle text-center" data-aos="fade-up" data-aos-delay="300">Debajo podras encontrar respuestas a las dudas que las personas interesadas en la Casa Loohl suelen tener.</p>
+        </div>
+        <div class="accordion" id="faq-accordion" data-aos="fade-up" data-aos-delay="400">
+            <div class="card faq-card">
+                <div class="card-header faq-header" id="headingOne">
+                    <a class="btn faq-link faq-btn font-weight-bold w-100 text-left" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        ¿Cuánto tiempo puede estar mi familiar en la Casa Loohl?
+                    </a>
+                </div>
+                <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#faq-accordion">
+                <div class="card-body faq-body">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum a egestas turpis, quis commodo ante. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+                </div>
+                </div>
+            </div>
+            <div class="card faq-card">
+                <div class="card-header faq-header" id="headingTwo">
+                    <a class="btn faq-link faq-btn font-weight-bold w-100 text-left" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                        ¿Qué personal atiende a los huéspedes?
+                    </a>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#faq-accordion">
+                <div class="card-body faq-body">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum a egestas turpis, quis commodo ante. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+                </div>
+                </div>
+            </div>
+            <div class="card faq-card">
+                <div class="card-header faq-header" id="headingThree">
+                    <a class="btn faq-link faq-btn font-weight-bold w-100 text-left" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                        ¿Están contratando?
+                    </a>
+                </div>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#faq-accordion">
+                <div class="card-body faq-body">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum a egestas turpis, quis commodo ante. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+                </div>
+                </div>
+            </div>
+        </div>
+    </section>
 </div>
 
 @endsection
+
+@push('css')
+    <link rel="stylesheet" href="{{ asset('/css/que_hacemos.css') }}">
+@endpush
