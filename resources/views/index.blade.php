@@ -7,7 +7,7 @@
     <div class="row about-us position-relative">
         <div class="col-lg-6">
             <div class="intro-text a">
-                <h1 class="mb-4" data-aos="fade-left" data-aos-delay="200">Ofreciendo<l class="text-purple"> atención y seguimiento</l> al proceso de inclusión social de personas con<l class="text-purple"> experiencias psiquiátricas.</l></h1>
+                <h1 class="mb-4" data-aos="fade-left" data-aos-delay="200">Ofreciendo<l class="text-purple"> atención y seguimiento</l> al proceso de inclusión social de personas con<l class="text-purple"> experiencias psiquiátricas</l></h1>
                 <h2 class="mb-4" data-aos="fade-left" data-aos-delay="400">Somos un puente entre la hospitalización y la reinserción social. </h2>
                 <div data-aos="fade-left" data-aos-delay="600" class="text-center text-lg-start">
                     <a href="{{route('quienes-somos')}}" class="btn-read-more d-inline-flex align-items-center justify-content-center align-self-center">
@@ -22,7 +22,7 @@
         </div>
         <div class="col-lg-6">
             <div class="intro-text b">
-                <h1 class="mb-4" data-aos="fade-left" data-aos-delay="200">Brindamos un espacio apto para el<l class="text-purple"> crecimiento personal </l>de personas con trastornos psicosociales.</h1>
+                <h1 class="mb-4" data-aos="fade-left" data-aos-delay="200">Brindamos un espacio apto para el<l class="text-purple"> crecimiento personal </l>de personas con trastornos psicosociales</h1>
                 <h2 class="mb-4" data-aos="fade-left" data-aos-delay="400">Ayudamos a nuestros huéspedes a tener una mejor calidad de vida con un modelo terapéutico innovador.</h2>
                 <div data-aos="fade-left" data-aos-delay="600" class="text-center text-lg-start">
                     <a href="{{route('que-hacemos')}}" class="btn-read-more d-inline-flex align-items-center justify-content-center align-self-center">
@@ -40,10 +40,10 @@
         <div class="row">
             <div class="col-lg pb-5 pb-lg-0 px-5 text-center">
                 <h1 class="header text-center" data-aos="fade-up" data-aos-delay="200">
-                    <span>COMUNIDAD TERAPEÚTICA</span>
+                    <span>CASA DE MEDIO CAMINO</span>
                     <i class="bi bi-house-fill" style="font-size: 2rem;"></i>
                 </h1>
-                <p class="subtitle text-center" data-aos="fade-up" data-aos-delay="400">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum a egestas turpis, quis commodo ante. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+                <p class="subtitle text-center" data-aos="fade-up" data-aos-delay="400">Es un modelo de comunidad terapéutica donde los huéspedes de la casa conviven diariamente en un espacio seguro, junto con el seguimiento y atención personalizada de psicólogos y profesionales de la salud mental.</p>
             </div>
             <div class="col-lg px-5 text-center">
                 <h1 class="header" data-aos="fade-up" data-aos-delay="200">
