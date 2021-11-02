@@ -11,7 +11,7 @@
     </h1>
     <p class="subtitle text-center pb-3" data-aos="fade-up" data-aos-delay="200">
         Apoya a nuestros huéspedes y sus familiares comprando productos físicos en cualquiera de nuestros puntos de venta.
-        Las ganancias de cada artículo nos permiten seguir con nuestra labor, motivar a los huéspeded y eliminar poco a poco el estigma sobre las personas con experiencias psiquiátricas.
+        Las ganancias de cada artículo nos permiten seguir con nuestra labor, motivar a los huéspedes y eliminar poco a poco el estigma sobre las personas con experiencias psiquiátricas.
     </p>
     <div id="salespoint">
         <ul>

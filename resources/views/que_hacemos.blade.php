@@ -22,10 +22,10 @@
         </div>
         <div class="row justify-content-left" data-aos="fade-up" data-aos-delay="500">
             <ul class="list">
-                <li> Ezquizofrenia </li>
+                <li> Esquizofrenia </li>
                 <li> Psicosis </li>
-                <li> Transtornos de ánimo alterado </li>
-                <li> Transtornos limítrofes de la personalidad </li>
+                <li> Trastornos de ánimo alterado </li>
+                <li> Trastornos limítrofes de la personalidad </li>
             </ul>
         </div>
         <div class="container d-flex justify-content-end" data-aos="fade-left" data-aos-delay="600">
@@ -93,8 +93,8 @@
             <h1 class="section-header" data-aos="fade-up" data-aos-delay="100">
                 <span class="underline">&nbsp;&nbsp;NUESTRA FORMA DE TRABAJO&nbsp;&nbsp;</span>
             </h1>
-            <p class="subtitle text-center" data-aos="fade-up" data-aos-delay="200">Utilizamos el modelo terapeútico Casa de Medio Camino, un modelo integral para el tratamiento de la salud mental. En este modelo el paciente vive en una comunidad que les permite establecer puentes de interacción de manera controlada y segura, aprender de manera colaborativa y hacerse responsable de sus acciones.  </p>
-            <p class="subtitle text-center" data-aos="fade-up" data-aos-delay="200">Esta forma de atención es una alternativa que se distingue de las instituciones de hospitalización psquiátrica convencionales por el seguimiento continuo y personalizado al tratamiento de cada paciente, así como por la introducción a una comunidad terapeútica.</p>
+            <p class="subtitle text-center" data-aos="fade-up" data-aos-delay="200">Utilizamos el modelo terapéutico Casa de Medio Camino, un modelo integral para el tratamiento de la salud mental. En este modelo el paciente vive en una comunidad que les permite establecer puentes de interacción de manera controlada y segura, aprender de manera colaborativa y hacerse responsable de sus acciones.  </p>
+            <p class="subtitle text-center" data-aos="fade-up" data-aos-delay="200">Esta forma de atención es una alternativa que se distingue de las instituciones de hospitalización psiquiátrica convencionales por el seguimiento continuo y personalizado al tratamiento de cada paciente, así como por la introducción a una comunidad terapéutica.</p>
         </div>
     </section>
 
@@ -104,7 +104,7 @@
             <h1 class="section-header" data-aos="fade-up" data-aos-delay="100">
                 <span class="underline">&nbsp;&nbsp;NUESTROS SERVICIOS&nbsp;&nbsp;</span>
             </h1>
-            <p class="subtitle text-center" data-aos="fade-up" data-aos-delay="200">Casa Loohl residencia con atención personalizada y seguimiento por parte de profesionales de la salud las 24 horas del día los 7 dias de la semana.</p>
+            <p class="subtitle text-center" data-aos="fade-up" data-aos-delay="200">Casa Loohl residencia con atención personalizada y seguimiento por parte de profesionales de la salud las 24 horas del día los 7 días de la semana.</p>
         </div>
         <div class="subtitle" data-aos="fade-up" data-aos-delay="300">
             <p class="subheader">Características:</p>
@@ -196,7 +196,7 @@
             <h1 class="section-header" data-aos="fade-up" data-aos-delay="200">
                 <span class="underline">&nbsp;&nbsp;TALLERES & ACTIVIDADES&nbsp;&nbsp;</span>
             </h1>
-            <p class="subtitle text-center" data-aos="fade-up" data-aos-delay="300">Los talleres que realizamos en Casa Loohl están dirigidos a contrarestar la sintomatología negativa que presentan los huéspedes, guiándolos en el fortalecimiento de sus habilidades sociales y cognitivas que le permita tener un mejor funcionamiento en su ámbito familiar y social.</p>
+            <p class="subtitle text-center" data-aos="fade-up" data-aos-delay="300">Los talleres que realizamos en Casa Loohl están dirigidos a contrarrestar la sintomatología negativa que presentan los huéspedes, guiándolos en el fortalecimiento de sus habilidades sociales y cognitivas que le permita tener un mejor funcionamiento en su ámbito familiar y social.</p>
         </div>
         <div class="row" data-aos="fade-up" data-aos-delay="400">
             <div class="col-12">
@@ -284,7 +284,7 @@
             <h1 class="section-header" data-aos="fade-up" data-aos-delay="200">
                 <span class="underline">&nbsp;&nbsp;PREGUNTAS FRECUENTES&nbsp;&nbsp;</span>
             </h1>
-            <p class="subtitle text-center" data-aos="fade-up" data-aos-delay="300">Debajo podras encontrar respuestas a las dudas que las personas interesadas en la Casa Loohl suelen tener.</p>
+            <p class="subtitle text-center" data-aos="fade-up" data-aos-delay="300">Debajo podrás encontrar respuestas a las dudas que las personas interesadas en la Casa Loohl suelen tener.</p>
         </div>
         <div class="accordion" id="faq-accordion" data-aos="fade-up" data-aos-delay="400">
             <div class="card faq-card">
