@@ -124,6 +124,12 @@
                 <span>Talleres</span>
             </a>
         </li>
+        <li class="nav-item">
+            <a class="nav-link collapsed" href="#">
+                <i class="bi bi-person-badge"></i>
+                <span>Autores</span>
+            </a>
+        </li>
 
     </ul>
 
