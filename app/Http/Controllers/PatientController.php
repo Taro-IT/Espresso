@@ -14,7 +14,7 @@ class PatientController extends Controller
      */
     public function index()
     {
-        
+        return view('patients.index')->with(['pacientes'=>Patient::get()]);
     }
 
     /**
@@ -24,7 +24,7 @@ class PatientController extends Controller
      */
     public function create()
     {
-        
+        //
     }
 
     /**
@@ -34,8 +34,16 @@ class PatientController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function store(Request $request)
-    {  
+    {
+        $request->validate([
+            'name'=> 'required',
+        ]);
 
+        $data = $request->all();
+
+        Patient::create($data);
+
+        return redirect()->route('patients.index')->with('status','Se agrego un paciente de forma exitosa!');
     }
 
     /**
@@ -80,7 +88,9 @@ class PatientController extends Controller
      */
     public function destroy($id)
     {
-
+        $product = Patient::find($id);
+        $product->delete();
+        return redirect()->route('patients.index')->with('status','El paciente fue eliminado con exito');
     }
 
 }

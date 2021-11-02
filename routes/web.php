@@ -63,3 +63,11 @@ Route::get('/editar-talleres/{id}',[\App\Http\Controllers\WorkshopController::cl
 Route::post('/almacenar-talleres',[\App\Http\Controllers\WorkshopController::class,'store'])->name('workshop.store');
 Route::put('/actualizar-talleres/{id}',[\App\Http\Controllers\WorkshopController::class,'update'])->name('workshop.update');
 Route::delete('/talleres-eliminar/{id}',[\App\Http\Controllers\WorkshopController::class,'destroy'])->name('workshop.destroy');
+
+//Seccion de pacientes
+Route::get('/pacientes',[\App\Http\Controllers\PatientController::class,'index'])->name('patients.index');
+Route::get('/agregar-pacientes',[\App\Http\Controllers\PatientController::class,'create'])->name('patients.create');
+Route::get('/editar-pacientes/{id}',[\App\Http\Controllers\PatientController::class,'edit'])->name('patients.edit');
+Route::post('/almacenar-pacientes',[\App\Http\Controllers\PatientController::class,'store'])->name('patients.store');
+Route::put('/actualizar-pacientes/{id}',[\App\Http\Controllers\PatientController::class,'update'])->name('patients.update');
+Route::delete('/pacientes-eliminar/{id}',[\App\Http\Controllers\PatientController::class,'destroy'])->name('patients.destroy');

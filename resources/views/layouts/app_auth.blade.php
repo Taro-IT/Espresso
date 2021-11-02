@@ -125,9 +125,9 @@
             </a>
         </li>
         <li class="nav-item">
-            <a class="nav-link collapsed" href="#">
+            <a class="nav-link collapsed" href="{{route('patients.index')}}">
                 <i class="bi bi-person-badge"></i>
-                <span>Autores</span>
+                <span>Pacientes</span>
             </a>
         </li>
 
