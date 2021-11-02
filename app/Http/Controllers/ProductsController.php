@@ -16,7 +16,7 @@ class ProductsController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function index()
-    {   
+    {
         return view('products.index')->with([
             'products'=>products::get(),
             'authors'=>ProductPatient::get(),
@@ -42,8 +42,8 @@ class ProductsController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function store(Request $request)
-    {  
-       
+    {
+
         $request->validate([
             'id_workshop'=> 'required',
             'title'=>'required|max:255',
@@ -54,9 +54,9 @@ class ProductsController extends Controller
 
         $data = $request->all();
         $patient = $data['id_patient'];
-        
+
         unset($data['_token']);
-        
+
         //Store image in variable
 
         //Save image ui=in route
@@ -73,12 +73,7 @@ class ProductsController extends Controller
 
         ProductPatient::create($product_patient);
 
-        return view('products.index')->with([
-            'products'=>products::get(),
-            'authors'=>ProductPatient::get(),
-            'patients'=>Patient::get(),
-            'workshops'=>Workshop::get()
-        ]);
+        return redirect()->route('products.index')->with('status','Se creo el producto de manera exitosa!');
 
     }
 

@@ -28,33 +28,48 @@
                 @csrf
                   <div class="mb-3">
                     <label for="title" class="form-label">Título</label>
-                    <input type="text" class="form-control" id="title" name="title" required="true">
+                    <input type="text" class="form-control" id="title" name="title" required value="{{old('title')}}">
+                      @error('title')
+                        <span class="invalid-feedback" role="alert">
+                            <strong>{{ $message }}</strong>
+                        </span>
+                      @enderror
                   </div>
                   <div class="mb-3">
                       <label for="description" class="form-label">Descripción</label>
-                      <textarea class="form-control" aria-label="With textarea" name="description" required="true"></textarea>
-                    </div>
+                      <textarea class="form-control" aria-label="With textarea" name="description" required>{{old('description')}}</textarea>
+                      @error('description')
+                        <span class="invalid-feedback" role="alert">
+                            <strong>{{ $message }}</strong>
+                        </span>
+                      @enderror
+                  </div>
                   <div class="mb-3">
                     <label for="author" class="form-label">Autor</label>
-                    <select class="form-select" aria-label="Default select example" name="id_patient" required="true">
-                      <option selected disabled>Escoge el autor</option>
+                    <select class="form-select" aria-label="Default select example" name="id_patient" required>
+                      <option disabled value="N/A">Escoge el autor</option>
                       @foreach($patients as $patient)
-                        <option value="{{$patient->id}}">{{$patient->name}}</option>    
-                      @endforeach       
+                        <option value="{{$patient->id}}">{{$patient->name}}</option>
+                      @endforeach
                     </select>
                   </div>
                   <div class="mb-3">
                     <label for="workshop" class="form-label">Taller</label>
-                    <select class="form-select" aria-label="Default select example" name="id_workshop" required="true">
-                      <option selected disabled>Escoge el taller</option>
+                    <select class="form-select" aria-label="Default select example" name="id_workshop" required>
+                      <option disabled>Escoge el taller</option>
                       @foreach($workshops as $workshop)
-                        <option value="{{$workshop->id}}">{{$workshop->name}}</option>    
-                      @endforeach 
+                        <option value="{{$workshop->id}}">{{$workshop->name}}</option>
+                      @endforeach
                     </select>
                   </div>
                   <div class="mb-3">
                       <label for="price" class="form-label">Precio Mínimo</label>
-                      <input type="number" class="form-control" name="price" required="true">
+                      <input type="number" class="form-control" name="price" required="true" value="{{old('price')}}">
+                      @error('price')
+                        <span class="invalid-feedback" role="alert">
+                            <strong>{{ $message }}</strong>
+                        </span>
+                      @enderror
                     </div>
               </div>
               <div class="modal-footer">
