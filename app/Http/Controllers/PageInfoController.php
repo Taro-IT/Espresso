@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Home;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Http;
 use App\Models\PageInfo;
@@ -20,15 +21,6 @@ class PageInfoController extends Controller
         if($url == "que-hacemos"){
             return view('que_hacemos');
         }
-
-        /*if($url == "quien-somos"){
-            return view('quien_somos');
-        }
-
-        * Info Pages
-        *
-        *
-        */
 
         return redirect("/");
     }
@@ -66,7 +58,7 @@ class PageInfoController extends Controller
         $data = json_decode($response);
         $fb_page = $data->html;
 
-        return view('index')->with(['fb_page'=>$fb_page]);
+        return view('index')->with(['fb_page'=>$fb_page,'home'=>Home::get()->first()]);
 
     }
 

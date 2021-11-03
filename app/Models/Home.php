@@ -10,9 +10,16 @@ class Home extends Model
     use HasFactory;
 
     protected $fillable=[
-        'name',
-        'phone',
-        'email'
+        'whatsapp',
+        'phone_1',
+        'phone_2',
+        'mobile_1',
+        'mobile_2',
+        'facebook',
+        'instagram',
+        'spotify',
+        'medium',
+        'email',
     ];
 
 

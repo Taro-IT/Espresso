@@ -47,7 +47,7 @@
                     @endif
                 </div>
                 <div class="container-login100-form-btn">
-                    <input type="submit" class="fadeIn fourth" value="Enviar Link">
+                    <input type="submit" class="fadeIn fourth" value="Iniciar Sesión">
                 </div>
             </form>
 

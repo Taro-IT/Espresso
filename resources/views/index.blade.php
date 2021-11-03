@@ -155,17 +155,17 @@
                         <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
                             <i class="bi bi-telephone-fill" style="font-size: 3rem;"></i>
                             <br><br>
-                            <p><a href="tel:4422541353">442 254 1353</a><br><a href="tel:4422539374">442 253 9374</a> </p>
+                            <p><a href="tel:{{$home->phone_1}}">{{$home->phone_1}}</a><br><a href="tel:{{$home->phone_2}}">{{$home->phone_2}}</a> </p>
                         </div>
                         <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
                             <i class="bi bi-phone-fill" style="font-size: 3rem;"></i>
                             <br><br>
-                            <p><a href="tel:+524425268903">+52 442 526 8903</a><br><a href="+524424231742">+52 442 423 1742</a></p>
+                            <p><a href="tel:+52{{$home->mobile_1}}">+52 {{$home->mobile_1}}</a><br><a href="+52{{$home->mobile_2}}">+52 {{$home->mobile_2}}</a></p>
                         </div>
                         <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
                             <i class="bi bi-envelope-fill" style="font-size: 3rem;"></i>
                             <br><br>
-                            <p><a href="mailto:contacto@casamediocamino.com">contacto@casamediocamino.com</a></p>
+                            <p><a href="mailto:{{$home->email}}">{{$home->email}}</a></p>
                         </div>
                     </div>
                 </div>
@@ -175,8 +175,8 @@
     <a href="#" class="back-to-top d-flex align-items-center justify-content-center">
         <i class="bi bi-arrow-up-short"></i>
     </a>
-    
-    <a href="https://wa.me/5214421370222" class="whatsapp-bubble d-flex align-items-center justify-content-center">
+
+    <a href="https://wa.me/{{$home->whatsapp}}" class="whatsapp-bubble d-flex align-items-center justify-content-center">
         <i class="bi bi-whatsapp"></i>
     </a>
 
