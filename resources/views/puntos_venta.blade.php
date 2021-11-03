@@ -11,7 +11,7 @@
     </h1>
     <p class="subtitle text-center pb-3" data-aos="fade-up" data-aos-delay="200">
         Apoya a nuestros huéspedes y sus familiares comprando productos físicos en cualquiera de nuestros puntos de venta.
-        Las ganancias de cada artículo nos permiten seguir con nuestra labor, motivar a los huéspeded y eliminar poco a poco el estigma sobre las personas con experiencias psiquiátricas.
+        Las ganancias de cada artículo nos permiten seguir con nuestra labor, motivar a los huéspedes y eliminar poco a poco el estigma sobre las personas con experiencias psiquiátricas.
     </p>
     <div id="salespoint">
         <ul>
@@ -118,7 +118,7 @@
                             <l class="text-purple">Horario de atención:</l> Lunes a domingo de 2:00 pm a 10:00 pm</p>
                         </div>
                         <div class="col-md-6">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3734.8706634998007!2d-100.39033294939806!3d20.593338786168307!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d35b2c6dfde9e5%3A0x16f719535be8109b!2sQronos%20Caf%C3%A9!5e0!3m2!1ses-419!2smx!4v1635433909510!5m2!1ses-419!2smx" width="400" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3734.8706634998007!2d-100.39033294939806!3d20.593338786168307!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d35b2c6dfde9e5%3A0x16f719535be8109b!2sQronos%20Caf%C3%A9!5e0!3m2!1ses-419!2smx!4v1635433909510!5m2!1ses-419!2smx" width="450" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                         </div>
                     </div>
                 </div>

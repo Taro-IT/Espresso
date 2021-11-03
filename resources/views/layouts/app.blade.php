@@ -38,11 +38,9 @@
 
     <!--CSS Personalizado por blade -->
     <link rel="stylesheet" href="{{ asset('/css/main.css') }}" crossorigin="anonymous">
-    <link rel="stylesheet" href="{{ asset('/css/medium_posts_styles.css') }}">
-    <link rel="stylesheet" href="{{ asset('/css/index_styles.css') }}">
+    @stack('css')
 
-@stack('css')
-<!-- Titulo-->
+    <!-- Titulo-->
     <title>@yield('title','Casa Medio Camino Loohl | Inicio')</title>
 
 </head>

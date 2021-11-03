@@ -4,20 +4,47 @@
  * Author: BootstrapMade.com
  * License: https://bootstrapmade.com/license/
  */
-(function() {
-    "use strict";
 
-    /**
-     * Easy selector helper function
-     */
-    const select = (el, all = false) => {
-        el = el.trim()
-        if (all) {
-            return [...document.querySelectorAll(el)]
-        } else {
-            return document.querySelector(el)
+/**
+ * Easy selector helper function
+ */
+ const select = (el, all = false) => {
+    el = el.trim()
+    if (all) {
+        return [...document.querySelectorAll(el)]
+    } else {
+        return document.querySelector(el)
+    }
+}
+
+/**
+ * Scrolls to an element with header offset
+ */
+ const scrollto = (el) => {
+    let header = select('#header')
+    let offset = header.offsetHeight
+
+    if (!header.classList.contains('header-scrolled')) {
+        offset -= 10
+    }
+
+    let elementPos = select(el).offsetTop
+    window.scrollTo({
+        top: elementPos - offset,
+        behavior: 'smooth'
+    })
+}
+
+function scrollToUrlHash() {
+    if (window.location.hash) {
+        if (select(window.location.hash)) {
+            scrollto(window.location.hash)
         }
     }
+}
+
+(function() {
+    "use strict";
 
     /**
      * Easy event listener function
@@ -57,23 +84,6 @@
     window.addEventListener('load', navbarlinksActive)
     onscroll(document, navbarlinksActive)
 
-    /**
-     * Scrolls to an element with header offset
-     */
-    const scrollto = (el) => {
-        let header = select('#header')
-        let offset = header.offsetHeight
-
-        if (!header.classList.contains('header-scrolled')) {
-            offset -= 10
-        }
-
-        let elementPos = select(el).offsetTop
-        window.scrollTo({
-            top: elementPos - offset,
-            behavior: 'smooth'
-        })
-    }
 
     /**
      * Toggle .header-scrolled class to #header when page is scrolled
@@ -163,13 +173,7 @@
     /**
      * Scroll with ofset on page load with hash links in the url
      */
-    window.addEventListener('load', () => {
-        if (window.location.hash) {
-            if (select(window.location.hash)) {
-                scrollto(window.location.hash)
-            }
-        }
-    });
+    window.addEventListener('load', scrollToUrlHash());
 
     /**
      * Clients Slider
