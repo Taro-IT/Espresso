@@ -173,7 +173,10 @@ function scrollToUrlHash() {
     /**
      * Scroll with ofset on page load with hash links in the url
      */
-    window.addEventListener('load', scrollToUrlHash());
+    window.addEventListener('load', () => {
+        console.log("load scroll");
+        scrollToUrlHash();
+    });
 
     /**
      * Clients Slider
