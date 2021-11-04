@@ -157,9 +157,12 @@
         <h1 class="section-header text-center" data-aos="fade-up" data-aos-delay="200" >
             <span class="underline">&nbsp;&nbsp;UN DÍA EN CASA LOOHL&nbsp;&nbsp;</span>
         </h1>
+        <p class="subtitle text-center" data-aos="fade-up" data-aos-delay="300">
+        Casa Loohl es una comunidad terapeútica donde residen personas con experiencias psiquiátricas, su día a día se organiza entre actividades rutinarias, actividades terapeúticas, talleres, clínica y actividades de ocio.
+        </p>
         <div class="row activities">
             <div class="col-md-6">
-                <ul data-aos="fade-up" data-aos-delay="300">
+                <ul data-aos="fade-up" data-aos-delay="400">
                     <li class="text-right">Higiene personal<span class="text-center">8:00 - 9:00</span></li>
                     <li class="text-right">Preparación de alimentos<span class="text-center">9:00 - 9:30</span></li>
                     <li class="text-right">Desayuno<span class="text-center">9:30 - 10:30</span></li>
@@ -171,7 +174,7 @@
                 </ul>
             </div>  
             <div class="col-md-6">
-                <ul data-aos="fade-up" data-aos-delay="300">
+                <ul data-aos="fade-up" data-aos-delay="400">
                     <li class="text-right">Otra actividad<span class="text-center">16:00 - 17:00</span></li>
                     <li class="text-right">Talleres de la comunidad<span class="text-center">17:00 - 18:00</span></li>
                     <li class="text-right">Salidas individuales & grupales<span class="text-center">18:00 - 19:00</span></li>
@@ -196,7 +199,12 @@
             <h1 class="section-header" data-aos="fade-up" data-aos-delay="200">
                 <span class="underline">&nbsp;&nbsp;TALLERES & ACTIVIDADES&nbsp;&nbsp;</span>
             </h1>
-            <p class="subtitle text-center" data-aos="fade-up" data-aos-delay="300">Los talleres que realizamos en Casa Loohl están dirigidos a contrarrestar la sintomatología negativa que presentan los huéspedes, guiándolos en el fortalecimiento de sus habilidades sociales y cognitivas que le permita tener un mejor funcionamiento en su ámbito familiar y social.</p>
+            <p class="subtitle text-center" data-aos="fade-up" data-aos-delay="300">
+                Una de las principales propuestas clínicas de Casa Loohl es propiciar la construcción y gestión de actividades para hacer una diferencia en y desde lo singular para cada huésped con el objetivo de sostener enlaces sociales que le generen cierta autonomía económica.
+                Los talleres que realizamos en Casa Loohl están dirigidos a contrarrestar la sintomatología negativa que presentan los huéspedes, guiándolos en el fortalecimiento de sus habilidades sociales y cognitivas que le permita tener un mejor funcionamiento en cualquier ámbito.</p>
+            <p class="subtitle text-center" data-aos="fade-up" data-aos-delay="300">
+                La estructuración de los talleres y el contenido de estos se ajustan a la medida de los integrantes del grupo y persiguen el objetivo de desarrollar funciones cognoscitivas, conductuales y creativas en los huéspedes, además de servir para identificar habilidades y actividades que éstos pudieran realizar con perspectiva de una futura inclusión social.
+            </p>
         </div>
         <div class="row" data-aos="fade-up" data-aos-delay="400">
             <div class="col-12">
@@ -208,8 +216,8 @@
                                     <div class="card">
                                         <img class="img-fluid" src="/about_us/test_image_1.jpg">
                                         <div class="card-body justify-content-center">
-                                            <h4 class="card-title text-center">HUERTO</h4>
-                                            <p class="card-text text-center">Descripción breve del taller</p>
+                                            <h4 class="card-title text-center">NARRATIVA</h4>
+                                            <p class="card-text text-center">En cada sesión del taller de poesía se les da una pauta formal o temática a los participantes, a partir de las cuales éstos escriben libremente, con la única condición-límite de seguir una técnica específica. </p>
                                         </div>
                                     </div>
                                 </div>
@@ -217,8 +225,8 @@
                                     <div class="card">
                                         <img class="img-fluid" src="/about_us/test_image_1.jpg">
                                         <div class="card-body justify-content-center">
-                                            <h4 class="card-title text-center">HUERTO</h4>
-                                            <p class="card-text text-center">Descripción breve del taller</p>
+                                            <h4 class="card-title text-center">RADIO</h4>
+                                            <p class="card-text text-center">Este taller se genera una mesa de diálogos sobre temas propuestos por los participantes, expresando a través de personajes ficticios sus puntos de vista, son pequeñas cápsulas de 15 a 20 minutos, el tallerista va generando la fluidez y va acompasando a los participantes en sus intervenciones.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -226,8 +234,8 @@
                                     <div class="card">
                                         <img class="img-fluid" src="/about_us/test_image_1.jpg">
                                         <div class="card-body justify-content-center">
-                                            <h4 class="card-title text-center">HUERTO</h4>
-                                            <p class="card-text text-center">Descripción breve del taller</p>
+                                            <h4 class="card-title text-center">PANADERÍA</h4>
+                                            <p class="card-text text-center">Más que un taller es una actividad que se realiza con frecuencia semanal. En donde se busca que los huéspedes aprendan a trabajar con la masa, sus propiedades y la manera en cómo los ingredientes en conjunto producen un resultado para el autoconsumo. </p>
                                         </div>
                                     </div>
                                 </div>
@@ -239,8 +247,10 @@
                                     <div class="card">
                                         <img class="img-fluid" src="/about_us/test_image_1.jpg">
                                         <div class="card-body justify-content-center">
-                                            <h4 class="card-title text-center">HUERTO</h4>
-                                            <p class="card-text text-center">Descripción breve del taller</p>
+                                            <h4 class="card-title text-center">HUERTO URBANO</h4>
+                                            <p class="card-text text-center">El huerto urbano, es una actividad que se lleva a acabo dos veces por semana, entre varios. A lo largo de los últimos 4 años se implementó un pequeño huerto en el interior de la comunidad en donde se han ido mejorando y aprendiendo 
+procesos de siembra, cosecha y cuidado de hortalizas para el autoconsumo, pero también para el cuidado de otro ser vivo.
+</p>
                                         </div>
                                     </div>
                                 </div>
@@ -248,8 +258,8 @@
                                     <div class="card">
                                         <img class="img-fluid" src="/about_us/test_image_1.jpg">
                                         <div class="card-body justify-content-center">
-                                            <h4 class="card-title text-center">HUERTO</h4>
-                                            <p class="card-text text-center">Descripción breve del taller</p>
+                                            <h4 class="card-title text-center">YOGA</h4>
+                                            <p class="card-text text-center">El yoga es una disciplina que permite trabajar con las frecuencias cardíacas y de relajación muscular. Las técnicas son diversas, sin embargo, en el caso de este taller se busca principalmente que los huéspedes desarrollen habilidades de respiración que en momentos críticos y de frustración resultan ser una herramienta muy útil para manejar las emociones. </p>
                                         </div>
                                     </div>
                                 </div>
@@ -257,8 +267,45 @@
                                     <div class="card">
                                         <img class="img-fluid" src="/about_us/test_image_1.jpg">
                                         <div class="card-body justify-content-center">
-                                            <h4 class="card-title text-center">HUERTO</h4>
-                                            <p class="card-text text-center">Descripción breve del taller</p>
+                                            <h4 class="card-title text-center">CALIGRAFÍA</h4>
+                                            <p class="card-text text-center">Al ser un taller en donde se promueve la actividad psicomotora fina y  haciendo uso de una estructura con bases geométricas de las letras se permite estimular el lado estructurado del cerebro, pero también el lado creativo. La caligrafía es una actividad que promueve la concentración y fomenta el desvanecimiento de pensamientos alternos. </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-md-4 mb-3" >
+                                    <div class="card">
+                                        <img class="img-fluid" src="/about_us/test_image_1.jpg">
+                                        <div class="card-body justify-content-center">
+                                            <h4 class="card-title text-center">BARRO</h4>
+                                            <p class="card-text text-center">La alfarería conlleva varios procesos que no solamente se ven evidenciados de manera física, sino que para que sean posibles físicamente, se requiere llevar a cabo el mismo proceso de manera psíquica. Por lo que a partir de lo que se va realizando, se identifican las dificultades que presenta el psiquísmo. A partir de ello se trabaja sobre
+actividades específicas que benefician esos procesos. Este taller ha dado lugar a la creación de macetas, cajas, ceniceros, tazas, juegos, esculturas y más, frecuentemente con la intención de ser regalados y por consecuente convirtiéndose en una forma singular de establecer vínculos significativos.
+</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 mb-3" >
+                                    <div class="card">
+                                        <img class="img-fluid" src="/about_us/test_image_1.jpg">
+                                        <div class="card-body justify-content-center">
+                                            <h4 class="card-title text-center">STAND UP</h4>
+                                            <p class="card-text text-center">
+                                            La comedia se convierte en una vía para generar otra forma de estabilización en lo social, a través de la creación de un pseudónimo o personalidad cómica es posible para los huéspedes manifestar sus pensamientos o recibir críticas de una mejor manera.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 mb-3" >
+                                    <div class="card">
+                                        <img class="img-fluid" src="/about_us/test_image_1.jpg">
+                                        <div class="card-body justify-content-center">
+                                            <h4 class="card-title text-center">PAPIROFLEXIA</h4>
+                                            <p class="card-text text-center">
+                                            La papiroflexia, además de ser una manualidad con diferentes modalidades y líneas de trabajo, es considerada un arte. En el taller se recorren diferentes técnicas artísticas, con el fin de fomentar la originalidad e innovación en los huéspedes. Dentro de una dimensión terapéutica, podemos citar varios efectos, como el refuerzo de las funciones cognitivas relativas a la memoria y el razonamiento y desarrollo de cuestiones psicomotrices, pues se requiere tanto de destreza, coordinación y precisión manual, como de sostener la atención y concentración durante la elaboración de las figuras.
+                                            </p>
                                         </div>
                                     </div>
                                 </div>
