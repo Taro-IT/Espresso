@@ -217,7 +217,7 @@
                             <div class="row">
                                 <div class="col-md-4 mb-3" >
                                     <div class="card">
-                                        <img class="img-fluid" src="/about_us/test_image_1.jpg">
+                                        <img class="img-fluid" src="/workshops/narrative.jpeg">
                                         <div class="card-body justify-content-center">
                                             <h4 class="card-title text-center">NARRATIVA</h4>
                                             <p class="card-text text-center">En cada sesión del taller de poesía se les da una pauta formal o temática a los participantes, a partir de las cuales éstos escriben libremente, con la única condición-límite de seguir una técnica específica. </p>
@@ -226,7 +226,7 @@
                                 </div>
                                 <div class="col-md-4 mb-3" >
                                     <div class="card">
-                                        <img class="img-fluid" src="/about_us/test_image_1.jpg">
+                                        <img class="img-fluid" src="/workshops/radio.jpeg">
                                         <div class="card-body justify-content-center">
                                             <h4 class="card-title text-center">RADIO</h4>
                                             <p class="card-text text-center">Este taller se genera una mesa de diálogos sobre temas propuestos por los participantes, expresando a través de personajes ficticios sus puntos de vista, son pequeñas cápsulas de 15 a 20 minutos, el tallerista va generando la fluidez y va acompasando a los participantes en sus intervenciones.</p>
@@ -235,7 +235,7 @@
                                 </div>
                                 <div class="col-md-4 mb-3" >
                                     <div class="card">
-                                        <img class="img-fluid" src="/about_us/test_image_1.jpg">
+                                        <img class="img-fluid" src="/workshops/bakery.jpeg">
                                         <div class="card-body justify-content-center">
                                             <h4 class="card-title text-center">PANADERÍA</h4>
                                             <p class="card-text text-center">Más que un taller es una actividad que se realiza con frecuencia semanal. En donde se busca que los huéspedes aprendan a trabajar con la masa, sus propiedades y la manera en cómo los ingredientes en conjunto producen un resultado para el autoconsumo. </p>
@@ -248,7 +248,7 @@
                             <div class="row">
                                 <div class="col-md-4 mb-3" >
                                     <div class="card">
-                                        <img class="img-fluid" src="/about_us/test_image_1.jpg">
+                                        <img class="img-fluid" src="/workshops/huerto.jpeg">
                                         <div class="card-body justify-content-center">
                                             <h4 class="card-title text-center">HUERTO URBANO</h4>
                                             <p class="card-text text-center">El huerto urbano, es una actividad que se lleva a acabo dos veces por semana, entre varios. A lo largo de los últimos 4 años se implementó un pequeño huerto en el interior de la comunidad en donde se han ido mejorando y aprendiendo 
@@ -259,7 +259,7 @@ procesos de siembra, cosecha y cuidado de hortalizas para el autoconsumo, pero t
                                 </div>
                                 <div class="col-md-4 mb-3" >
                                     <div class="card">
-                                        <img class="img-fluid" src="/about_us/test_image_1.jpg">
+                                        <img class="img-fluid" src="/workshops/yoga.jpeg">
                                         <div class="card-body justify-content-center">
                                             <h4 class="card-title text-center">YOGA</h4>
                                             <p class="card-text text-center">El yoga es una disciplina que permite trabajar con las frecuencias cardíacas y de relajación muscular. Las técnicas son diversas, sin embargo, en el caso de este taller se busca principalmente que los huéspedes desarrollen habilidades de respiración que en momentos críticos y de frustración resultan ser una herramienta muy útil para manejar las emociones. </p>
@@ -268,7 +268,7 @@ procesos de siembra, cosecha y cuidado de hortalizas para el autoconsumo, pero t
                                 </div>
                                 <div class="col-md-4 mb-3" >
                                     <div class="card">
-                                        <img class="img-fluid" src="/about_us/test_image_1.jpg">
+                                        <img class="img-fluid" src="/workshops/calligraphy.jpeg">
                                         <div class="card-body justify-content-center">
                                             <h4 class="card-title text-center">CALIGRAFÍA</h4>
                                             <p class="card-text text-center">Al ser un taller en donde se promueve la actividad psicomotora fina y  haciendo uso de una estructura con bases geométricas de las letras se permite estimular el lado estructurado del cerebro, pero también el lado creativo. La caligrafía es una actividad que promueve la concentración y fomenta el desvanecimiento de pensamientos alternos. </p>
@@ -281,7 +281,7 @@ procesos de siembra, cosecha y cuidado de hortalizas para el autoconsumo, pero t
                             <div class="row">
                                 <div class="col-md-4 mb-3" >
                                     <div class="card">
-                                        <img class="img-fluid" src="/about_us/test_image_1.jpg">
+                                        <img class="img-fluid" src="/workshops/pottery.jpeg">
                                         <div class="card-body justify-content-center">
                                             <h4 class="card-title text-center">BARRO</h4>
                                             <p class="card-text text-center">La alfarería conlleva varios procesos que no solamente se ven evidenciados de manera física, sino que para que sean posibles físicamente, se requiere llevar a cabo el mismo proceso de manera psíquica. Por lo que a partir de lo que se va realizando, se identifican las dificultades que presenta el psiquísmo. A partir de ello se trabaja sobre
@@ -292,7 +292,7 @@ actividades específicas que benefician esos procesos. Este taller ha dado luga
                                 </div>
                                 <div class="col-md-4 mb-3" >
                                     <div class="card">
-                                        <img class="img-fluid" src="/about_us/test_image_1.jpg">
+                                        <img class="img-fluid" src="/workshops/standup.jpeg">
                                         <div class="card-body justify-content-center">
                                             <h4 class="card-title text-center">STAND UP</h4>
                                             <p class="card-text text-center">
@@ -303,7 +303,7 @@ actividades específicas que benefician esos procesos. Este taller ha dado luga
                                 </div>
                                 <div class="col-md-4 mb-3" >
                                     <div class="card">
-                                        <img class="img-fluid" src="/about_us/test_image_1.jpg">
+                                        <img class="img-fluid" src="/workshops/origami.jpeg">
                                         <div class="card-body justify-content-center">
                                             <h4 class="card-title text-center">PAPIROFLEXIA</h4>
                                             <p class="card-text text-center">
