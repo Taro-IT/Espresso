@@ -16,7 +16,7 @@
     <div id="salespoint">
         <ul>
             <!-- Monono cafe -->
-            <li>
+            <li data-aos="fade-up" data-aos-delay="300"> 
                 <img class="icon" src="{{asset('images/logos-tiendas/monono_logo.png')}}" alt="Logo Monono Cafe">
                 <a class="store-link" href="https://www.facebook.com/mononocafe/">MONONO CAFÉ</a>
                 <div class="row mt-0">
@@ -43,7 +43,7 @@
                 </div>
             </li>
             <!-- La Santa Tostada -->
-            <li>
+            <li data-aos="fade-up" data-aos-delay="400">
                 <img class="icon" src="{{asset('images/logos-tiendas/santa_tostada_logo.jpg')}}" alt="Logo La Santa Tostada">
                 <a class="store-link" href="https://www.facebook.com/lasantatostadaqro/">LA SANTA TOSTADA</a>
                 <div class="row mt-0">
@@ -70,7 +70,7 @@
                 </div>
             </li>
             <!-- La Pluma Cafe Bar -->
-            <li>
+            <li data-aos="fade-up" data-aos-delay="500">
                 <img class="icon" src="{{asset('images/logos-tiendas/pluma_logo.png')}}" alt="Logo La Pluma Cafe Bar">
                 <p class="store-name">LA PLUMA CAFÉ BAR</p>
                 <div class="row mt-0">
@@ -97,7 +97,7 @@
                 </div>
             </li>
             <!-- Qronos Cafe -->
-            <li>
+            <li data-aos="fade-up" data-aos-delay="600">
                 <img class="icon" src="{{asset('images/logos-tiendas/qronos_logo.jpg')}}" alt="Logo Qronos Cafe">
                 <p class="store-name">QRONOS CAFÉ</p>
                 <div class="row mt-0">
