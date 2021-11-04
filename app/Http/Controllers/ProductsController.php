@@ -55,14 +55,11 @@ class ProductsController extends Controller
         $data = $request->all();
         $patient = $data['id_patient'];
 
-        unset($data['_token']);
-
-        //Store image in variable
-
-        //Save image ui=in route
-
-        //Save url in database
-        unset($data['id_patient']);
+        if ($request->hasFile('image'))
+        {
+            $request->file('image')->store('public');
+            $data['image'] = $request->file('image')->store('');
+        }
 
         products::create($data);
 

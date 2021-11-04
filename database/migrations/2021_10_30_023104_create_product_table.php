@@ -16,12 +16,14 @@ class CreateProductTable extends Migration
         Schema::create('product', function (Blueprint $table) {
             $table->id();
             $table->unsignedBigInteger('id_workshop');
+            $table->unsignedBigInteger('id_patient');
             $table->string('title');
             $table->text('description')->nullable();
             $table->string('image')->nullable();
             $table->float('price');
             $table->timestamps();
             $table->foreign('id_workshop')->references('id')->on('workshop')->onDelete('cascade');
+            $table->foreign('id_patient')->references('id')->on('patient')->onDelete('cascade');
         });
     }
 

@@ -19,8 +19,8 @@ class DatabaseSeeder extends Seeder
                 PaymentPlataformsTableSeeder::class,
                 CurrenciesTableSeeder::class,
                 WorkshopSeeder::class,
-                ProductSeeder::class,
                 PatientSeeder::class,
+                ProductSeeder::class,
                 PatientProductSeeder::class,
                 HomeSeeder::class,
             ]);

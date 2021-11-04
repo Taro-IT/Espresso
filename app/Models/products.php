@@ -15,10 +15,11 @@ class products extends Model
         'title',
         'description',
         'price',
-        'id_patient'
+        'id_patient',
+        'image',
     ];
 
-    
+
 
 
 }
