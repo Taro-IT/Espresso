@@ -22,7 +22,9 @@
             @foreach($productos as $product)
                 <div class="col-md-4 mt-5">
                     <div class="card product-animation rounded">
-                        <img class="card-img-top" src="{{asset('storage/'.$product->image)}}" alt="{{$product->title}}" alt="" height="250px" onerror="this.onerror=null;this.src='{{asset('images/image-not-found.png')}}';">
+                        <img class="card-img-top" src="{{asset('storage/'.$product->image)}}" alt="{{$product->title}}"
+                             alt="" height="250px"
+                             onerror="this.onerror=null;this.src='{{asset('images/image-not-found.png')}}';">
                         <div class="card-body">
                             <h5 class="card-title">{{$product->title}}</h5>
                             <div class="row card-text ml-1">
@@ -48,11 +50,12 @@
                     </div>
                 </div>
 
-            <!-- MODAL PARA PAGAR-->
+                <!-- MODAL PARA PAGAR-->
 
                 <form action="{{route('donation.pay')}}" method="post" id="paymentForm">
                     @csrf
-                    <div class="modal fade" id="producto-{{$product->id}}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal fade" id="producto-{{$product->id}}" tabindex="-1"
+                         aria-labelledby="exampleModalLabel" aria-hidden="true">
                         <div class="modal-dialog modal-lg">
                             <div class="modal-content">
                                 <div class="modal-header">
@@ -63,7 +66,9 @@
                                 <div class="modal-body">
                                     <div class="row">
                                         <div class="col-md-5">
-                                            <img class="img-fluid" src="{{asset('storage/'.$product->image)}}" alt="{{$product->title}}" onerror="this.onerror=null;this.src='{{asset('images/image-not-found.png')}}';">
+                                            <img class="img-fluid" src="{{asset('storage/'.$product->image)}}"
+                                                 alt="{{$product->title}}"
+                                                 onerror="this.onerror=null;this.src='{{asset('images/image-not-found.png')}}';">
                                         </div>
                                         <div class="col-md-7">
                                             <p class="subtitle mb-0">{{$product->title}}</p>
@@ -82,7 +87,9 @@
                                             </div>
                                             <p>{{$product->description}}.</p>
                                         </div>
-                                        <div class="col-auto mt-3">
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-4 mt-3">
                                             <label>Moneda</label>
                                             <select class="custom-select" name="currency" required>
                                                 @foreach($currencies as $currency)
@@ -91,32 +98,48 @@
                                                 @endforeach
                                             </select>
                                         </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-md-5 ml-1 mt-2">
-                                            <a data-toggle="tooltip" data-placement="right"
-                                               title="Una vez realizado el pago se te enviará a tu correo una URL para la descarga de tu artículo digital."><i
-                                                    class="bi bi-info-circle-fill mr-2" style="font-size: 1rem; color:black;"></i></a>
-                                        </div>
-                                        <div class="col-md-3">
+                                        <div class="col-md-4 mt-5">
                                             <div class="input-group mb-3">
                                                 <span class="input-group-text">$</span>
-                                                <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)"
-                                                       value="{{$product->price}}" min="{{$product->price}}" name="value">
+                                                <input type="number" class="form-control"
+                                                       aria-label="Amount (to the nearest dollar)"
+                                                       value="{{$product->price}}" step="0.01" min="{{$product->price}}"
+                                                       name="value" required>
                                                 <span class="input-group-text">.00</span>
                                             </div>
                                         </div>
-                                        <div class="col-md-3 mt-2">
+                                        <div class="col-md-2 ml-1 mt-5">
+                                            <a data-toggle="tooltip" data-placement="right"
+                                               title="Una vez realizado el pago se te enviará a tu correo una URL para la descarga de tu artículo digital."><i
+                                                    class="bi bi-info-circle-fill mr-2"
+                                                    style="font-size: 1rem; color:black;"></i></a>
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <div class="row">
+                                        <div class="col-md-8">
+                                            <div class="form-group">
+                                                <label for="email">Email</label>
+                                                <input type="email" class="form-control" id="email"
+                                                       aria-describedby="email" placeholder="Ingresa tu email Ejemplo: espresso@gmail.com" required>
+                                                <small id="emailHelp" class="form-text text-muted">No compartiremos tu
+                                                    correo con nadie.</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
                                             <input type="hidden" value="1" name="payment_plataform">
                                             <button type="submit" class="btn-read-more pl-3 pr-3 pt-2 pb-2">
                                                 <span>Pagar</span>
-
                                                 <i class="bi bi-paypal"></i>
                                             </button>
                                         </div>
                                     </div>
+                                    <br>
                                     <div class="row-md">
-                                        <p>Este artículo tiene un precio mínimo de ${{$product->price}}, pero puedes apoyar el trabajo de los
+                                        <p>Este artículo tiene un precio mínimo de ${{$product->price}}, pero puedes
+                                            apoyar el trabajo de los
                                             huéspedes pagando otra cantidad que creas justa.</p>
                                     </div>
                                 </div>
