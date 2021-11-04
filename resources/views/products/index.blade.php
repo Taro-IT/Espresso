@@ -25,7 +25,8 @@
                 <div class="modal-header">
                     <h5 class="modal-title" id="staticBackdropLabel">Agregar Nuevo Producto</h5>
 
-                    <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close"><span
+                            aria-hidden="true">&times;</span></button>
                 </div>
                 <div class="modal-body">
                     <form method="POST" action="{{route('products.store')}}" enctype="multipart/form-data">
@@ -138,7 +139,8 @@
                         <td class="text-center">{{$product->id}}</td>
                         <td>{{$product->title}}</td>
                         <td class="align-middle text-center">
-                            <img src="{{asset('storage/'.$product->image)}}" alt="{{$product->title}}-{{$product->title}}" class="product-images rounded">
+                            <img src="{{asset('storage/'.$product->image)}}"
+                                 alt="{{$product->title}}-{{$product->title}}" class="product-images rounded">
                         </td>
                         <td>
                             @foreach($authors as $author)
@@ -160,7 +162,7 @@
                             </a>
                         </td>
                         <td>
-                            <a href="#">
+                            <a href="{{route('products.edit',$product->id)}}">
                                 <button class="btn btn-warning" type="button">Editar</button>
                             </a>
                         </td>
@@ -215,7 +217,9 @@
                                 <div class="modal-body">
                                     <div class="row">
                                         <div class="col-md-12 text-center">
-                                            <img src="{{asset('storage/'.$product->image)}}" alt="{{$product->title}}-{{$product->title}}" class="product-images-ver-mas rounded">
+                                            <img src="{{asset('storage/'.$product->image)}}"
+                                                 alt="{{$product->title}}-{{$product->title}}"
+                                                 class="product-images-ver-mas rounded">
                                         </div>
                                     </div>
                                     <br>

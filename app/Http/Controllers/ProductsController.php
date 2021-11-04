@@ -91,9 +91,15 @@ class ProductsController extends Controller
      * @param  \App\Models\products  $products
      * @return \Illuminate\Http\Response
      */
-    public function edit(products $products)
+    public function edit($id)
     {
-        //
+        $product = products::find($id);
+        return view('products.edit')->with([
+            'product'=>$product,'products'=>products::get(),
+            'authors'=>ProductPatient::get(),
+            'patients'=>Patient::get(),
+            'workshops'=>Workshop::get()
+        ]);
     }
 
     /**
@@ -103,13 +109,29 @@ class ProductsController extends Controller
      * @param  \App\Models\products  $products
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, products $products)
+    public function update(Request $request, $id)
     {
         $request->validate([
             'title'=>'required|max:255',
             'description' =>'max:1500',
-            'author'=>'required'
         ]);
+
+        $data = $request->all();
+
+        if ($request->hasFile('image'))
+        {
+            $request->file('image')->store('public');
+            $data['image'] = $request->file('image')->store('');
+        }else{
+            $data['image'] = $request->image_aux;
+        }
+
+        $update = Products::find($id);
+        $update->update($data);
+
+        return redirect()->route('products.index')->with('status','Se edito correctamente el producto');
+
+
     }
 
     /**
