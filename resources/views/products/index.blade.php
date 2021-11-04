@@ -125,6 +125,7 @@
                 <tr>
                     <th class="text-center">ID</th>
                     <th>Titulo</th>
+                    <th>Imagen</th>
                     <th>Autor</th>
                     <th>Ver mas</th>
                     <th>Editar</th>
@@ -136,6 +137,9 @@
                     <tr>
                         <td class="text-center">{{$product->id}}</td>
                         <td>{{$product->title}}</td>
+                        <td class="align-middle text-center">
+                            <img src="{{asset('storage/'.$product->image)}}" alt="{{$product->title}}-{{$product->title}}" class="product-images rounded">
+                        </td>
                         <td>
                             @foreach($authors as $author)
                                 @if ($product->id == $author->id_product)
@@ -209,6 +213,40 @@
                                     </button>
                                 </div>
                                 <div class="modal-body">
+                                    <div class="row">
+                                        <div class="col-md-12 text-center">
+                                            <img src="{{asset('storage/'.$product->image)}}" alt="{{$product->title}}-{{$product->title}}" class="product-images-ver-mas rounded">
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <p>{{$product->description}}</p>
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <strong>Taller:</strong>
+                                            @foreach($workshops as $workshop)
+                                                @if(($product->id_workshop) == $workshop->id) {{$workshop->name}} @endif
+                                            @endforeach
+
+                                        </div>
+                                        <div class="col-md-6">
+                                            <strong>Autor:</strong>
+                                            @foreach($authors as $author)
+                                                @if ($product->id == $author->id_product)
+                                                    @foreach($patients as $patient)
+                                                        @if ($author->id_patient == $patient->id)
+                                                            {{$patient->name}}
+                                                            <br>
+                                                        @endif
+                                                    @endforeach
+                                                @endif
+                                            @endforeach
+                                        </div>
+                                    </div>
 
                                 </div>
                                 <div class="modal-footer">
