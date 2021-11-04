@@ -2,7 +2,12 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Currency;
 use App\Models\Home;
+use App\Models\Patient;
+use App\Models\ProductPatient;
+use App\Models\products;
+use App\Models\Workshop;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Http;
 use App\Models\PageInfo;
@@ -66,5 +71,21 @@ class PageInfoController extends Controller
         $response = Http::get('https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@sabesan96');
         $posts = json_decode($response);
         return response()->json($posts);
+    }
+
+    public function tienda(){
+
+        return view('tienda')->with([
+            'productos'=>Products::paginate(6),
+            'authors'=>ProductPatient::get(),
+            'patients'=>Patient::get(),
+            'workshops'=>Workshop::get(),
+            'currencies'=>Currency::all(),
+        ]);
+    }
+
+    public function download($id){
+        $file = Products::find($id);
+        return response()->download(public_path('storage/'.$file->file));
     }
 }

@@ -349,3 +349,7 @@ h1, h2, h3, h4, h5, h6 {
     width: 300px;
     height: 250px;
 }
+
+.underlined{
+    border-bottom: 1px solid cornflowerblue;
+}

@@ -2,12 +2,14 @@
 
 namespace App\Services;
 
+use App\Mail\ProductMail;
 use App\Models\User;
 use App\Traits\ConsumesExternalServices;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Crypt;
+use Illuminate\Support\Facades\Mail;
 
 class PayPalService
 {
@@ -64,6 +66,9 @@ class PayPalService
         if (session()->has('approvalId')) {
             $approvalId = session()->get('approvalId');
             $payment = $this->capturePayment($approvalId);
+            $mail = session('sendEmail');
+            $product = session('productId');
+            Mail::to($mail)->send(new ProductMail($product));
             return redirect('/hacer-una-donacion')->with('status', 'Muchas Gracias por tu donación');
         }
         return redirect('/hacer-una-donacion')->withErrors('No pudimos capturar tu donación :c');

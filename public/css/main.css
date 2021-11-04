@@ -715,7 +715,7 @@ section {
   /* #salespoint a {
     color: black;
   } */
-  
+
   #salespoint ul > li {
     list-style: none;
     border-bottom: 1px solid var(--dark-purple);
@@ -727,11 +727,11 @@ section {
   .expand {
     display: block;
   }
-  
+
   .detail {
     display: none;
   }
-  
+
   .right-arrow {
     width: 10px;
     height: 10px;
@@ -740,7 +740,7 @@ section {
     display: flex;
     align-items: center;
   }
-  
+
   .icon {
     max-height: 75px;
     max-width: 75px;
@@ -757,4 +757,12 @@ section {
   .purple-icon {
       font-size: 1.5rem;
       color: var(--dark-purple);
+  }
+
+  .product-animation{
+      transition: 0.3s;
+  }
+  .product-animation:hover{
+      transition: 0.3s;
+      transform: scale(1.03);
   }

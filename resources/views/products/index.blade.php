@@ -20,7 +20,7 @@
     <!-- Modal -->
     <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
          aria-labelledby="staticBackdropLabel" aria-hidden="true">
-        <div class="modal-dialog">
+        <div class="modal-dialog modal-lg">
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title" id="staticBackdropLabel">Agregar Nuevo Producto</h5>
@@ -31,16 +31,33 @@
                 <div class="modal-body">
                     <form method="POST" action="{{route('products.store')}}" enctype="multipart/form-data">
                         @csrf
-                        <div class="mb-3">
-                            <label for="title" class="form-label">Título</label>
-                            <input type="text" class="form-control" id="title" name="title" required
-                                   value="{{old('title')}}">
-                            @error('title')
-                            <span class="invalid-feedback" role="alert">
-                            <strong>{{ $message }}</strong>
-                        </span>
-                            @enderror
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label for="title" class="form-label">Título</label>
+                                    <input type="text" class="form-control" id="title" name="title" required
+                                           value="{{old('title')}}" placeholder="Titulo Ejemplo: Libro de la gran Ciudad">
+                                    @error('title')
+                                        <span class="invalid-feedback" role="alert">
+                                            <strong>{{ $message }}</strong>
+                                        </span>
+                                    @enderror
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label for="price" class="form-label">$ Precio Mínimo</label>
+                                    <input type="number" min="0" step="0.01" class="form-control" name="price" required="true"
+                                           value="{{old('price')}}" placeholder="$ Precio Ejemplo: 200.35">
+                                    @error('price')
+                                    <span class="invalid-feedback" role="alert">
+                                            <strong>{{ $message }}</strong>
+                                        </span>
+                                    @enderror
+                                </div>
+                            </div>
                         </div>
+
                         <div class="mb-3">
                             <label for="description" class="form-label">Descripción</label>
                             <textarea class="form-control" aria-label="With textarea" name="description"
@@ -89,23 +106,22 @@
                         </div>
                         <div class="row">
                             <div class="col-md-12">
-                                <div class="mb-3">
-                                    <label for="price" class="form-label">Precio Mínimo</label>
-                                    <input type="number" class="form-control" name="price" required="true"
-                                           value="{{old('price')}}">
-                                    @error('price')
-                                    <span class="invalid-feedback" role="alert">
-                                            <strong>{{ $message }}</strong>
-                                        </span>
-                                    @enderror
-                                </div>
+
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="col-md-12">
-                                <label>Imagen</label>
+                        <br><br>
+                        <div class="row text-center">
+                            <div class="col-md-6">
+                                <label>Imagen de portada</label>
                                 <br>
-                                <input type="file" name="image">
+                                <input type="file" name="image" accept="image/*">
+                                <small class="text-muted">Se recomienda usar las medidas 600x450 px</small>
+                            </div>
+                            <div class="col-md-6">
+                                <label>Archivo del producto</label>
+                                <br>
+                                <input type="file" name="file">
+                                <small class="text-muted"> Puede ser una fotografiá, video, Archivo, Audio</small>
                             </div>
                         </div>
                         <div class="modal-footer">
@@ -126,7 +142,7 @@
                 <tr>
                     <th class="text-center">ID</th>
                     <th>Titulo</th>
-                    <th>Imagen</th>
+                    <th class="text-center">Imagen</th>
                     <th>Autor</th>
                     <th>Ver mas</th>
                     <th>Editar</th>
@@ -140,7 +156,7 @@
                         <td>{{$product->title}}</td>
                         <td class="align-middle text-center">
                             <img src="{{asset('storage/'.$product->image)}}"
-                                 alt="{{$product->title}}-{{$product->title}}" class="product-images rounded">
+                                 alt="{{$product->title}}-{{$product->title}}" class="product-images rounded" onerror="this.onerror=null;this.src='{{asset('images/image-not-found.png')}}';">
                         </td>
                         <td>
                             @foreach($authors as $author)
@@ -156,18 +172,18 @@
                         </td>
                         <td>
                             <a href="#">
-                                <button class="btn btn-info" type="button" data-toggle="modal"
+                                <button class="btn btn-info btn-lg" type="button" data-toggle="modal"
                                         data-target="#ver-mas-{{$product->id}}">Ver mas
                                 </button>
                             </a>
                         </td>
                         <td>
                             <a href="{{route('products.edit',$product->id)}}">
-                                <button class="btn btn-warning" type="button">Editar</button>
+                                <button class="btn btn-warning btn-lg" type="button">Editar</button>
                             </a>
                         </td>
                         <td>
-                            <button type="button" class="btn btn-danger" data-toggle="modal"
+                            <button type="button" class="btn btn-danger btn-lg" data-toggle="modal"
                                     data-target="#eliminar-{{$product->id}}">Eliminar
                             </button>
                         </td>
@@ -219,7 +235,7 @@
                                         <div class="col-md-12 text-center">
                                             <img src="{{asset('storage/'.$product->image)}}"
                                                  alt="{{$product->title}}-{{$product->title}}"
-                                                 class="product-images-ver-mas rounded">
+                                                 class="product-images-ver-mas rounded" onerror="this.onerror=null;this.src='{{asset('images/image-not-found.png')}}';">
                                         </div>
                                     </div>
                                     <br>
@@ -228,6 +244,14 @@
                                             <p>{{$product->description}}</p>
                                         </div>
                                     </div>
+                                    @if(($product->file) != null)
+                                    <br>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <a href="{{route('download',$product->id)}}">Descargar Archivo</a>
+                                        </div>
+                                    </div>
+                                    @endif
                                     <br>
                                     <div class="row">
                                         <div class="col-md-6">

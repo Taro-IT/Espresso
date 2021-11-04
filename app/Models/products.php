@@ -17,6 +17,7 @@ class products extends Model
         'price',
         'id_patient',
         'image',
+        'file',
     ];
 
 

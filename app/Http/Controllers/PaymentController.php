@@ -15,7 +15,8 @@ class PaymentController extends Controller
         ];
 
         $request->validate($rules);
-
+        session(['sendEmail' =>$request->email ]);
+        session(['productId' =>$request->product_id ]);
         $paymentPlataform = resolve(PayPalService::class); //resolver la dependencia
 
         return $paymentPlataform->handlePayment($request);
