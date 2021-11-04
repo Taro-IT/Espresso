@@ -131,13 +131,13 @@
                             {!!$post !!}
                         </div>
                     </div>
-                @endforeach -->
+                @endforeach -->--}}
                 <div class="col-lg-12">
                     <div class="post-box p-0 text-center">
                         <!-- <div id="fb-root"></div> -->
                         {!! $fb_page !!}
                     </div>
-                </div>--}}
+                </div>
             </div>
         </div>
     </section>
