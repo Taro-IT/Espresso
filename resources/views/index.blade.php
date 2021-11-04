@@ -2,38 +2,38 @@
 
 @section('content')
 
-<!-- ======= ABOUT US SECTION ======= -->
-<div class="container-fluid" id="about-us">
-    <div class="row about-us position-relative">
-        <div class="col-lg-6">
-            <div class="intro-text a">
-                <h1 class="mb-4" data-aos="fade-left" data-aos-delay="200">Ofreciendo<l class="text-purple"> atención y seguimiento</l> al proceso de inclusión social de personas con<l class="text-purple"> experiencias psiquiátricas</l></h1>
-                <h2 class="mb-4" data-aos="fade-left" data-aos-delay="400">Somos un puente entre la hospitalización y la reinserción social. </h2>
-                <div data-aos="fade-left" data-aos-delay="600" class="text-center text-lg-start">
-                    <a href="{{route('quienes-somos')}}" class="btn-read-more d-inline-flex align-items-center justify-content-center align-self-center">
-                        <span>¿QUIÉNES SOMOS?</span>
-                        <i class="bi bi-arrow-right"></i>
-                    </a>
+    <!-- ======= ABOUT US SECTION ======= -->
+    <div class="container-fluid" id="about-us">
+        <div class="row about-us position-relative">
+            <div class="col-lg-6">
+                <div class="intro-text a">
+                    <h1 class="mb-4" data-aos="fade-left" data-aos-delay="200">Ofreciendo<l class="text-purple"> atención y seguimiento</l> al proceso de inclusión social de personas con<l class="text-purple"> experiencias psiquiátricas</l></h1>
+                    <h2 class="mb-4" data-aos="fade-left" data-aos-delay="400">Somos un puente entre la hospitalización y la reinserción social. </h2>
+                    <div data-aos="fade-left" data-aos-delay="600" class="text-center text-lg-start">
+                        <a href="{{route('quienes-somos')}}" class="btn-read-more d-inline-flex align-items-center justify-content-center align-self-center">
+                            <span>¿QUIÉNES SOMOS?</span>
+                            <i class="bi bi-arrow-right"></i>
+                        </a>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="col-lg-6 position-static">
-            <img src="{{asset('images/img-sala.jpg')}}" class="main-img fixed-img" id="home-img" alt="Imagen de sala casa medio camino">
-        </div>
-        <div class="col-lg-6">
-            <div class="intro-text b">
-                <h1 class="mb-4" data-aos="fade-left" data-aos-delay="200">Brindamos un espacio apto para el<l class="text-purple"> crecimiento personal </l>de personas con trastornos psicosociales</h1>
-                <h2 class="mb-4" data-aos="fade-left" data-aos-delay="400">Ayudamos a nuestros huéspedes a tener una mejor calidad de vida con un modelo terapéutico innovador.</h2>
-                <div data-aos="fade-left" data-aos-delay="600" class="text-center text-lg-start">
-                    <a href="{{route('que-hacemos')}}" class="btn-read-more d-inline-flex align-items-center justify-content-center align-self-center">
-                        <span>¿QUÉ HACEMOS?</span>
-                        <i class="bi bi-arrow-right"></i>
-                    </a>
+            <div class="col-lg-6 position-static">
+                <img src="{{asset('images/img-sala.jpg')}}" class="main-img fixed-img" id="home-img" alt="Imagen de sala casa medio camino">
+            </div>
+            <div class="col-lg-6">
+                <div class="intro-text b">
+                    <h1 class="mb-4" data-aos="fade-left" data-aos-delay="200">Brindamos un espacio apto para el<l class="text-purple"> crecimiento personal </l>de personas con trastornos psicosociales</h1>
+                    <h2 class="mb-4" data-aos="fade-left" data-aos-delay="400">Ayudamos a nuestros huéspedes a tener una mejor calidad de vida con un modelo terapéutico innovador.</h2>
+                    <div data-aos="fade-left" data-aos-delay="600" class="text-center text-lg-start">
+                        <a href="{{route('que-hacemos')}}" class="btn-read-more d-inline-flex align-items-center justify-content-center align-self-center">
+                            <span>¿QUÉ HACEMOS?</span>
+                            <i class="bi bi-arrow-right"></i>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
 
     <!-- =======  MISSION AND TERAPEUTIC COMMUNITY SECTION ======= -->
     <section class="container-fluid mission-section">
@@ -115,26 +115,35 @@
             </div>
         </div>
     </section>
+
     <!-- ======= FACEBOOK POSTS SECTION ======= -->
     <section class="recent-blog-posts">
-        <div class="container" data-aos="fade-up">
-            <header class="section-header">
-                <h1 class="header text-center font-weight-bold">
-                    <span class="underline">&nbsp;&nbsp;MANTENTE AL DÍA&nbsp;&nbsp;</span>
-                </h1>
-            </header>
-            <div class="row" style="height: 700px">
-                {{-- @foreach($fb_posts as $post)
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+            <h1 class="header text-center font-weight-bold pb-lg-3 mb-lg-3">
+                <span class="underline">&nbsp;&nbsp;MANTENTE AL DÍA&nbsp;&nbsp;</span>
+            </h1>
+            
+            <div class="row">
+                <div class="col-12 col-lg-6 d-flex flex-column justify-content-center align-items-center">
+                    <p class="text-center subtitle" data-aos="fade-right" data-aos-delay="200">Entérate de todos los eventos y noticias sobre la Casa Loohl con nuestras publicaciones en facebook.</p>
+                    <div data-aos="fade-right" data-aos-delay="400" class="d-flex justify-content-center d-block d-sm-none d-lg-block" data-aos="zoom-out" data-aos-delay="250">
+                        <a href="https://www.facebook.com/Casa-de-Medio-Camino-Quer%C3%A9taro-Casa-Loohl-313251725496600/" class="btn-read-more d-inline-flex align-items-center justify-content-center align-self-center">
+                            <span id="medium-posts-see-more">DESCUBRE NUESTRO PERFIL</span>
+                            <i class="bi bi-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <!-- {{-- @foreach($fb_posts as $post)
                     <div class="col-lg-4">
                         <div class="post-box p-0">
                             <div id="fb-root"></div>
-                            {!!$post !!}
+                            {!! $post !!}
                         </div>
                     </div>
-                @endforeach -->--}}
-                <div class="col-lg-12">
-                    <div class="post-box p-0 text-center">
-                        <!-- <div id="fb-root"></div> -->
+                @endforeach --}} -->
+                <div class="col-12 col-lg-6 d-none d-sm-flex justify-content-center" data-aos="fade-left" data-aos-delay="200" style="height: 400px">
+                    <!-- <div id="fb-root"></div> -->
+                    <div class="post-box d-inline-block shadow-sm text-center">
                         {!! $fb_page !!}
                     </div>
                 </div>
@@ -172,10 +181,12 @@
             </div>
     </section>
 
+    <!-- ======= BACK TO TOP FLOATING BUTTON ======= -->
     <a href="#" class="back-to-top d-flex align-items-center justify-content-center">
         <i class="bi bi-arrow-up-short"></i>
     </a>
 
+    <!-- ======= WHATSAPP FLOATING BUTTON ======= -->
     <a href="https://api.whatsapp.com/send/?phone={{$home->whatsapp}}&text=Tengo%20una%20duda%20sobre%20la%20casa%20Loohl,%20%C2%BFme%20pueden%20ayudar%3F" class="whatsapp-bubble d-flex align-items-center justify-content-center">
         <i class="bi bi-whatsapp"></i>
     </a>

@@ -466,16 +466,16 @@ section {
 # FACEBOOK RECENT POSTS
 --------------------------------------------------------------*/
 .recent-blog-posts .post-box {
-    box-shadow: 0px 0 30px rgba(1, 41, 112, 0.08);
+    /* box-shadow: 0px 0 30px rgba(1, 41, 112, 0.08); */
     transition: 0.3s;
     height: 100%;
     overflow: hidden;
-    padding: 30px;
     border-radius: 8px;
     position: relative;
     display: flex;
     flex-direction: column;
 }
+
 .recent-blog-posts .post-box .post-img {
     overflow: hidden;
     margin: -30px -30px 15px -30px;
