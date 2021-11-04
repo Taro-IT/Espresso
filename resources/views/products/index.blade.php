@@ -126,7 +126,7 @@
                 <tr>
                     <th class="text-center">ID</th>
                     <th>Titulo</th>
-                    <th>Imagen</th>
+                    <th class="text-center">Imagen</th>
                     <th>Autor</th>
                     <th>Ver mas</th>
                     <th>Editar</th>
@@ -140,7 +140,7 @@
                         <td>{{$product->title}}</td>
                         <td class="align-middle text-center">
                             <img src="{{asset('storage/'.$product->image)}}"
-                                 alt="{{$product->title}}-{{$product->title}}" class="product-images rounded">
+                                 alt="{{$product->title}}-{{$product->title}}" class="product-images rounded" onerror="this.onerror=null;this.src='{{asset('images/image-not-found.png')}}';">
                         </td>
                         <td>
                             @foreach($authors as $author)
@@ -156,18 +156,18 @@
                         </td>
                         <td>
                             <a href="#">
-                                <button class="btn btn-info" type="button" data-toggle="modal"
+                                <button class="btn btn-info btn-lg" type="button" data-toggle="modal"
                                         data-target="#ver-mas-{{$product->id}}">Ver mas
                                 </button>
                             </a>
                         </td>
                         <td>
                             <a href="{{route('products.edit',$product->id)}}">
-                                <button class="btn btn-warning" type="button">Editar</button>
+                                <button class="btn btn-warning btn-lg" type="button">Editar</button>
                             </a>
                         </td>
                         <td>
-                            <button type="button" class="btn btn-danger" data-toggle="modal"
+                            <button type="button" class="btn btn-danger btn-lg" data-toggle="modal"
                                     data-target="#eliminar-{{$product->id}}">Eliminar
                             </button>
                         </td>
@@ -219,7 +219,7 @@
                                         <div class="col-md-12 text-center">
                                             <img src="{{asset('storage/'.$product->image)}}"
                                                  alt="{{$product->title}}-{{$product->title}}"
-                                                 class="product-images-ver-mas rounded">
+                                                 class="product-images-ver-mas rounded" onerror="this.onerror=null;this.src='{{asset('images/image-not-found.png')}}';">
                                         </div>
                                     </div>
                                     <br>
