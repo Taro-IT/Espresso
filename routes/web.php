@@ -44,6 +44,7 @@ Route::get('/donaciones/cancelado',[\App\Http\Controllers\PaymentController::cla
 Auth::routes(["register" => false]);
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::put('/actualizar-home',[App\Http\Controllers\HomeController::class, 'update'])->name('homeUpdate');
 
 // Cambio de contraseña
 Route::get('/cambiar-contraseña', [App\Http\Controllers\HomeController::class, 'pwdChange'])->name('change_pwd.index');

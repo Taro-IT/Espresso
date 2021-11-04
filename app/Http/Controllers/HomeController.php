@@ -27,6 +27,7 @@ class HomeController extends Controller
      */
     public function index()
     {
+
         return view('home')->with(['home'=>Home::get()->first()]);
     }
 
@@ -39,25 +40,18 @@ class HomeController extends Controller
         $request->validate([
             'password'=>'required|min:6|',
         ]);
-
         $user = Auth::user();
         $user->password = Hash::make($request->password);
         $user->save();
-
         return redirect(route('change_pwd.index'))->with('status','Tu contraseña fue cambiada con éxito!');
 
     }
 
     public function update(Request $request){
 
-        $request->validate([
-            'name'=> 'required',
-        ]);
-
         $data = $request->all();
-
-        Home::update($data);
-
+        $home = Home::first();
+        $home->update($data);
         return redirect()->route('home')->with('status','La información fue actualizada correctamente');
     }
 }
