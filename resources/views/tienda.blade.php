@@ -121,7 +121,7 @@
                                             <div class="form-group">
                                                 <label for="email">Email</label>
                                                 <input type="email" class="form-control" id="email"
-                                                       aria-describedby="email" placeholder="Ingresa tu email Ejemplo: espresso@gmail.com" required>
+                                                       aria-describedby="email" placeholder="Ingresa tu email Ejemplo: espresso@gmail.com" name="email" required>
                                                 <small id="emailHelp" class="form-text text-muted">No compartiremos tu
                                                     correo con nadie.</small>
                                             </div>
@@ -130,6 +130,7 @@
                                     <div class="row">
                                         <div class="col-md-12">
                                             <input type="hidden" value="1" name="payment_plataform">
+                                            <input type="hidden" value="{{$product->id}}" name="product_id">
                                             <button type="submit" class="btn-read-more pl-3 pr-3 pt-2 pb-2">
                                                 <span>Pagar</span>
                                                 <i class="bi bi-paypal"></i>

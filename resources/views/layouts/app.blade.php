@@ -77,7 +77,7 @@
                         <li><a href="{{route('puntos-venta')}}">TIENDAS FISICAS</a></li>
                     </ul>
                 </li>
-                <li><a class="nav-link scrollto" href="{{route('index')}}#contact">CONTÁCTANOS</a></li>
+                <li><a class="nav-link" href="/#contact">CONTÁCTANOS</a></li>
                 <li><a class="getstarted" href="{{route('donation.index')}}">DONAR</a></li>
             </ul>
             <i class="bi bi-list mobile-nav-toggle"></i>
