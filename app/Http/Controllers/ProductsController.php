@@ -133,6 +133,14 @@ class ProductsController extends Controller
             $data['image'] = $request->image_aux;
         }
 
+        if ($request->hasFile('file'))
+        {
+            $request->file('file')->store('public');
+            $data['file'] = $request->file('file')->store('');
+        }else{
+            $data['file'] = $request->file_aux;
+        }
+
         $update = Products::find($id);
         $update->update($data);
 
