@@ -120,13 +120,16 @@
                 <div class="carousel slide carrousel-sizing" id="main-carousel" data-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img class="d-block img-fluid" src="/about_us/test_image_1.jpg" alt="">
+                            <img class="d-block img-fluid" src="/images/img-sala-2.png" alt="">
                         </div>
                         <div class="carousel-item">
-                            <img class="d-block img-fluid" src="/about_us/test_image_2.jpg" alt="">
+                            <img class="d-block img-fluid" src="/images/img-sala.jpg" alt="">
                         </div>
                         <div class="carousel-item">
-                            <img class="d-block img-fluid" src="/about_us/test_image_5.jpg" alt="">
+                            <img class="d-block img-fluid" src="/images/carrousel-1.jpg" alt="">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block img-fluid" src="/images/carrousel-3.jpg" alt="">
                         </div>
                     </div><!-- /.carousel-inner -->
 
