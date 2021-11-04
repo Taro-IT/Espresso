@@ -10,10 +10,10 @@
 <ul>
     <li>Nombre: {{ $product->title }}</li>
     <li>Descripción: {{ $product->description }}</li>
-    <li>Precio: {{ $product->price }}</li>
+    <li>Precio: $ {{ $product->price }}</li>
     <li>Link: <a href="{{route('download',$product->id)}}">Link de descarga</a></li>
 </ul>
-<p>Si no puedes darle click al link puedes usar la siguiente URK:{{route('download',$product->id)}}</p>
+<p>Si no puedes darle click al link puedes usar la siguiente URL: {{route('download',$product->id)}} </p>
 
 </body>
 </html>
