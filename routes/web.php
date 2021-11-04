@@ -24,6 +24,7 @@ Route::match(['get', 'post'], 'botman', [BotManController::class, 'handle']);
 
 Route::get('/', [PageInfoController::class, 'main'])->name('index');
 // Route::match(['get', 'post'], 'index', [PageInfoController::class, 'main']);
+Route::get('/download/file/{id}', [\App\Http\Controllers\PageInfoController::class,'download'])->name('download');
 
 
 // Routes to pages for web services validation

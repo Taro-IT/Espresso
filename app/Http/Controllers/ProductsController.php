@@ -49,7 +49,8 @@ class ProductsController extends Controller
             'title'=>'required|max:255',
             'description' =>'max:1500',
             'id_patient'=>'required',
-            'price' => 'required'
+            'price' => 'required',
+
         ]);
 
         $data = $request->all();
@@ -59,6 +60,12 @@ class ProductsController extends Controller
         {
             $request->file('image')->store('public');
             $data['image'] = $request->file('image')->store('');
+        }
+
+        if ($request->hasFile('file'))
+        {
+            $request->file('file')->store('public');
+            $data['file'] = $request->file('file')->store('');
         }
 
         products::create($data);
@@ -89,7 +96,7 @@ class ProductsController extends Controller
      * Show the form for editing the specified resource.
      *
      * @param  \App\Models\products  $products
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View|\Illuminate\Http\Response
      */
     public function edit($id)
     {
@@ -107,7 +114,7 @@ class ProductsController extends Controller
      *
      * @param  \Illuminate\Http\Request  $request
      * @param  \App\Models\products  $products
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Http\RedirectResponse
      */
     public function update(Request $request, $id)
     {

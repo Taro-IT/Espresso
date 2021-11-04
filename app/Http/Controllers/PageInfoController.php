@@ -83,4 +83,9 @@ class PageInfoController extends Controller
             'currencies'=>Currency::all(),
         ]);
     }
+
+    public function download($id){
+        $file = Products::find($id);
+        return response()->download(public_path('storage/'.$file->file));
+    }
 }
