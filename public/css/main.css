@@ -403,7 +403,6 @@ section {
     padding: 15px 40px;
     border-radius: 5px;
     transition: 0.5s;
-    color: white;
     background: var(--dark-purple);
     box-shadow: 0px 5px 25px rgba(179, 154, 255, 0.516);
 }
@@ -413,6 +412,10 @@ section {
     letter-spacing: 1px;
 }
 .btn-read-more:hover span {
+    color: white;
+    font-size: 17px;
+}
+.btn-read-more:hover {
     color: white;
     font-size: 17px;
 }
@@ -698,9 +701,6 @@ section {
     line-height: 24px;
     font-size: 14px;
     margin-bottom: 0;
-}
-.paypal-icon{
-    width: 1.5vw;
 }
 
 .my-card{
