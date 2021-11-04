@@ -22,14 +22,14 @@ Route::get('/bot_test', function () {
 Route::match(['get', 'post'], 'botman', [BotManController::class, 'handle']);
 
 
-Route::get('/', [PageInfoController::class, 'main'])->name('index');;
+Route::get('/', [PageInfoController::class, 'main'])->name('index');
 // Route::match(['get', 'post'], 'index', [PageInfoController::class, 'main']);
 
 
 // Routes to pages for web services validation
 Route::view('/quienes-somos', 'about_us')->name('quienes-somos');
 Route::view('/que-hacemos', 'que_hacemos')->name('que-hacemos');
-Route::view('/tienda' , 'tienda')->name('tienda');
+Route::get('/tienda' , [\App\Http\Controllers\PageInfoController::class,'tienda'])->name('tienda');
 Route::view('/puntos-venta', 'puntos_venta')->name('puntos-venta');
 
 Route::get('/medium', [\App\Http\Controllers\PageInfoController::class,'getMediumPosts']);

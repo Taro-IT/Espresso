@@ -95,7 +95,7 @@ class ProductsController extends Controller
     {
         $product = products::find($id);
         return view('products.edit')->with([
-            'product'=>$product,'products'=>products::get(),
+            'product'=>$product,
             'authors'=>ProductPatient::get(),
             'patients'=>Patient::get(),
             'workshops'=>Workshop::get()
