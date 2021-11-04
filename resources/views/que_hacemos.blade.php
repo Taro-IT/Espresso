@@ -4,7 +4,7 @@
 @section('content')
 
 <section id="carrousel" class="margin-navbar">
-    <img class="d-block w-100" src="{{asset('images/slider-1.png')}}" alt="First slide">
+    <img class="d-block w-100" src="{{asset('images/mainslider4.jpg')}}" alt="First slide">
 </section>
 
 <!-- =======  WHAT WE DO SECTION ======= -->

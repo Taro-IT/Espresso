@@ -4,7 +4,7 @@
 @section('content')
 
 <section id="carrousel" class="margin-navbar">
-    <img class="d-block w-100" src="{{asset('images/slider-1.png')}}" alt="First slide">
+    <img class="d-block w-100" src="{{asset('images/slider-3.png')}}" alt="First slide">
 </section>
 
 <div class="container">
@@ -30,13 +30,16 @@
                 <div class="carousel slide carrousel-sizing" id="main-carousel" data-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img class="d-block img-fluid" src="/about_us/test_image_1.jpg" alt="">
+                            <img class="d-block img-fluid" src="/images/Carrusel1.jpeg" alt="">
                         </div>
                         <div class="carousel-item">
-                            <img class="d-block img-fluid" src="/about_us/test_image_2.jpg" alt="">
+                            <img class="d-block img-fluid" src="/images/Carrusel2.jpeg" alt="">
                         </div>
                         <div class="carousel-item">
-                            <img class="d-block img-fluid" src="/about_us/test_image_5.jpg" alt="">
+                            <img class="d-block img-fluid" src="/images/Carrusel3.jpeg" alt="">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block img-fluid" src="/images/Carrusel4.jpeg" alt="">
                         </div>
                     </div><!-- /.carousel-inner -->
 
@@ -113,7 +116,7 @@
             </div>
         </div>
         <div class="row justify-content-center" data-aos="fade-left" data-aos-delay="500">
-            <img class="d-block img-fluid wide" src="/about_us/test_image_4.jpeg" alt="">
+            <img class="d-block img-fluid wide" src="/images/lavender.jpeg" alt="">
         </div>
     </section>
 
