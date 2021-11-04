@@ -22,7 +22,7 @@
             @foreach($productos as $product)
                 <div class="col-md-4 mt-5">
                     <div class="card">
-                        <img class="card-img-top" src="/about_us/test_image_2.jpg" alt="">
+                        <img class="card-img-top" src="{{asset('storage/'.$product->image)}}" alt="{{$product->title}}" alt="" height="250px">
                         <div class="card-body">
                             <h5 class="card-title">{{$product->title}}</h5>
                             <div class="row card-text ml-1">
@@ -63,7 +63,7 @@
                                 <div class="modal-body">
                                     <div class="row">
                                         <div class="col-md-5">
-                                            <img class="img-fluid" src="/about_us/test_image_1.jpg" alt="">
+                                            <img class="img-fluid" src="{{asset('storage/'.$product->image)}}" alt="{{$product->title}}">
                                         </div>
                                         <div class="col-md-7">
                                             <p class="subtitle mb-0">{{$product->title}}</p>
@@ -82,7 +82,7 @@
                                             </div>
                                             <p>{{$product->description}}.</p>
                                         </div>
-                                        <div class="col-auto">
+                                        <div class="col-auto mt-3">
                                             <label>Moneda</label>
                                             <select class="custom-select" name="currency" required>
                                                 @foreach($currencies as $currency)
