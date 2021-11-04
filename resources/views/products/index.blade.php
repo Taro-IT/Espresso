@@ -115,6 +115,7 @@
                                 <label>Imagen de portada</label>
                                 <br>
                                 <input type="file" name="image" accept="image/*">
+                                <small class="text-muted">Se recomienda usar las medidas 600x450 px</small>
                             </div>
                             <div class="col-md-6">
                                 <label>Archivo del producto</label>
