@@ -10,7 +10,7 @@ echo "Deploying application ..."
 php artisan down || true
     # Update codebase
     git pull origin main
-    php artisan composer install --no-dev
+    composer install --no-dev
     php artisan config:clear
     php artisan config:cache
     php artisan route:clear
