@@ -91,14 +91,14 @@
     <!-- ======= Sidebar ======= -->
     <aside id="sidebar" class="sidebar">
         <ul class="sidebar-nav" id="sidebar-nav">
-            <li class="nav-item">
-                <a class="nav-link " href="{{route('home')}}">
+            <li class="nav-item" id="nav-item">
+                <a class="nav-link" href="{{route('home')}}">
                     <i class="bi bi-person-badge-fill"></i>
                     <span>INFORMACIÓN DE CONTACTO</span>
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link collapsed" href="{{route('products.index')}}">
+                <a class="nav-link" href="{{route('products.index')}}">
                     <i class="bi bi-shop"></i>
                     <span>PRODUCTOS DIGITALES</span>
                 </a>

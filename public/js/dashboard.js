@@ -47,13 +47,19 @@
     }
 
     /**
-     * Search bar toggle
+     * highlight selected section
      */
-    if (select('.search-bar-toggle')) {
-        on('click', '.search-bar-toggle', function(e) {
-            select('.search-bar').classList.toggle('search-bar-show')
-        })
-    }
+    (".nav-link").click(function () {
+  // If the clicked element has the active class, remove the active class from EVERY .nav-link element
+  if ($(this).hasClass("active")) {
+    $(".nav-link").removeClass("active");
+  }
+  // Else, the element doesn't have the active class, so we remove it from every element before applying it to the element that was clicked
+  else {
+    $(".nav-link").removeClass("active");
+    $(this).addClass("active");
+  }
+});
 
     /**
      * Navbar links active state on scroll

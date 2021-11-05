@@ -24,6 +24,10 @@
     font-family: "Raleway", sans-serif;
 }
 
+.admin-section{
+    display: flex;
+}
+
 body {
     color: #444444;
     font-family: "Raleway", sans-serif;
@@ -212,27 +216,27 @@ a:hover {
     display: flex;
     align-items: center;
     font-size: 15px;
-    color: var(--dark-purple);
     transition: 0.3s;
     padding: 10px 15px;
     border-radius: 4px;
+    color: black;
 }
 .sidebar-nav .nav-link i {
     font-size: 20px;
     margin-right: 10px;
-}
-.sidebar-nav .nav-link.collapsed {
     color: black;
 }
-.sidebar-nav .nav-link.collapsed i {
-    color: black;
-}
+
 .sidebar-nav .nav-link:hover {
     color: #652d90;
     background: var(--light-purple);
 }
 .sidebar-nav .nav-link:hover i {
     color: #652d90;
+}
+
+.active {
+    background: var(--light-purple);
 }
 
 @media (max-width: 1600px) {
