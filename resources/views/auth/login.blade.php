@@ -36,7 +36,7 @@
                     @enderror
     </div> <!-- form-group// --> 
     @if (Route::has('password.request'))
-    <p><a href="{{ route('password.request') }}" class="small float-left btn-link">¿Olvidaste la contraseña?</a></p>
+    <a href="{{ route('password.request') }}" class="small float-left btn-link mb-3">¿Olvidaste la contraseña?</a>
     @endif
     <div class="form-group mt-2 container-login100-form-btn">
         <button type="submit" class="btn btn-read-more btn-block"> Iniciar sesión  </button>
