@@ -544,6 +544,10 @@ section {
     color: var(--purple);
 }
 
+.text-darkpurple{
+    color: var(--purple);
+}
+
 .store-name {
     margin-bottom: 0px;
     color: var(--purple);
@@ -677,7 +681,6 @@ section {
 
 .margin-login{
     margin-top: 8%;
-    margin-bottom: 6%;
 }
 
 .contact .info-box {
