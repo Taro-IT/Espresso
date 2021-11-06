@@ -77,7 +77,7 @@
                         </select>
                     </div>
                     <a href="{{route('patients.index')}}">
-                        <button class="btn btn-info btn-sm" type="button">Registrar autor</button>
+                        <button class="btn btn-warning btn-sm" type="button">Registrar autor</button>
                     </a>
                 </div>
             </div>

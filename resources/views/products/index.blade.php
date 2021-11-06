@@ -116,7 +116,7 @@
                                 <div class="mb-3">
                                     <label for="workshop" class="form-label">Taller(es):</label>
                                     <div class="input-group mb-3">
-                                    <select class="custom-select" id="inputGroupSelect01" name="id_patient" required>
+                                    <select class="custom-select" id="inputGroupSelect01" name="id_workshop" required>
                                         <option disabled value="N/A">Selecciona un taller...</option>
                                         @foreach($workshops as $workshop)
                                             <option value="{{$workshop->id}}">{{$workshop->name}}</option>
