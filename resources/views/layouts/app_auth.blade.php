@@ -20,6 +20,7 @@
     <!-- Favicon de Pagina web-->
     <link rel="icon" href="{{asset('images/logo.jpg')}}" type="image/x-icon">
     <link rel="stylesheet" href="{{asset('css/dashboard.css')}}">
+    <link href="{{asset('css/main.css')}}" rel="stylesheet">
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
 
@@ -27,8 +28,7 @@
     <link href="{{asset('vendor')}}/bootstrap-4.6.0/css/bootstrap.min.css" rel="stylesheet">
     <link href="{{asset('vendor')}}/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
     <script src="{{asset('js/app.js')}}"></script>
-
-
+    
 @stack('css')
 <!-- Titulo-->
     <title>@yield('title','Casa Medio Camino Loohl | Panel de Administración')</title>
