@@ -78,7 +78,7 @@
                                 <label><i class="bi bi-image-fill mr-2"></i>Imagen del producto:</label>
                                 <div class="input-group mb-2">
                                     <div class="custom-file" id="customFile">
-                                        <input type="file" class="custom-file-input" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01" lang="es" data-browse="Subir" accept="image/*">
+                                        <input name="image" type="file" class="custom-file-input" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01" lang="es" data-browse="Subir" accept="image/*">
                                         <label class="custom-file-label" for="inputGroupFile01">Seleccionar archivo...</label>
                                     </div>
                                 </div>
