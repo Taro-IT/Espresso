@@ -28,9 +28,6 @@
     <link href="{{asset('vendor')}}/swiper/swiper-bundle.min.css" rel="stylesheet">
     <link href="{{asset('vendor')}}/glightbox/css/glightbox.min.css" rel="stylesheet">
 
-    <!-- Materialize Icons -->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
     <!-- Google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

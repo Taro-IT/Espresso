@@ -22,7 +22,7 @@
                 <div class="row mt-0">
                     <p>
                         <i class="bi bi-geo-alt-fill mr-2" style="font-size: 1rem;"></i> 
-                        C. Ignacio Pérez 13-Norte, Centro, 76000 Santiago de Querétaro, Qro.
+                        Santiago de Querétaro, Qro.
                     </p>
                 </div>
                 <div class="d-flex justify-content-end">
@@ -33,7 +33,7 @@
                 <div class="collapse" id="detail_monono">
                     <div class="row">
                         <div class="col-md-6 more-text">
-                            <p><l class="text-purple">Dirección:</l> C. Ignacio Pérez 13-Norte, Centro, 76000.<br>
+                            <p><l class="text-purple">Dirección:</l> C. Ignacio Pérez 13-Norte, Centro, 76000 Santiago de Querétaro, Qro.<br>
                             <l class="text-purple">Horario de atención:</l> Lunes a viernes de 9:00 am a 9:00 pm & sábados de 10:00 am a 9:00 pm.</p>
                         </div>
                         <div class="col-md-6">
@@ -49,7 +49,7 @@
                 <div class="row mt-0">
                     <p>
                         <i class="bi bi-geo-alt-fill mr-2" style="font-size: 1rem;"></i>
-                        Epigmenio González No. 1 bis, local 6, San Pablo Tecnológico, 76150 Santiago de Querétaro, Qro.
+                        Santiago de Querétaro, Qro.
                     </p>
                 </div>
                 <div class="d-flex justify-content-end">
@@ -60,7 +60,7 @@
                 <div class="collapse" id="detail_santa_tostada">
                     <div class="row">
                         <div class="col-md-6 more-text">
-                            <p><l class="text-purple">Dirección:</l> Epigmenio González No. 1 bis, local 6, San Pablo Tecnológico, 76150. <br>
+                            <p><l class="text-purple">Dirección:</l> Epigmenio González No. 1 bis, local 6, San Pablo Tecnológico, 76150 Santiago de Querétaro, Qro. <br>
                             <l class="text-purple">Horario de atención:</l> Domingo a jueves de 12:30 pm a 9:00 pm, viernes y sábados de 12:30 pm a 9:30 pm</p>
                         </div>
                         <div class="col-md-6">
@@ -76,7 +76,7 @@
                 <div class="row mt-0">
                     <p>
                         <i class="bi bi-geo-alt-fill mr-2" style="font-size: 1rem;"></i>
-                        Manuel Gutiérrez Nájera 30-local 44, La Santa Cruz, La Cruz, 76020 Santiago de Querétaro, Qro.
+                        Santiago de Querétaro, Qro.
                     </p>
                 </div>
                 <div class="d-flex justify-content-end">
@@ -87,7 +87,7 @@
                 <div class="collapse" id="detail_pluma">
                     <div class="row">
                         <div class="col-md-6 more-text">
-                            <p><l class="text-purple">Dirección:</l> Manuel Gutiérrez Nájera 30-local 44, La Santa Cruz, La Cruz, 76020. <br>
+                            <p><l class="text-purple">Dirección:</l> Manuel Gutiérrez Nájera 30-local 44, La Santa Cruz, La Cruz, 76020 Santiago de Querétaro, Qro. <br>
                             <l class="text-purple">Horario de atención:</l> Lunes y miercoles abierto las 24 horas & martes, jueves, viernes, sábado y domingo de 10:00 am a 11:00 pm</p>
                         </div>
                         <div class="col-md-6">
@@ -103,7 +103,7 @@
                 <div class="row mt-0">
                     <p>
                         <i class="bi bi-geo-alt-fill mr-2" style="font-size: 1rem;"></i>
-                        C. Rio de la Loza Sur #7-int. 2, La Cruz, 76000 Santiago de Querétaro, Qro.
+                        Santiago de Querétaro, Qro.
                     </p>
                 </div>
                 <div class="d-flex justify-content-end">
@@ -114,7 +114,7 @@
                 <div class="collapse" id="detail_qronos">
                     <div class="row">
                         <div class="col-md-6 more-text">
-                            <p><l class="text-purple">Dirección:</l> C. Rio de la Loza Sur #7-int. 2, La Cruz, 76000. <br>
+                            <p><l class="text-purple">Dirección:</l> C. Rio de la Loza Sur #7-int. 2, La Cruz, 76000 Santiago de Querétaro, Qro. <br>
                             <l class="text-purple">Horario de atención:</l> Lunes a domingo de 2:00 pm a 10:00 pm</p>
                         </div>
                         <div class="col-md-6">

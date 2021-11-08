@@ -7,7 +7,7 @@
     <div class="row">
         <div class="col-md-6 text-left">
         <h1 class="section-header mt-5 mb-5"> 
-            <span class="underline" >&nbsp;&nbsp;PRODUCTOS DIGITALES&nbsp;&nbsp;</span>
+            <span class="underline">&nbsp;&nbsp;PRODUCTOS DIGITALES&nbsp;&nbsp;</span>
         </h1>
         </div>
         <div class="col-md-6 text-right mt-5">
