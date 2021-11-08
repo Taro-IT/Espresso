@@ -21,16 +21,18 @@
     <link rel="icon" href="{{asset('images/logo.jpg')}}" type="image/x-icon">
     <link rel="stylesheet" href="{{asset('css/dashboard.css')}}">
     <link href="{{asset('css/main.css')}}" rel="stylesheet">
+    
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
 
     <!-- Vendor CSS Files -->
     <link href="{{asset('vendor')}}/bootstrap-4.6.0/css/bootstrap.min.css" rel="stylesheet">
-    <link href="{{asset('vendor')}}/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <!-- <link href="{{asset('vendor')}}/bootstrap-icons/bootstrap-icons.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css">
     <script src="{{asset('js/app.js')}}"></script>
-    
-@stack('css')
-<!-- Titulo-->
+    @stack('css')
+
+    <!-- Titulo-->
     <title>@yield('title','Casa Medio Camino Loohl | Panel de Administración')</title>
 
 </head>
