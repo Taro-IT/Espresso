@@ -8,7 +8,7 @@
             <div class="row">
                 <div class="col-md-12">
                 <h1 class="section-header mt-5 mb-5"> 
-                <span class="underline">&nbsp;&nbsp;INFORMACIÓN DE CONTACTO&nbsp;&nbsp;</span>
+                    <span class="underline font-weight-normal">&nbsp;&nbsp;INFORMACIÓN DE CONTACTO&nbsp;&nbsp;</span>
                 </h1>
                 </div>
             </div>
