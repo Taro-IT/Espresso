@@ -23,13 +23,14 @@
     <link href="{{asset('css/main.css')}}" rel="stylesheet">
     
     <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
 
     <!-- Vendor CSS Files -->
     <link href="{{asset('vendor')}}/bootstrap-4.6.0/css/bootstrap.min.css" rel="stylesheet">
     <!-- <link href="{{asset('vendor')}}/bootstrap-icons/bootstrap-icons.css" rel="stylesheet"> -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css">
-    <script src="{{asset('js/app.js')}}"></script>
     @stack('css')
 
     <!-- Titulo-->
@@ -144,11 +145,12 @@
     </main>
 </body>
 
-
-<!-- ======= Custom JS file ======= -->
-<script src="{{asset('js')}}/dashboard.js"></script>
 <!-- Vendor JS Files -->
 <script src="{{asset('vendor')}}/bootstrap-4.6.0/js/bootstrap_2.bundle.js"></script>
 
+<!-- Custom JS file -->
+<script src="{{asset('js')}}/dashboard.js"></script>
+<script src="{{asset('js/app.js')}}"></script>
 @stack('scripts')
+
 </html>
