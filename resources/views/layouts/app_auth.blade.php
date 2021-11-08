@@ -18,7 +18,7 @@
           psiquiatra,afectivos,">
 
     <!-- Favicon de Pagina web-->
-    <link rel="icon" href="{{asset('images/logo.jpg')}}" type="image/x-icon">
+    <link rel="icon" href="{{asset('favicon.ico')}}" type="image/x-icon">
     <link rel="stylesheet" href="{{asset('css/dashboard.css')}}">
     <link href="{{asset('css/main.css')}}" rel="stylesheet">
     
