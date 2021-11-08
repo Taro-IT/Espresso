@@ -18,151 +18,139 @@
           psiquiatra,afectivos,">
 
     <!-- Favicon de Pagina web-->
-    <link rel="icon" href="{{asset('images/logo.jpg')}}" type="image/x-icon">
+    <link rel="icon" href="{{asset('favicon.ico')}}" type="image/x-icon">
     <link rel="stylesheet" href="{{asset('css/dashboard.css')}}">
+    <link href="{{asset('css/main.css')}}" rel="stylesheet">
+    
     <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
 
     <!-- Vendor CSS Files -->
     <link href="{{asset('vendor')}}/bootstrap-4.6.0/css/bootstrap.min.css" rel="stylesheet">
-    <link href="{{asset('vendor')}}/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-    <script src="{{asset('js/app.js')}}"></script>
+    <!-- <link href="{{asset('vendor')}}/bootstrap-icons/bootstrap-icons.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css">
+    @stack('css')
 
-
-@stack('css')
-<!-- Titulo-->
+    <!-- Titulo-->
     <title>@yield('title','Casa Medio Camino Loohl | Panel de Administración')</title>
 
 </head>
 <body>
-<header id="header" class="header fixed-top d-flex align-items-center">
+    <!-- ======= HEADER ======= -->
+    <header id="header" class="header fixed-top d-flex align-items-center">
 
-    <div class="d-flex align-items-center justify-content-between">
-        <a href="{{asset('home')}}" class="logo d-flex align-items-center">
-            <img src="{{asset('images/logo.jpg')}}" alt="Logo Casa Loohl">
-            <span class="d-none d-lg-block">Casa Loohl</span>
-        </a>
-        <i class="bi bi-list toggle-sidebar-btn"></i>
-    </div><!-- End Logo -->
+        <!-- ======= LOGO ======= -->
+        <div class="d-flex align-items-center justify-content-between">
+            <a href="{{asset('home')}}" class="logo d-flex align-items-center">
+                <img src="{{asset('images/logo.jpg')}}" alt="Logo Casa Loohl">
+            </a>
+            <i class="bi bi-list toggle-sidebar-btn"></i>
 
-    <nav class="header-nav ms-auto margin-right">
-        <ul class="d-flex align-items-center ">
-            <li class="nav-item dropdown pe-3">
-                <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
-                    <span class="d-none d-md-block dropdown-toggle ps-2">{{Auth::user()->name}}</span>
+        <!-- ======= NAVBAR ======= -->
+        <nav class="header-nav ms-auto margin-right">
+            <ul class="d-flex align-items-center ">
+                <li class="nav-item dropdown pe-3">
+                    <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
+                        <span class="d-none d-md-block dropdown-toggle ps-2">{{Auth::user()->name}}</span>
+                    </a>
+
+                    <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
+                        <li class="dropdown-header">
+                            <span>Administrador</span>
+                        </li>
+                        <li><hr class="m-0"></li>
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center" href="{{route('change_pwd.index')}}">
+                                <i class="bi bi-shield-lock-fill"></i>
+                                <span>Cambiar contraseña</span>
+                            </a>
+                        </li>
+                        <li><hr class="m-0"></li>
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center" href="pages-faq.html">
+                                <i class="bi bi-question-circle"></i>
+                                <span>¿Necesitas ayuda?</span>
+                            </a>
+                        </li>
+                        <li><hr class="m-0"></li>
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center" href="{{ route('logout') }}"
+                            onclick="event.preventDefault();document.getElementById('logout-form').submit();">
+                                <i class="bi bi-box-arrow-right"></i>
+                                <span>Cerrar sesión</span>
+                            </a>
+                            <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                @csrf
+                            </form>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ======= Sidebar ======= -->
+    <aside id="sidebar" class="sidebar">
+        <ul class="sidebar-nav" id="sidebar-nav">
+            <li class="nav-item" id="nav-item">
+                <a class="nav-link" href="{{route('home')}}">
+                    <i class="bi bi-person-badge-fill"></i>
+                    <span>INFORMACIÓN DE CONTACTO</span>
                 </a>
-
-                <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
-                    <li class="dropdown-header">
-                        <h6>{{Auth::user()->name}}</h6>
-                        <span>Administración casa Loohl</span>
-                    </li>
-                    <li>
-                        <hr class="dropdown-divider">
-                    </li>
-                    <li>
-                        <hr class="dropdown-divider">
-                    </li>
-                    <li>
-                        <a class="dropdown-item d-flex align-items-center" href="{{route('change_pwd.index')}}">
-                            <i class="bi bi-gear"></i>
-                            <span>Cambiar contraseña</span>
-                        </a>
-                    </li>
-                    <li>
-                        <hr class="dropdown-divider">
-                    </li>
-                    <li>
-                        <a class="dropdown-item d-flex align-items-center" href="pages-faq.html">
-                            <i class="bi bi-question-circle"></i>
-                            <span>¿Necesitas ayuda?</span>
-                        </a>
-                    </li>
-                    <li>
-                        <hr class="dropdown-divider">
-                    </li>
-                    <li>
-                        <a class="dropdown-item d-flex align-items-center" href="{{ route('logout') }}"
-                           onclick="event.preventDefault();document.getElementById('logout-form').submit();">
-                            <i class="bi bi-box-arrow-right"></i>
-                            <span>Cerrar Sesion</span>
-                        </a>
-
-                        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                            @csrf
-                        </form>
-                    </li>
-                </ul><!-- End Profile Dropdown Items -->
-            </li><!-- End Profile Nav -->
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{{route('products.index')}}">
+                    <i class="bi bi-shop"></i>
+                    <span>PRODUCTOS DIGITALES</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="{{route('workshop.index')}}">
+                    <i class="bi bi-easel-fill"></i>
+                    <span>TALLERES</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="{{route('patients.index')}}">
+                    <i class="bi bi-people-fill"></i>
+                    <span>HUÉSPEDES</span>
+                </a>
+            </li>
         </ul>
-    </nav><!-- End Icons Navigation -->
+    </aside>
 
-</header><!-- End Header -->
+    <main>
+        <div class="container-loohl">
+            @if (session('status'))
+                <div class="alert alert-success">
+                    {{ session('status') }}
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+            @endif
 
-<!-- ======= Sidebar ======= -->
-<aside id="sidebar" class="sidebar">
-
-    <ul class="sidebar-nav" id="sidebar-nav">
-
-        <li class="nav-item">
-            <a class="nav-link " href="{{route('home')}}">
-                <i class="bi bi-grid"></i>
-                <span>Información General</span>
-            </a>
-        </li><!-- End Dashboard Nav -->
-
-        <li class="nav-item">
-
-        <li class="nav-item">
-            <a class="nav-link collapsed" href="{{route('products.index')}}">
-                <i class="bi bi-menu-button-wide"></i>
-                <span>Productos</span>
-            </a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link collapsed" href="{{route('workshop.index')}}">
-                <i class="bi bi-journal-text"></i>
-                <span>Talleres</span>
-            </a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link collapsed" href="{{route('patients.index')}}">
-                <i class="bi bi-person-badge"></i>
-                <span>Pacientes</span>
-            </a>
-        </li>
-
-    </ul>
-
-</aside><!-- End Sidebar-->
-<main>
-
-    <div class="container-loohl">
-        @if (session('status'))
-            <div class="alert alert-success">
-                {{ session('status') }}
-                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-        @endif
-
-        @if (session('error'))
-            <div class="alert alert-danger">
-                {{ session('error') }}
-                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-        @endif
-        @yield('content')
-    </div>
-</main>
+            @if (session('error'))
+                <div class="alert alert-danger">
+                    {{ session('error') }}
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+            @endif
+            @yield('content')
+        </div>
+    </main>
 </body>
 
-<script src="{{asset('js')}}/dashboard.js"></script>
 <!-- Vendor JS Files -->
 <script src="{{asset('vendor')}}/bootstrap-4.6.0/js/bootstrap_2.bundle.js"></script>
 
+<!-- Custom JS file -->
+<script src="{{asset('js')}}/dashboard.js"></script>
+<script src="{{asset('js/app.js')}}"></script>
 @stack('scripts')
 
 </html>

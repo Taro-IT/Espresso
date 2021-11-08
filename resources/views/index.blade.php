@@ -41,16 +41,14 @@
             <div class="col-lg pb-5 pb-lg-0 px-5 text-center">
                 <h1 class="header text-center" data-aos="fade-up" data-aos-delay="200">
                     <span>CASA DE MEDIO CAMINO</span>
-                    <i class="bi bi-house-fill" style="font-size: 2rem;"></i>
                 </h1>
                 <p class="subtitle text-center" data-aos="fade-up" data-aos-delay="400">Es un modelo de comunidad terapéutica donde los huéspedes de la casa conviven diariamente en un espacio seguro, junto con el seguimiento y atención personalizada de psicólogos y profesionales de la salud mental.</p>
             </div>
             <div class="col-lg px-5 text-center">
                 <h1 class="header" data-aos="fade-up" data-aos-delay="200">
                     <span>NUESTRA MISIÓN</span>
-                    <i class="bi bi-flag-fill" style="font-size: 2rem;"></i>
                 </h1>
-                <p class="subtitle text-center" data-aos="fade-up" data-aos-delay="200">Restablecer los vínculos interpersonales, sociales y ocupacionales de los huéspedes y brindarles herramientas que les permitan sobrellevar sus padecimientos permitiéndoles alcanzar una mejor calidad de vida.</p>
+                <p class="subtitle text-center" data-aos="fade-up" data-aos-delay="400">Restablecer los vínculos interpersonales, sociales y ocupacionales de los huéspedes y brindarles herramientas que les permitan sobrellevar sus padecimientos permitiéndoles alcanzar una mejor calidad de vida.</p>
             </div>
         </div>
     </section>

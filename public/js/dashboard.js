@@ -4,6 +4,7 @@
  * Author: BootstrapMade.com
  * License: https://bootstrapmade.com/license/
  */
+
 (function() {
     "use strict";
 
@@ -45,16 +46,11 @@
             select('body').classList.toggle('toggle-sidebar')
         })
     }
+});
 
-    /**
-     * Search bar toggle
-     */
-    if (select('.search-bar-toggle')) {
-        on('click', '.search-bar-toggle', function(e) {
-            select('.search-bar').classList.toggle('search-bar-show')
-        })
-    }
-
+$(document).on('change', '.custom-file-input', function (event) {
+    $(this).next('.custom-file-label').html(event.target.files[0].name);
+})
     /**
      * Navbar links active state on scroll
      */
@@ -107,6 +103,19 @@
         onscroll(document, toggleBacktotop)
     }
 
+        /**
+     * highlight selected section
+     */
+         (".nav-link").click(function () {
+            // If the clicked element has the active class, remove the active class from EVERY .nav-link element
+            if ($(this).hasClass("active")) {
+              $(".nav-link").removeClass("active");
+            }
+            // Else, the element doesn't have the active class, so we remove it from every element before applying it to the element that was clicked
+            else {
+              $(".nav-link").removeClass("active");
+              $(this).addClass("active");
+            }
     /**
      * Initiate tooltips
      */
@@ -114,6 +123,12 @@
     var tooltipList = tooltipTriggerList.map(function(tooltipTriggerEl) {
         return new bootstrap.Tooltip(tooltipTriggerEl)
     })
+
+    $('[data-tooltip="tooltip"]').tooltip();
+
+    $(function () {
+        $('[data-tooltip="tooltip"]').tooltip()
+      })
 
     /**
      * Initiate quill editors
@@ -218,3 +233,4 @@
     }
 
 })();
+
