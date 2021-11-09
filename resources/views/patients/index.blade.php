@@ -1,9 +1,11 @@
 @extends('layouts.app_auth')
 
 @section('title') Casa Medio camino Loohl | Autores @endsection
+
 @push('css')
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.css">
 @endpush
+
 @section('content')
     <div class="row">
         <div class="col-md-6 text-left">

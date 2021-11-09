@@ -1,5 +1,7 @@
 @extends('layouts.app_auth')
+
 @section('title') Casa Medio camino Loohl | Productos @endsection
+
 @push('css')
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.css">
 @endpush
@@ -168,19 +170,20 @@
                             @endforeach
                         </td>
                         <td>
-                            <button class="btn btn-info tooltipped-btn" type="button" data-toggle="modal" data-target="#ver-mas-{{$product->id}}" data-tooltip="tooltip" data-placement="right" title="Ver detalle">
+                            <!-- Digital product detail button -->
+                            <button class="btn btn-info tooltipped-btn" type="button" data-toggle="modal" data-target="#ver-mas-{{$product->id}}" data-tooltip="tooltip" data-placement="right" title="Ver detalle del producto">
                                 <i class="bi bi-eye-fill"></i>
                             </button>
                         </td>
                         <td>
-                            <a class="tooltipped-btn" href="{{route('products.edit', $product->id)}}" data-tooltip="tooltip" data-placement="right" title="Modificar">
-                                <button class="btn btn-warning" type="button">
-                                    <i class="bi bi-pencil-fill"></i>
-                                </button>
+                            <!-- Edit digital product button -->
+                            <a class="btn btn-warning tooltipped-btn" href="{{route('products.edit', $product->id)}}" data-tooltip="tooltip" data-placement="right" title="Modificar el producto" role="button">
+                                <i class="bi bi-pencil-fill"></i>
                             </a>
                         </td>
                         <td>
-                            <button type="button" class="btn btn-danger tooltipped-btn" data-tooltip="tooltip" data-placement="left" title="Eliminar producto digital" data-toggle="modal" data-target="#eliminar-{{$product->id}}">
+                            <!-- Delete digital product button -->
+                            <button type="button" class="btn btn-danger tooltipped-btn" data-tooltip="tooltip" data-placement="left" title="Eliminar el producto" data-toggle="modal" data-target="#eliminar-{{$product->id}}">
                                 <i class="bi bi-trash-fill"></i>
                             </button>
                         </td>
