@@ -84,7 +84,7 @@ a:hover {
     background-color: #f8f3ff;
 }
 
-@media (min-width: 768px) {
+/* @media (min-width: 768px) {
     .dropdown-menu-arrow::before {
         content: "";
         width: 13px;
@@ -97,7 +97,7 @@ a:hover {
         border-top: 1px solid #eaedf1;
         border-left: 1px solid #eaedf1;
     }
-}
+} */
 
 
 /* Alerts */
@@ -244,7 +244,7 @@ a:hover {
     background: var(--light-purple);
 }
 
-@media (max-width: 1600px) {
+/* @media (max-width: 1600px) {
     .margin-right{
         margin-left: 65vw;
     }
@@ -254,12 +254,12 @@ a:hover {
     .margin-right{
         margin-left: 75vw;
     }
-}
+} */
 
 .container-loohl {
     margin-top: 90px;
     margin-right: 2%;
-    margin-left: 24%;
+    /* margin-left: 24%; */
 }
 
 @media (min-width: 1200px) {
