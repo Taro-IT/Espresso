@@ -128,6 +128,7 @@
     <main>
         <div class="container-loohl">
             @if (session('status'))
+                <br>
                 <div class="alert alert-success">
                     {{ session('status') }}
                     <button type="button" class="close" data-dismiss="alert" aria-label="Close">
@@ -137,6 +138,7 @@
             @endif
 
             @if (session('error'))
+                <br>
                 <div class="alert alert-danger">
                     {{ session('error') }}
                     <button type="button" class="close" data-dismiss="alert" aria-label="Close">
