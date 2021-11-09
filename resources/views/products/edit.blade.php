@@ -3,12 +3,13 @@
 @section('title') Casa Medio camino Loohl | {{$product->title}} @endsection
 
 @section('content')
-<div class="container">
-    <div class="row text-center mb-3">
-        <div class="col-md-12">
-            <h1 class="section-header modal-title mt-5 mb-5"> 
-                <span class="underline text-uppercase">&nbsp;&nbsp;MODIFICAR PRODUCTO&nbsp;&nbsp;</span>
-            </h1>
+    <div class="container">
+        <div class="row text-center mb-3">
+            <div class="col-md-12">
+                <h1 class="section-header modal-title mt-5 mb-5"> 
+                    <span class="underline text-uppercase">&nbsp;&nbsp;MODIFICAR PRODUCTO&nbsp;&nbsp;</span>
+                </h1>
+            </div>
         </div>
         <form action="{{route('products.update',$product->id)}}" enctype="multipart/form-data" method="post">
             @csrf
@@ -16,13 +17,13 @@
             <div class="row">
                 <div class="col-md-6">
                     <img src="{{asset('storage/'.$product->image)}}" alt="{{$product->title}}" width="100%"
-                         class="rounded"
-                         onerror="this.onerror=null;this.src='{{asset('images/image-not-found.png')}}';">
+                        class="rounded"
+                        onerror="this.onerror=null;this.src='{{asset('images/image-not-found.png')}}';">
                     <div class="input-group">
                         <div class="custom-file" id="customFile">
                             <input type="file" name="image" class="custom-file-input" id="inputGroupFile01"
-                                   aria-describedby="inputGroupFileAddon01" lang="es" data-browse="Subir"
-                                   accept="image/*">
+                                aria-describedby="inputGroupFileAddon01" lang="es" data-browse="Subir"
+                                accept="image/*">
                             <label class="custom-file-label" for="inputGroupFile01">Seleccionar archivo...</label>
                         </div>
                     </div>
@@ -31,12 +32,12 @@
                     <div class="form-group">
                         <label for="title">Nombre:</label>
                         <input type="text" class="form-control" id="title" aria-describedby="Titulo"
-                               placeholder="Titulo" name="title" value="{{old('title',$product->title)}}">
+                            placeholder="Titulo" name="title" value="{{old('title',$product->title)}}">
                     </div>
                     <div class="form-group">
                         <label for="title">Descripción:</label>
                         <textarea class="form-control" id="description" rows="5"
-                                  name="description">{{old('description', $product->description)}}</textarea>
+                                name="description">{{old('description', $product->description)}}</textarea>
                     </div>
                     <div class="form-group">
                         <label for="price">Precio mínimo: </label>
@@ -45,8 +46,8 @@
                                 <span class="input-group-text">$</span>
                             </div>
                             <input type="number" step="1" min="0" class="form-control" id="price"
-                                   aria-describedby="Precio" placeholder="100" name="price"
-                                   value="{{old('price',$product->price)}}">
+                                aria-describedby="Precio" placeholder="100" name="price"
+                                value="{{old('price',$product->price)}}">
                             <div class="input-group-append">
                                 <span class="input-group-text">.00</span>
                             </div>
@@ -57,8 +58,8 @@
                         <div class="input-group mb-2">
                             <div class="custom-file" id="customFile">
                                 <input type="file" class="custom-file-input" id="inputGroupFile01"
-                                       aria-describedby="inputGroupFileAddon01" lang="es" data-browse="Subir"
-                                       name="file">
+                                    aria-describedby="inputGroupFileAddon01" lang="es" data-browse="Subir"
+                                    name="file">
                                 <label class="custom-file-label" for="inputGroupFile01">Seleccionar archivo...</label>
                             </div>
                         </div>
@@ -118,5 +119,4 @@
             </div>
         </form>
     </div>
-</div>
 @endsection
