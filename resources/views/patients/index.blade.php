@@ -85,7 +85,7 @@
                         </td>
                     </tr>
 
-                    <!-- Modal -->
+                    <!-- Delete guest modal -->
                     <div class="modal fade" id="eliminar-{{$paciente->id}}" tabindex="-1" role="dialog"
                          aria-labelledby="eliminar-{{$paciente->id}}-Label" aria-hidden="true">
                         <div class="modal-dialog" role="document">
@@ -101,7 +101,7 @@
                                     ¿Estas segur@ que deseas eliminar el paciente {{$paciente->title}} ?
                                 </div>
                                 <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">No</button>
+                                    <button type="button" class="btn btn-secondary mr-auto" data-dismiss="modal">No</button>
                                     <form action="{{route('patients.destroy',$paciente->id)}}"
                                           method="post">
                                         @csrf
