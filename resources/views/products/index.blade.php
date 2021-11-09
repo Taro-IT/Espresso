@@ -232,7 +232,7 @@
                                 <div class="modal-body">
                                     <div class="row">
                                         <div class="col-md-6">
-                                            <img src="{{asset('storage/'.$product->image)}}"
+                                            <img src="{{asset($product->image)}}"
                                                  alt="{{$product->title}}-{{$product->title}}"
                                                  class="product-images-ver-mas rounded" onerror="this.onerror=null;this.src='{{asset('images/image-not-found.png')}}';">
                                         </div>

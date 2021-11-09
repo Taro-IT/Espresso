@@ -56,17 +56,15 @@ class ProductsController extends Controller
         $data = $request->all();
         $patient = $data['id_patient'];
 
-        if ($request->hasFile('image'))
-        {
-            $request->file('image')->store('public');
-            $data['image'] = $request->file('image')->store('');
-        }
+        $file = $request->file('file');
+        $fileType = $file->getClientMimeType();
+        $fileType = explode('/', $fileType);
+        $fileType = $fileType[1];
 
-        if ($request->hasFile('file'))
-        {
-            $request->file('file')->store('public');
-            $data['file'] = $request->file('file')->store('');
-        }
+        $image = $request->file('image');
+        $imageType = $image->getClientMimeType();
+        $imageType = explode('/', $imageType);
+        $imageType = $imageType[1];
 
         products::create($data);
 
@@ -77,10 +75,30 @@ class ProductsController extends Controller
 
         ProductPatient::create($product_patient);
 
+        if ($request->hasFile('image'))
+        {
+            $request->file('image')->store('public');
+            $data['image'] = $request->file('image')->storeAs('products/'.$lastProductId,'image.'.$imageType);
+        }
+
+        if ($request->hasFile('file'))
+        {
+            $request->file('file')->store('public');
+            $data['file'] = $request->file('image')->storeAs('products/'.$lastProductId,'file'.$fileType);
+            
+        }
+
+        $producto = products::find($lastProductId);
+        $producto->image = 'products/'.$lastProductId.'/image.'.$imageType;
+        $producto->file = 'products/'.$lastProductId.'/file.'.$fileType;
+        $producto->save();
+
+
         return redirect()->route('products.index')->with('status','El producto ha sido creado de manera exitosa.');
 
     }
 
+ 
     /**
      * Display the specified resource.
      *
@@ -124,11 +142,12 @@ class ProductsController extends Controller
         ]);
 
         $data = $request->all();
+        
 
         if ($request->hasFile('image'))
         {
             $request->file('image')->store('public');
-            $data['image'] = $request->file('image')->store('');
+            $data['image'] = $request->file('image')->storeAs('products/'.$id,'image');
         }else{
             $data['image'] = $request->image_aux;
         }
@@ -136,13 +155,17 @@ class ProductsController extends Controller
         if ($request->hasFile('file'))
         {
             $request->file('file')->store('public');
-            $data['file'] = $request->file('file')->store('');
-        }else{
+            $data['file'] = $request->file('image')->storeAs('products/'.$id,'file');
+        } else{
             $data['file'] = $request->file_aux;
         }
 
         $update = Products::find($id);
+        $update->image = 'products/'.$id.'/image';
+        $update->file = 'products/'.$id.'/file';
+        $update->save();
         $update->update($data);
+        
 
         return redirect()->route('products.index')->with('status','El producto ha sido modificado de manera exitosa.');
 
