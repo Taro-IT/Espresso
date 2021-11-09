@@ -99,25 +99,25 @@
     <aside id="sidebar" class="sidebar">
         <ul class="sidebar-nav" id="sidebar-nav">
             <li class="nav-item" id="nav-item">
-                <a class="nav-link" href="{{route('home')}}">
+                <a class="nav-link @if(Request::is('home')) active @endif" href="{{route('home')}}">
                     <i class="bi bi-person-badge-fill"></i>
                     <span>INFORMACIÓN DE CONTACTO</span>
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="{{route('products.index')}}">
+                <a class="nav-link @if(Request::is('productos') or Request::is('editar-productos/*')) active @endif" href="{{route('products.index')}}">
                     <i class="bi bi-shop"></i>
                     <span>PRODUCTOS DIGITALES</span>
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link collapsed" href="{{route('workshop.index')}}">
+                <a class="nav-link @if(Request::is('talleres') or Request::is('editar-talleres/*')) active @endif collapsed" href="{{route('workshop.index')}}">
                     <i class="bi bi-easel-fill"></i>
                     <span>TALLERES</span>
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link collapsed" href="{{route('patients.index')}}">
+                <a class="nav-link @if(Request::is('pacientes')) active @endif collapsed" href="{{route('patients.index')}}">
                     <i class="bi bi-people-fill"></i>
                     <span>HUÉSPEDES</span>
                 </a>
