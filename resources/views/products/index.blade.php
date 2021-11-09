@@ -28,7 +28,7 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <div class="row col-md-12 justify-content-center text-center">
-                    <h2 class="section-header"> 
+                    <h2 class="section-header">
                     <span class="underline">&nbsp;&nbsp;REGISTRAR PRODUCTO&nbsp;&nbsp;</span>
                     </h2>
                     </div>
@@ -207,7 +207,7 @@
                                     </div>
                                     <div class="modal-footer">
                                         <button type="button" class="btn btn-secondary mr-auto" data-dismiss="modal">No</button>
-                                        <form action="{{route('products.destroy',$product->id)}}"
+                                        <form action="{{route('products.destroy', $product->id)}}"
                                             method="post">
                                             @csrf
                                             @method('delete')
@@ -236,10 +236,11 @@
                                     </div>
                                     <div class="modal-body">
                                         <div class="row">
-                                            <div class="col-lg-6 mb-3 text-center">
-                                                <img src="{{asset('storage/'.$product->image)}}"
+                                            <div class="col-md-6">
+                                                <img src="{{asset($product->image)}}"
                                                     alt="{{$product->title}}-{{$product->title}}"
-                                                    class="product-images-ver-mas rounded" onerror="this.onerror=null;this.src='{{asset('images/image-not-found.png')}}';">
+                                                    class="product-images-ver-mas rounded" 
+                                                    onerror="this.onerror=null;this.src='{{asset('images/image-not-found.png')}}';">
                                             </div>
                                             <div class="col-lg-6 mb-3 text-center text-lg-left">
                                                 <div class="mb-4">
