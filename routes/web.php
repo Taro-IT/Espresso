@@ -29,7 +29,7 @@ Route::get('/download/file/{id}', [\App\Http\Controllers\PageInfoController::cla
 
 // Routes to pages for web services validation
 Route::view('/quienes-somos', 'about_us')->name('quienes-somos');
-Route::view('/que-hacemos', 'que_hacemos')->name('que-hacemos');
+Route::get('/que-hacemos', [\App\Http\Controllers\PageInfoController::class,'queHacemos'])->name('que-hacemos');
 Route::get('/tienda' , [\App\Http\Controllers\PageInfoController::class,'tienda'])->name('tienda');
 Route::view('/puntos-venta', 'puntos_venta')->name('puntos-venta');
 

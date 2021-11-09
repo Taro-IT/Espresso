@@ -22,7 +22,7 @@
     </div>
 
     <!-- Register new guest modal -->
-    <div class="modal fade" id="staticBackdrop"  tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal fade" id="staticBackdrop" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
@@ -31,7 +31,7 @@
                             <span class="underline text-uppercase">&nbsp;&nbsp;REGISTRAR HUÉSPED&nbsp;&nbsp;</span>
                         </h2>
                     </div>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
@@ -40,7 +40,8 @@
                         @csrf
                         <div class="mb-2">
                             <label for="name" class="form-label">Nombre:</label>
-                            <input type="text" class="form-control" id="name" name="name" required value="{{old('name')}}" placeholder="Mario Sandoval">
+                            <input type="text" class="form-control" id="name" name="name" required
+                                   value="{{old('name')}}" placeholder="Mario Sandoval">
                             @error('name')
                             <span class="invalid-feedback" role="alert">
                             <strong>{{ $message }}</strong>
@@ -73,12 +74,8 @@
                             <td class="text-center">{{$paciente->id}}</td>
                             <td>{{$paciente->name}}</td>
                             <td class="d-flex justify-content-around">
-                                <!-- Guest detail button -->
-                                <button class="btn btn-info tooltipped-btn" type="button" data-tooltip="tooltip" data-placement="right" title="Ver el detalle del huésped">
-                                    <i class="bi bi-eye-fill"></i>
-                                </button>
                                 <!-- Edit guest button -->
-                                <a class="btn btn-warning tooltipped-btn" href="" data-tooltip="tooltip" data-placement="right" title="Modificar el huésped" role="button">
+                                <a class="btn btn-warning tooltipped-btn" href="{{route('patients.edit', $paciente->id)}}" data-tooltip="tooltip" data-placement="right" title="Modificar el huésped" role="button">
                                     <i class="bi bi-pencil-fill"></i>
                                 </a>
                                 <!-- Delete guest button -->

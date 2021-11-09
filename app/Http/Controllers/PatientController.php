@@ -47,25 +47,14 @@ class PatientController extends Controller
     }
 
     /**
-     * Display the specified resource.
-     *
-     * @param  \App\Models\products  $products
-     * @return \Illuminate\Http\Response
-     */
-    public function show(products $products)
-    {
-        //
-    }
-
-    /**
      * Show the form for editing the specified resource.
      *
      * @param  \App\Models\products  $products
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View|\Illuminate\Http\Response
      */
-    public function edit(products $products)
+    public function edit($id)
     {
-        //
+        return view('patients.edit')->with(['paciente'=>Patient::find($id)]);
     }
 
     /**
@@ -73,10 +62,17 @@ class PatientController extends Controller
      *
      * @param  \Illuminate\Http\Request  $request
      * @param  \App\Models\products  $products
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Http\RedirectResponse
      */
-    public function update(Request $request, products $products)
+    public function update(Request $request, $id)
     {
+        $request->validate([
+            'name'=>'required|max:255',
+        ]);
+        $data = $request->all();
+        $update = patient::find($id);
+        $update->update($data);
+        return redirect()->route('patients.index')->with('status','El paciente ha sido modificado de manera exitosa.');
 
     }
 

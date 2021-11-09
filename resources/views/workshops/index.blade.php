@@ -15,11 +15,71 @@
         </div>
         <div class="col-md-6 text-right mt-5 mb-4 mb-md-0">
             <!-- Register new workshop button -->
-            <button class="btn btn-principal" type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+            <button class="btn btn-principal" type="button" data-bs-toggle="modal" data-bs-target="#registerWorkshop">
                 Registrar taller
             </button>
         </div>
     </div>
+
+    <div class="modal fade" id="registerWorkshop" tabindex="-1" aria-labelledby="staticBackdropLabel"
+            aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="row col-md-12 justify-content-center text-center">
+                        <h2 class="section-header modal-title" id="staticBackdropLabel">
+                            <span class="underline text-uppercase">&nbsp;&nbsp;REGISTRAR TALLER&nbsp;&nbsp;</span>
+                        </h2>
+                    </div>
+                    <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form method="POST" action="{{route('workshop.store')}}" enctype="multipart/form-data">
+                        @csrf
+                        <div class="mb-2">
+                            <label for="name" class="form-label">Nombre:</label>
+                            <input type="text" class="form-control" id="name" name="name" required
+                                    value="{{old('name')}}" placeholder="Taller de escultura">
+                            @error('name')
+                            <span class="invalid-feedback" role="alert">
+                                <strong>{{ $message }}</strong>
+                            </span>
+                            @enderror
+                        </div>
+                        <div class="mb-3">
+                            <label for="description" class="form-label">Descripción:</label>
+                            <textarea class="form-control" aria-label="With textarea" name="description"
+                                        required>{{old('description')}}</textarea>
+                            @error('description')
+                            <span class="invalid-feedback" role="alert">
+                                <strong>{{ $message }}</strong>
+                            </span>
+                            @enderror
+                        </div>
+                        <div class="row text-left">
+                            <div class="col-md-12">
+                                <label><i class="bi bi-image-fill mr-2"></i>Imagen del producto:</label>
+                                <div class="input-group mb-2">
+                                    <div class="custom-file" id="customFile">
+                                        <input name="image" type="file" value="{{old('image')}}" class="custom-file-input" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01" lang="es" data-browse="Subir" accept="image/*">
+                                        <label class="custom-file-label" for="inputGroupFile01">Seleccionar archivo...</label>
+                                    </div>
+                                </div>
+                                <small class="text-muted">Se recomienda usar una imagen de 600 x 450px.</small>
+                            </div>
+                        </div>
+                        <div class="modal-footer justify-content-center">
+                            <button type="submit" class="btn btn-principal">Registrar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Register new workshop product modal -->
     <div class="row">
         <div class="col-md-12">
             <div class="table-responsive mb-5">
@@ -37,12 +97,8 @@
                             <td class="text-center">{{$workshop->id}}</td>
                             <td>{{$workshop->name}}</td>
                             <td class="d-flex justify-content-around">
-                                <!-- Workshop detail button -->
-                                <button class="btn btn-info tooltipped-btn" type="button" data-tooltip="tooltip" data-placement="right" title="Ver detalle del taller" data-toggle="modal" data-target="#ver-mas-{{$workshop->id}}">
-                                    <i class="bi bi-eye-fill"></i>
-                                </button>
                                 <!-- Edit workshop button -->
-                                <a class="btn btn-warning tooltipped-btn" href="{{route('products.edit',$workshop->id)}}" data-tooltip="tooltip" data-placement="right" title="Modificar el taller" role="button">
+                                <a class="btn btn-warning tooltipped-btn" href="{{route('workshop.edit', $workshop->id)}}" data-tooltip="tooltip" data-placement="right" title="Modificar el taller" role="button">
                                     <i class="bi bi-pencil-fill"></i>
                                 </a>
                                 <!-- Delete workshop button -->

@@ -83,6 +83,13 @@ class PageInfoController extends Controller
             'currencies'=>Currency::all(),
         ]);
     }
+    public function queHacemos(){
+        $talleres = Workshop::all();
+
+        return view('que_hacemos')->with([
+            'talleres' => $talleres,
+        ]);
+    }
 
     public function download($id){
         $file = Products::find($id);

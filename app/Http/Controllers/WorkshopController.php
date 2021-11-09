@@ -26,17 +26,33 @@ class WorkshopController extends Controller
      */
     public function create()
     {
-        
+
     }
 
     /**
      * Store a newly created resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Http\RedirectResponse
      */
     public function store(Request $request)
-    {  
+    {
+
+        $request->validate([
+            'name'=>'required|max:255',
+        ]);
+
+        $data = $request->all();
+
+        if ($request->hasFile('image'))
+        {
+            $request->file('image')->store('public');
+            $data['image'] = $request->file('image')->store('');
+        }
+
+        Workshop::create($data);
+        return redirect()->route('workshop.index')->with('status','Se agergo el taller de manera exitosa');
+
 
     }
 
@@ -55,11 +71,11 @@ class WorkshopController extends Controller
      * Show the form for editing the specified resource.
      *
      * @param  \App\Models\products  $products
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View|\Illuminate\Http\Response
      */
-    public function edit(products $products)
+    public function edit($id)
     {
-        //
+        return view('workshops.edit')->with(['workshop'=>Workshop::find($id)]);
     }
 
     /**
@@ -69,9 +85,26 @@ class WorkshopController extends Controller
      * @param  \App\Models\products  $products
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, products $products)
+    public function update(Request $request, $id)
     {
+        $request->validate([
+            'name'=>'required|max:255',
+        ]);
 
+        $data = $request->all();
+
+        if ($request->hasFile('image'))
+        {
+            $request->file('image')->store('public');
+            $data['image'] = $request->file('image')->store('');
+        }else{
+            $data['image'] = $request->image_aux;
+        }
+
+        $update = Workshop::find($id);
+        $update->update($data);
+
+        return redirect()->route('workshop.index')->with('status','El taller ha sido modificado de manera exitosa.');
     }
 
     /**
