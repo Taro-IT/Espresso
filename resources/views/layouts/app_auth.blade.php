@@ -18,9 +18,7 @@
           psiquiatra,afectivos,">
 
     <!-- Favicon de Pagina web-->
-    <link rel="icon" href="{{asset('favicon.ico')}}" type="image/x-icon">
-    <link rel="stylesheet" href="{{asset('css/dashboard.css')}}">
-    <link href="{{asset('css/main.css')}}" rel="stylesheet">
+    <link rel="icon" href="{{asset('favicon.ico')}}" type="image/x-icon">    
     
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -29,8 +27,11 @@
 
     <!-- Vendor CSS Files -->
     <link href="{{asset('vendor')}}/bootstrap-4.6.0/css/bootstrap.min.css" rel="stylesheet">
-    <!-- <link href="{{asset('vendor')}}/bootstrap-icons/bootstrap-icons.css" rel="stylesheet"> -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css">
+
+    <!-- Custom CSS -->
+    <link href="{{asset('css/main.css')}}" rel="stylesheet">
+    <link href="{{asset('css/dashboard.css')}}" rel="stylesheet" >
     @stack('css')
 
     <!-- Titulo-->

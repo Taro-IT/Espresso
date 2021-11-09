@@ -33,7 +33,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
 
-    <!--CSS Personalizado por blade -->
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="{{ asset('/css/main.css') }}" crossorigin="anonymous">
     @stack('css')
 
@@ -75,7 +75,7 @@
                     </ul>
                 </li>
                 <li><a class="nav-link" href="/#contact">CONTÁCTANOS</a></li>
-                <li><a class="getstarted" href="{{route('donation.index')}}">DONAR</a></li>
+                <li><a class="getstarted btn btn-danger" href="{{route('donation.index')}}">DONAR</a></li>
             </ul>
             <i class="bi bi-list mobile-nav-toggle"></i>
         </nav><!-- End Navbar -->

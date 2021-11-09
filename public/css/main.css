@@ -64,6 +64,14 @@ h1 {
     color: var(--dark-purple);
 }
 
+.btn-danger{
+    background-color: #FF4F79 !important;
+    border: none !important;
+}
+.btn-danger:hover {
+    box-shadow: 0px 0px 12px #FF4F79c1 !important;
+}
+
 /*--------------------------------------------------------------
 # Sections
 --------------------------------------------------------------*/
