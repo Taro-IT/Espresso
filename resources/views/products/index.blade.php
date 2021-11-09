@@ -5,6 +5,7 @@
 @push('css')
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.css">
 @endpush
+
 @section('content')
     <div class="row">
         <div class="col-md-6 text-left">
@@ -149,7 +150,7 @@
                         <th class="text-center">ID</th>
                         <th>Nombre del producto</th>
                         <th>Autor(es)</th>
-                        <th colspan="3" class="text-center">Acciones</th>
+                        <th>Acciones</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -169,19 +170,15 @@
                                 @endif
                             @endforeach
                         </td>
-                        <td>
+                        <td class="d-flex justify-content-around">
                             <!-- Digital product detail button -->
                             <button class="btn btn-info tooltipped-btn" type="button" data-toggle="modal" data-target="#ver-mas-{{$product->id}}" data-tooltip="tooltip" data-placement="right" title="Ver detalle del producto">
                                 <i class="bi bi-eye-fill"></i>
                             </button>
-                        </td>
-                        <td>
                             <!-- Edit digital product button -->
                             <a class="btn btn-warning tooltipped-btn" href="{{route('products.edit', $product->id)}}" data-tooltip="tooltip" data-placement="right" title="Modificar el producto" role="button">
                                 <i class="bi bi-pencil-fill"></i>
                             </a>
-                        </td>
-                        <td>
                             <!-- Delete digital product button -->
                             <button type="button" class="btn btn-danger tooltipped-btn" data-tooltip="tooltip" data-placement="left" title="Eliminar el producto" data-toggle="modal" data-target="#eliminar-{{$product->id}}">
                                 <i class="bi bi-trash-fill"></i>

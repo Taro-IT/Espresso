@@ -72,13 +72,16 @@
                     <tr>
                         <td class="text-center">{{$paciente->id}}</td>
                         <td>{{$paciente->name}}</td>
-                        <td>
+                        <td class="d-flex justify-content-around">
+                            <!-- Guest detail button -->
                             <button class="btn btn-info tooltipped-btn" type="button" data-tooltip="tooltip" data-placement="right" title="Ver el detalle del huésped">
                                 <i class="bi bi-eye-fill"></i>
                             </button>
+                            <!-- Edit guest button -->
                             <a class="btn btn-warning tooltipped-btn" href="" data-tooltip="tooltip" data-placement="right" title="Modificar el huésped" role="button">
                                 <i class="bi bi-pencil-fill"></i>
                             </a>
+                            <!-- Delete guest button -->
                             <button type="button" class="btn btn-danger tooltipped-btn" data-toggle="modal" data-target="#eliminar-{{$paciente->id}}" title="Eliminar el huésped">
                                 <i class="bi bi-trash-fill"></i>
                             </button>

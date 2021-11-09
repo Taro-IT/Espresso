@@ -28,7 +28,7 @@
                     <tr>
                         <th class="text-center">ID</th>
                         <th>Nombre de Taller</th>
-                        <th></th>
+                        <th>Acciones</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -36,7 +36,7 @@
                     <tr>
                         <td class="text-center">{{$workshop->id}}</td>
                         <td>{{$workshop->name}}</td>
-                        <td>
+                        <td class="d-flex justify-content-around">
                             <!-- Workshop detail button -->
                             <button class="btn btn-info tooltipped-btn" type="button" data-tooltip="tooltip" data-placement="right" title="Ver detalle del taller" data-toggle="modal" data-target="#ver-mas-{{$workshop->id}}">
                                 <i class="bi bi-eye-fill"></i>
