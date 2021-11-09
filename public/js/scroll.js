@@ -28,4 +28,3 @@ function makeImageFixed() {
     target.classList.remove("unfixed-img");
     target.classList.add("fixed-img");
 }
-

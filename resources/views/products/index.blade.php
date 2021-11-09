@@ -11,14 +11,14 @@
         </h1>
         </div>
         <div class="col-md-6 text-right mt-5">
+            <!-- Register new digital product button -->
             <button class="btn btn-principal d-inline-flex align-items-center justify-content-center align-self-center" type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                 Registrar producto
-                <!--<i class="bi bi-plus-circle-fill" style="font-size: 20px;"></i>-->
             </button>
         </div>
     </div>
 
-    <!-- Modal -->
+    <!-- Register new digital product modal -->
     <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
          aria-labelledby="staticBackdropLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg">
@@ -138,16 +138,17 @@
         </div>
     </div>
 
+    <!-- Digital products table -->
     <div class="row">
         <div class="col-md-12">
             <table id="table_id" class="display table-striped">
                 <thead>
-                <tr>
-                    <th class="text-center">ID</th>
-                    <th>Nombre del producto</th>
-                    <th>Autor(es)</th>
-                    <th colspan="3" class="text-center">Acciones</th>
-                </tr>
+                    <tr>
+                        <th class="text-center">ID</th>
+                        <th>Nombre del producto</th>
+                        <th>Autor(es)</th>
+                        <th colspan="3" class="text-center">Acciones</th>
+                    </tr>
                 </thead>
                 <tbody>
                 @foreach($products as $product)
@@ -167,33 +168,35 @@
                             @endforeach
                         </td>
                         <td>
-                            <a href="#">
-                                <button class="btn btn-info" type="button" data-toggle="modal" data-target="#ver-mas-{{$product->id}}" data-tooltip="tooltip" data-placement="right" title="Ver detalle del producto digital">
+                            <button class="btn btn-info tooltipped-btn" type="button" data-toggle="modal" data-target="#ver-mas-{{$product->id}}" data-tooltip="tooltip" data-placement="right" title="Ver detalle">
                                 <i class="bi bi-eye-fill"></i>
+                            </button>
+                        </td>
+                        <td>
+                            <a class="tooltipped-btn" href="{{route('products.edit', $product->id)}}" data-tooltip="tooltip" data-placement="right" title="Modificar">
+                                <button class="btn btn-warning" type="button">
+                                    <i class="bi bi-pencil-fill"></i>
                                 </button>
                             </a>
                         </td>
                         <td>
-                            <a href="{{route('products.edit',$product->id)}}" data-tooltip="tooltip" data-placement="right" title="Modificar producto digital">
-                                <button class="btn btn-warning" type="button"><i class="bi bi-pencil-fill"></i></button>
-                            </a>
-                        </td>
-                        <td>
-                            <button type="button" class="btn btn-danger" data-tooltip="tooltip" data-placement="right" title="Eliminar producto digital" data-toggle="modal" data-target="#eliminar-{{$product->id}}"><i class="bi bi-trash-fill"></i>
+                            <button type="button" class="btn btn-danger tooltipped-btn" data-tooltip="tooltip" data-placement="left" title="Eliminar producto digital" data-toggle="modal" data-target="#eliminar-{{$product->id}}">
+                                <i class="bi bi-trash-fill"></i>
                             </button>
                         </td>
                     </tr>
 
-                    <!-- Modal -->
+                    <!-- Delete digital product modal -->
                     <div class="modal fade" id="eliminar-{{$product->id}}" tabindex="-1" role="dialog"
                          aria-labelledby="eliminar-{{$product->id}}-Label" aria-hidden="true">
                         <div class="modal-dialog" role="document">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                <div class="row col-md-12 justify-content-center text-center">
-                                <h2 class="section-header modal-title" id="eliminar-{{$product->id}}-Label"> 
-            <span class="underline text-uppercase">&nbsp;&nbsp;ELIMINAR PRODUCTO&nbsp;&nbsp;</span>
-        </h2></div>
+                                    <div class="row col-md-12 justify-content-center text-center">
+                                        <h2 class="section-header modal-title" id="eliminar-{{$product->id}}-Label"> 
+                                            <span class="underline text-uppercase">&nbsp;&nbsp;ELIMINAR PRODUCTO&nbsp;&nbsp;</span>
+                                        </h2>
+                                    </div>
                                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                         <span aria-hidden="true">&times;</span>
                                     </button>
@@ -215,16 +218,17 @@
                     </div>
 
 
-                    <!-- Modal -->
+                    <!-- Digital product detail modal -->
                     <div class="modal fade" id="ver-mas-{{$product->id}}" tabindex="-1" role="dialog"
                          aria-labelledby="ver-mas-{{$product->id}}-label" aria-hidden="true">
                         <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                <div class="row col-md-12 justify-content-center text-center">
-                                <h2 class="section-header modal-title" id="ver-mas-{{$product->id}}-Title"> 
-            <span class="underline text-uppercase">&nbsp;&nbsp;{{strtoupper($product->title)}}&nbsp;&nbsp;</span>
-        </h2></div>
+                                    <div class="row col-md-12 justify-content-center text-center">
+                                        <h2 class="section-header modal-title" id="ver-mas-{{$product->id}}-Title"> 
+                                            <span class="underline text-uppercase">&nbsp;&nbsp;{{strtoupper($product->title)}}&nbsp;&nbsp;</span>
+                                        </h2>
+                                    </div>
                                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                         <span aria-hidden="true">&times;</span>
                                     </button>
@@ -275,7 +279,6 @@
                     </div>
 
                 @endforeach
-
                 </tbody>
             </table>
         </div>
