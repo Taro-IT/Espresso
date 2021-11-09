@@ -14,7 +14,7 @@ class HomeSeeder extends Seeder
      */
     public function run()
     {
-        DB::table('homes')->insert([
+        DB::table('home')->insert([
             'whatsapp' =>'5214421370222',
             'phone_1'=>'4422541353',
             'phone_2'=>'4422539374',
@@ -24,6 +24,7 @@ class HomeSeeder extends Seeder
             'instagram'=>'https://www.instagram.com/casa_loohl/?hl=es-la',
             'spotify'=>'https://open.spotify.com/show/1tB5CIsUPNtc9y0Q7GuqF3?si=GyvAbp1yRQ-q08HLzaI_nw&nd=1',
             'medium'=>'https://medium.com/@Casademediocamino/following',
+            'linkedin'=>'https://linkedin.com/in/casa-loohl',
             'email'=>'contacto@casamediocamino.com',
         ]);
     }
