@@ -236,12 +236,12 @@
                                     </div>
                                     <div class="modal-body">
                                         <div class="row">
-                                            <div class="col-md-6">
+                                            <div class="col-lg-6 mb-3 text-center">
                                                 <img src="{{asset('storage/'.$product->image)}}"
                                                     alt="{{$product->title}}-{{$product->title}}"
                                                     class="product-images-ver-mas rounded" onerror="this.onerror=null;this.src='{{asset('images/image-not-found.png')}}';">
                                             </div>
-                                            <div class="col-md-6">
+                                            <div class="col-lg-6 mb-3 text-center text-lg-left">
                                                 <div class="mb-4">
                                                 <p><strong>Precio mínimo: </strong>{{$product->price}}</p>
                                                 <p><strong>Descripción: </strong>{{$product->description}}</p>
@@ -265,15 +265,15 @@
                                                     @endif
                                                 @endforeach</p>
                                                 </div>
+                                                @if(($product->file) != null)
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <a href="{{route('download',$product->id)}}">Descargar Archivo</a>
+                                                    </div>
+                                                </div>
+                                                @endif
                                             </div>
                                         </div>
-                                        @if(($product->file) != null)
-                                        <div class="row">
-                                            <div class="col-md-12">
-                                                <a href="{{route('download',$product->id)}}">Descargar Archivo</a>
-                                            </div>
-                                        </div>
-                                        @endif
                                     </div>
                                 </div>
                             </div>
