@@ -69,12 +69,7 @@
                     <tr>
                         <td class="text-center">{{$workshop->id}}</td>
                         <td>{{$workshop->name}}</td>
-                        <td>
-                            <button class="btn btn-info" type="button" data-tooltip="tooltip" data-placement="right"
-                                    title="Ver detalle del taller." data-toggle="modal"
-                                    data-target="#ver-mas-{{$workshop->id}}">
-                                <i class="bi bi-eye-fill"></i>
-                            </button>
+                        <td class="text-center">
                             <a href="{{route('products.edit',$workshop->id)}}" data-tooltip="tooltip"
                                data-placement="right" title="Modificar el taller.">
                                 <button class="btn btn-warning" type="button">

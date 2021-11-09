@@ -63,7 +63,7 @@
                 <tr>
                     <th class="text-center">ID</th>
                     <th>Nombre</th>
-                    <th>Acciones</th>
+                    <th class="text-center">Acciones</th>
                 </tr>
                 </thead>
                 <tbody>
@@ -71,11 +71,8 @@
                     <tr>
                         <td class="text-center">{{$paciente->id}}</td>
                         <td>{{$paciente->name}}</td>
-                        <td>
-                            <button class="btn btn-info" type="button" data-tooltip="tooltip" data-placement="right"
-                                    title="Eliminar el taller.">Ver mas
-                            </button>
-                            <a href="#">
+                        <td class="text-center">
+                            <a href="{{route('patients.edit',$paciente->id)}}">
                                 <button class="btn btn-warning" type="button">Editar</button>
                             </a>
                             <button type="button" class="btn btn-danger" data-toggle="modal"
