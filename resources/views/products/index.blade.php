@@ -127,7 +127,7 @@
                                     </select>
                                 </div>
                                     <a href="{{route('workshop.index')}}">
-                                        <button class="btn btn-principal btn-sm" type="button">+ Agregar Taller</button>
+                                        <button class="btn btn-principal btn-sm" type="button">Agregar Taller</button>
                                     </a>
                                 </div>
                             </div>

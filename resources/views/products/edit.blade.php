@@ -77,7 +77,7 @@
                         </select>
                     </div>
                     <a href="{{route('patients.index')}}">
-                        <button class="btn btn-warning btn-sm" type="button">Registrar autor</button>
+                        <button class="btn btn-principal btn-sm" type="button">Registrar autor</button>
                     </a>
                 </div>
             </div>
@@ -94,7 +94,7 @@
                         </select>
                     </div>
                     <a href="{{route('workshop.index')}}">
-                        <button class="btn btn-info btn-sm" type="button">Registrar taller</button>
+                        <button class="btn btn-principal btn-sm" type="button">Registrar taller</button>
                     </a>
                 </div>
             </div>

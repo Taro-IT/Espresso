@@ -17,7 +17,6 @@
             <!-- Register new workshop button -->
             <button class="btn btn-principal" type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                 Registrar taller
-                <!--<i class="bi bi-plus-circle-fill" style="font-size: 20px;"></i>-->
             </button>
         </div>
     </div>

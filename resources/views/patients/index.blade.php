@@ -17,7 +17,6 @@
             <!-- Register new guest button -->
             <button class="btn btn-principal d-inline-flex align-items-center justify-content-center align-self-center" type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                 Registrar huésped
-                <!--<i class="bi bi-plus-circle-fill" style="font-size: 20px;"></i>-->
             </button>
         </div>
     </div>
