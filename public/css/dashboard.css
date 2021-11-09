@@ -256,10 +256,21 @@ a:hover {
     }
 }
 
-.container-loohl{
-    margin-top: 90px;
+.container-loohl {
+    margin-bottom: 50px;
     margin-right: 2%;
     margin-left: 24%;
+}
+
+@media (min-width: 1200px) {
+    .container-loohl {
+        margin-left: 350px;
+    }
+}
+@media (max-width: 1199px) {
+    .container-loohl {
+        margin-left: 2%;
+    }
 }
 
 .icons{
