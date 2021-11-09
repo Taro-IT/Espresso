@@ -93,6 +93,6 @@ class PageInfoController extends Controller
 
     public function download($id){
         $file = Products::find($id);
-        return response()->download(public_path('storage/'.$file->file));
+        return response()->download(public_path($file->file));
     }
 }

@@ -16,7 +16,7 @@
             @method('put')
             <div class="row">
                 <div class="col-md-6">
-                    <img src="{{asset('storage/'.$product->image)}}" alt="{{$product->title}}" width="100%"
+                    <img src="{{asset($product->image)}}" alt="{{$product->title}}" width="100%"
                          class="rounded"
                          onerror="this.onerror=null;this.src='{{asset('images/image-not-found.png')}}';">
                     <div class="input-group">
