@@ -6,7 +6,7 @@
 @section('content')
     <div class="row">
         <div class="col-md-6 text-left">
-        <h1 class="section-header mt-5 mb-5"> 
+        <h1 class="section-header mt-5 mb-5">
             <span class="underline">&nbsp;&nbsp;PRODUCTOS DIGITALES&nbsp;&nbsp;</span>
         </h1>
         </div>
@@ -25,7 +25,7 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <div class="row col-md-12 justify-content-center text-center">
-                    <h2 class="section-header"> 
+                    <h2 class="section-header">
                     <span class="underline">&nbsp;&nbsp;REGISTRAR PRODUCTO&nbsp;&nbsp;</span>
                     </h2>
                     </div>
@@ -191,7 +191,7 @@
                             <div class="modal-content">
                                 <div class="modal-header">
                                 <div class="row col-md-12 justify-content-center text-center">
-                                <h2 class="section-header modal-title" id="eliminar-{{$product->id}}-Label"> 
+                                <h2 class="section-header modal-title" id="eliminar-{{$product->id}}-Label">
             <span class="underline text-uppercase">&nbsp;&nbsp;ELIMINAR PRODUCTO&nbsp;&nbsp;</span>
         </h2></div>
                                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -222,7 +222,7 @@
                             <div class="modal-content">
                                 <div class="modal-header">
                                 <div class="row col-md-12 justify-content-center text-center">
-                                <h2 class="section-header modal-title" id="ver-mas-{{$product->id}}-Title"> 
+                                <h2 class="section-header modal-title" id="ver-mas-{{$product->id}}-Title">
             <span class="underline text-uppercase">&nbsp;&nbsp;{{strtoupper($product->title)}}&nbsp;&nbsp;</span>
         </h2></div>
                                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -234,7 +234,7 @@
                                         <div class="col-md-6">
                                             <img src="{{asset($product->image)}}"
                                                  alt="{{$product->title}}-{{$product->title}}"
-                                                 class="product-images-ver-mas rounded" onerror="this.onerror=null;this.src='{{asset('images/image-not-found.png')}}';">
+                                                 class="product-images-ver-mas rounded" >
                                         </div>
                                         <div class="col-md-6">
                                             <div class="mb-4">

@@ -13,7 +13,7 @@ class ProductsController extends Controller
     /**
      * Display a listing of the resource.
      *
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View|\Illuminate\Http\Response
      */
     public function index()
     {
@@ -28,7 +28,7 @@ class ProductsController extends Controller
     /**
      * Show the form for creating a new resource.
      *
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View|\Illuminate\Http\Response
      */
     public function create()
     {
@@ -39,7 +39,7 @@ class ProductsController extends Controller
      * Store a newly created resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Http\RedirectResponse
      */
     public function store(Request $request)
     {
@@ -56,16 +56,6 @@ class ProductsController extends Controller
         $data = $request->all();
         $patient = $data['id_patient'];
 
-        $file = $request->file('file');
-        $fileType = $file->getClientMimeType();
-        $fileType = explode('/', $fileType);
-        $fileType = $fileType[1];
-
-        $image = $request->file('image');
-        $imageType = $image->getClientMimeType();
-        $imageType = explode('/', $imageType);
-        $imageType = $imageType[1];
-
         products::create($data);
 
         //Obtain the last entry
@@ -75,40 +65,37 @@ class ProductsController extends Controller
 
         ProductPatient::create($product_patient);
 
+        $producto = products::find($lastProductId);
         if ($request->hasFile('image'))
         {
-            $request->file('image')->store('public');
-            $data['image'] = $request->file('image')->storeAs('products/'.$lastProductId,'image.'.$imageType);
+            $image = $request->file('image');
+            $imageType = $image->getClientMimeType();
+            $imageType = explode('/', $imageType);
+            $imageType = $imageType[1];
+
+            $randNum = mt_rand(100,999);
+            $data['image'] = $request->file('image')->storeAs('storage/products/'.$lastProductId,'/image-'.$randNum.'.'.$imageType);
+            $producto->image = 'storage/products/'.$lastProductId.'/image-'.$randNum.'.'.$imageType;
+
         }
 
         if ($request->hasFile('file'))
         {
-            $request->file('file')->store('public');
-            $data['file'] = $request->file('image')->storeAs('products/'.$lastProductId,'file'.$fileType);
-            
+            $file = $request->file('file');
+            $fileType = $file->getClientMimeType();
+            $fileType = explode('/', $fileType);
+            $fileType = $fileType[1];
+
+            $randNum = mt_rand(100,999);
+            $data['file'] = $request->file('file')->storeAs('storage/products/'.$lastProductId,'/file-'.$randNum.'.'.$fileType);
+            $producto->file = 'storage/products/'.$lastProductId.'/file-'.$randNum.'.'.$fileType;
         }
 
-        $producto = products::find($lastProductId);
-        $producto->image = 'products/'.$lastProductId.'/image.'.$imageType;
-        $producto->file = 'products/'.$lastProductId.'/file.'.$fileType;
         $producto->save();
-
-
         return redirect()->route('products.index')->with('status','El producto ha sido creado de manera exitosa.');
 
     }
 
- 
-    /**
-     * Display the specified resource.
-     *
-     * @param  \App\Models\products  $products
-     * @return \Illuminate\Http\Response
-     */
-    public function show(products $products)
-    {
-        //
-    }
 
     /**
      * Show the form for editing the specified resource.
@@ -142,31 +129,37 @@ class ProductsController extends Controller
         ]);
 
         $data = $request->all();
-        
 
+        $update = Products::find($id);
         if ($request->hasFile('image'))
         {
-            $request->file('image')->store('public');
-            $data['image'] = $request->file('image')->storeAs('products/'.$id,'image');
+            $image = $request->file('image');
+            $imageType = $image->getClientMimeType();
+            $imageType = explode('/', $imageType);
+            $imageType = $imageType[1];
+
+            $randNum = mt_rand(100,999);
+            $data['image'] = $request->file('image')->storeAs('storage/products/'.$id,'/image-'.$randNum.'.'.$imageType);
+            $update->image = 'storage/products/'.$id.'/image-'.$randNum.'.'.$imageType;
         }else{
             $data['image'] = $request->image_aux;
         }
 
         if ($request->hasFile('file'))
         {
-            $request->file('file')->store('public');
-            $data['file'] = $request->file('image')->storeAs('products/'.$id,'file');
+            $file = $request->file('file');
+            $fileType = $file->getClientMimeType();
+            $fileType = explode('/', $fileType);
+            $fileType = $fileType[1];
+
+            $randNum = mt_rand(100,999);
+            $data['file'] = $request->file('file')->storeAs('storage/products/'.$id,'/file-'.$randNum.'.'.$fileType);
+            $update->file = 'storage/products/'.$id.'/file-'.$randNum.'.'.$fileType;
         } else{
             $data['file'] = $request->file_aux;
         }
 
-        $update = Products::find($id);
-        $update->image = 'products/'.$id.'/image';
-        $update->file = 'products/'.$id.'/file';
-        $update->save();
         $update->update($data);
-        
-
         return redirect()->route('products.index')->with('status','El producto ha sido modificado de manera exitosa.');
 
 
