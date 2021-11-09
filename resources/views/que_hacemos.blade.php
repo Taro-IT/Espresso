@@ -257,7 +257,7 @@
                                             @for($j = 0; $j < 3; $j++)
                                                 <div class="col-md-4 mb-3">
                                                     <div class="card">
-                                                        <img class="img-fluid" src="/workshops/narrative.jpeg">
+                                                        <img class="img-fluid" src="{{asset('storage/'.$talleres[$i + $j]->image)}}" onerror="this.onerror=null;this.src='{{asset('images/image-not-found.png')}}';">
                                                         <div class="card-body justify-content-center">
                                                             <h4 class="card-title text-center">{{strtoupper($talleres[$i + $j]->name) }}</h4>
                                                             <p class="card-text text-center">{{$talleres[$i + $j]->description}} </p>
@@ -274,7 +274,7 @@
                                             @for($j = 0; $j < 3; $j++)
                                                 <div class="col-md-4 mb-3">
                                                     <div class="card">
-                                                        <img class="img-fluid" src="/workshops/narrative.jpeg">
+                                                        <img class="img-fluid" src="{{asset('storage/'.$talleres[$i + $j]->image)}}" onerror="this.onerror=null;this.src='{{asset('images/image-not-found.png')}}';">
                                                         <div class="card-body justify-content-center">
                                                             <h4 class="card-title text-center">{{strtoupper($talleres[$i + $j]->name)}}</h4>
                                                             <p class="card-text text-center">{{$talleres[$i + $j]->description}} </p>
