@@ -23,67 +23,69 @@
     </div>
     <div class="row">
         <div class="col-md-12">
-            <table id="table_id" class="display table-striped">
-                <thead>
-                    <tr>
-                        <th class="text-center">ID</th>
-                        <th>Nombre de Taller</th>
-                        <th>Acciones</th>
-                    </tr>
-                </thead>
-                <tbody>
-                @foreach($workshops as $workshop)
-                    <tr>
-                        <td class="text-center">{{$workshop->id}}</td>
-                        <td>{{$workshop->name}}</td>
-                        <td class="d-flex justify-content-around">
-                            <!-- Workshop detail button -->
-                            <button class="btn btn-info tooltipped-btn" type="button" data-tooltip="tooltip" data-placement="right" title="Ver detalle del taller" data-toggle="modal" data-target="#ver-mas-{{$workshop->id}}">
-                                <i class="bi bi-eye-fill"></i>
-                            </button>
-                            <!-- Edit workshop button -->
-                            <a class="btn btn-warning tooltipped-btn" href="{{route('products.edit',$workshop->id)}}" data-tooltip="tooltip" data-placement="right" title="Modificar el taller" role="button">
-                                <i class="bi bi-pencil-fill"></i>
-                            </a>
-                            <!-- Delete workshop button -->
-                            <button type="button" class="btn btn-danger tooltipped-btn" data-toggle="modal" data-target="#eliminar-{{$workshop->id}}" data-tooltip="tooltip" data-placement="right" title="Eliminar el taller">
-                                <i class="bi bi-trash-fill"></i>
-                            </button>
-                        </td>
-                    </tr>
+            <div class="table-responsive mb-5">
+                <table id="table_id" class="display table-striped">
+                    <thead>
+                        <tr>
+                            <th class="text-center">ID</th>
+                            <th>Nombre de Taller</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    @foreach($workshops as $workshop)
+                        <tr>
+                            <td class="text-center">{{$workshop->id}}</td>
+                            <td>{{$workshop->name}}</td>
+                            <td class="d-flex justify-content-around">
+                                <!-- Workshop detail button -->
+                                <button class="btn btn-info tooltipped-btn" type="button" data-tooltip="tooltip" data-placement="right" title="Ver detalle del taller" data-toggle="modal" data-target="#ver-mas-{{$workshop->id}}">
+                                    <i class="bi bi-eye-fill"></i>
+                                </button>
+                                <!-- Edit workshop button -->
+                                <a class="btn btn-warning tooltipped-btn" href="{{route('products.edit',$workshop->id)}}" data-tooltip="tooltip" data-placement="right" title="Modificar el taller" role="button">
+                                    <i class="bi bi-pencil-fill"></i>
+                                </a>
+                                <!-- Delete workshop button -->
+                                <button type="button" class="btn btn-danger tooltipped-btn" data-toggle="modal" data-target="#eliminar-{{$workshop->id}}" data-tooltip="tooltip" data-placement="right" title="Eliminar el taller">
+                                    <i class="bi bi-trash-fill"></i>
+                                </button>
+                            </td>
+                        </tr>
 
-                    <!-- Delete workshop modal -->
-                    <div class="modal fade" id="eliminar-{{$workshop->id}}" tabindex="-1" role="dialog" aria-labelledby="eliminar-{{$workshop->id}}-Label" aria-hidden="true">
-                        <div class="modal-dialog" role="document">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <div class="row col-md-12 justify-content-center text-center">
-                                        <h2 class="section-header modal-title" id="eliminar-{{$workshop->id}}-Label"> 
-                                            <span class="underline text-uppercase">&nbsp;&nbsp;ELIMINAR TALLER&nbsp;&nbsp;</span>
-                                        </h2>
+                        <!-- Delete workshop modal -->
+                        <div class="modal fade" id="eliminar-{{$workshop->id}}" tabindex="-1" role="dialog" aria-labelledby="eliminar-{{$workshop->id}}-Label" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <div class="row col-md-12 justify-content-center text-center">
+                                            <h2 class="section-header modal-title" id="eliminar-{{$workshop->id}}-Label"> 
+                                                <span class="underline text-uppercase">&nbsp;&nbsp;ELIMINAR TALLER&nbsp;&nbsp;</span>
+                                            </h2>
+                                        </div>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
                                     </div>
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                    </button>
-                                </div>
-                                <div class="modal-body">
-                                    <p>¿Estás segur@ que deseas eliminar el taller: <l class="text-purple">{{$workshop->title}} </l>?</p>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary mr-auto" data-dismiss="modal">No</button>
-                                    <form action="{{route('workshop.destroy',$workshop->id)}}"
-                                        method="post">
-                                        @csrf
-                                        @method('delete')
-                                        <button type="submit" class="btn btn-danger">Si</button>
-                                    </form>
+                                    <div class="modal-body">
+                                        <p>¿Estás segur@ que deseas eliminar el taller: <l class="text-purple">{{$workshop->title}} </l>?</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary mr-auto" data-dismiss="modal">No</button>
+                                        <form action="{{route('workshop.destroy',$workshop->id)}}"
+                                            method="post">
+                                            @csrf
+                                            @method('delete')
+                                            <button type="submit" class="btn btn-danger">Si</button>
+                                        </form>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                @endforeach
-                </tbody>
-            </table>
+                    @endforeach
+                    </tbody>
+                </table>
+            </div>
         </div>
     </div>
 @endsection

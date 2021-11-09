@@ -59,67 +59,69 @@
 
     <div class="row">
         <div class="col-md-12">
-            <table id="table_id" class="display table-striped">
-                <thead>
-                    <tr>
-                        <th class="text-center">ID</th>
-                        <th>Nombre</th>
-                        <th>Acciones</th>
-                    </tr>
-                </thead>
-                <tbody>
-                @foreach($pacientes as $paciente)
-                    <tr>
-                        <td class="text-center">{{$paciente->id}}</td>
-                        <td>{{$paciente->name}}</td>
-                        <td class="d-flex justify-content-around">
-                            <!-- Guest detail button -->
-                            <button class="btn btn-info tooltipped-btn" type="button" data-tooltip="tooltip" data-placement="right" title="Ver el detalle del huésped">
-                                <i class="bi bi-eye-fill"></i>
-                            </button>
-                            <!-- Edit guest button -->
-                            <a class="btn btn-warning tooltipped-btn" href="" data-tooltip="tooltip" data-placement="right" title="Modificar el huésped" role="button">
-                                <i class="bi bi-pencil-fill"></i>
-                            </a>
-                            <!-- Delete guest button -->
-                            <button type="button" class="btn btn-danger tooltipped-btn" data-toggle="modal" data-target="#eliminar-{{$paciente->id}}" title="Eliminar el huésped">
-                                <i class="bi bi-trash-fill"></i>
-                            </button>
-                        </td>
-                    </tr>
+            <div class="table-responsive mb-5">
+                <table id="table_id" class="display table-striped">
+                    <thead>
+                        <tr>
+                            <th class="text-center">ID</th>
+                            <th>Nombre</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    @foreach($pacientes as $paciente)
+                        <tr>
+                            <td class="text-center">{{$paciente->id}}</td>
+                            <td>{{$paciente->name}}</td>
+                            <td class="d-flex justify-content-around">
+                                <!-- Guest detail button -->
+                                <button class="btn btn-info tooltipped-btn" type="button" data-tooltip="tooltip" data-placement="right" title="Ver el detalle del huésped">
+                                    <i class="bi bi-eye-fill"></i>
+                                </button>
+                                <!-- Edit guest button -->
+                                <a class="btn btn-warning tooltipped-btn" href="" data-tooltip="tooltip" data-placement="right" title="Modificar el huésped" role="button">
+                                    <i class="bi bi-pencil-fill"></i>
+                                </a>
+                                <!-- Delete guest button -->
+                                <button type="button" class="btn btn-danger tooltipped-btn" data-toggle="modal" data-target="#eliminar-{{$paciente->id}}" title="Eliminar el huésped">
+                                    <i class="bi bi-trash-fill"></i>
+                                </button>
+                            </td>
+                        </tr>
 
-                    <!-- Delete guest modal -->
-                    <div class="modal fade" id="eliminar-{{$paciente->id}}" tabindex="-1" role="dialog"
-                         aria-labelledby="eliminar-{{$paciente->id}}-Label" aria-hidden="true">
-                        <div class="modal-dialog" role="document">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title" id="eliminar-{{$paciente->id}}-Label">
-                                        Eliminar {{$paciente->title}}</h5>
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                    </button>
-                                </div>
-                                <div class="modal-body">
-                                    ¿Estas segur@ que deseas eliminar el paciente {{$paciente->title}} ?
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary mr-auto" data-dismiss="modal">No</button>
-                                    <form action="{{route('patients.destroy',$paciente->id)}}"
-                                          method="post">
-                                        @csrf
-                                        @method('delete')
-                                        <button type="submit" class="btn btn-danger">Si</button>
-                                    </form>
+                        <!-- Delete guest modal -->
+                        <div class="modal fade" id="eliminar-{{$paciente->id}}" tabindex="-1" role="dialog"
+                            aria-labelledby="eliminar-{{$paciente->id}}-Label" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="eliminar-{{$paciente->id}}-Label">
+                                            Eliminar {{$paciente->title}}</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        ¿Estas segur@ que deseas eliminar el paciente {{$paciente->title}} ?
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary mr-auto" data-dismiss="modal">No</button>
+                                        <form action="{{route('patients.destroy',$paciente->id)}}"
+                                            method="post">
+                                            @csrf
+                                            @method('delete')
+                                            <button type="submit" class="btn btn-danger">Si</button>
+                                        </form>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
 
-                @endforeach
+                    @endforeach
 
-                </tbody>
-            </table>
+                    </tbody>
+                </table>
+            </div>
         </div>
     </div>
 @endsection
