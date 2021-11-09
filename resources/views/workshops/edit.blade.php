@@ -13,14 +13,13 @@
         </div>
     @endif
     <div class="container">
-        <div class="row text-center mt-5 mb-5">
+        <div class="row text-center mb-3">
             <div class="col-md-12">
-                <h1 class="section-header modal-title" id="eliminar-{{$workshop->id}}-Label">
+                <h1 class="section-header modal-title mt-5 mb-5" id="eliminar-{{$workshop->id}}-Label">
                     <span class="underline text-uppercase">&nbsp;&nbsp;MODIFICAR TALLER / ACTIVIDAD&nbsp;&nbsp;</span>
                 </h1>
             </div>
         </div>
-        <br><br><br><br>
         <form action="{{route('workshop.update',$workshop->id)}}" enctype="multipart/form-data" method="post">
             @csrf
             @method('put')
@@ -53,7 +52,7 @@
             </div>
             <input type="hidden" name="image_aux" value="{{$workshop->image}}">
             <div class="row col-md-12 justify-content-center text-center mt-5">
-                <button type="submit" class="btn btn-principal btn-lg">Guardar cambios</button>
+                <button type="submit" class="btn btn-principal btn-lg mb-5">Guardar cambios</button>
             </div>
         </form>
     </div>
