@@ -8,7 +8,7 @@
         <div class="row">
             <div class="col-md-12">
                 <h2>Cambiar contraseña</h2>
-                <small lass="text-muted">Recibirás un correo de aviso, puedes ignorarlo</small>
+                <small lass="text-muted">Recibirás un correo de aviso del cambio de contraseña, puedes ignorarlo.</small>
             </div>
         </div>
         <br>
@@ -30,7 +30,7 @@
                                        placeholder="Correo electrónico" value="{{$user->email}}" disabled>
                             </div>
                             <div class="form-group">
-                                <label for="exampleInputPassword1">Contraseña</label>
+                                <label for="exampleInputPassword1">Contraseña nueva</label>
                                 <input id="password" type="password"
                                        class="form-control @error('password') is-invalid @enderror" name="password"
                                        required autocomplete="new-password" placeholder="Contraseña nueva">
@@ -42,12 +42,12 @@
                                 @enderror
                             </div>
                             <div class="form-group">
-                                <label for="exampleInputPassword1">Confirmación de contraseña</label>
+                                <label for="exampleInputPassword1">Confirmación de contraseña nueva</label>
                                 <input id="password-confirm" type="password" class="form-control"
                                        name="password_confirmation" required autocomplete="new-password"
                                        placeholder="Confirmación de contraseña">
                             </div>
-                            <button type="submit" class="btn btn-primary">Cambiar contraseña</button>
+                            <button type="submit" class="btn btn-principal">Cambiar contraseña</button>
                         </form>
                     </div>
                 </div>

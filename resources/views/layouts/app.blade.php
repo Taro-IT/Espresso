@@ -33,7 +33,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
 
-    <!--CSS Personalizado por blade -->
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="{{ asset('/css/main.css') }}" crossorigin="anonymous">
     @stack('css')
 
@@ -75,7 +75,7 @@
                     </ul>
                 </li>
                 <li><a class="nav-link" href="/#contact">CONTÁCTANOS</a></li>
-                <li><a class="getstarted" href="{{route('donation.index')}}">DONAR</a></li>
+                <li><a class="getstarted btn btn-danger" href="{{route('donation.index')}}">DONAR</a></li>
             </ul>
             <i class="bi bi-list mobile-nav-toggle"></i>
         </nav><!-- End Navbar -->
@@ -98,11 +98,11 @@
         <div class="col-lg-4 col-md-6">
             <h6 class="font-weight-bold">CONÉCTATE</h6>
             <ul class="list-inline mt-1">
-                <li class="list-inline-item"><a href="https://www.facebook.com/Casa-de-Medio-Camino-Quer%C3%A9taro-Casa-Loohl-313251725496600" target="_blank" title="facebook"><i class="bi bi-facebook" style="font-size: 2rem;"></i></a></li>
-                <li class="list-inline-item"><a href="https://www.instagram.com/casa_loohl/?hl=es-la" target="_blank" title="instagram"><i class="bi bi-instagram" style="font-size: 2rem;"></i></a></li>
-                <li class="list-inline-item"><a href="https://open.spotify.com/show/1tB5CIsUPNtc9y0Q7GuqF3?si=GyvAbp1yRQ-q08HLzaI_nw&nd=1" target="_blank" title="spotify"><i class="bi bi-spotify" style="font-size: 2rem;"></i></a></li>
-                <li class="list-inline-item"><a href="https://medium.com/@Casademediocamino/following" target="_blank" title="medium"><i class="bi bi-medium" style="font-size: 2rem;"></i></a></li>
-                <li class="list-inline-item"><a href="" target="_blank" title="linked_in"><i class="bi bi-linkedin" style="font-size: 2rem;"></i></a></li>
+                <li class="list-inline-item"><a class="social-link" href="{{$home->facebook}}" target="_blank" title="facebook"><i class="bi bi-facebook" style="font-size: 2rem;"></i></a></li>
+                <li class="list-inline-item"><a class="social-link" href="{{$home->instagram}}" target="_blank" title="instagram"><i class="bi bi-instagram" style="font-size: 2rem;"></i></a></li>
+                <li class="list-inline-item"><a class="social-link" href="{{$home->spotify}}" target="_blank" title="spotify"><i class="bi bi-spotify" style="font-size: 2rem;"></i></a></li>
+                <li class="list-inline-item"><a class="social-link" href="{{$home->medium}}" target="_blank" title="medium"><i class="bi bi-medium" style="font-size: 2rem;"></i></a></li>
+                <li class="list-inline-item"><a class="social-link" href="{{$home->linkedin}}" target="_blank" title="linked_in"><i class="bi bi-linkedin" style="font-size: 2rem;"></i></a></li>
             </ul>
         </div>
         <div class="col-lg-4 col-md-6 mb-lg-0">

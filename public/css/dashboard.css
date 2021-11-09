@@ -84,7 +84,7 @@ a:hover {
     background-color: #f8f3ff;
 }
 
-@media (min-width: 768px) {
+/* @media (min-width: 768px) {
     .dropdown-menu-arrow::before {
         content: "";
         width: 13px;
@@ -97,7 +97,7 @@ a:hover {
         border-top: 1px solid #eaedf1;
         border-left: 1px solid #eaedf1;
     }
-}
+} */
 
 
 /* Alerts */
@@ -165,6 +165,11 @@ a:hover {
 @media (max-width: 1199px) {
     .sidebar {
         left: -300px;
+    }
+}
+@media (min-width: 1200px) {
+    .sidebar {
+        left: 0px;
     }
 }
 .sidebar::-webkit-scrollbar {
@@ -239,7 +244,7 @@ a:hover {
     background: var(--light-purple);
 }
 
-@media (max-width: 1600px) {
+/* @media (max-width: 1600px) {
     .margin-right{
         margin-left: 65vw;
     }
@@ -249,12 +254,23 @@ a:hover {
     .margin-right{
         margin-left: 75vw;
     }
+} */
+
+.container-loohl {
+    margin-top: 90px;
+    margin-right: 2%;
+    /* margin-left: 24%; */
 }
 
-.container-loohl{
-    margin-top: 5%;
-    margin-right: 2%;
-    margin-left: 24%;
+@media (min-width: 1200px) {
+    .container-loohl {
+        margin-left: 350px;
+    }
+}
+@media (max-width: 1199px) {
+    .container-loohl {
+        margin-left: 2%;
+    }
 }
 
 .icons{
@@ -338,3 +354,42 @@ a:hover {
 .btn-warning:hover {
     box-shadow: 0px 0px 12px #C490D1c1 !important;
 }
+
+.paginate_button {
+    transition: 0.5s !important;
+    background-color: #eae3f2 !important;
+    background-image: none !important;
+    color: black !important;
+    border: none !important;
+    font-weight: bold !important;;
+}
+.paginate_button:hover {
+    background-color: #a282c4 !important;
+    background-image: none !important;
+    box-shadow: 0px 0px 12px #a282c4c1 !important;
+    color: black !important;
+}
+
+.paginate_button.current {
+    background-color: #a282c4 !important;
+    background-image: none !important;
+    color: black !important;
+}
+.paginate_button.current:hover {
+    background-color: #a282c4 !important;
+    background-image: none !important;
+    box-shadow: 0px 0px 12px #a282c4c1 !important;
+    color: black !important;
+}
+
+
+.paginate_button.disabled {
+    box-shadow: none !important;
+    background-color: #c4c4c4 !important;
+    color: black !important;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button:hover {
+    color: black !important;
+}
+

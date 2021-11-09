@@ -1,34 +1,36 @@
 @extends('layouts.app_auth')
 
 @section('title') Casa Medio camino Loohl | Autores @endsection
+
 @push('css')
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.css">
 @endpush
+
 @section('content')
     <div class="row">
         <div class="col-md-6 text-left">
-            <h1 class="section-header mt-5 mb-5">
+            <h1 class="section-header mt-5 mb-4 mb-md-5"> 
                 <span class="underline">&nbsp;&nbsp;HUÉSPEDES&nbsp;&nbsp;</span>
             </h1>
         </div>
-        <div class="col-md-6 text-right mt-5">
-            <button class="btn btn-principal d-inline-flex align-items-center justify-content-center align-self-center"
-                    type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+        <div class="col-md-6 text-right mt-5 mb-4 mb-md-0">
+            <!-- Register new guest button -->
+            <button class="btn btn-principal d-inline-flex align-items-center justify-content-center align-self-center" type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                 Registrar huésped
-                <!--<i class="bi bi-plus-circle-fill" style="font-size: 20px;"></i>-->
             </button>
         </div>
     </div>
 
-    <!-- Modal -->
+    <!-- Register new guest modal -->
     <div class="modal fade" id="staticBackdrop" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
                     <div class="row col-md-12 justify-content-center text-center">
-                        <h2 class="section-header modal-title" id="staticBackdropLabel">
+                        <h2 class="section-header modal-title" id="staticBackdropLabel"> 
                             <span class="underline text-uppercase">&nbsp;&nbsp;REGISTRAR HUÉSPED&nbsp;&nbsp;</span>
-                        </h2></div>
+                        </h2>
+                    </div>
                     <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
@@ -55,67 +57,71 @@
         </div>
     </div>
 
-    <br>
     <div class="row">
         <div class="col-md-12">
-            <table id="table_id" class="display table-striped">
-                <thead>
-                <tr>
-                    <th class="text-center">ID</th>
-                    <th>Nombre</th>
-                    <th class="text-center">Acciones</th>
-                </tr>
-                </thead>
-                <tbody>
-                @foreach($pacientes as $paciente)
-                    <tr>
-                        <td class="text-center">{{$paciente->id}}</td>
-                        <td>{{$paciente->name}}</td>
-                        <td class="text-center">
-                            <a href="{{route('patients.edit',$paciente->id)}}">
-                                <button class="btn btn-warning" type="button">Editar</button>
-                            </a>
-                            <button type="button" class="btn btn-danger" data-toggle="modal"
-                                    data-target="#eliminar-{{$paciente->id}}">Eliminar
-                            </button>
-                        </td>
-                    </tr>
+            <div class="table-responsive mb-5">
+                <table id="table_id" class="display table-striped">
+                    <thead>
+                        <tr>
+                            <th class="text-center">ID</th>
+                            <th>Nombre</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    @foreach($pacientes as $paciente)
+                        <tr>
+                            <td class="text-center">{{$paciente->id}}</td>
+                            <td>{{$paciente->name}}</td>
+                            <td class="d-flex justify-content-around">
+                                <!-- Edit guest button -->
+                                <a class="btn btn-warning tooltipped-btn" href="{{route('patients.edit', $paciente->id)}}" data-tooltip="tooltip" data-placement="right" title="Modificar el huésped" role="button">
+                                    <i class="bi bi-pencil-fill"></i>
+                                </a>
+                                <!-- Delete guest button -->
+                                <button type="button" class="btn btn-danger tooltipped-btn" data-toggle="modal" data-target="#eliminar-{{$paciente->id}}" title="Eliminar el huésped">
+                                    <i class="bi bi-trash-fill"></i>
+                                </button>
+                            </td>
+                        </tr>
 
-                    <!-- Modal -->
-                    <div class="modal fade" id="eliminar-{{$paciente->id}}" tabindex="-1" role="dialog"
-                         aria-labelledby="eliminar-{{$paciente->id}}-Label" aria-hidden="true">
-                        <div class="modal-dialog" role="document">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title" id="eliminar-{{$paciente->id}}-Label">
-                                        Eliminar {{$paciente->title}}</h5>
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                    </button>
-                                </div>
-                                <div class="modal-body">
-                                    ¿Estas segur@ que deseas eliminar el paciente {{$paciente->title}} ?
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">No</button>
-                                    <form action="{{route('patients.destroy',$paciente->id)}}"
-                                          method="post">
-                                        @csrf
-                                        @method('delete')
-                                        <button type="submit" class="btn btn-danger">Si</button>
-                                    </form>
+                        <!-- Delete guest modal -->
+                        <div class="modal fade" id="eliminar-{{$paciente->id}}" tabindex="-1" role="dialog"
+                            aria-labelledby="eliminar-{{$paciente->id}}-Label" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="eliminar-{{$paciente->id}}-Label">
+                                            Eliminar {{$paciente->title}}</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        ¿Estas segur@ que deseas eliminar el paciente {{$paciente->title}} ?
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary mr-auto" data-dismiss="modal">No</button>
+                                        <form action="{{route('patients.destroy',$paciente->id)}}"
+                                            method="post">
+                                            @csrf
+                                            @method('delete')
+                                            <button type="submit" class="btn btn-danger">Si</button>
+                                        </form>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
 
-                @endforeach
+                    @endforeach
 
-                </tbody>
-            </table>
+                    </tbody>
+                </table>
+            </div>
         </div>
     </div>
 @endsection
+
 @push('scripts')
     <script
         src="https://code.jquery.com/jquery-3.6.0.min.js"

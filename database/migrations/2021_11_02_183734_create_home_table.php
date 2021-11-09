@@ -13,7 +13,7 @@ class CreateHomeTable extends Migration
      */
     public function up()
     {
-        Schema::create('homes', function (Blueprint $table) {
+        Schema::create('home', function (Blueprint $table) {
             $table->id();
             $table->string('whatsapp')->nullable();
             $table->string('phone_1')->nullable();
@@ -24,6 +24,7 @@ class CreateHomeTable extends Migration
             $table->string('instagram')->nullable();
             $table->string('spotify')->nullable();
             $table->string('medium')->nullable();
+            $table->string('linkedin')->nullable();
             $table->string('email')->nullable();
             $table->timestamps();
         });

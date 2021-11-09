@@ -43,7 +43,7 @@ class HomeController extends Controller
         $user = Auth::user();
         $user->password = Hash::make($request->password);
         $user->save();
-        return redirect(route('change_pwd.index'))->with('status','Tu contraseña fue cambiada con éxito!');
+        return redirect(route('change_pwd.index'))->with('status', 'Tu contraseña ha sido cambiada exitosamente');
 
     }
 
@@ -52,6 +52,6 @@ class HomeController extends Controller
         $data = $request->all();
         $home = Home::first();
         $home->update($data);
-        return redirect()->route('home')->with('status','La información fue actualizada correctamente');
+        return redirect()->route('home')->with('status', 'La información ha sido actualizada exitosamente');
     }
 }

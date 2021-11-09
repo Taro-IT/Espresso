@@ -1,24 +1,27 @@
 @extends('layouts.app_auth')
+
 @section('title') Casa Medio camino Loohl | Productos @endsection
+
 @push('css')
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.css">
 @endpush
+
 @section('content')
     <div class="row">
         <div class="col-md-6 text-left">
-        <h1 class="section-header mt-5 mb-5">
-            <span class="underline">&nbsp;&nbsp;PRODUCTOS DIGITALES&nbsp;&nbsp;</span>
-        </h1>
+            <h1 class="section-header mt-5 mb-4 mb-md-5"> 
+                <span class="underline">&nbsp;&nbsp;PRODUCTOS DIGITALES&nbsp;&nbsp;</span>
+            </h1>
         </div>
-        <div class="col-md-6 text-right mt-5">
+        <div class="col-md-6 text-right mt-5 mb-4 mb-md-0">
+            <!-- Register new digital product button -->
             <button class="btn btn-principal d-inline-flex align-items-center justify-content-center align-self-center" type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                 Registrar producto
-                <!--<i class="bi bi-plus-circle-fill" style="font-size: 20px;"></i>-->
             </button>
         </div>
     </div>
 
-    <!-- Modal -->
+    <!-- Register new digital product modal -->
     <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
          aria-labelledby="staticBackdropLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg">
@@ -124,7 +127,7 @@
                                     </select>
                                 </div>
                                     <a href="{{route('workshop.index')}}">
-                                        <button class="btn btn-principal btn-sm" type="button">+ Agregar Taller</button>
+                                        <button class="btn btn-principal btn-sm" type="button">Agregar Taller</button>
                                     </a>
                                 </div>
                             </div>
@@ -138,146 +141,149 @@
         </div>
     </div>
 
+    <!-- Digital products table -->
     <div class="row">
         <div class="col-md-12">
-            <table id="table_id" class="display table-striped">
-                <thead>
-                <tr>
-                    <th class="text-center">ID</th>
-                    <th>Nombre del producto</th>
-                    <th>Autor(es)</th>
-                    <th colspan="3" class="text-center">Acciones</th>
-                </tr>
-                </thead>
-                <tbody>
-                @foreach($products as $product)
-                    <tr>
-                        <td class="text-center">{{$product->id}}</td>
-                        <td>{{$product->title}}</td>
-                        <td>
-                            @foreach($authors as $author)
-                                @if ($product->id == $author->id_product)
-                                    @foreach($patients as $patient)
-                                        @if ($author->id_patient == $patient->id)
-                                            {{$patient->name}}
-                                            <br>
-                                        @endif
-                                    @endforeach
-                                @endif
-                            @endforeach
-                        </td>
-                        <td>
-                            <a href="#">
-                                <button class="btn btn-info" type="button" data-toggle="modal" data-target="#ver-mas-{{$product->id}}" data-tooltip="tooltip" data-placement="right" title="Ver detalle del producto digital">
-                                <i class="bi bi-eye-fill"></i>
+            <div class="table-responsive mb-5">
+                <table id="table_id" class="display table-striped">
+                    <thead>
+                        <tr>
+                            <th class="text-center">ID</th>
+                            <th>Nombre del producto</th>
+                            <th>Autor(es)</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    @foreach($products as $product)
+                        <tr>
+                            <td class="text-center">{{$product->id}}</td>
+                            <td>{{$product->title}}</td>
+                            <td>
+                                @foreach($authors as $author)
+                                    @if ($product->id == $author->id_product)
+                                        @foreach($patients as $patient)
+                                            @if ($author->id_patient == $patient->id)
+                                                {{$patient->name}}
+                                                <br>
+                                            @endif
+                                        @endforeach
+                                    @endif
+                                @endforeach
+                            </td>
+                            <td class="d-flex justify-content-around">
+                                <!-- Digital product detail button -->
+                                <button class="btn btn-info tooltipped-btn" type="button" data-toggle="modal" data-target="#ver-mas-{{$product->id}}" data-tooltip="tooltip" data-placement="right" title="Ver detalle del producto">
+                                    <i class="bi bi-eye-fill"></i>
                                 </button>
-                            </a>
-                        </td>
-                        <td>
-                            <a href="{{route('products.edit',$product->id)}}" data-tooltip="tooltip" data-placement="right" title="Modificar producto digital">
-                                <button class="btn btn-warning" type="button"><i class="bi bi-pencil-fill"></i></button>
-                            </a>
-                        </td>
-                        <td>
-                            <button type="button" class="btn btn-danger" data-tooltip="tooltip" data-placement="right" title="Eliminar producto digital" data-toggle="modal" data-target="#eliminar-{{$product->id}}"><i class="bi bi-trash-fill"></i>
-                            </button>
-                        </td>
-                    </tr>
+                                <!-- Edit digital product button -->
+                                <a class="btn btn-warning tooltipped-btn" href="{{route('products.edit', $product->id)}}" data-tooltip="tooltip" data-placement="right" title="Modificar el producto" role="button">
+                                    <i class="bi bi-pencil-fill"></i>
+                                </a>
+                                <!-- Delete digital product button -->
+                                <button type="button" class="btn btn-danger tooltipped-btn" data-tooltip="tooltip" data-placement="left" title="Eliminar el producto" data-toggle="modal" data-target="#eliminar-{{$product->id}}">
+                                    <i class="bi bi-trash-fill"></i>
+                                </button>
+                            </td>
+                        </tr>
 
-                    <!-- Modal -->
-                    <div class="modal fade" id="eliminar-{{$product->id}}" tabindex="-1" role="dialog"
-                         aria-labelledby="eliminar-{{$product->id}}-Label" aria-hidden="true">
-                        <div class="modal-dialog" role="document">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                <div class="row col-md-12 justify-content-center text-center">
-                                <h2 class="section-header modal-title" id="eliminar-{{$product->id}}-Label">
-            <span class="underline text-uppercase">&nbsp;&nbsp;ELIMINAR PRODUCTO&nbsp;&nbsp;</span>
-        </h2></div>
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                    </button>
-                                </div>
-                                <div class="modal-body">
-                                    <p>¿Estás segur@ que deseas eliminar el producto: <l class="text-purple">{{$product->title}} </l>?</p>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary mr-auto" data-dismiss="modal">No</button>
-                                    <form action="{{route('products.destroy',$product->id)}}"
-                                          method="post">
-                                        @csrf
-                                        @method('delete')
-                                        <button type="submit" class="btn btn-danger">Si</button>
-                                    </form>
+                        <!-- Delete digital product modal -->
+                        <div class="modal fade" id="eliminar-{{$product->id}}" tabindex="-1" role="dialog"
+                            aria-labelledby="eliminar-{{$product->id}}-Label" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <div class="row col-md-12 justify-content-center text-center">
+                                            <h2 class="section-header modal-title" id="eliminar-{{$product->id}}-Label"> 
+                                                <span class="underline text-uppercase">&nbsp;&nbsp;ELIMINAR PRODUCTO&nbsp;&nbsp;</span>
+                                            </h2>
+                                        </div>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p>¿Estás segur@ que deseas eliminar el producto: <l class="text-purple">{{$product->title}} </l>?</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary mr-auto" data-dismiss="modal">No</button>
+                                        <form action="{{route('products.destroy', $product->id)}}"
+                                            method="post">
+                                            @csrf
+                                            @method('delete')
+                                            <button type="submit" class="btn btn-danger">Si</button>
+                                        </form>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
 
 
-                    <!-- Modal -->
-                    <div class="modal fade" id="ver-mas-{{$product->id}}" tabindex="-1" role="dialog"
-                         aria-labelledby="ver-mas-{{$product->id}}-label" aria-hidden="true">
-                        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                <div class="row col-md-12 justify-content-center text-center">
-                                <h2 class="section-header modal-title" id="ver-mas-{{$product->id}}-Title">
-            <span class="underline text-uppercase">&nbsp;&nbsp;{{strtoupper($product->title)}}&nbsp;&nbsp;</span>
-        </h2></div>
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                    </button>
-                                </div>
-                                <div class="modal-body">
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <img src="{{asset($product->image)}}"
-                                                 alt="{{$product->title}}-{{$product->title}}"
-                                                 class="product-images-ver-mas rounded" >
+                        <!-- Digital product detail modal -->
+                        <div class="modal fade" id="ver-mas-{{$product->id}}" tabindex="-1" role="dialog"
+                            aria-labelledby="ver-mas-{{$product->id}}-label" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <div class="row col-md-12 justify-content-center text-center">
+                                            <h2 class="section-header modal-title" id="ver-mas-{{$product->id}}-Title"> 
+                                                <span class="underline text-uppercase">&nbsp;&nbsp;{{strtoupper($product->title)}}&nbsp;&nbsp;</span>
+                                            </h2>
                                         </div>
-                                        <div class="col-md-6">
-                                            <div class="mb-4">
-                                            <p><strong>Precio mínimo: </strong>{{$product->price}}</p>
-                                            <p><strong>Descripción: </strong>{{$product->description}}</p>
-                                            <p><strong>Taller(es):</strong>
-                                            @foreach($workshops as $workshop)
-                                                @if(($product->id_workshop) == $workshop->id) {{$workshop->name}} @endif
-                                            @endforeach</p>
-                                            <p><strong>Autor(es):</strong>
-                                            @foreach($authors as $author)
-                                                @if ($product->id == $author->id_product)
-                                                    @foreach($patients as $patient)
-                                                        @if ($author->id_patient == $patient->id)
-                                                            {{$patient->name}}
-                                                            @if($patient === end($patients))
-                                                                &#46;
-                                                            @else
-                                                                &#44;
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <img src="{{asset($product->image)}}"
+                                                    alt="{{$product->title}}-{{$product->title}}"
+                                                    class="product-images-ver-mas rounded" 
+                                                    onerror="this.onerror=null;this.src='{{asset('images/image-not-found.png')}}';">
+                                            </div>
+                                            <div class="col-lg-6 mb-3 text-center text-lg-left">
+                                                <div class="mb-4">
+                                                <p><strong>Precio mínimo: </strong>{{$product->price}}</p>
+                                                <p><strong>Descripción: </strong>{{$product->description}}</p>
+                                                <p><strong>Taller(es):</strong>
+                                                @foreach($workshops as $workshop)
+                                                    @if(($product->id_workshop) == $workshop->id) {{$workshop->name}} @endif
+                                                @endforeach</p>
+                                                <p><strong>Autor(es):</strong>
+                                                @foreach($authors as $author)
+                                                    @if ($product->id == $author->id_product)
+                                                        @foreach($patients as $patient)
+                                                            @if ($author->id_patient == $patient->id)
+                                                                {{$patient->name}}
+                                                                @if($patient === end($patients))
+                                                                    &#46;
+                                                                @else
+                                                                    &#44;
+                                                                @endif
                                                             @endif
-                                                        @endif
-                                                    @endforeach
+                                                        @endforeach
+                                                    @endif
+                                                @endforeach</p>
+                                                </div>
+                                                @if(($product->file) != null)
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <a href="{{route('download',$product->id)}}">Descargar Archivo</a>
+                                                    </div>
+                                                </div>
                                                 @endif
-                                            @endforeach</p>
                                             </div>
                                         </div>
                                     </div>
-                                    @if(($product->file) != null)
-                                    <div class="row">
-                                        <div class="col-md-12">
-                                            <a href="{{route('download',$product->id)}}">Descargar Archivo</a>
-                                        </div>
-                                    </div>
-                                    @endif
                                 </div>
                             </div>
                         </div>
-                    </div>
 
-                @endforeach
-
-                </tbody>
-            </table>
+                    @endforeach
+                    </tbody>
+                </table>
+            </div>
         </div>
     </div>
 @endsection

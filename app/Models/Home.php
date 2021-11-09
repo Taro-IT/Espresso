@@ -9,6 +9,8 @@ class Home extends Model
 {
     use HasFactory;
 
+    protected $table = 'home';
+
     protected $fillable=[
         'whatsapp',
         'phone_1',
@@ -19,8 +21,7 @@ class Home extends Model
         'instagram',
         'spotify',
         'medium',
+        'linkedin',
         'email',
     ];
-
-
 }

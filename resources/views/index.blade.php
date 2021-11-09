@@ -151,32 +151,32 @@
 
     <!-- ======= CONTACT US SECTION ======= -->
     <section id="contact" class="container">
-            <h1 class="header text-center" data-aos="fade-up" data-aos-delay="100">
-                <span class="underline">&nbsp;&nbsp;CONTÁCTANOS&nbsp;&nbsp;</span>
-            </h1>
-            <p class="subtitle text-center" data-aos="fade-up" data-aos-delay="200">Ponte en contacto con nosotros, nos encantaría saber de ti y apoyarte en lo que necesites.</p>
+        <h1 class="header text-center" data-aos="fade-up" data-aos-delay="100">
+            <span class="underline">&nbsp;&nbsp;CONTÁCTANOS&nbsp;&nbsp;</span>
+        </h1>
+        <p class="subtitle text-center" data-aos="fade-up" data-aos-delay="200">Ponte en contacto con nosotros, nos encantaría saber de ti y apoyarte en lo que necesites.</p>
 
-            <div class="row text-center">
-                <div class="col-lg-12">
-                    <div class="row">
-                        <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
-                            <i class="bi bi-telephone-fill" style="font-size: 3rem;"></i>
-                            <br><br>
-                            <p><a href="tel:{{$home->phone_1}}">{{$home->phone_1}}</a><br><a href="tel:{{$home->phone_2}}">{{$home->phone_2}}</a> </p>
-                        </div>
-                        <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
-                            <i class="bi bi-phone-fill" style="font-size: 3rem;"></i>
-                            <br><br>
-                            <p><a href="tel:+52{{$home->mobile_1}}">+52 {{$home->mobile_1}}</a><br><a href="+52{{$home->mobile_2}}">+52 {{$home->mobile_2}}</a></p>
-                        </div>
-                        <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
-                            <i class="bi bi-envelope-fill" style="font-size: 3rem;"></i>
-                            <br><br>
-                            <p><a href="mailto:{{$home->email}}">{{$home->email}}</a></p>
-                        </div>
+        <div class="row text-center">
+            <div class="col-lg-12">
+                <div class="row">
+                    <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+                        <i class="bi bi-telephone-fill" style="font-size: 3rem;"></i>
+                        <br><br>
+                        <p><a href="tel:{{$home->phone_1}}">{{$home->phone_1}}</a><br><a href="tel:{{$home->phone_2}}">{{$home->phone_2}}</a> </p>
+                    </div>
+                    <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+                        <i class="bi bi-phone-fill" style="font-size: 3rem;"></i>
+                        <br><br>
+                        <p><a href="tel:+52{{$home->mobile_1}}">+52 {{$home->mobile_1}}</a><br><a href="+52{{$home->mobile_2}}">+52 {{$home->mobile_2}}</a></p>
+                    </div>
+                    <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+                        <i class="bi bi-envelope-fill" style="font-size: 3rem;"></i>
+                        <br><br>
+                        <p><a href="mailto:{{$home->email}}">{{$home->email}}</a></p>
                     </div>
                 </div>
             </div>
+        </div>
     </section>
 
     <!-- ======= BACK TO TOP FLOATING BUTTON ======= -->

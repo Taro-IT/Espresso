@@ -92,7 +92,7 @@ class ProductsController extends Controller
         }
 
         $producto->save();
-        return redirect()->route('products.index')->with('status','El producto ha sido creado de manera exitosa.');
+        return redirect()->route('products.index')->with('status', 'El producto ha sido registrado exitosamente');
 
     }
 
@@ -160,9 +160,8 @@ class ProductsController extends Controller
         }
 
         $update->update($data);
-        return redirect()->route('products.index')->with('status','El producto ha sido modificado de manera exitosa.');
 
-
+        return redirect()->route('products.index')->with('status', 'El producto ha sido modificado exitosamente');
     }
 
     /**
@@ -175,6 +174,6 @@ class ProductsController extends Controller
     {
         $product = products::find($id);
         $product->delete();
-        return redirect()->route('products.index')->with('status','El producto ha sido eliminado de manera exitosa.');
+        return redirect()->route('products.index')->with('status', 'El producto ha sido eliminado exitosamente');
     }
 }

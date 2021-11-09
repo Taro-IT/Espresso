@@ -18,19 +18,23 @@
           psiquiatra,afectivos,">
 
     <!-- Favicon de Pagina web-->
-    <link rel="icon" href="{{asset('favicon.ico')}}" type="image/x-icon">
-    <link rel="stylesheet" href="{{asset('css/dashboard.css')}}">
-    <link href="{{asset('css/main.css')}}" rel="stylesheet">
+    <link rel="icon" href="{{asset('favicon.ico')}}" type="image/x-icon">    
     
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
 
+    <!-- some styles break if these css files aren't linked in this order -->
+
+    <!-- Custom CSS -->
+    <link href="{{asset('css/dashboard.css')}}" rel="stylesheet">
+    <link href="{{asset('css/main.css')}}" rel="stylesheet">
+    
     <!-- Vendor CSS Files -->
     <link href="{{asset('vendor')}}/bootstrap-4.6.0/css/bootstrap.min.css" rel="stylesheet">
-    <!-- <link href="{{asset('vendor')}}/bootstrap-icons/bootstrap-icons.css" rel="stylesheet"> -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css">
+
     @stack('css')
 
     <!-- Titulo-->
@@ -39,7 +43,7 @@
 </head>
 <body>
     <!-- ======= HEADER ======= -->
-    <header id="header" class="header fixed-top d-flex align-items-center">
+    <header id="header" class="header fixed-top d-flex justify-content-between align-items-center">
 
         <!-- ======= LOGO ======= -->
         <div class="d-flex align-items-center justify-content-between">
@@ -47,13 +51,13 @@
                 <img src="{{asset('images/logo.jpg')}}" alt="Logo Casa Loohl">
             </a>
             <i class="bi bi-list toggle-sidebar-btn"></i>
-
+        </div>
         <!-- ======= NAVBAR ======= -->
-        <nav class="header-nav ms-auto margin-right">
+        <nav class="header-nav ms-auto margin-right mr-4">
             <ul class="d-flex align-items-center ">
                 <li class="nav-item dropdown pe-3">
                     <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
-                        <span class="d-none d-md-block dropdown-toggle ps-2">{{Auth::user()->name}}</span>
+                        <span class="dropdown-toggle ps-2">{{Auth::user()->name}}</span>
                     </a>
 
                     <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
@@ -95,25 +99,25 @@
     <aside id="sidebar" class="sidebar">
         <ul class="sidebar-nav" id="sidebar-nav">
             <li class="nav-item" id="nav-item">
-                <a class="nav-link" href="{{route('home')}}">
+                <a class="nav-link @if(Request::is('home')) active @endif" href="{{route('home')}}">
                     <i class="bi bi-person-badge-fill"></i>
                     <span>INFORMACIÓN DE CONTACTO</span>
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="{{route('products.index')}}">
+                <a class="nav-link @if(Request::is('productos') or Request::is('editar-productos/*')) active @endif" href="{{route('products.index')}}">
                     <i class="bi bi-shop"></i>
                     <span>PRODUCTOS DIGITALES</span>
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link collapsed" href="{{route('workshop.index')}}">
+                <a class="nav-link @if(Request::is('talleres') or Request::is('editar-talleres/*')) active @endif collapsed" href="{{route('workshop.index')}}">
                     <i class="bi bi-easel-fill"></i>
                     <span>TALLERES</span>
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link collapsed" href="{{route('patients.index')}}">
+                <a class="nav-link @if(Request::is('pacientes')) active @endif collapsed" href="{{route('patients.index')}}">
                     <i class="bi bi-people-fill"></i>
                     <span>HUÉSPEDES</span>
                 </a>
@@ -124,6 +128,7 @@
     <main>
         <div class="container-loohl">
             @if (session('status'))
+                <br>
                 <div class="alert alert-success">
                     {{ session('status') }}
                     <button type="button" class="close" data-dismiss="alert" aria-label="Close">
@@ -133,6 +138,7 @@
             @endif
 
             @if (session('error'))
+                <br>
                 <div class="alert alert-danger">
                     {{ session('error') }}
                     <button type="button" class="close" data-dismiss="alert" aria-label="Close">
@@ -146,11 +152,13 @@
 </body>
 
 <!-- Vendor JS Files -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="{{asset('vendor')}}/bootstrap-4.6.0/js/bootstrap_2.bundle.js"></script>
 
-<!-- Custom JS file -->
-<script src="{{asset('js')}}/dashboard.js"></script>
-<script src="{{asset('js/app.js')}}"></script>
+<!-- Custom JS files -->
+<script src="{{ asset('js/dashboard.js') }}"></script>
+<script src="{{ asset('js/app.js') }}"></script>
+<script src="{{ asset('/js/tooltips.js') }}"></script>
 @stack('scripts')
 
 </html>

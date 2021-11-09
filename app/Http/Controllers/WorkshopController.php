@@ -51,7 +51,7 @@ class WorkshopController extends Controller
         }
 
         Workshop::create($data);
-        return redirect()->route('workshop.index')->with('status','Se agergo el taller de manera exitosa');
+        return redirect()->route('workshop.index')->with('status','El taller ha sido registrado exitosamente');
 
 
     }
@@ -104,7 +104,7 @@ class WorkshopController extends Controller
         $update = Workshop::find($id);
         $update->update($data);
 
-        return redirect()->route('workshop.index')->with('status','El taller ha sido modificado de manera exitosa.');
+        return redirect()->route('workshop.index')->with('status','El taller ha sido modificado exitosamente');
     }
 
     /**
@@ -117,7 +117,7 @@ class WorkshopController extends Controller
     {
         $workshop = Workshop::find($id);
         $workshop->delete();
-        return redirect()->route('workshop.index')->with('status','El taller fue eliminado con exito');
+        return redirect()->route('workshop.index')->with('status','El taller ha sido eliminado exitosamente');
     }
 
 }

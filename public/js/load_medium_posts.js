@@ -31,7 +31,7 @@ function getPostHtml(link, thumbnail, title, author) {
    postsHtml = `
       <div class="medium-post">
          <a href="${link}" class="medium-post-link texst-reset">
-            <img src="${thumbnail}" class="medium-post-img rounded-lg"></img>
+            <img src="${thumbnail}" class="medium-post-img rounded-lg shadow"></img>
             <p class="medium-post-title text-center font-weight-bold">${title}</p>
          <a/>
          <p class="medium-post-author text-center">${author}</p>
