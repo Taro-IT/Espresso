@@ -9,11 +9,11 @@
 @section('content')
     <div class="row">
         <div class="col-md-6 text-left">
-            <h1 class="section-header mt-5 mb-5"> 
+            <h1 class="section-header mt-5 mb-4 mb-md-5"> 
                 <span class="underline">&nbsp;&nbsp;TALLERES&nbsp;&nbsp;</span>
             </h1>
         </div>
-        <div class="col-md-6 text-right mt-5">
+        <div class="col-md-6 text-right mt-5 mb-4 mb-md-0">
             <!-- Register new workshop button -->
             <button class="btn btn-principal" type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                 Registrar taller

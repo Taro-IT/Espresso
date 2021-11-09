@@ -105,7 +105,7 @@
                         </div>
                     </div>
                     <div class=" row justify-content-center">
-                        <button type="submit" class="btn btn-read-more">Guardar cambios</button>
+                        <button type="submit" class="btn btn-read-more mb-5">Guardar cambios</button>
                     </div>
                 </form>
             </div>
