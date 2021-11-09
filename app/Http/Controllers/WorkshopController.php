@@ -26,7 +26,7 @@ class WorkshopController extends Controller
      */
     public function create()
     {
-        
+
     }
 
     /**
@@ -36,7 +36,17 @@ class WorkshopController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function store(Request $request)
-    {  
+    {
+
+        $request->validate([
+            'name'=>'required|max:255',
+        ]);
+
+        $data = $request->all();
+
+        Workshop::create($data);
+        return redirect()->route('workshop.index')->with('status','Se agergo el taller de manera exitosa');
+
 
     }
 

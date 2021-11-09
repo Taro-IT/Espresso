@@ -6,7 +6,7 @@
 <div class="container">
     <div class="row text-center mb-3">
         <div class="col-md-12">
-            <h1 class="section-header modal-title" id="eliminar-{{$product->id}}-Label"> 
+            <h1 class="section-header modal-title" id="eliminar-{{$product->id}}-Label">
                 <span class="underline text-uppercase">&nbsp;&nbsp;MODIFICAR PRODUCTO&nbsp;&nbsp;</span>
             </h1>
         </div>
@@ -61,7 +61,7 @@
                                 </div>
                             </div>
                         @endif
-                </div>  
+                </div>
             </div>
         </div>
         <div class="row">
@@ -72,7 +72,7 @@
                         <select class="custom-select" name="id_patient" required>
                             <option disabled value="N/A">Selecciona el autor...</option>
                                             @foreach($patients as $patient)
-                                                <option value="{{$patient->id}}">@if(($product->id_patient) == $patient->id ) selected @endif>{{$patient->name}}</option>
+                                                <option value="{{$patient->id}}">@if(($product->id_patient) == $patient->id ) selected @endif{{$patient->name}}</option>
                                             @endforeach
                         </select>
                     </div>
@@ -89,7 +89,7 @@
                         <select class="custom-select" name="id_workshop" required>
                             <option disabled>Selecciona un taller...</option>
                                         @foreach($workshops as $workshop)
-                                            <option value="{{$workshop->id}}">@if(($product->id_workshop) == $workshop->id) selected @endif>{{$workshop->name}}</option>
+                                            <option value="{{$workshop->id}}">@if(($product->id_workshop) == $workshop->id) selected @endif{{$workshop->name}}</option>
                                         @endforeach
                         </select>
                     </div>
