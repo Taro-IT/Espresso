@@ -10,6 +10,8 @@ class Workshop extends Model
     protected $table = 'workshop';
 
     protected $fillable = [
-        'name'
+        'name',
+        'description',
+        'image',
     ];
 }

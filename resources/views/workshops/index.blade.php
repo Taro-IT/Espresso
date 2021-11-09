@@ -5,10 +5,11 @@
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.css">
 @endpush
 @section('content')
+
     <div class="row">
         <div class="col-md-6 text-left">
             <h1 class="section-header mt-5 mb-5">
-                <span class="underline">&nbsp;&nbsp;TALLERES&nbsp;&nbsp;</span>
+                <span class="underline">&nbsp;&nbsp;TALLERES&nbsp;& ACTIVIDADES</span>
             </h1>
         </div>
         <div class="col-md-6 text-right mt-5">
@@ -43,6 +44,28 @@
                         </span>
                                 @enderror
                             </div>
+                            <div class="mb-3">
+                                <label for="description" class="form-label">Descripción:</label>
+                                <textarea class="form-control" aria-label="With textarea" name="description"
+                                          required>{{old('description')}}</textarea>
+                                @error('description')
+                                <span class="invalid-feedback" role="alert">
+                            <strong>{{ $message }}</strong>
+                        </span>
+                                @enderror
+                            </div>
+                            <div class="row text-left">
+                                <div class="col-md-12">
+                                    <label><i class="bi bi-image-fill mr-2"></i>Imagen del producto:</label>
+                                    <div class="input-group mb-2">
+                                        <div class="custom-file" id="customFile">
+                                            <input name="image" type="file" value="{{old('image')}}" class="custom-file-input" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01" lang="es" data-browse="Subir" accept="image/*">
+                                            <label class="custom-file-label" for="inputGroupFile01">Seleccionar archivo...</label>
+                                        </div>
+                                    </div>
+                                    <small class="text-muted">Se recomienda usar una imagen de 600 x 450px.</small>
+                                </div>
+                            </div>
                             <div class="modal-footer justify-content-center">
                                 <button type="submit" class="btn btn-principal">Registrar</button>
                             </div>
@@ -70,7 +93,7 @@
                         <td class="text-center">{{$workshop->id}}</td>
                         <td>{{$workshop->name}}</td>
                         <td class="text-center">
-                            <a href="{{route('products.edit',$workshop->id)}}" data-tooltip="tooltip"
+                            <a href="{{route('workshop.edit',$workshop->id)}}" data-tooltip="tooltip"
                                data-placement="right" title="Modificar el taller.">
                                 <button class="btn btn-warning" type="button">
                                     <i class="bi bi-pencil-fill"></i>

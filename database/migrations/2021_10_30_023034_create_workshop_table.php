@@ -16,6 +16,8 @@ class CreateWorkshopTable extends Migration
         Schema::create('workshop', function (Blueprint $table) {
             $table->id();
             $table->string('name');
+            $table->string('image')->nullable();
+            $table->text('description')->nullable();
             $table->timestamps();
         });
     }
