@@ -123,7 +123,7 @@
                                         </button>
                                     </div>
                                     <div class="modal-body">
-                                        <p>¿Estás segur@ que deseas eliminar el taller: <l class="text-purple">{{$workshop->title}} </l>?</p>
+                                        <p>¿Estás segur@ que deseas eliminar el taller: <l class="text-purple">{{$workshop->name}} </l>?</p>
                                     </div>
                                     <div class="modal-footer">
                                         <button type="button" class="btn btn-secondary mr-auto" data-dismiss="modal">No</button>
