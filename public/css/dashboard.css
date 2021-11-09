@@ -354,3 +354,42 @@ a:hover {
 .btn-warning:hover {
     box-shadow: 0px 0px 12px #C490D1c1 !important;
 }
+
+.paginate_button {
+    transition: 0.5s !important;
+    background-color: #eae3f2 !important;
+    background-image: none !important;
+    color: black !important;
+    border: none !important;
+    font-weight: bold !important;;
+}
+.paginate_button:hover {
+    background-color: #a282c4 !important;
+    background-image: none !important;
+    box-shadow: 0px 0px 12px #a282c4c1 !important;
+    color: black !important;
+}
+
+.paginate_button.current {
+    background-color: #a282c4 !important;
+    background-image: none !important;
+    color: black !important;
+}
+.paginate_button.current:hover {
+    background-color: #a282c4 !important;
+    background-image: none !important;
+    box-shadow: 0px 0px 12px #a282c4c1 !important;
+    color: black !important;
+}
+
+
+.paginate_button.disabled {
+    box-shadow: none !important;
+    background-color: #c4c4c4 !important;
+    color: black !important;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button:hover {
+    color: black !important;
+}
+
