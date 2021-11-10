@@ -28,10 +28,10 @@ Route::get('/download/file/{id}', [\App\Http\Controllers\PageInfoController::cla
 
 
 // Routes to pages for web services validation
-Route::view('/quienes-somos', 'about_us')->name('quienes-somos');
+Route::get('/quienes-somos', [\App\Http\Controllers\PageInfoController::class,'quienesSomos'])->name('quienes-somos');
 Route::get('/que-hacemos', [\App\Http\Controllers\PageInfoController::class,'queHacemos'])->name('que-hacemos');
 Route::get('/tienda' , [\App\Http\Controllers\PageInfoController::class,'tienda'])->name('tienda');
-Route::view('/puntos-venta', 'puntos_venta')->name('puntos-venta');
+Route::get('/puntos-venta', [\App\Http\Controllers\PageInfoController::class,'puntosVenta'])->name('puntos-venta');
 
 Route::get('/medium', [\App\Http\Controllers\PageInfoController::class,'getMediumPosts']);
 

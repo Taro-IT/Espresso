@@ -45,7 +45,7 @@ class PageInfoController extends Controller
         $data = json_decode($response);
         $fb_page = $data->html;
 
-        return view('index')->with(['fb_page'=>$fb_page,'home'=>Home::get()->first()]);
+        return view('index')->with(['fb_page'=>$fb_page, 'home'=>Home::get()->first()]);
     }
 
     public function getMediumPosts() {
@@ -54,7 +54,19 @@ class PageInfoController extends Controller
         return response()->json($posts);
     }
 
-    public function tienda(){
+    public function puntosVenta() {
+        return view('puntos_venta')->with([
+            'home'=>Home::get()->first()
+        ]);
+    }
+
+    public function quienesSomos() {
+        return view('about_us')->with([
+            'home'=>Home::get()->first()
+        ]);
+    }
+
+    public function tienda() {
 
         return view('tienda')->with([
             'productos'=>Products::paginate(6),
@@ -62,6 +74,7 @@ class PageInfoController extends Controller
             'patients'=>Patient::get(),
             'workshops'=>Workshop::get(),
             'currencies'=>Currency::all(),
+            'home'=>Home::get()->first()
         ]);
     }
     public function queHacemos(){
@@ -69,6 +82,7 @@ class PageInfoController extends Controller
 
         return view('que_hacemos')->with([
             'talleres' => $talleres,
+            'home'=>Home::get()->first()
         ]);
     }
 
