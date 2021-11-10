@@ -84,7 +84,7 @@ a:hover {
     background-color: #f8f3ff;
 }
 
-/* @media (min-width: 768px) {
+@media (min-width: 768px) {
     .dropdown-menu-arrow::before {
         content: "";
         width: 13px;
@@ -97,7 +97,7 @@ a:hover {
         border-top: 1px solid #eaedf1;
         border-left: 1px solid #eaedf1;
     }
-} */
+}
 
 
 /* Alerts */
@@ -181,7 +181,16 @@ a:hover {
     background-color: white;
 }
 
-
+@media (min-width: 1200px) {
+    .toggle-sidebar-btn {
+        display: none;
+    }
+}
+@media (max-width: 1199px) {
+    .toggle-sidebar-btn {
+        display: block;
+    }
+}
 
 
 @media (min-width: 1200px) {
@@ -194,15 +203,6 @@ a:hover {
         left: 0;
     }
 }
-@media (min-width: 1200px) {
-    .toggle-sidebar #main, .toggle-sidebar #footer {
-        margin-left: 0;
-    }
-    .toggle-sidebar .sidebar {
-        left: -300px;
-    }
-}
-
 .sidebar-nav {
     padding: 0;
     margin: 0;
@@ -244,22 +244,9 @@ a:hover {
     background: var(--light-purple);
 }
 
-/* @media (max-width: 1600px) {
-    .margin-right{
-        margin-left: 65vw;
-    }
-}
-
-@media(min-width: 1600px){
-    .margin-right{
-        margin-left: 75vw;
-    }
-} */
-
 .container-loohl {
     margin-top: 90px;
     margin-right: 2%;
-    /* margin-left: 24%; */
 }
 
 @media (min-width: 1200px) {
@@ -355,6 +342,7 @@ a:hover {
     box-shadow: 0px 0px 12px #C490D1c1 !important;
 }
 
+/* Datatables pagination button override */
 .paginate_button {
     transition: 0.5s !important;
     background-color: #eae3f2 !important;
