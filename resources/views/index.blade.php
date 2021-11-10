@@ -131,16 +131,7 @@
                         </a>
                     </div>
                 </div>
-                <!-- {{-- @foreach($fb_posts as $post)
-                    <div class="col-lg-4">
-                        <div class="post-box p-0">
-                            <div id="fb-root"></div>
-                            {!! $post !!}
-                        </div>
-                    </div>
-                @endforeach --}} -->
                 <div class="col-12 col-lg-6 d-none d-sm-flex justify-content-center" data-aos="fade-left" data-aos-delay="200" style="height: 400px">
-                    <!-- <div id="fb-root"></div> -->
                     <div class="post-box d-inline-block shadow-sm text-center">
                         {!! $fb_page !!}
                     </div>
