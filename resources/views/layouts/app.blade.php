@@ -66,6 +66,7 @@
                         <li><a class="nav-link scrollto" href="{{route('que-hacemos')}}#wow">FORMA DE TRABAJO</a></li>
                         <li><a class="nav-link scrollto" href="{{route('que-hacemos')}}#services">SERVICIOS</a></li>
                         <li><a class="nav-link scrollto" href="{{route('que-hacemos')}}#activities">ACTIVIDADES</a></li>
+                        <li><a class="nav-link scrollto" href="{{route('que-hacemos')}}#faq">PREGUNTAS FRECUENTES</a></li>
                     </ul>
                 </li>
                 <li class="dropdown"><a class="nav-link scrollto" href="{{route('index')}}#contribute"><span>INVOLÚCRATE</span><i class="bi bi-chevron-down"></i></a>
