@@ -41,3 +41,10 @@
     transition: 0.15s;
     text-decoration: underline;
 }
+
+/* Services carrousel */
+.services-img {
+    height: 350px;
+    width: 100%;
+    object-fit: cover;
+}

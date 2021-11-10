@@ -116,41 +116,28 @@
                 <h1 class="section-header" data-aos="fade-up" data-aos-delay="100">
                     <span class="underline">&nbsp;&nbsp;NUESTROS SERVICIOS&nbsp;&nbsp;</span>
                 </h1>
-                <p class="subtitle text-center" data-aos="fade-up" data-aos-delay="200">Casa Loohl residencia con
+                <p class="subtitle text-center" data-aos="fade-up" data-aos-delay="200">Casa Loohl es una residencia con
                     atención personalizada y seguimiento por parte de profesionales de la salud las 24 horas del día los
                     7 días de la semana.</p>
             </div>
             <div class="subtitle" data-aos="fade-up" data-aos-delay="300">
-                <p class="subheader">Características:</p>
-                <ul class="list text-justify">
-                    <li> Modalidad proyectada para periodos prolongados, con un periodo mínimo sugerido de 4 meses de
-                        estadía.
-                    </li>
-                    <li> El huésped realiza actividades en comunidad para fortalecer sus habilidades interpersonales.
-                    </li>
-                    <li> El huésped realiza actividades de manera individual que le permiten sentirse independiente y
-                        enfocar su energía en cosas de su total agrado.
-                    </li>
-                    <li> En la casa se cuentan con reglas definidas para lograr un ambiente armonioso y una sana
-                        convivencia.
-                    </li>
-                </ul>
+                
             </div>
-            <div class="row" data-aos="fade-up" data-aos-delay="400">
-                <div class="col-md-6">
+            <div class="row" data-aos="fade-up" data-aos-delay="300">
+                <div class="col-md-6 mb-3">
                     <div class="carousel slide carrousel-sizing" id="main-carousel" data-ride="carousel">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <img class="d-block img-fluid" src="/images/img-sala-2.png" alt="">
+                                <img class="d-block services-img" src="/images/img-sala-2.png" alt="">
                             </div>
                             <div class="carousel-item">
-                                <img class="d-block img-fluid" src="/images/img-sala.jpg" alt="">
+                                <img class="d-block services-img" src="/images/img-sala.jpg" alt="">
                             </div>
                             <div class="carousel-item">
-                                <img class="d-block img-fluid" src="/images/carrousel-1.jpg" alt="">
+                                <img class="d-block services-img" src="/images/carrousel-1.jpg" alt="">
                             </div>
                             <div class="carousel-item">
-                                <img class="d-block img-fluid" src="/images/carrousel-3.jpg" alt="">
+                                <img class="d-block services-img" src="/images/carrousel-3.jpg" alt="">
                             </div>
                         </div><!-- /.carousel-inner -->
 
@@ -165,13 +152,26 @@
                     </div><!-- /.carousel -->
                 </div>
                 <div class="col-md-6">
-                    <p class="subtitle text-center">Todos los espacios de Casa Loohl están diseñados para brindar
-                        comodidad y seguridad a los huéspedes, haciéndolos sentir como si estuvieran en casa.</p>
+                    <p class="subheader">Características:</p>
+                    <ul class="list text-justify">
+                        <li> Modalidad proyectada para periodos prolongados, con un periodo mínimo sugerido de 4 meses de
+                            estadía.
+                        </li>
+                        <li> El huésped realiza actividades en comunidad para fortalecer sus habilidades interpersonales.
+                        </li>
+                        <li> El huésped realiza actividades de manera individual que le permiten sentirse independiente y
+                            enfocar su energía en cosas de su total agrado.
+                        </li>
+                        <li> En la casa se cuentan con reglas definidas para lograr un ambiente armonioso y una sana
+                            convivencia.
+                        </li>
+                    </ul>
                 </div>
             </div>
-            <div class="row mt-1" data-aos="fade-up" data-aos-delay="450">
-                <i class="bi bi-info-circle-fill mr-2" style="font-size: 1rem;"></i>
-                <p>Actualmente, Casa Loohl está acondicionada para recibir un máximo de 12 huéspedes.</p>
+            <p class="subtitle" data-aos="fade-up" data-aos-delay="400">Todos los espacios de Casa Loohl están diseñados para brindar
+            comodidad y seguridad a los huéspedes, haciéndolos sentir como si estuvieran en casa.</p>
+            <div class="mt-2" data-aos="fade-up" data-aos-delay="450">
+                <p><i class="bi bi-info-circle-fill mr-2" style="font-size: 1rem;"></i>Actualmente, Casa Loohl está acondicionada para recibir un máximo de 12 huéspedes.</p>
             </div>
     </div>
     </div>
