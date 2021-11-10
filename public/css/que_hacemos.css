@@ -25,3 +25,19 @@
     text-decoration: underline;
     text-decoration-color: inherit;
 }
+
+.faq-answer-link {
+    color: var(--dark-purple);
+    transition: 0.15s;
+    text-decoration: underline;
+}
+.faq-answer-link:hover {
+    color: #985fc4;
+    text-decoration: underline;
+    text-decoration-color: #985fc4;
+}
+.faq-answer-link:active {
+    color: var(--dark-purple);
+    transition: 0.15s;
+    text-decoration: underline;
+}
