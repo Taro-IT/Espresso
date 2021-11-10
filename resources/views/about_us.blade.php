@@ -30,16 +30,16 @@
                 <div class="carousel slide carrousel-sizing" id="main-carousel" data-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img class="d-block img-fluid" src="/images/Carrusel1.jpeg" alt="">
+                            <img class="d-block about-us-img" src="/images/Carrusel1.jpeg" alt="">
                         </div>
                         <div class="carousel-item">
-                            <img class="d-block img-fluid" src="/images/Carrusel2.jpeg" alt="">
+                            <img class="d-block about-us-img" src="/images/Carrusel2.jpeg" alt="">
                         </div>
                         <div class="carousel-item">
-                            <img class="d-block img-fluid" src="/images/Carrusel3.jpeg" alt="">
+                            <img class="d-block about-us-img" src="/images/Carrusel3.jpeg" alt="">
                         </div>
                         <div class="carousel-item">
-                            <img class="d-block img-fluid" src="/images/Carrusel4.jpeg" alt="">
+                            <img class="d-block about-us-img" src="/images/Carrusel4.jpeg" alt="">
                         </div>
                     </div><!-- /.carousel-inner -->
 
@@ -100,7 +100,7 @@
                             sociología).</p>
             </div>
             <div class="col-md-4" data-aos="fade-left" data-aos-delay="500">
-                <img class="d-block img-fluid" src="/about_us/test_image_2.jpg" alt="image-girl">
+            <img class="d-block img-fluid" src="/about_us/test_image_2.jpg" alt="image-girl">
             </div>
         </div>
         <br>
@@ -122,3 +122,7 @@
 
 </div>
 @endsection
+
+@push('css')
+    <link rel="stylesheet" href="{{ asset('/css/about_us.css') }}">
+@endpush
