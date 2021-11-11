@@ -74,3 +74,9 @@ Route::get('/editar-pacientes/{id}',[\App\Http\Controllers\PatientController::cl
 Route::post('/almacenar-pacientes',[\App\Http\Controllers\PatientController::class,'store'])->name('patients.store');
 Route::put('/actualizar-pacientes/{id}',[\App\Http\Controllers\PatientController::class,'update'])->name('patients.update');
 Route::delete('/pacientes-eliminar/{id}',[\App\Http\Controllers\PatientController::class,'destroy'])->name('patients.destroy');
+
+//Seccion de Imagenes
+Route::get('/imagenes',[\App\Http\Controllers\ImageController::class,'index'])->name('images.index');
+Route::get('/agregar-imagenes',[\App\Http\Controllers\ImageController::class,'create'])->name('images.create');
+Route::post('/almacenar-imagenes',[\App\Http\Controllers\ImageController::class,'store'])->name('images.store');
+Route::delete('/imagenes-eliminar/{id}',[\App\Http\Controllers\ImageController::class,'destroy'])->name('images.destroy');

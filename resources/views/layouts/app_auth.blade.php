@@ -18,8 +18,8 @@
           psiquiatra,afectivos,">
 
     <!-- Favicon de Pagina web-->
-    <link rel="icon" href="{{asset('favicon.ico')}}" type="image/x-icon">    
-    
+    <link rel="icon" href="{{asset('favicon.ico')}}" type="image/x-icon">
+
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -30,7 +30,7 @@
     <!-- Custom CSS -->
     <link href="{{asset('css/dashboard.css')}}" rel="stylesheet">
     <link href="{{asset('css/main.css')}}" rel="stylesheet">
-    
+
     <!-- Vendor CSS Files -->
     <link href="{{asset('vendor')}}/bootstrap-4.6.0/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css">
@@ -114,6 +114,12 @@
                 <a class="nav-link @if(Request::is('talleres') or Request::is('editar-talleres/*')) active @endif collapsed" href="{{route('workshop.index')}}">
                     <i class="bi bi-easel-fill"></i>
                     <span>TALLERES</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link @if(Request::is('imagenes')) active @endif collapsed" href="{{route('images.index')}}">
+                    <i class="bi bi-images"></i>
+                    <span>IMÁGENES</span>
                 </a>
             </li>
             <li class="nav-item">
