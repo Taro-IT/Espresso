@@ -10,7 +10,7 @@ class WorkshopController extends Controller
         /**
      * Display a listing of the resource.
      *
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View|\Illuminate\Http\Response
      */
     public function index()
     {
@@ -46,25 +46,20 @@ class WorkshopController extends Controller
 
         if ($request->hasFile('image'))
         {
-            $request->file('image')->store('public');
-            $data['image'] = $request->file('image')->store('');
+            $image = $request->file('image');
+            $imageType = $image->getClientMimeType();
+            $imageType = explode('/', $imageType);
+            $imageType = $imageType[1];
+
+            $randNum = mt_rand(100,999);
+            $request->file('image')->storeAs('storage/workshops/','/workshop-'.$randNum.'.'.$imageType);
+            $data['image'] = 'storage/workshops/workshop-'.$randNum.'.'.$imageType;
         }
 
         Workshop::create($data);
         return redirect()->route('workshop.index')->with('status','El taller ha sido registrado exitosamente');
 
 
-    }
-
-    /**
-     * Display the specified resource.
-     *
-     * @param  \App\Models\products  $products
-     * @return \Illuminate\Http\Response
-     */
-    public function show(products $products)
-    {
-        //
     }
 
     /**
@@ -83,7 +78,7 @@ class WorkshopController extends Controller
      *
      * @param  \Illuminate\Http\Request  $request
      * @param  \App\Models\products  $products
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Http\RedirectResponse
      */
     public function update(Request $request, $id)
     {
@@ -95,8 +90,14 @@ class WorkshopController extends Controller
 
         if ($request->hasFile('image'))
         {
-            $request->file('image')->store('public');
-            $data['image'] = $request->file('image')->store('');
+            $image = $request->file('image');
+            $imageType = $image->getClientMimeType();
+            $imageType = explode('/', $imageType);
+            $imageType = $imageType[1];
+
+            $randNum = mt_rand(100,999);
+            $request->file('image')->storeAs('storage/workshops/','/workshop-'.$randNum.'.'.$imageType);
+            $data['image'] = 'storage/workshops/workshop-'.$randNum.'.'.$imageType;
         }else{
             $data['image'] = $request->image_aux;
         }
@@ -111,7 +112,7 @@ class WorkshopController extends Controller
      * Remove the specified resource from storage.
      *
      * @param  \App\Models\products  $products
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Http\RedirectResponse
      */
     public function destroy($id)
     {
