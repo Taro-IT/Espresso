@@ -103,12 +103,18 @@ Debera mandarte al link http://127.0.0.1:8000
 
 ## Ejecutando las pruebas ⚙️
 
-_Dentro del sistema se configuraron pruebas automaticas sigue los sigueintes pasos para correr ya sean 
-generales o individuales_
+_Dentro del sistema se configuraron pruebas automaticas sigue los siguientes pasos para correr ya sean 
+generales o individuales, puede utilizar el siguiente comando para probar la página principal_
+
+```
+php artisan test
+```
+
+_Para correr las pruebas del sistema sigue lo siguiente_
 
 ### Analice las pruebas end-to-end 🔩
 
-_Explica que verifican estas pruebas y por qué_
+_Con_
 
 ```
 Da un ejemplo

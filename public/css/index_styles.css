@@ -1,0 +1,142 @@
+/*--------------------------------------------------------------
+# Intro
+--------------------------------------------------------------*/
+@media query and (max-width:992px) {
+    .top-section-with-fixed-bg {
+        background-attachment:fixed;
+    }
+}
+@media only screen and (min-width: 992px) {
+    .fixed-img {
+        position: fixed;
+        top: 120px;
+        right: 0px;
+        width: 50vw;
+        height: calc(100vh - 120px);
+        object-fit: cover;
+    }
+    
+    .unfixed-img {
+        position: absolute;
+        bottom: 0px;
+        right: 0px;
+        width: 50vw;
+        height: calc(100vh - 120px);
+        object-fit: cover;
+    }
+
+    .intro-text {
+        min-height: calc(100vh - 120px);
+        padding-top: 120px;
+        padding-bottom: 100px;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    
+}
+@media only screen and (max-width: 991px) {
+    .main-img {
+        margin-left: -15px;
+        width: 100vw;
+        height: 400px;
+        object-fit: cover;
+    }
+
+    .intro-text {
+        padding: 70px 50px;
+    }
+}
+
+/*--------------------------------------------------------------
+# Medium posts
+--------------------------------------------------------------*/
+
+/* Style posts links */
+.medium-post-link {
+    color: inherit;
+    transition: 0.15s;
+    text-decoration: underline;
+    text-decoration-color: var(--transparent);
+}
+.medium-post-link:hover {
+    color: inherit;
+    text-decoration: underline;
+    text-decoration-color: var(--purple);
+}
+.medium-post-link:active {
+    text-decoration: underline;
+    text-decoration-color: inherit;
+}
+
+/* Style the font size of each article title */
+div[data-medium-post-id='1'] > .medium-post > a > .medium-post-title{
+    font-size: 2.7rem;
+}
+div[data-medium-post-id='2'] > .medium-post > a > .medium-post-title{
+    font-size: 2rem;
+}
+div[data-medium-post-id='3'] > .medium-post > a > .medium-post-title,
+div[data-medium-post-id='4'] > .medium-post > a > .medium-post-title{
+    font-size: 1.2rem;
+}
+
+/* Style the image size of each article title */
+.medium-post-img {
+    width: 100%;
+    object-fit: cover;
+}
+div[data-medium-post-id='1'] > .medium-post > a > .medium-post-img{
+    height: 400px;
+}
+div[data-medium-post-id='2'] > .medium-post > a > .medium-post-img{
+    height: 200px;
+}
+div[data-medium-post-id='3'] > .medium-post > a > .medium-post-img,
+div[data-medium-post-id='4'] > .medium-post > a > .medium-post-img{
+    height: 150px;
+}
+
+/* Style posts links */
+.medium-post-link {
+    color: inherit;
+    transition: 0.15s;
+    text-decoration: underline;
+    text-decoration-color: var(--transparent);
+}
+.medium-post-link:hover {
+    color: inherit;
+    text-decoration: underline;
+    text-decoration-color: var(--purple);
+}
+.medium-post-link:active {
+    text-decoration: underline;
+    text-decoration-color: inherit;
+}
+
+/* Style the font size of each article title */
+div[data-medium-post-id='1'] > .medium-post > a > .medium-post-title{
+    font-size: 2.7rem;
+}
+div[data-medium-post-id='2'] > .medium-post > a > .medium-post-title{
+    font-size: 2rem;
+}
+div[data-medium-post-id='3'] > .medium-post > a > .medium-post-title,
+div[data-medium-post-id='4'] > .medium-post > a > .medium-post-title{
+    font-size: 1.2rem;
+}
+
+/* Style the image size of each article title */
+.medium-post-img {
+    width: 100%;
+    object-fit: cover;
+}
+div[data-medium-post-id='1'] > .medium-post > a > .medium-post-img{
+    height: 400px;
+}
+div[data-medium-post-id='2'] > .medium-post > a > .medium-post-img{
+    height: 200px;
+}
+div[data-medium-post-id='3'] > .medium-post > a > .medium-post-img,
+div[data-medium-post-id='4'] > .medium-post > a > .medium-post-img{
+    height: 150px;
+}

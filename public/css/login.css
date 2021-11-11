@@ -1,0 +1,110 @@
+:root {
+    scroll-behavior: smooth;
+    --dark-purple: #652d90;
+    --purple: #a282c4;
+    --light-purple: #eae3f2;
+    --underline-purple: #e2cef8;
+    --transparent: rgba(255, 255, 255, 0);
+    --red: #ff5e6b;
+    --green: #9ee6b8;
+    --yellow: #fcf89c;
+}
+
+* {
+    font-family: "Raleway", sans-serif;
+}
+
+.content {
+    min-height: 77vh;
+}
+
+.card {
+    margin-top:10vh;
+    box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
+    width: 30vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (max-width: 1350px) {
+    .card {
+        width: 50vw;
+    }
+}
+
+@media (max-width: 760px) {
+    .card {
+        width: 70vw;
+    }
+    .card h1{
+        font-size: 35px;
+        font-family: "Raleway", sans-serif;
+    }
+}
+
+@media (max-width: 420px) {
+    .card {
+        width: 95vw;
+    }
+    .card h1{
+        font-size: 35px;
+        font-family: "Raleway", sans-serif;
+    }
+}
+
+/* FORM TYPOGRAPHY*/
+input[type=email],input[type=password] {
+    background-color: white;
+    color: black;
+    padding: 10px 10px;
+    text-align: left;
+    font-size: 16px;
+    margin-bottom: 5px;
+    width: 100%;
+    border: 2px solid #a29b9b;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    -webkit-border-radius: 5px 5px 5px 5px;
+    border-radius: 5px 5px 5px 5px;
+}
+
+input[type=email],input[type=password]:focus {
+    background-color: white;
+    border-bottom: 2px solid #652D90;
+}
+
+input[type=email],input[type=password]:placeholder {
+    color: lightgray;
+}
+/* Simple CSS3 Fade-in Animation */
+.underlineHover:after {
+    display: block;
+    left: 0;
+    bottom: -10px;
+    width: 0;
+    height: 2px;
+    background-color: var(--dark-purple);
+    content: "";
+    transition: width 0.2s;
+}
+
+.underlineHover:hover {
+    color: #0d0d0d;
+}
+
+.underlineHover:hover:after{
+    width: 100%;
+}
+
+/* OTHERS */
+
+*:focus {
+    outline: none;
+}
+
+#icon {
+    width:30%;
+}
