@@ -75,8 +75,8 @@
                     @foreach($images as $image)
                         <tr>
                             <td class="text-center">{{$image->id}}</td>
-                           <td>
-                               <img src="{{asset($image->image)}}" alt="Imagen-{{$image->id}}">
+                           <td class="text-center">
+                               <img src="{{asset($image->image)}}" width="60%" height="250vh" alt="Imagen-{{$image->id}}">
                            </td>
                             <td class="d-flex justify-content-around">
                                 <!-- Digital product detail button -->

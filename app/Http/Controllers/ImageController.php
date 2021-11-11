@@ -31,11 +31,34 @@ class ImageController extends Controller
      * Store a newly created resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Http\RedirectResponse
      */
     public function store(Request $request)
     {
-        //
+        $request->validate([
+            'image'=> 'required',
+        ]);
+
+        $data = $request->all();
+
+        if ($request->hasFile('image'))
+        {
+            $image = $request->file('image');
+            $imageType = $image->getClientMimeType();
+            $imageType = explode('/', $imageType);
+            $imageType = $imageType[1];
+
+            $randNum = mt_rand(100,999);
+            $request->file('image')->storeAs('storage/images/','/galery-'.$randNum.'.'.$imageType);
+            $data['image'] = 'storage/images/galery-'.$randNum.'.'.$imageType;
+
+        }
+
+        Image::create($data);
+
+        return redirect()->route('images.index')->with('status', 'La imagen ha sido registrada exitosamente');
+
+
     }
 
     /**
@@ -76,10 +99,12 @@ class ImageController extends Controller
      * Remove the specified resource from storage.
      *
      * @param  \App\Models\Image  $image
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Http\RedirectResponse
      */
-    public function destroy(Image $image)
+    public function destroy($id)
     {
-        //
+        $product = Image::find($id);
+        $product->delete();
+        return redirect()->route('images.index')->with('status', 'La imagen ha sido eliminada exitosamente');
     }
 }
