@@ -66,12 +66,13 @@
                         <li><a class="nav-link scrollto" href="{{route('que-hacemos')}}#wow">FORMA DE TRABAJO</a></li>
                         <li><a class="nav-link scrollto" href="{{route('que-hacemos')}}#services">SERVICIOS</a></li>
                         <li><a class="nav-link scrollto" href="{{route('que-hacemos')}}#activities">ACTIVIDADES</a></li>
+                        <li><a class="nav-link scrollto" href="{{route('que-hacemos')}}#faq">PREGUNTAS FRECUENTES</a></li>
                     </ul>
                 </li>
                 <li class="dropdown"><a class="nav-link scrollto" href="{{route('index')}}#contribute"><span>INVOLÚCRATE</span><i class="bi bi-chevron-down"></i></a>
                     <ul>
                         <li><a href="{{route('tienda')}}">TIENDA EN LINEA</a></li>
-                        <li><a href="{{route('puntos-venta')}}">TIENDAS FISICAS</a></li>
+                        <li><a href="{{route('puntos-venta')}}">TIENDAS FÍSICAS</a></li>
                     </ul>
                 </li>
                 <li><a class="nav-link" href="/#contact">CONTÁCTANOS</a></li>

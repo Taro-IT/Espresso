@@ -43,7 +43,7 @@ class PatientController extends Controller
 
         Patient::create($data);
 
-        return redirect()->route('patients.index')->with('status','Se agrego un paciente de forma exitosa!');
+        return redirect()->route('patients.index')->with('status', 'El huésped ha sido registrado exitosamente');
     }
 
     /**
@@ -72,7 +72,7 @@ class PatientController extends Controller
         $data = $request->all();
         $update = patient::find($id);
         $update->update($data);
-        return redirect()->route('patients.index')->with('status','El paciente ha sido modificado de manera exitosa.');
+        return redirect()->route('patients.index')->with('status', 'El huésped ha sido modificado exitosamente');
 
     }
 
@@ -86,7 +86,7 @@ class PatientController extends Controller
     {
         $product = Patient::find($id);
         $product->delete();
-        return redirect()->route('patients.index')->with('status','El paciente fue eliminado con exito');
+        return redirect()->route('patients.index')->with('status', 'El huésped ha sido eliminado exitosamente');
     }
 
 }

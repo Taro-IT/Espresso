@@ -123,7 +123,7 @@
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link @if(Request::is('pacientes')) active @endif collapsed" href="{{route('patients.index')}}">
+                <a class="nav-link @if(Request::is('pacientes') or Request::is('editar-pacientes/*')) active @endif collapsed" href="{{route('patients.index')}}">
                     <i class="bi bi-people-fill"></i>
                     <span>HUÉSPEDES</span>
                 </a>

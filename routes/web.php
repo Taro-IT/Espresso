@@ -1,82 +1,73 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\BotManController;
 use App\Http\Controllers\PageInfoController;
+use App\Http\Controllers\DonationsController;
+use App\Http\Controllers\PaymentController;
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\ProductsController;
+use App\Http\Controllers\WorkshopController;
+use App\Http\Controllers\PatientController;
 
 /*
 |--------------------------------------------------------------------------
 | Web Routes
 |--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| contains the "web" middleware group. Now create something great!
-|
 */
 
-Route::get('/bot_test', function () {
-    return view('bot_test');
-});
-
-Route::match(['get', 'post'], 'botman', [BotManController::class, 'handle']);
-
-
+// Website basic info
 Route::get('/', [PageInfoController::class, 'main'])->name('index');
-// Route::match(['get', 'post'], 'index', [PageInfoController::class, 'main']);
-Route::get('/download/file/{id}', [\App\Http\Controllers\PageInfoController::class,'download'])->name('download');
+Route::get('/quienes-somos', [PageInfoController::class, 'quienesSomos'])->name('quienes-somos');
+Route::get('/que-hacemos', [PageInfoController::class, 'queHacemos'])->name('que-hacemos');
+Route::get('/puntos-venta', [PageInfoController::class, 'puntosVenta'])->name('puntos-venta');
 
+Route::get('/medium', [PageInfoController::class,'getMediumPosts']);
 
-// Routes to pages for web services validation
-Route::view('/quienes-somos', 'about_us')->name('quienes-somos');
-Route::get('/que-hacemos', [\App\Http\Controllers\PageInfoController::class,'queHacemos'])->name('que-hacemos');
-Route::get('/tienda' , [\App\Http\Controllers\PageInfoController::class,'tienda'])->name('tienda');
-Route::view('/puntos-venta', 'puntos_venta')->name('puntos-venta');
-
-Route::get('/medium', [\App\Http\Controllers\PageInfoController::class,'getMediumPosts']);
-
-//Rutas para acciones de donaciones
-Route::get('/hacer-una-donacion',[\App\Http\Controllers\DonationsController::class,'index'])->name('donation.index');
-Route::post('/donaciones/donativo',[\App\Http\Controllers\PaymentController::class,'pay'])->name('donation.pay');
-Route::get('/donaciones/aprovado',[\App\Http\Controllers\PaymentController::class,'approval'])->name('donation.approval');
-Route::get('/donaciones/cancelado',[\App\Http\Controllers\PaymentController::class,'cancelled'])->name('donation.cancelled');
-
+// Online shop, donations and payments
+Route::get('/tienda' , [PageInfoController::class,'tienda'])->name('tienda');
+Route::get('/download/file/{id}', [PageInfoController::class,'download'])->name('download');
+Route::get('/hacer-una-donacion',[DonationsController::class,'index'])->name('donation.index');
+Route::post('/donaciones/donativo',[PaymentController::class,'pay'])->name('donation.pay');
+Route::get('/donaciones/aprovado',[PaymentController::class,'approval'])->name('donation.approval');
+Route::get('/donaciones/cancelado',[PaymentController::class,'cancelled'])->name('donation.cancelled');
 
 Auth::routes(["register" => false]);
-
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-Route::put('/actualizar-home',[App\Http\Controllers\HomeController::class, 'update'])->name('homeUpdate');
-
-// Cambio de contraseña
-Route::get('/cambiar-contraseña', [App\Http\Controllers\HomeController::class, 'pwdChange'])->name('change_pwd.index');
-Route::put('/actualizar-contraseña', [App\Http\Controllers\HomeController::class, 'updatePwd'])->name('change_pwd.update');
-
-// Sección de productos
-Route::get('/productos',[\App\Http\Controllers\ProductsController::class,'index'])->name('products.index');
-Route::get('/agregar-productos',[\App\Http\Controllers\ProductsController::class,'create'])->name('products.create');
-Route::get('/editar-productos/{id}',[\App\Http\Controllers\ProductsController::class,'edit'])->name('products.edit');
-Route::post('/almacenar-productos',[\App\Http\Controllers\ProductsController::class,'store'])->name('products.store');
-Route::put('/actualizar-productos/{id}',[\App\Http\Controllers\ProductsController::class,'update'])->name('products.update');
-Route::delete('/productos-eliminar/{id}',[\App\Http\Controllers\ProductsController::class,'destroy'])->name('products.destroy');
-
-//Seccion de talleres
-Route::get('/talleres',[\App\Http\Controllers\WorkshopController::class,'index'])->name('workshop.index');
-Route::get('/agregar-talleres',[\App\Http\Controllers\WorkshopController::class,'create'])->name('workshop.create');
-Route::get('/editar-talleres/{id}',[\App\Http\Controllers\WorkshopController::class,'edit'])->name('workshop.edit');
-Route::post('/almacenar-talleres',[\App\Http\Controllers\WorkshopController::class,'store'])->name('workshop.store');
-Route::put('/actualizar-talleres/{id}',[\App\Http\Controllers\WorkshopController::class,'update'])->name('workshop.update');
-Route::delete('/talleres-eliminar/{id}',[\App\Http\Controllers\WorkshopController::class,'destroy'])->name('workshop.destroy');
-
-//Seccion de pacientes
-Route::get('/pacientes',[\App\Http\Controllers\PatientController::class,'index'])->name('patients.index');
-Route::get('/agregar-pacientes',[\App\Http\Controllers\PatientController::class,'create'])->name('patients.create');
-Route::get('/editar-pacientes/{id}',[\App\Http\Controllers\PatientController::class,'edit'])->name('patients.edit');
-Route::post('/almacenar-pacientes',[\App\Http\Controllers\PatientController::class,'store'])->name('patients.store');
-Route::put('/actualizar-pacientes/{id}',[\App\Http\Controllers\PatientController::class,'update'])->name('patients.update');
-Route::delete('/pacientes-eliminar/{id}',[\App\Http\Controllers\PatientController::class,'destroy'])->name('patients.destroy');
 
 //Seccion de Imagenes
 Route::get('/imagenes',[\App\Http\Controllers\ImageController::class,'index'])->name('images.index');
 Route::get('/agregar-imagenes',[\App\Http\Controllers\ImageController::class,'create'])->name('images.create');
 Route::post('/almacenar-imagenes',[\App\Http\Controllers\ImageController::class,'store'])->name('images.store');
 Route::delete('/imagenes-eliminar/{id}',[\App\Http\Controllers\ImageController::class,'destroy'])->name('images.destroy');
+
+// Contact info admin section
+Route::get('/home', [HomeController::class, 'index'])->name('home');
+Route::put('/actualizar-home',[HomeController::class, 'update'])->name('homeUpdate');
+
+// Password change
+Route::get('/cambiar-contraseña', [HomeController::class, 'pwdChange'])->name('change_pwd.index');
+Route::put('/actualizar-contraseña', [HomeController::class, 'updatePwd'])->name('change_pwd.update');
+
+// Digital products admin section
+Route::get('/productos',[ProductsController::class,'index'])->name('products.index');
+Route::get('/agregar-productos',[ProductsController::class,'create'])->name('products.create');
+Route::get('/editar-productos/{id}',[ProductsController::class,'edit'])->name('products.edit');
+Route::post('/almacenar-productos',[ProductsController::class,'store'])->name('products.store');
+Route::put('/actualizar-productos/{id}',[ProductsController::class,'update'])->name('products.update');
+Route::delete('/productos-eliminar/{id}',[ProductsController::class,'destroy'])->name('products.destroy');
+
+// Workshops admin section
+Route::get('/talleres',[WorkshopController::class,'index'])->name('workshop.index');
+Route::get('/agregar-talleres',[WorkshopController::class,'create'])->name('workshop.create');
+Route::get('/editar-talleres/{id}',[WorkshopController::class,'edit'])->name('workshop.edit');
+Route::post('/almacenar-talleres',[WorkshopController::class,'store'])->name('workshop.store');
+Route::put('/actualizar-talleres/{id}',[WorkshopController::class,'update'])->name('workshop.update');
+Route::delete('/talleres-eliminar/{id}',[WorkshopController::class,'destroy'])->name('workshop.destroy');
+
+// Guests admin section
+Route::get('/pacientes',[PatientController::class,'index'])->name('patients.index');
+Route::get('/agregar-pacientes',[PatientController::class,'create'])->name('patients.create');
+Route::get('/editar-pacientes/{id}',[PatientController::class,'edit'])->name('patients.edit');
+Route::post('/almacenar-pacientes',[PatientController::class,'store'])->name('patients.store');
+Route::put('/actualizar-pacientes/{id}',[PatientController::class,'update'])->name('patients.update');
+Route::delete('/pacientes-eliminar/{id}',[PatientController::class,'destroy'])->name('patients.destroy');
+

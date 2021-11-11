@@ -32,26 +32,8 @@ class PageInfoController extends Controller
 
     public function main()
     {
-
-        // $post_ids = array(
-        //     "https://www.facebook.com/permalink.php?story_fbid=1975493025939120&id=313251725496600",
-        //     "https://www.facebook.com/permalink.php?story_fbid=1977799792375110&id=313251725496600",
-        //     "https://www.facebook.com/permalink.php?story_fbid=1952226838265739&id=313251725496600"
-        // );
-
         $base_url = "https://graph.facebook.com/v12.0/oembed_page";
         $casa_loohl_url = "https://www.facebook.com/Casa-de-Medio-Camino-Quer%C3%A9taro-Casa-Loohl-313251725496600/";
-
-        // $posts = array();
-
-        // foreach($post_ids as $post_id) {
-        //     $response = Http::get(sprintf($base_url, $post_id), [
-        //         'url' => $post_id,
-        //         'access_token' => '272044211444955|J0Ms6aqX_UORBw1ODC4-QuR3iSA',
-        //     ]);
-        //     $data = json_decode($response);
-        //     array_push($posts, $data->html);
-        // }
 
         $response = Http::get($base_url, [
             'url' => $casa_loohl_url,
@@ -63,8 +45,7 @@ class PageInfoController extends Controller
         $data = json_decode($response);
         $fb_page = $data->html;
 
-        return view('index')->with(['fb_page'=>$fb_page,'home'=>Home::get()->first()]);
-
+        return view('index')->with(['fb_page'=>$fb_page, 'home'=>Home::get()->first()]);
     }
 
     public function getMediumPosts() {
@@ -73,7 +54,19 @@ class PageInfoController extends Controller
         return response()->json($posts);
     }
 
-    public function tienda(){
+    public function puntosVenta() {
+        return view('puntos_venta')->with([
+            'home'=>Home::get()->first()
+        ]);
+    }
+
+    public function quienesSomos() {
+        return view('about_us')->with([
+            'home'=>Home::get()->first()
+        ]);
+    }
+
+    public function tienda() {
 
         return view('tienda')->with([
             'productos'=>Products::paginate(6),
@@ -81,6 +74,7 @@ class PageInfoController extends Controller
             'patients'=>Patient::get(),
             'workshops'=>Workshop::get(),
             'currencies'=>Currency::all(),
+            'home'=>Home::get()->first()
         ]);
     }
     public function queHacemos(){
@@ -88,6 +82,7 @@ class PageInfoController extends Controller
 
         return view('que_hacemos')->with([
             'talleres' => $talleres,
+            'home'=>Home::get()->first()
         ]);
     }
 
