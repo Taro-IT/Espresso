@@ -116,41 +116,28 @@
                 <h1 class="section-header" data-aos="fade-up" data-aos-delay="100">
                     <span class="underline">&nbsp;&nbsp;NUESTROS SERVICIOS&nbsp;&nbsp;</span>
                 </h1>
-                <p class="subtitle text-center" data-aos="fade-up" data-aos-delay="200">Casa Loohl residencia con
+                <p class="subtitle text-center" data-aos="fade-up" data-aos-delay="200">Casa Loohl es una residencia con
                     atención personalizada y seguimiento por parte de profesionales de la salud las 24 horas del día los
                     7 días de la semana.</p>
             </div>
             <div class="subtitle" data-aos="fade-up" data-aos-delay="300">
-                <p class="subheader">Características:</p>
-                <ul class="list text-justify">
-                    <li> Modalidad proyectada para periodos prolongados, con un periodo mínimo sugerido de 4 meses de
-                        estadía.
-                    </li>
-                    <li> El huésped realiza actividades en comunidad para fortalecer sus habilidades interpersonales.
-                    </li>
-                    <li> El huésped realiza actividades de manera individual que le permiten sentirse independiente y
-                        enfocar su energía en cosas de su total agrado.
-                    </li>
-                    <li> En la casa se cuentan con reglas definidas para lograr un ambiente armonioso y una sana
-                        convivencia.
-                    </li>
-                </ul>
+                
             </div>
-            <div class="row" data-aos="fade-up" data-aos-delay="400">
-                <div class="col-md-6">
+            <div class="row" data-aos="fade-up" data-aos-delay="300">
+                <div class="col-md-6 mb-3">
                     <div class="carousel slide carrousel-sizing" id="main-carousel" data-ride="carousel">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <img class="d-block img-fluid" src="/images/img-sala-2.png" alt="">
+                                <img class="d-block services-img" src="/images/img-sala-2.png" alt="">
                             </div>
                             <div class="carousel-item">
-                                <img class="d-block img-fluid" src="/images/img-sala.jpg" alt="">
+                                <img class="d-block services-img" src="/images/img-sala.jpg" alt="">
                             </div>
                             <div class="carousel-item">
-                                <img class="d-block img-fluid" src="/images/carrousel-1.jpg" alt="">
+                                <img class="d-block services-img" src="/images/carrousel-1.jpg" alt="">
                             </div>
                             <div class="carousel-item">
-                                <img class="d-block img-fluid" src="/images/carrousel-3.jpg" alt="">
+                                <img class="d-block services-img" src="/images/carrousel-3.jpg" alt="">
                             </div>
                         </div><!-- /.carousel-inner -->
 
@@ -165,13 +152,26 @@
                     </div><!-- /.carousel -->
                 </div>
                 <div class="col-md-6">
-                    <p class="subtitle text-center">Todos los espacios de Casa Loohl están diseñados para brindar
-                        comodidad y seguridad a los huéspedes, haciéndolos sentir como si estuvieran en casa.</p>
+                    <p class="subheader">Características:</p>
+                    <ul class="list text-justify">
+                        <li> Modalidad proyectada para periodos prolongados, con un periodo mínimo sugerido de 4 meses de
+                            estadía.
+                        </li>
+                        <li> El huésped realiza actividades en comunidad para fortalecer sus habilidades interpersonales.
+                        </li>
+                        <li> El huésped realiza actividades de manera individual que le permiten sentirse independiente y
+                            enfocar su energía en cosas de su total agrado.
+                        </li>
+                        <li> En la casa se cuentan con reglas definidas para lograr un ambiente armonioso y una sana
+                            convivencia.
+                        </li>
+                    </ul>
                 </div>
             </div>
-            <div class="row mt-1" data-aos="fade-up" data-aos-delay="450">
-                <i class="bi bi-info-circle-fill mr-2" style="font-size: 1rem;"></i>
-                <p>Actualmente, Casa Loohl está acondicionada para recibir un máximo de 12 huéspedes.</p>
+            <p class="subtitle" data-aos="fade-up" data-aos-delay="400">Todos los espacios de Casa Loohl están diseñados para brindar
+            comodidad y seguridad a los huéspedes, haciéndolos sentir como si estuvieran en casa.</p>
+            <div class="mt-2" data-aos="fade-up" data-aos-delay="450">
+                <p><i class="bi bi-info-circle-fill mr-2" style="font-size: 1rem;"></i>Actualmente, Casa Loohl está acondicionada para recibir un máximo de 12 huéspedes.</p>
             </div>
     </div>
     </div>
@@ -313,47 +313,161 @@
         </div>
         <div class="accordion" id="faq-accordion" data-aos="fade-up" data-aos-delay="400">
             <div class="card faq-card">
-                <div class="card-header faq-header" id="headingOne">
+                <div class="card-header faq-header" id="heading1">
                     <a class="btn faq-link faq-btn font-weight-bold w-100 text-left" data-toggle="collapse"
-                       data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                        ¿Cuánto tiempo puede estar mi familiar en la Casa Loohl?
+                       data-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                       ¿Cuánto cuesta el servicio de Casa Loohl y que incluye? 
                     </a>
                 </div>
-                <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#faq-accordion">
+                <div id="collapse1" class="collapse" aria-labelledby="heading1" data-parent="#faq-accordion">
                     <div class="card-body faq-body">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum a egestas turpis, quis
-                        commodo ante. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac
-                        turpis egestas.
+                        <p>Somos una Asociación Civil sin fines de lucro, por lo que la cuota de recuperación se basa en el costo real de los gastos erogados por paciente. </p>
+                        <p>Incluye servicios de desayuno, comida, cena, hospedaje, servicios básicos y servicios de atención terapéutica los 7 días de la semana, las 24 horas del día. Incluye la mayoría de los talleres que se imparten dentro de la comunidad. </p>
+                        <p>Para mayores informes te atenderemos con gusto en nuestros <a class="faq-answer-link" href="/#contact">medios de contacto</a>.</p>
                     </div>
                 </div>
             </div>
             <div class="card faq-card">
-                <div class="card-header faq-header" id="headingTwo">
+                <div class="card-header faq-header" id="heading2">
                     <a class="btn faq-link faq-btn font-weight-bold w-100 text-left" data-toggle="collapse"
-                       data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-                        ¿Qué personal atiende a los huéspedes?
+                       data-target="#collapse2" aria-expanded="true" aria-controls="collapse2">
+                       ¿Qué tengo que hacer si ya consulté el sitio web y estoy interesado en hospedar a mi familiar en Casa Loohl?
                     </a>
                 </div>
-                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#faq-accordion">
+                <div id="collapse2" class="collapse" aria-labelledby="heading2" data-parent="#faq-accordion">
                     <div class="card-body faq-body">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum a egestas turpis, quis
-                        commodo ante. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac
-                        turpis egestas.
+                    Con gusto, te puedes comunicar en cualquiera de nuestros <a class="faq-answer-link" href="/#contact">medios de contacto</a> para empezar el protocolo de ingreso. El proceso que seguimos es el siguiente: nos ponemos en contacto para agendar una cita de entrevista primero con el familiar responsable y una segunda cita con el paciente para que pueda visitar la comunidad. 
                     </div>
                 </div>
             </div>
             <div class="card faq-card">
-                <div class="card-header faq-header" id="headingThree">
+                <div class="card-header faq-header" id="heading3">
                     <a class="btn faq-link faq-btn font-weight-bold w-100 text-left" data-toggle="collapse"
-                       data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
-                        ¿Están contratando?
+                       data-target="#collapse3" aria-expanded="true" aria-controls="collapse3">
+                       ¿Cada cuanto puedo ver y hablar con mi familiar si ingresa a Casa Loohl?
                     </a>
                 </div>
-                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#faq-accordion">
+                <div id="collapse3" class="collapse" aria-labelledby="heading3" data-parent="#faq-accordion">
                     <div class="card-body faq-body">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum a egestas turpis, quis
-                        commodo ante. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac
-                        turpis egestas.
+                    El objetivo de la Casa de Medio Camino es lograr reestablecer los vínculos y lazos afectivos, familiares y sociales, mediante una estructura cotidiana, por ende los huéspedes pueden salir a convivir con sus familiares una vez a la semana, mantener la comunicación vía telefónica y las visitas de la red de apoyo familiar mediante el consentimiento del familiar responsable. El horario para recibir llamadas todos los días es de 19 a 21 hrs.
+                    </div>
+                </div>
+            </div>
+            <div class="card faq-card">
+                <div class="card-header faq-header" id="heading4">
+                    <a class="btn faq-link faq-btn font-weight-bold w-100 text-left" data-toggle="collapse"
+                       data-target="#collapse4" aria-expanded="true" aria-controls="collapse4">
+                       ¿Cómo se me comunica el estado y progreso de mi familiar?
+                    </a>
+                </div>
+                <div id="collapse4" class="collapse" aria-labelledby="heading4" data-parent="#faq-accordion">
+                    <div class="card-body faq-body">
+                    La comunicación es esencial por lo que se da apertura a canales directos con los familiares y se les informa periódicamente el estado de su familiar, a la par que a su médico tratante.
+                    </div>
+                </div>
+            </div>
+            <div class="card faq-card">
+                <div class="card-header faq-header" id="heading5">
+                    <a class="btn faq-link faq-btn font-weight-bold w-100 text-left" data-toggle="collapse"
+                       data-target="#collapse5" aria-expanded="true" aria-controls="collapse5">
+                       ¿Cuánto tiempo duran los huéspedes dentro de la casa?
+                    </a>
+                </div>
+                <div id="collapse5" class="collapse" aria-labelledby="heading5" data-parent="#faq-accordion">
+                    <div class="card-body faq-body">
+                    El tiempo de estancia del huésped depende directamente de la evolución de éste y el seguimiento que dé la familia y/o el cuidador primario en el proceso. Cada persona tiene tiempos para la asimilación, comprensión y compromiso con su propio proceso personal. Por lo tanto, no se puede generalizar. Sin embargo, el tiempo mínimo para brindar las mínimas herramientas de autonomía en los pacientes con experiencias psiquiátricas es de 4 a 5 meses.
+                    </div>
+                </div>
+            </div>
+            <div class="card faq-card">
+                <div class="card-header faq-header" id="heading6">
+                    <a class="btn faq-link faq-btn font-weight-bold w-100 text-left" data-toggle="collapse"
+                       data-target="#collapse6" aria-expanded="true" aria-controls="collapse6">
+                       ¿Cuál es el siguiente paso después de que concluye la estadía de los huéspedes?
+                    </a>
+                </div>
+                <div id="collapse6" class="collapse" aria-labelledby="heading6" data-parent="#faq-accordion">
+                    <div class="card-body faq-body">
+                    Eso dependerá de la situación de cada paciente, pero se realiza un proceso de integración a su futuro entorno familiar, social o laboral. 
+                    </div>
+                </div>
+            </div>
+            <div class="card faq-card">
+                <div class="card-header faq-header" id="heading7">
+                    <a class="btn faq-link faq-btn font-weight-bold w-100 text-left" data-toggle="collapse"
+                       data-target="#collapse7" aria-expanded="true" aria-controls="collapse7">
+                       ¿Atienden a personas en situación de suicidio?
+                    </a>
+                </div>
+                <div id="collapse7" class="collapse" aria-labelledby="heading7" data-parent="#faq-accordion">
+                    <div class="card-body faq-body">
+                    Sí. Sin embargo, para ello es indispensable que la persona cuente previamente con un cuadro farmacológico establecido por su médico tratante. 
+                    </div>
+                </div>
+            </div>
+            <div class="card faq-card">
+                <div class="card-header faq-header" id="heading8">
+                    <a class="btn faq-link faq-btn font-weight-bold w-100 text-left" data-toggle="collapse"
+                       data-target="#collapse8" aria-expanded="true" aria-controls="collapse8">
+                       ¿Tengo que llevar despensa para mi familiar si se hospeda en Casa Loohl? 
+                    </a>
+                </div>
+                <div id="collapse8" class="collapse" aria-labelledby="heading8" data-parent="#faq-accordion">
+                    <div class="card-body faq-body">
+                    La cuota de recuperación mínima que manejamos únicamente incluye los servicios básicos. Si el huésped requiere de colaciones u otro tipo de alimento extraordinario es importante fijar un criterio de consumo extraordinario de alimentos. Debido a que los medicamentos psiquiátricos tienen como efectos secundarios la sensación de ansiedad, recomendamos que los familiares consideren como gasto extraordinario las colaciones, las cuales son sugeridas bajo términos de valoración nutrimental. 
+                    </div>
+                </div>
+            </div>
+            <div class="card faq-card">
+                <div class="card-header faq-header" id="heading9">
+                    <a class="btn faq-link faq-btn font-weight-bold w-100 text-left" data-toggle="collapse"
+                       data-target="#collapse9" aria-expanded="true" aria-controls="collapse9">
+                       ¿Qué personal atiende a los huéspedes? 
+                    </a>
+                </div>
+                <div id="collapse9" class="collapse" aria-labelledby="heading9" data-parent="#faq-accordion">
+                    <div class="card-body faq-body">
+                    Los atiende un grupo de psicólogos y enfermeras de diferentes orientaciones clínicas y sociales. Al no ser un dispositivo hospitalario o de clínica, el modelo no incluye a médicos dentro de la comunidad. Sin embargo, el seguimiento médico y el tratamiento, visitas y consultas médicas se da en paralelo y en comunicación constante con el médico tratante. 
+                    </div>
+                </div>
+            </div>
+            <div class="card faq-card">
+                <div class="card-header faq-header" id="heading10">
+                    <a class="btn faq-link faq-btn font-weight-bold w-100 text-left" data-toggle="collapse"
+                       data-target="#collapse10" aria-expanded="true" aria-controls="collapse10">
+                       ¿Los huéspedes pasan todo su tiempo dentro de la casa?
+                    </a>
+                </div>
+                <div id="collapse10" class="collapse" aria-labelledby="heading10" data-parent="#faq-accordion">
+                    <div class="card-body faq-body">
+                    La mayoría de su estancia, sí. Sin embargo, como parte de su proceso de inclusión social, también tienen tiempo de esparcimiento y actividades personales. Se sale a la tienda o a realizar actividades personales, siempre y cuando el huésped y su familia le den seguimiento. Así mismo, de lunes a viernes, como parte de la estructura cotidiana se imparten 2 talleres. Uno por la mañana y otro por la tarde.  
+                    </div>
+                </div>
+            </div>
+            <div class="card faq-card">
+                <div class="card-header faq-header" id="heading11">
+                    <a class="btn faq-link faq-btn font-weight-bold w-100 text-left" data-toggle="collapse"
+                       data-target="#collapse11" aria-expanded="true" aria-controls="collapse11">
+                       ¿Las medicinas de los huéspedes se las recetan ustedes o usan el tratamiento que ya tenían?
+                    </a>
+                </div>
+                <div id="collapse11" class="collapse" aria-labelledby="heading11" data-parent="#faq-accordion">
+                    <div class="card-body faq-body">
+                        <p>Damos seguimiento al tratamiento farmacológico ya establecido. Por lo que, a su ingreso, el huésped debe contar con un médico de especialidad en psiquiatría que lleve su tratamiento médico. </p>
+                        <p>Nosotros le damos seguimiento, monitoreamos que se cumpla y estamos en constante comunicación con el médico tratante para reportar efectos secundarios, efectos negativos y piramidales, así como morbilidades.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card faq-card">
+                <div class="card-header faq-header" id="heading12">
+                    <a class="btn faq-link faq-btn font-weight-bold w-100 text-left" data-toggle="collapse"
+                       data-target="#collapse12" aria-expanded="true" aria-controls="collapse12">
+                       ¿Dónde está ubicada la Casa Loohl?
+                    </a>
+                </div>
+                <div id="collapse12" class="collapse" aria-labelledby="heading12" data-parent="#faq-accordion">
+                    <div class="card-body faq-body">
+                    Nos encontramos en la ciudad de Querétaro. Nuestra filosofía se centra en brindar herramientas para la inclusión social de pacientes con experiencias psiquiátricas, por tanto, se busca que el espacio físico se encuentre integrado en la sociedad. No en las afueras o aislados. Nuestro objetivo como institución es brindar herramientas de autonomía, por lo que el estar en el seno de una ciudad permite a los huéspedes sentirse y formar parte de ésta sin romper vínculos sociales y de integración. 
                     </div>
                 </div>
             </div>

@@ -103,7 +103,7 @@
             </div>
             <div class="col-md mb-3 mb-md-0" data-aos="fade-up" data-aos-delay="300">
                 <a class="btn btn-read-more py-md-5 h-100 d-flex justify-content-center align-items-center" href="{{route('puntos-venta')}}" role="button">
-                    <span class="white-text">COMPRA EN TIENDA FÍSICA</span>
+                    <span class="white-text">COMPRA EN TIENDAS FÍSICAS</span>
                 </a>
             </div>
             <div class="col-md mb-3 mb-md-0" data-aos="fade-up" data-aos-delay="300">
@@ -131,16 +131,7 @@
                         </a>
                     </div>
                 </div>
-                <!-- {{-- @foreach($fb_posts as $post)
-                    <div class="col-lg-4">
-                        <div class="post-box p-0">
-                            <div id="fb-root"></div>
-                            {!! $post !!}
-                        </div>
-                    </div>
-                @endforeach --}} -->
                 <div class="col-12 col-lg-6 d-none d-sm-flex justify-content-center" data-aos="fade-left" data-aos-delay="200" style="height: 400px">
-                    <!-- <div id="fb-root"></div> -->
                     <div class="post-box d-inline-block shadow-sm text-center">
                         {!! $fb_page !!}
                     </div>

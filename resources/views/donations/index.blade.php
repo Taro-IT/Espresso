@@ -15,7 +15,7 @@
                 </p>
                 <div class="row gy-4 text-center">
                     <div class="col-lg-12">
-                        <div class="card my-card shadow">
+                        <div class="card shadow">
                             <div class="card-body">
                                 @if (session('status'))
                                     <div class="alert alert-success">
@@ -27,7 +27,7 @@
                                 @endif
                                 <form action="{{route('donation.pay')}}" method="post" id="paymentForm">
                                     @csrf
-                                    <h2 class="subheader text-center">
+                                    <h2 class="subheader text-center mt-3">
                                         <span>¡Toda donación cuenta!</span>
                                     </h2>
                                     <div class="row">
@@ -55,10 +55,9 @@
                                             </select>
                                         </div>
                                     </div>
-                                    <br><br>
                                     <input type="hidden" value="1" name="payment_plataform">
                                     <!--Aqui se pone estatico el valor ID de la plataforma paypal, en caso de tener mas, se sustituye por un valor dinamico-->
-                                    <div class="text-center mt-3">
+                                    <div class="text-center mt-3 mb-3">
                                         <button type="submit" id="payButton"
                                                 class="btn btn-read-more d-inline-flex align-items-center justify-content-center align-self-center paypal-button">Donar con PayPal <i class="bi bi-paypal"></i>
                                         </button>

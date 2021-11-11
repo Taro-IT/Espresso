@@ -236,13 +236,13 @@
                                     </div>
                                     <div class="modal-body">
                                         <div class="row">
-                                            <div class="col-md-6">
+                                            <div class="col-lg-6 mb-4 text-center text-lg-left">
                                                 <img src="{{asset($product->image)}}"
                                                     alt="{{$product->title}}-{{$product->title}}"
                                                     class="product-images-ver-mas rounded" 
                                                     onerror="this.onerror=null;this.src='{{asset('images/image-not-found.png')}}';">
                                             </div>
-                                            <div class="col-lg-6 mb-3 text-center text-lg-left">
+                                            <div class="col-lg-6 mb-3">
                                                 <div class="mb-4">
                                                 <p><strong>Precio mínimo: </strong>{{$product->price}}</p>
                                                 <p><strong>Descripción: </strong>{{$product->description}}</p>

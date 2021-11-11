@@ -16,7 +16,7 @@
         <div class="row text-center mb-3">
             <div class="col-md-12">
                 <h1 class="section-header modal-title mt-5 mb-5" id="eliminar-{{$workshop->id}}-Label">
-                    <span class="underline text-uppercase">&nbsp;&nbsp;MODIFICAR TALLER / ACTIVIDAD&nbsp;&nbsp;</span>
+                    <span class="underline text-uppercase">&nbsp;&nbsp;MODIFICAR TALLER&nbsp;&nbsp;</span>
                 </h1>
             </div>
         </div>
