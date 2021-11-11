@@ -33,6 +33,12 @@ Route::get('/donaciones/cancelado',[PaymentController::class,'cancelled'])->name
 
 Auth::routes(["register" => false]);
 
+//Seccion de Imagenes
+Route::get('/imagenes',[\App\Http\Controllers\ImageController::class,'index'])->name('images.index');
+Route::get('/agregar-imagenes',[\App\Http\Controllers\ImageController::class,'create'])->name('images.create');
+Route::post('/almacenar-imagenes',[\App\Http\Controllers\ImageController::class,'store'])->name('images.store');
+Route::delete('/imagenes-eliminar/{id}',[\App\Http\Controllers\ImageController::class,'destroy'])->name('images.destroy');
+
 // Contact info admin section
 Route::get('/home', [HomeController::class, 'index'])->name('home');
 Route::put('/actualizar-home',[HomeController::class, 'update'])->name('homeUpdate');
@@ -64,3 +70,4 @@ Route::get('/editar-pacientes/{id}',[PatientController::class,'edit'])->name('pa
 Route::post('/almacenar-pacientes',[PatientController::class,'store'])->name('patients.store');
 Route::put('/actualizar-pacientes/{id}',[PatientController::class,'update'])->name('patients.update');
 Route::delete('/pacientes-eliminar/{id}',[PatientController::class,'destroy'])->name('patients.destroy');
+
