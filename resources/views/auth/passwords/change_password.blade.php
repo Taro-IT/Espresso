@@ -19,11 +19,6 @@
                         <form method="POST" action="{{ route('change_pwd.update') }}">
                             @csrf
                             @method('PUT')
-                            @if (session('status'))
-                                <div class="alert alert-success" role="alert">
-                                    {{ session('status') }}
-                                </div>
-                            @endif
                             <div class="form-group">
                                 <label for="email">Correo electrónico</label>
                                 <input type="email" class="form-control" id="email" aria-describedby="emailHelp"

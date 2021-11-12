@@ -79,12 +79,8 @@
                                <img src="{{asset($image->image)}}" class="about-us-img-table" alt="Imagen-{{$image->id}}">
                            </td>
                             <td class="d-flex justify-content-around">
-                                <!-- Digital product detail button -->
-                                <button class="btn btn-info tooltipped-btn" type="button" data-toggle="modal" data-target="#ver-mas-{{$image->id}}" data-tooltip="tooltip" data-placement="right" title="Ver detalle del producto">
-                                    <i class="bi bi-eye-fill"></i>
-                                </button>
                                 <!-- Delete digital product button -->
-                                <button type="button" class="btn btn-danger tooltipped-btn" data-tooltip="tooltip" data-placement="left" title="Eliminar el producto" data-toggle="modal" data-target="#eliminar-{{$image->id}}">
+                                <button type="button" class="btn btn-danger tooltipped-btn" data-tooltip="tooltip" data-placement="left" title="Eliminar la imagen" data-toggle="modal" data-target="#eliminar-{{$image->id}}">
                                     <i class="bi bi-trash-fill"></i>
                                 </button>
                             </td>

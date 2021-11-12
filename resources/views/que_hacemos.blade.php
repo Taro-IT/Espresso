@@ -218,8 +218,9 @@
         </div>
 
         <div class="row mt-1" data-aos="fade-up" data-aos-delay="350">
-            <i class="bi bi-info-circle-fill mr-2" style="font-size: 1rem;"></i>
-            <p>Los horarios pueden variar según sea necesario.</p>
+            <div class="col-md-12">
+                <p>  <i class="bi bi-info-circle-fill mr-2" style="font-size: 1rem;"></i>Los horarios pueden variar según sea necesario.</p>
+            </div>
         </div>
     </section>
 
@@ -256,7 +257,7 @@
                                         <div class="row">
                                             @for($j = 0; $j < 3; $j++)
                                                 <div class="col-md-4 mb-3">
-                                                    <div class="card">
+                                                    <div class="card" style="height: 600px">
                                                         <img class="img-fluid" src="{{asset($talleres[$i + $j]->image)}}" onerror="this.onerror=null;this.src='{{asset('images/image-not-found.png')}}';">
                                                         <div class="card-body justify-content-center">
                                                             <h4 class="card-title text-center">{{strtoupper($talleres[$i + $j]->name) }}</h4>
