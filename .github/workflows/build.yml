@@ -32,6 +32,6 @@ jobs:
         uses: appleboy/ssh-action@master
         with:
           username: "root"
-          host: "147.182.180.196"
+          host: "147.182.167.201"
           password: "X9u8qjZtvy.qtKM"
           script: 'cd /var/www/Espresso && . server_deploy.sh'
