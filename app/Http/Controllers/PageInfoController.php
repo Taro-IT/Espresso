@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Currency;
 use App\Models\Home;
+use App\Models\Image;
 use App\Models\Patient;
 use App\Models\ProductPatient;
 use App\Models\products;
@@ -62,7 +63,8 @@ class PageInfoController extends Controller
 
     public function quienesSomos() {
         return view('about_us')->with([
-            'home'=>Home::get()->first()
+            'home'=>Home::get()->first(),
+            'images' => Image::all(),
         ]);
     }
 

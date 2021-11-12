@@ -76,7 +76,7 @@
                         <tr>
                             <td class="text-center">{{$image->id}}</td>
                            <td class="text-center">
-                               <img src="{{asset($image->image)}}" width="60%" height="250vh" alt="Imagen-{{$image->id}}">
+                               <img src="{{asset($image->image)}}" class="about-us-img-table" alt="Imagen-{{$image->id}}">
                            </td>
                             <td class="d-flex justify-content-around">
                                 <!-- Digital product detail button -->
