@@ -22,7 +22,7 @@
             @foreach($productos as $product)
                 <div class="col-md-4 mt-5">
                     <div class="card product-animation rounded">
-                        <img class="card-img-top" src="{{asset('storage/'.$product->image)}}" alt="{{$product->title}}"
+                        <img class="card-img-top" src="{{asset($product->image)}}" alt="{{$product->title}}"
                              alt="" height="250px"
                              onerror="this.onerror=null;this.src='{{asset('images/image-not-found.png')}}';">
                         <div class="card-body">
@@ -66,7 +66,7 @@
                                 <div class="modal-body">
                                     <div class="row">
                                         <div class="col-md-5">
-                                            <img class="img-fluid" src="{{asset('storage/'.$product->image)}}"
+                                            <img class="img-fluid" src="{{asset($product->image)}}"
                                                  alt="{{$product->title}}"
                                                  onerror="this.onerror=null;this.src='{{asset('images/image-not-found.png')}}';">
                                         </div>

@@ -121,7 +121,7 @@
                     7 días de la semana.</p>
             </div>
             <div class="subtitle" data-aos="fade-up" data-aos-delay="300">
-                
+
             </div>
             <div class="row" data-aos="fade-up" data-aos-delay="300">
                 <div class="col-md-6 mb-3">
@@ -218,8 +218,9 @@
         </div>
 
         <div class="row mt-1" data-aos="fade-up" data-aos-delay="350">
-            <i class="bi bi-info-circle-fill mr-2" style="font-size: 1rem;"></i>
-            <p>Los horarios pueden variar según sea necesario.</p>
+            <div class="col-md-12">
+                <p>  <i class="bi bi-info-circle-fill mr-2" style="font-size: 1rem;"></i>Los horarios pueden variar según sea necesario.</p>
+            </div>
         </div>
     </section>
 
@@ -256,8 +257,8 @@
                                         <div class="row">
                                             @for($j = 0; $j < 3; $j++)
                                                 <div class="col-md-4 mb-3">
-                                                    <div class="card">
-                                                        <img class="img-fluid" src="{{asset('storage/'.$talleres[$i + $j]->image)}}" onerror="this.onerror=null;this.src='{{asset('images/image-not-found.png')}}';">
+                                                    <div class="card" style="height: 600px">
+                                                        <img class="img-fluid" src="{{asset($talleres[$i + $j]->image)}}" onerror="this.onerror=null;this.src='{{asset('images/image-not-found.png')}}';">
                                                         <div class="card-body justify-content-center">
                                                             <h4 class="card-title text-center">{{strtoupper($talleres[$i + $j]->name) }}</h4>
                                                             <p class="card-text text-center">{{$talleres[$i + $j]->description}} </p>
@@ -274,7 +275,7 @@
                                             @for($j = 0; $j < 3; $j++)
                                                 <div class="col-md-4 mb-3">
                                                     <div class="card">
-                                                        <img class="img-fluid" src="{{asset('storage/'.$talleres[$i + $j]->image)}}" onerror="this.onerror=null;this.src='{{asset('images/image-not-found.png')}}';">
+                                                        <img class="img-fluid" src="{{asset($talleres[$i + $j]->image)}}" onerror="this.onerror=null;this.src='{{asset('images/image-not-found.png')}}';">
                                                         <div class="card-body justify-content-center">
                                                             <h4 class="card-title text-center">{{strtoupper($talleres[$i + $j]->name)}}</h4>
                                                             <p class="card-text text-center">{{$talleres[$i + $j]->description}} </p>
@@ -316,7 +317,7 @@
                 <div class="card-header faq-header" id="heading1">
                     <a class="btn faq-link faq-btn font-weight-bold w-100 text-left" data-toggle="collapse"
                        data-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
-                       ¿Cuánto cuesta el servicio de Casa Loohl y que incluye? 
+                       ¿Cuánto cuesta el servicio de Casa Loohl y que incluye?
                     </a>
                 </div>
                 <div id="collapse1" class="collapse" aria-labelledby="heading1" data-parent="#faq-accordion">
@@ -336,7 +337,7 @@
                 </div>
                 <div id="collapse2" class="collapse" aria-labelledby="heading2" data-parent="#faq-accordion">
                     <div class="card-body faq-body">
-                    Con gusto, te puedes comunicar en cualquiera de nuestros <a class="faq-answer-link" href="/#contact">medios de contacto</a> para empezar el protocolo de ingreso. El proceso que seguimos es el siguiente: nos ponemos en contacto para agendar una cita de entrevista primero con el familiar responsable y una segunda cita con el paciente para que pueda visitar la comunidad. 
+                    Con gusto, te puedes comunicar en cualquiera de nuestros <a class="faq-answer-link" href="/#contact">medios de contacto</a> para empezar el protocolo de ingreso. El proceso que seguimos es el siguiente: nos ponemos en contacto para agendar una cita de entrevista primero con el familiar responsable y una segunda cita con el paciente para que pueda visitar la comunidad.
                     </div>
                 </div>
             </div>
@@ -388,7 +389,7 @@
                 </div>
                 <div id="collapse6" class="collapse" aria-labelledby="heading6" data-parent="#faq-accordion">
                     <div class="card-body faq-body">
-                    Eso dependerá de la situación de cada paciente, pero se realiza un proceso de integración a su futuro entorno familiar, social o laboral. 
+                    Eso dependerá de la situación de cada paciente, pero se realiza un proceso de integración a su futuro entorno familiar, social o laboral.
                     </div>
                 </div>
             </div>
@@ -401,7 +402,7 @@
                 </div>
                 <div id="collapse7" class="collapse" aria-labelledby="heading7" data-parent="#faq-accordion">
                     <div class="card-body faq-body">
-                    Sí. Sin embargo, para ello es indispensable que la persona cuente previamente con un cuadro farmacológico establecido por su médico tratante. 
+                    Sí. Sin embargo, para ello es indispensable que la persona cuente previamente con un cuadro farmacológico establecido por su médico tratante.
                     </div>
                 </div>
             </div>
@@ -409,12 +410,12 @@
                 <div class="card-header faq-header" id="heading8">
                     <a class="btn faq-link faq-btn font-weight-bold w-100 text-left" data-toggle="collapse"
                        data-target="#collapse8" aria-expanded="true" aria-controls="collapse8">
-                       ¿Tengo que llevar despensa para mi familiar si se hospeda en Casa Loohl? 
+                       ¿Tengo que llevar despensa para mi familiar si se hospeda en Casa Loohl?
                     </a>
                 </div>
                 <div id="collapse8" class="collapse" aria-labelledby="heading8" data-parent="#faq-accordion">
                     <div class="card-body faq-body">
-                    La cuota de recuperación mínima que manejamos únicamente incluye los servicios básicos. Si el huésped requiere de colaciones u otro tipo de alimento extraordinario es importante fijar un criterio de consumo extraordinario de alimentos. Debido a que los medicamentos psiquiátricos tienen como efectos secundarios la sensación de ansiedad, recomendamos que los familiares consideren como gasto extraordinario las colaciones, las cuales son sugeridas bajo términos de valoración nutrimental. 
+                    La cuota de recuperación mínima que manejamos únicamente incluye los servicios básicos. Si el huésped requiere de colaciones u otro tipo de alimento extraordinario es importante fijar un criterio de consumo extraordinario de alimentos. Debido a que los medicamentos psiquiátricos tienen como efectos secundarios la sensación de ansiedad, recomendamos que los familiares consideren como gasto extraordinario las colaciones, las cuales son sugeridas bajo términos de valoración nutrimental.
                     </div>
                 </div>
             </div>
@@ -422,12 +423,12 @@
                 <div class="card-header faq-header" id="heading9">
                     <a class="btn faq-link faq-btn font-weight-bold w-100 text-left" data-toggle="collapse"
                        data-target="#collapse9" aria-expanded="true" aria-controls="collapse9">
-                       ¿Qué personal atiende a los huéspedes? 
+                       ¿Qué personal atiende a los huéspedes?
                     </a>
                 </div>
                 <div id="collapse9" class="collapse" aria-labelledby="heading9" data-parent="#faq-accordion">
                     <div class="card-body faq-body">
-                    Los atiende un grupo de psicólogos y enfermeras de diferentes orientaciones clínicas y sociales. Al no ser un dispositivo hospitalario o de clínica, el modelo no incluye a médicos dentro de la comunidad. Sin embargo, el seguimiento médico y el tratamiento, visitas y consultas médicas se da en paralelo y en comunicación constante con el médico tratante. 
+                    Los atiende un grupo de psicólogos y enfermeras de diferentes orientaciones clínicas y sociales. Al no ser un dispositivo hospitalario o de clínica, el modelo no incluye a médicos dentro de la comunidad. Sin embargo, el seguimiento médico y el tratamiento, visitas y consultas médicas se da en paralelo y en comunicación constante con el médico tratante.
                     </div>
                 </div>
             </div>
@@ -440,7 +441,7 @@
                 </div>
                 <div id="collapse10" class="collapse" aria-labelledby="heading10" data-parent="#faq-accordion">
                     <div class="card-body faq-body">
-                    La mayoría de su estancia, sí. Sin embargo, como parte de su proceso de inclusión social, también tienen tiempo de esparcimiento y actividades personales. Se sale a la tienda o a realizar actividades personales, siempre y cuando el huésped y su familia le den seguimiento. Así mismo, de lunes a viernes, como parte de la estructura cotidiana se imparten 2 talleres. Uno por la mañana y otro por la tarde.  
+                    La mayoría de su estancia, sí. Sin embargo, como parte de su proceso de inclusión social, también tienen tiempo de esparcimiento y actividades personales. Se sale a la tienda o a realizar actividades personales, siempre y cuando el huésped y su familia le den seguimiento. Así mismo, de lunes a viernes, como parte de la estructura cotidiana se imparten 2 talleres. Uno por la mañana y otro por la tarde.
                     </div>
                 </div>
             </div>
@@ -467,7 +468,7 @@
                 </div>
                 <div id="collapse12" class="collapse" aria-labelledby="heading12" data-parent="#faq-accordion">
                     <div class="card-body faq-body">
-                    Nos encontramos en la ciudad de Querétaro. Nuestra filosofía se centra en brindar herramientas para la inclusión social de pacientes con experiencias psiquiátricas, por tanto, se busca que el espacio físico se encuentre integrado en la sociedad. No en las afueras o aislados. Nuestro objetivo como institución es brindar herramientas de autonomía, por lo que el estar en el seno de una ciudad permite a los huéspedes sentirse y formar parte de ésta sin romper vínculos sociales y de integración. 
+                    Nos encontramos en la ciudad de Querétaro. Nuestra filosofía se centra en brindar herramientas para la inclusión social de pacientes con experiencias psiquiátricas, por tanto, se busca que el espacio físico se encuentre integrado en la sociedad. No en las afueras o aislados. Nuestro objetivo como institución es brindar herramientas de autonomía, por lo que el estar en el seno de una ciudad permite a los huéspedes sentirse y formar parte de ésta sin romper vínculos sociales y de integración.
                     </div>
                 </div>
             </div>

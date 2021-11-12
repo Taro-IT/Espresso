@@ -453,6 +453,23 @@ section {
 .about-us-img {
     text-align: right;
 }
+
+
+@media only screen and (max-width: 600px) {
+    .about-us-img-table {
+        height: 1px;
+        width: 30%;
+        object-fit: cover;
+
+    }
+}
+.about-us-img-table {
+    height: 30vh;
+    width: 50%;
+    object-fit: cover;
+
+}
+
 @media (max-width: 991px) {
     .about-us .about-us-img {
         text-align: center;
@@ -742,7 +759,7 @@ section {
     padding: 15px;
     overflow: hidden;
   }
-  
+
   .expand {
     display: block;
   }
