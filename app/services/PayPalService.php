@@ -68,7 +68,9 @@ class PayPalService
             $payment = $this->capturePayment($approvalId);
             $mail = session('sendEmail');
             $product = session('productId');
-            Mail::to($mail)->send(new ProductMail($product));
+            if($mail != null and $product!= null){
+                Mail::to($mail)->send(new ProductMail($product));
+            }
             return redirect('/hacer-una-donacion')->with('status', 'Muchas Gracias por tu donación');
         }
         return redirect('/hacer-una-donacion')->withErrors('No pudimos capturar tu donación :c');
