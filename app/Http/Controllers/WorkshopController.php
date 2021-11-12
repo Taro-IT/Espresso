@@ -40,6 +40,7 @@ class WorkshopController extends Controller
 
         $request->validate([
             'name'=>'required|max:255',
+            'description' =>'max:500'
         ]);
 
         $data = $request->all();
