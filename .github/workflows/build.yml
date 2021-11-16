@@ -28,21 +28,6 @@ jobs:
         run: |
           mkdir -p database
           touch database/database.sqlite
-      - name: Run Migration
-        run: |
-          php artisan migrate --force
-      - name: Compile assets
-        run: |
-          npm install
-          npm run production
-      - name: Execute tests (Unit and Feature tests) via PHPUnit
-        env:
-          DB_CONNECTION: sqlite
-          DB_DATABASE: database/database.sqlite
-          CACHE_DRIVER: array
-          SESSION_DRIVER: array
-          QUEUE_DRIVER: sync
-        run: vendor/bin/phpunit
       - name: Deploy to production
         uses: appleboy/ssh-action@master
         with:
