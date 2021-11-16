@@ -4,3 +4,19 @@
     width: 100%;
     object-fit: cover;
 }
+
+.about-link {
+    color: var(--dark-purple);
+    transition: 0.15s;
+    text-decoration: underline;
+}
+.about-link:hover {
+    color: black;
+    text-decoration: underline;
+    text-decoration-color: black;
+}
+.about-link:active {
+    color: var(--dark-purple);
+    transition: 0.15s;
+    text-decoration: underline;
+}

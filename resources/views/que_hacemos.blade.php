@@ -225,7 +225,7 @@
     </section>
 
     <!-- =======  ACTIVITIES SECTION ======= -->
-    <section class="container" id="activities">
+    <section class="container" id="workshops">
         <div class="text-center">
             <h1 class="section-header" data-aos="fade-up" data-aos-delay="200">
                 <span class="underline">&nbsp;&nbsp;TALLERES & ACTIVIDADES&nbsp;&nbsp;</span>

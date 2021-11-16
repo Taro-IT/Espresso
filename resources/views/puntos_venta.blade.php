@@ -10,7 +10,8 @@
         <span class="underline">&nbsp;&nbsp;NUESTROS PUNTOS DE VENTA&nbsp;&nbsp;</span>
     </h1>
     <p class="subtitle text-center pb-3" data-aos="fade-up" data-aos-delay="200">
-        Apoya a nuestros huéspedes y sus familiares comprando productos físicos en cualquiera de nuestros puntos de venta.
+        Apoya a nuestros huéspedes y sus familiares comprando productos físicos como separadores, jabones artesanales, cuadernillos y esencias en cualquiera de los siguientes puntos de venta afiliados. Todos los productos vienen directamente
+        de las <a class="about-link" href="{{route('que-hacemos')}}#workshops">actividades</a> realizadas por los huéspedess de Casa Loohl.
         Las ganancias de cada artículo nos permiten seguir con nuestra labor, motivar a los huéspedes y eliminar poco a poco el estigma sobre las personas con experiencias psiquiátricas.
     </p>
     <div id="salespoint">
@@ -127,3 +128,7 @@
     </div>
 </section>
 @endsection
+
+@push('css')
+    <link rel="stylesheet" href="{{ asset('/css/about_us.css') }}">
+@endpush
