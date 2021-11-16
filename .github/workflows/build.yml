@@ -28,6 +28,9 @@ jobs:
         run: |
           mkdir -p database
           touch database/database.sqlite
+      - name: Run Migration
+        run: |
+          php artisan migrate --force
       - name: Compile assets
         run: |
           npm install
