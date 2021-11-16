@@ -148,7 +148,7 @@ Por favor lee la [Guía para manejar ramas](https://taro-it.github.io/docs/guias
 
 ## Wiki 📖
 
-Puedes encontrar mucho más de cómo utilizar este proyecto en nuestra [Wiki Departamental](https://taro-it.github.io/docs/) y en nuestra [Wiki Espresso]()
+Puedes encontrar mucho más de cómo utilizar este proyecto en nuestra [Wiki Departamental](https://taro-it.github.io/docs/) y en nuestra [Wiki Espresso](https://taro-it.github.io/Espresso_doc/)
 
 ## Versionado 📌
 
@@ -166,4 +166,4 @@ Usamos [SemVer](http://semver.org/) para el versionado. Para todas las versiones
 * **Adolfo Acosta Castro** - *Trabajo Inicial* - [AAcostac](https://github.com/AAcostac)
 * **Jose Carlos Pacheco** - *Trabajo Inicial* - [JoseCarlosPa](https://github.com/JoseCarlosPa)
 
-También puedes mirar la lista de todos los [contribuyentes](https://github.com/your/project/contributors) quíenes han participado en este proyecto.
+También puedes mirar la lista de todos los [contribuyentes](https://github.com/Taro-IT) quíenes han participado en este proyecto.

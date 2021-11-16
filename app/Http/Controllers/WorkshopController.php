@@ -40,7 +40,7 @@ class WorkshopController extends Controller
 
         $request->validate([
             'name'=>'required|max:255',
-            'description' =>'max:500'
+            'description' =>'max:280'
         ]);
 
         $data = $request->all();
@@ -85,6 +85,7 @@ class WorkshopController extends Controller
     {
         $request->validate([
             'name'=>'required|max:255',
+            'description' =>'max:280'
         ]);
 
         $data = $request->all();

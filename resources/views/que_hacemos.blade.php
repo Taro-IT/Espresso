@@ -225,7 +225,7 @@
     </section>
 
     <!-- =======  ACTIVITIES SECTION ======= -->
-    <section class="container" id="activities">
+    <section class="container" id="workshops">
         <div class="text-center">
             <h1 class="section-header" data-aos="fade-up" data-aos-delay="200">
                 <span class="underline">&nbsp;&nbsp;TALLERES & ACTIVIDADES&nbsp;&nbsp;</span>
@@ -244,24 +244,27 @@
                 perspectiva de una futura inclusión social.
             </p>
         </div>
-        <div class="row" data-aos="fade-up" data-aos-delay="400">
+        <div class="row" data-aos="fade-up" data-aos-delay="400" style="min-height: 550px">
             <div class="col-12">
                 <div id="talleresActividades" class="carousel slide" data-ride="carousel">
                     <div class="carousel-inner">
 
                         <div style="display: none">{{$flag = false}}</div>
                         @if($talleres != null)
-                            @for($i = 0;$i <= count($talleres)/3; $i++ )
+                            @for($i = 0; $i < count($talleres)/3; $i++)
                                 @if($flag == false)
                                     <div class="carousel-item active">
-                                        <div class="row">
+                                        <div class="row justify-content-center">
                                             @for($j = 0; $j < 3; $j++)
+                                                @if($i*3 + $j >= count($talleres))
+                                                    @break
+                                                @endif
                                                 <div class="col-md-4 mb-3">
-                                                    <div class="card" style="height: 600px">
+                                                    <div class="card">
                                                         <img class="img-fluid" src="{{asset($talleres[$i + $j]->image)}}" onerror="this.onerror=null;this.src='{{asset('images/image-not-found.png')}}';">
                                                         <div class="card-body justify-content-center">
-                                                            <h4 class="card-title text-center">{{strtoupper($talleres[$i + $j]->name) }}</h4>
-                                                            <p class="card-text text-center">{{$talleres[$i + $j]->description}} </p>
+                                                            <h4 class="card-title text-center">{{strtoupper($talleres[$i*3 + $j]->name) }}</h4>
+                                                            <p class="card-text text-center">{{$talleres[$i*3 + $j]->description}} </p>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -271,14 +274,17 @@
                                     <div style="display: none">{{$flag = true}}</div>
                                 @else
                                     <div class="carousel-item">
-                                        <div class="row">
+                                        <div class="row justify-content-center">
                                             @for($j = 0; $j < 3; $j++)
+                                                @if($i*3 + $j >= count($talleres))
+                                                    @break
+                                                @endif
                                                 <div class="col-md-4 mb-3">
                                                     <div class="card">
                                                         <img class="img-fluid" src="{{asset($talleres[$i + $j]->image)}}" onerror="this.onerror=null;this.src='{{asset('images/image-not-found.png')}}';">
                                                         <div class="card-body justify-content-center">
-                                                            <h4 class="card-title text-center">{{strtoupper($talleres[$i + $j]->name)}}</h4>
-                                                            <p class="card-text text-center">{{$talleres[$i + $j]->description}} </p>
+                                                            <h4 class="card-title text-center">{{strtoupper($talleres[$i*3 + $j]->name)}}</h4>
+                                                            <p class="card-text text-center">{{$talleres[$i*3 + $j]->description}} </p>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -290,16 +296,16 @@
                         @endif
 
                     </div>
-                </div>
-                <div>
-                    <a href="#talleresActividades" class="carousel-control-prev" data-slide="prev">
-                        <span class="carousel-control-prev-icon"></span>
-                        <span class="sr-only" aria-hidden="true">Prev</span>
-                    </a>
-                    <a href="#talleresActividades" class="carousel-control-next" data-slide="next">
-                        <span class="carousel-control-next-icon"></span>
-                        <span class="sr-only" aria-hidden="true">Next</span>
-                    </a>
+                    <div>
+                        <a href="#talleresActividades" class="carousel-control-prev" data-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                            <span class="sr-only" aria-hidden="true">Prev</span>
+                        </a>
+                        <a href="#talleresActividades" class="carousel-control-next" data-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                            <span class="sr-only" aria-hidden="true">Next</span>
+                        </a>
+                    </div>
                 </div>
     </section>
 

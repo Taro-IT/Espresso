@@ -41,7 +41,7 @@
                         <div class="mb-2">
                             <label for="name" class="form-label">Nombre:</label>
                             <input type="text" class="form-control" id="name" name="name" required
-                                    value="{{old('name')}}" placeholder="Taller de escultura">
+                                    maxlength="255" value="{{old('name')}}" placeholder="Taller de escultura">
                             @error('name')
                             <span class="invalid-feedback" role="alert">
                                 <strong>{{ $message }}</strong>
@@ -51,7 +51,7 @@
                         <div class="mb-3">
                             <label for="description" class="form-label">Descripción:</label>
                             <textarea class="form-control" aria-label="With textarea" name="description"
-                                        required>{{old('description')}}</textarea>
+                                        maxlength="280" required>{{old('description')}}</textarea>
                             @error('description')
                             <span class="invalid-feedback" role="alert">
                                 <strong>{{ $message }}</strong>
