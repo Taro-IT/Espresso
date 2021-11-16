@@ -166,4 +166,4 @@ Usamos [SemVer](http://semver.org/) para el versionado. Para todas las versiones
 * **Adolfo Acosta Castro** - *Trabajo Inicial* - [AAcostac](https://github.com/AAcostac)
 * **Jose Carlos Pacheco** - *Trabajo Inicial* - [JoseCarlosPa](https://github.com/JoseCarlosPa)
 
-También puedes mirar la lista de todos los [contribuyentes](https://github.com/your/project/contributors) quíenes han participado en este proyecto.
+También puedes mirar la lista de todos los [contribuyentes](https://github.com/Taro-IT) quíenes han participado en este proyecto.
