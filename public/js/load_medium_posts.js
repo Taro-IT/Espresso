@@ -1,6 +1,6 @@
 // Get posts from medium rss converted to json through rss2json.com
 function loadMediumPosts() {
-   fetch('https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@sabesan96')
+   fetch('https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@Casademediocamino')
    .then((response) => response.json())
    .then((data) => {
       // Filter for actual posts. Comments don't have categories, thus they can be removed with that criteria
