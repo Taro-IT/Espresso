@@ -244,7 +244,7 @@
                 perspectiva de una futura inclusión social.
             </p>
         </div>
-        <div class="row" data-aos="fade-up" data-aos-delay="400">
+        <div class="row" data-aos="fade-up" data-aos-delay="400" style="min-height: 550px">
             <div class="col-12">
                 <div id="talleresActividades" class="carousel slide" data-ride="carousel">
                     <div class="carousel-inner">
@@ -257,7 +257,7 @@
                                         <div class="row">
                                             @for($j = 0; $j < 3; $j++)
                                                 <div class="col-md-4 mb-3">
-                                                    <div class="card" style="height: 600px">
+                                                    <div class="card">
                                                         <img class="img-fluid" src="{{asset($talleres[$i + $j]->image)}}" onerror="this.onerror=null;this.src='{{asset('images/image-not-found.png')}}';">
                                                         <div class="card-body justify-content-center">
                                                             <h4 class="card-title text-center">{{strtoupper($talleres[$i + $j]->name) }}</h4>
@@ -290,16 +290,16 @@
                         @endif
 
                     </div>
-                </div>
-                <div>
-                    <a href="#talleresActividades" class="carousel-control-prev" data-slide="prev">
-                        <span class="carousel-control-prev-icon"></span>
-                        <span class="sr-only" aria-hidden="true">Prev</span>
-                    </a>
-                    <a href="#talleresActividades" class="carousel-control-next" data-slide="next">
-                        <span class="carousel-control-next-icon"></span>
-                        <span class="sr-only" aria-hidden="true">Next</span>
-                    </a>
+                    <div>
+                        <a href="#talleresActividades" class="carousel-control-prev" data-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                            <span class="sr-only" aria-hidden="true">Prev</span>
+                        </a>
+                        <a href="#talleresActividades" class="carousel-control-next" data-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                            <span class="sr-only" aria-hidden="true">Next</span>
+                        </a>
+                    </div>
                 </div>
     </section>
 
