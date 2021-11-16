@@ -101,7 +101,7 @@
                         sociología).</p>
                 </div>
                 <div class="col-md-4" data-aos="fade-left" data-aos-delay="500">
-                    <img class="d-block img-fluid" src="/about_us/test_image_2.jpg" alt="image-girl">
+                    <img class="d-block img-fluid" src="{{asset('images/about_us.jpg')}}" alt="Pacientes frente a letrero de Querétaro">
                 </div>
             </div>
             <br>
