@@ -23,8 +23,11 @@
         <form action="{{route('workshop.update',$workshop->id)}}" enctype="multipart/form-data" method="post">
             @csrf
             @method('put')
-            <div class="row">
+            <div class="row mb-3">
                 <div class="col-md-6">
+                    <label>
+                        <i class="bi bi-image-fill mr-2"></i>Imagen del producto:
+                    </label>
                     <img src="{{asset($workshop->image)}}" alt="{{$workshop->name}}" width="100%"
                          class="rounded"
                          onerror="this.onerror=null;this.src='{{asset('images/image-not-found.png')}}';">
@@ -44,7 +47,7 @@
                                 maxlength="255" name="name" value="{{old('title',$workshop->name)}}">
                     </div>
                     <div class="form-group">
-                        <label for="title">Descripción:</label>
+                        <label for="title"><i class="bi bi-text-left mr-2"></i>Descripción:</label>
                         <textarea class="form-control" id="description" rows="5"
                                     maxlength="280" name="description">{{old('description',$workshop->description)}}</textarea>
                     </div>

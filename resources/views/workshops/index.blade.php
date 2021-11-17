@@ -49,7 +49,7 @@
                             @enderror
                         </div>
                         <div class="mb-3">
-                            <label for="description" class="form-label">Descripción:</label>
+                            <label for="description" class="form-label"><i class="bi bi-text-left mr-2"></i>Descripción:</label>
                             <textarea class="form-control" aria-label="With textarea" name="description"
                                         maxlength="280" required>{{old('description')}}</textarea>
                             @error('description')

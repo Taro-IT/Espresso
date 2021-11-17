@@ -52,7 +52,9 @@
                             </div>
                             <div class="col-md-6">
                                 <div class="mb-3">
-                                    <label for="price" class="form-label">Precio mínimo:</label>
+                                    <label for="price" class="form-label">
+                                        <i class="bi bi-cash-stack mr-2"></i>Precio mínimo:
+                                    </label>
                                     <div class="input-group mb-3">
                                         <span class="input-group-text">$</span>
                                         <input type="number" min="0" step="1" class="form-control" required="true" name="price" value="{{old('price')}}">
@@ -67,7 +69,9 @@
                             </div>
                         </div>
                         <div class="mb-3">
-                            <label for="description" class="form-label">Descripción:</label>
+                            <label for="description" class="form-label">
+                                <i class="bi bi-text-left mr-2"></i>Descripción:
+                            </label>
                             <textarea class="form-control" aria-label="With textarea" name="description"
                                       required>{{old('description')}}</textarea>
                             @error('description')
@@ -78,7 +82,9 @@
                         </div>
                         <div class="row text-left">
                             <div class="col-md-6">
-                                <label><i class="bi bi-image-fill mr-2"></i>Imagen del producto:</label>
+                                <label>
+                                    <i class="bi bi-image-fill mr-2"></i>Imagen del producto:
+                                </label>
                                 <div class="input-group mb-2">
                                     <div class="custom-file" id="customFile">
                                         <input name="image" type="file" class="custom-file-input" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01" lang="es" data-browse="Subir" accept="image/*">
@@ -88,7 +94,9 @@
                                 <small class="text-muted">Se recomienda usar una imagen de 600 x 450px.</small>
                             </div>
                             <div class="col-md-6">
-                                <label><i class="bi bi-file-earmark-fill mr-2"></i>Archivo del producto:</label>
+                                <label>
+                                    <i class="bi bi-file-earmark-fill mr-2"></i>Archivo del producto:
+                                </label>
                                 <div class="input-group mb-2">
                                     <div class="custom-file" id="customFile">
                                         <input type="file" name="file" class="custom-file-input" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01" lang="es" data-browse="Subir">
@@ -101,7 +109,9 @@
                         <div class="row text-left">
                             <div class="col-md-6">
                                 <div class="mb-3">
-                                <label for="author" class="form-label">Autor:</label>
+                                <label for="author" class="form-label">
+                                    <i class="bi bi-person-fill mr-2"></i>Autor:
+                                </label>
                                 <div class="input-group mb-3">
                                     <select class="custom-select" id="inputGroupSelect01" name="id_patient" required>
                                         <option disabled selected value="N/A">Selecciona el autor...</option>
@@ -117,7 +127,9 @@
                             </div>
                             <div class="col-md-6">
                                 <div class="mb-3">
-                                    <label for="workshop" class="form-label">Taller(es):</label>
+                                    <label for="workshop" class="form-label">
+                                        <i class="bi bi-easel-fill mr-2"></i>Taller:
+                                    </label>
                                     <div class="input-group mb-3">
                                     <select class="custom-select" id="inputGroupSelect01" name="id_workshop" required>
                                         <option disabled selected value="N/A">Selecciona un taller...</option>
@@ -240,13 +252,13 @@
                                             </div>
                                             <div class="col-lg-6 mb-3">
                                                 <div class="mb-4">
-                                                <p><strong>Precio mínimo: </strong>{{$product->price}}</p>
-                                                <p><strong>Descripción: </strong>{{$product->description}}</p>
-                                                <p><strong>Taller:</strong>
+                                                <p><strong><i class="bi bi-cash-stack mr-2"></i>Precio mínimo: </strong>{{$product->price}}</p>
+                                                <p><strong><i class="bi bi-text-left mr-2"></i>Descripción: </strong>{{$product->description}}</p>
+                                                <p><strong><i class="bi bi-easel-fill mr-2"></i>Taller:</strong>
                                                 @foreach($workshops as $workshop)
                                                     @if(($product->id_workshop) == $workshop->id) {{$workshop->name}} @endif
                                                 @endforeach</p>
-                                                <p><strong>Autor:</strong>
+                                                <p><strong><i class="bi bi-person-fill mr-2"></i>Autor:</strong>
                                                 @foreach($patients as $patient)
                                                     @if(($product->id_patient) == $patient->id) 
                                                         {{$patient->name}} 

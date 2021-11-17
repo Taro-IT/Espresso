@@ -14,8 +14,11 @@
         <form action="{{route('products.update',$product->id)}}" enctype="multipart/form-data" method="post">
             @csrf
             @method('put')
-            <div class="row">
+            <div class="row mb-3">
                 <div class="col-md-6">
+                    <label>
+                        <i class="bi bi-image-fill mr-2"></i>Imagen del producto:
+                    </label>
                     <img src="{{asset($product->image)}}" alt="{{$product->title}}" width="100%"
                          class="rounded"
                          onerror="this.onerror=null;this.src='{{asset('images/image-not-found.png')}}';">
@@ -35,12 +38,14 @@
                             name="title" value="{{old('title',$product->title)}}">
                     </div>
                     <div class="form-group">
-                        <label for="title">Descripción:</label>
+                        <label for="title"><i class="bi bi-text-left mr-2"></i>Descripción:</label>
                         <textarea class="form-control" id="description" rows="5"
                                 name="description">{{old('description', $product->description)}}</textarea>
                     </div>
                     <div class="form-group">
-                        <label for="price">Precio mínimo: </label>
+                        <label for="price">
+                            <i class="bi bi-cash-stack mr-2"></i>Precio mínimo:
+                        </label>
                         <div class="input-group mb-3">
                             <div class="input-group-prepend">
                                 <span class="input-group-text">$</span>
@@ -78,7 +83,7 @@
             <div class="row">
                 <div class="col-md-6">
                     <div class="mb-3">
-                        <label for="author" class="form-label">Autor:</label>
+                        <label for="author" class="form-label"><i class="bi bi-person-fill mr-2"></i>Autor:</label>
                         <div class="input-group mb-3">
                             <select class="custom-select" name="id_patient" required>
                                 <option disabled value="N/A">Selecciona el autor...</option>
@@ -98,7 +103,7 @@
 
                 <div class="col-md-6">
                     <div class="mb-3">
-                        <label for="workshop" class="form-label">Taller:</label>
+                        <label for="workshop" class="form-label"><i class="bi bi-easel-fill mr-2"></i>Taller:</label>
                         <div class="input-group mb-3">
                             <select class="custom-select" name="id_workshop" required>
                                 <option disabled>Selecciona un taller...</option>
