@@ -26,7 +26,7 @@
             <div class="row mb-3">
                 <div class="col-md-6">
                     <label>
-                        <i class="bi bi-image-fill mr-2"></i>Imagen del producto:
+                        <i class="bi bi-image-fill mr-2"></i>Imagen del taller:
                     </label>
                     <br>
                     <div class="w-100 text-center">
