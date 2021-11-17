@@ -83,8 +83,10 @@
                             <select class="custom-select" name="id_patient" required>
                                 <option disabled value="N/A">Selecciona el autor...</option>
                                 @foreach($patients as $patient)
-                                    <option value="{{$patient->id}}">@if(($product->id_patient) == $patient->id )
-                                            selected @endif{{$patient->name}}</option>
+                                    <option value="{{$patient->id}}"
+                                        @if($product->id_patient == $patient->id) selected @endif>
+                                        {{$patient->name}}
+                                    </option>
                                 @endforeach
                             </select>
                         </div>
@@ -101,8 +103,10 @@
                             <select class="custom-select" name="id_workshop" required>
                                 <option disabled>Selecciona un taller...</option>
                                 @foreach($workshops as $workshop)
-                                    <option value="{{$workshop->id}}">@if(($product->id_workshop) == $workshop->id)
-                                            selected @endif{{$workshop->name}}</option>
+                                    <option value="{{$workshop->id}}"
+                                        @if($product->id_workshop == $workshop->id) selected @endif>
+                                        {{$workshop->name}}
+                                    </option>
                                 @endforeach
                             </select>
                         </div>
