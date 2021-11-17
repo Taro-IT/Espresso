@@ -71,13 +71,7 @@
                                 <span>Cambiar contraseña</span>
                             </a>
                         </li>
-                        <li><hr class="m-0"></li>
                         <li>
-                            <a class="dropdown-item d-flex align-items-center" href="pages-faq.html">
-                                <i class="bi bi-question-circle"></i>
-                                <span>¿Necesitas ayuda?</span>
-                            </a>
-                        </li>
                         <li><hr class="m-0"></li>
                         <li>
                             <a class="dropdown-item d-flex align-items-center" href="{{ route('logout') }}"

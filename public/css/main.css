@@ -470,6 +470,14 @@ section {
 
 }
 
+.product-showcase-img {
+    max-width: calc(100% - 40px); 
+    max-height: 260px; 
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
 @media (max-width: 991px) {
     .about-us .about-us-img {
         text-align: center;

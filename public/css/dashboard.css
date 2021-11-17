@@ -274,8 +274,8 @@ a:hover {
 }
 
 .product-images-ver-mas{
-    width: 300px;
-    height: 250px;
+    max-width: 300px;
+    max-height: 250px;
 }
 
 .underlined{

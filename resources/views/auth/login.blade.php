@@ -19,7 +19,7 @@
     @csrf
     <div class="form-group  wrap-input100 validate-input" data-validate="Valid email is required: ex@abc.xyz">
     	<label>Correo electrónico:</label>
-        <input id="email" name="email" class="form-control @error('email') is-invalid @enderror" placeholder="usuario@gmail.com" type="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
+        <input id="email" name="email" class="form-control @error('email') is-invalid @enderror" type="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
         @error('email')
                     <span class="invalid-feedback" role="alert">
                         <strong>{{ $message }}</strong>
@@ -28,7 +28,7 @@
     </div> <!-- form-group// -->
     <div class="form-group">
     	<label>Contraseña:</label>
-        <input class="form-control @error('password') is-invalid @enderror" id="password" name="password" placeholder="********" type="password" required autocomplete="current-password">
+        <input class="form-control @error('password') is-invalid @enderror" id="password" name="password" type="password" required autocomplete="current-password">
         @error('password')
                     <span class="invalid-feedback" role="alert">
                         <strong>{{ $message }}</strong>
@@ -36,7 +36,7 @@
                     @enderror
     </div> <!-- form-group// --> 
     @if (Route::has('password.request'))
-    <a href="{{ route('password.request') }}" class="small float-left btn-link mb-3">¿Olvidaste la contraseña?</a>
+    <a href="{{ route('password.request') }}" class="small float-left login-link mb-3">¿Olvidaste la contraseña?</a>
     @endif
     <div class="form-group mt-2 container-login100-form-btn">
         <button type="submit" class="btn btn-read-more btn-block"> Iniciar sesión  </button>

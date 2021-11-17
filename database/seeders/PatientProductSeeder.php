@@ -29,10 +29,5 @@ class PatientProductSeeder extends Seeder
             'id_patient' => 3
 
         ]);
-        DB::table('patient_product')->insert([
-            'id_product' => 1,
-            'id_patient' => 3
-
-        ]);
     }
 }

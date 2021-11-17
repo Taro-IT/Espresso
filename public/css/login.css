@@ -108,3 +108,19 @@ input[type=email],input[type=password]:placeholder {
 #icon {
     width:30%;
 }
+
+.login-link {
+    color: var(--dark-purple) !important;
+    transition: 0.15s !important;
+    text-decoration: underline !important;
+}
+.login-link:hover {
+    color: black !important;
+    text-decoration: underline !important;
+    text-decoration-color: black !important;
+}
+.login-link:active {
+    color: var(--dark-purple) !important;
+    transition: 0.15s !important;
+    text-decoration: underline !important;
+}

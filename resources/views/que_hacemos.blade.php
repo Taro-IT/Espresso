@@ -100,13 +100,13 @@
                     <span class="underline">&nbsp;&nbsp;NUESTRA FORMA DE TRABAJO&nbsp;&nbsp;</span>
                 </h1>
                 <p class="subtitle text-center" data-aos="fade-up" data-aos-delay="200">Utilizamos el modelo terapéutico
-                    Casa de Medio Camino, un modelo integral para el tratamiento de la salud mental. En este modelo el
+                    Casa de Medio Camino, un modelo integral para el tratamiento de la salud mental, en el que
                     paciente vive en una comunidad que les permite establecer puentes de interacción de manera
                     controlada y segura, aprender de manera colaborativa y hacerse responsable de sus acciones. </p>
                 <p class="subtitle text-center" data-aos="fade-up" data-aos-delay="200">Esta forma de atención es una
                     alternativa que se distingue de las instituciones de hospitalización psiquiátrica convencionales por
                     el seguimiento continuo y personalizado al tratamiento de cada paciente, así como por la
-                    introducción a una comunidad terapéutica.</p>
+                    introducción a una Comunidad Terapéutica.</p>
             </div>
         </section>
 
@@ -183,7 +183,7 @@
             <span class="underline">&nbsp;&nbsp;UN DÍA EN CASA LOOHL&nbsp;&nbsp;</span>
         </h1>
         <p class="subtitle text-center" data-aos="fade-up" data-aos-delay="300">
-            Casa Loohl es una comunidad terapeútica donde residen personas con experiencias psiquiátricas, su día a día
+            Casa Loohl es una Comunidad Terapeútica donde residen personas con experiencias psiquiátricas, su día a día
             se organiza entre actividades rutinarias, actividades terapeúticas, talleres, clínica y actividades de ocio.
         </p>
         <div class="row activities">
@@ -236,7 +236,7 @@
                 sostener enlaces sociales que le generen cierta autonomía económica.
                 Los talleres que realizamos en Casa Loohl están dirigidos a contrarrestar la sintomatología negativa que
                 presentan los huéspedes, guiándolos en el fortalecimiento de sus habilidades sociales y cognitivas que
-                le permita tener un mejor funcionamiento en cualquier ámbito.</p>
+                les permitan tener un mejor funcionamiento en cualquier ámbito.</p>
             <p class="subtitle text-center" data-aos="fade-up" data-aos-delay="300">
                 La estructuración de los talleres y el contenido de estos se ajustan a la medida de los integrantes del
                 grupo y persiguen el objetivo de desarrollar funciones cognoscitivas, conductuales y creativas en los
@@ -261,7 +261,7 @@
                                                 @endif
                                                 <div class="col-md-4 mb-3">
                                                     <div class="card">
-                                                        <img class="img-fluid" src="{{asset($talleres[$i + $j]->image)}}" onerror="this.onerror=null;this.src='{{asset('images/image-not-found.png')}}';">
+                                                        <img style="max-width: 100%; max-height: 260px; object-fit: cover;" src="{{asset($talleres[$i + $j]->image)}}" onerror="this.onerror=null;this.src='{{asset('images/image-not-found.png')}}';">
                                                         <div class="card-body justify-content-center">
                                                             <h4 class="card-title text-center">{{strtoupper($talleres[$i*3 + $j]->name) }}</h4>
                                                             <p class="card-text text-center">{{$talleres[$i*3 + $j]->description}} </p>
@@ -403,7 +403,7 @@
                 <div class="card-header faq-header" id="heading7">
                     <a class="btn faq-link faq-btn font-weight-bold w-100 text-left" data-toggle="collapse"
                        data-target="#collapse7" aria-expanded="true" aria-controls="collapse7">
-                       ¿Atienden a personas en situación de suicidio?
+                       ¿Atienden a personas con tendencias suicidas?
                     </a>
                 </div>
                 <div id="collapse7" class="collapse" aria-labelledby="heading7" data-parent="#faq-accordion">

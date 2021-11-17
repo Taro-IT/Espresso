@@ -41,7 +41,7 @@
                         <div class="mb-2">
                             <label for="name" class="form-label">Nombre:</label>
                             <input type="text" class="form-control" id="name" name="name" required
-                                    maxlength="255" value="{{old('name')}}" placeholder="Taller de escultura">
+                                    maxlength="255" value="{{old('name')}}">
                             @error('name')
                             <span class="invalid-feedback" role="alert">
                                 <strong>{{ $message }}</strong>
@@ -49,7 +49,7 @@
                             @enderror
                         </div>
                         <div class="mb-3">
-                            <label for="description" class="form-label">Descripción:</label>
+                            <label for="description" class="form-label"><i class="bi bi-text-left mr-2"></i>Descripción:</label>
                             <textarea class="form-control" aria-label="With textarea" name="description"
                                         maxlength="280" required>{{old('description')}}</textarea>
                             @error('description')
@@ -71,7 +71,7 @@
                             </div>
                         </div>
                         <div class="modal-footer justify-content-center">
-                            <button type="submit" class="btn btn-principal">Registrar</button>
+                            <button type="submit" class="btn btn-principal px-5">Registrar</button>
                         </div>
                     </form>
                 </div>
