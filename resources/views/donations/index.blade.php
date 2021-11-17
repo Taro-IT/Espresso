@@ -42,8 +42,8 @@
                                                 value="10.00"
                                                 required
                                             />
-                                            <small class="form-text text-muted">Utilice valores con decimales separados
-                                                por puntos "."</small>
+                                            <small class="form-text text-muted">Utiliza valores con decimales separados
+                                                por punto.</small>
                                         </div>
                                         <div class="col-md-6 text-left">
                                             <label>Moneda:</label>

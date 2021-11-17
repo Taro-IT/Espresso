@@ -23,11 +23,17 @@
         <form action="{{route('workshop.update',$workshop->id)}}" enctype="multipart/form-data" method="post">
             @csrf
             @method('put')
-            <div class="row">
+            <div class="row mb-3">
                 <div class="col-md-6">
-                    <img src="{{asset($workshop->image)}}" alt="{{$workshop->name}}" width="100%"
-                         class="rounded"
-                         onerror="this.onerror=null;this.src='{{asset('images/image-not-found.png')}}';">
+                    <label>
+                        <i class="bi bi-image-fill mr-2"></i>Imagen del taller:
+                    </label>
+                    <br>
+                    <div class="w-100 text-center">
+                        <img src="{{asset($workshop->image)}}" alt="{{$workshop->name}}" style="max-width: 100%; max-height: 350px"
+                            class="rounded mb-3"
+                            onerror="this.onerror=null;this.src='{{asset('images/image-not-found.png')}}';">
+                    </div>
                     <div class="input-group">
                         <div class="custom-file" id="customFile">
                             <input type="file" name="image" class="custom-file-input" id="inputGroupFile01"
@@ -41,10 +47,10 @@
                     <div class="form-group">
                         <label for="name">Nombre:</label>
                         <input type="text" class="form-control" id="name" aria-describedby="Titulo"
-                                maxlength="255" placeholder="Titulo" name="name" value="{{old('title',$workshop->name)}}">
+                                maxlength="255" name="name" value="{{old('title',$workshop->name)}}">
                     </div>
                     <div class="form-group">
-                        <label for="title">Descripción:</label>
+                        <label for="title"><i class="bi bi-text-left mr-2"></i>Descripción:</label>
                         <textarea class="form-control" id="description" rows="5"
                                     maxlength="280" name="description">{{old('description',$workshop->description)}}</textarea>
                     </div>

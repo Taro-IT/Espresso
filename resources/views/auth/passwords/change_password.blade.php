@@ -22,13 +22,13 @@
                             <div class="form-group">
                                 <label for="email">Correo electrónico</label>
                                 <input type="email" class="form-control" id="email" aria-describedby="emailHelp"
-                                       placeholder="Correo electrónico" value="{{$user->email}}" disabled>
+                                       value="{{$user->email}}" disabled>
                             </div>
                             <div class="form-group">
                                 <label for="exampleInputPassword1">Contraseña nueva</label>
                                 <input id="password" type="password"
                                        class="form-control @error('password') is-invalid @enderror" name="password"
-                                       required autocomplete="new-password" placeholder="Contraseña nueva">
+                                       required autocomplete="new-password">
 
                                 @error('password')
                                 <span class="invalid-feedback" role="alert">
@@ -40,7 +40,7 @@
                                 <label for="exampleInputPassword1">Confirmación de contraseña nueva</label>
                                 <input id="password-confirm" type="password" class="form-control"
                                        name="password_confirmation" required autocomplete="new-password"
-                                       placeholder="Confirmación de contraseña">
+                                       >
                             </div>
                             <button type="submit" class="btn btn-principal">Cambiar contraseña</button>
                         </form>

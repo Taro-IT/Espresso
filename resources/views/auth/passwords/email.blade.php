@@ -20,7 +20,7 @@
     @csrf
         <div class=" form-group wrap-input100 validate-input" data-validate="Valid email is required: ex@abc.xyz">
         <label>Correo electrónico:</label>    
-        <input id="email" type="email" class="@error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" placeholder="usuario@gmail.com" required autocomplete="email" autofocus>
+        <input id="email" type="email" class="@error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
             @error('email')
             <span class="invalid-feedback" role="alert">
                 <strong>{{ $message }}</strong>

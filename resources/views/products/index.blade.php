@@ -42,7 +42,7 @@
                                 <div class="mb-3">
                                     <label for="title" class="form-label">Nombre del producto:</label>
                                     <input type="text" class="form-control" id="title" name="title" required
-                                           value="{{old('title')}}" placeholder="Diversas voces">
+                                           value="{{old('title')}}">
                                     @error('title')
                                         <span class="invalid-feedback" role="alert">
                                             <strong>{{ $message }}</strong>
@@ -52,10 +52,12 @@
                             </div>
                             <div class="col-md-6">
                                 <div class="mb-3">
-                                    <label for="price" class="form-label">Precio mínimo:</label>
+                                    <label for="price" class="form-label">
+                                        <i class="bi bi-cash-stack mr-2"></i>Precio mínimo:
+                                    </label>
                                     <div class="input-group mb-3">
                                         <span class="input-group-text">$</span>
-                                        <input type="number" min="0" step="1" class="form-control" required="true" name="price" value="{{old('price')}}" placeholder="100">
+                                        <input type="number" min="0" step="1" class="form-control" required="true" name="price" value="{{old('price')}}">
                                         <span class="input-group-text">.00</span>
                                     </div>
                                     @error('price')
@@ -67,7 +69,9 @@
                             </div>
                         </div>
                         <div class="mb-3">
-                            <label for="description" class="form-label">Descripción:</label>
+                            <label for="description" class="form-label">
+                                <i class="bi bi-text-left mr-2"></i>Descripción:
+                            </label>
                             <textarea class="form-control" aria-label="With textarea" name="description"
                                       required>{{old('description')}}</textarea>
                             @error('description')
@@ -78,7 +82,9 @@
                         </div>
                         <div class="row text-left">
                             <div class="col-md-6">
-                                <label><i class="bi bi-image-fill mr-2"></i>Imagen del producto:</label>
+                                <label>
+                                    <i class="bi bi-image-fill mr-2"></i>Imagen del producto:
+                                </label>
                                 <div class="input-group mb-2">
                                     <div class="custom-file" id="customFile">
                                         <input name="image" type="file" class="custom-file-input" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01" lang="es" data-browse="Subir" accept="image/*">
@@ -88,7 +94,9 @@
                                 <small class="text-muted">Se recomienda usar una imagen de 600 x 450px.</small>
                             </div>
                             <div class="col-md-6">
-                                <label><i class="bi bi-file-earmark-fill mr-2"></i>Archivo del producto:</label>
+                                <label>
+                                    <i class="bi bi-file-earmark-fill mr-2"></i>Archivo del producto:
+                                </label>
                                 <div class="input-group mb-2">
                                     <div class="custom-file" id="customFile">
                                         <input type="file" name="file" class="custom-file-input" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01" lang="es" data-browse="Subir">
@@ -101,39 +109,43 @@
                         <div class="row text-left">
                             <div class="col-md-6">
                                 <div class="mb-3">
-                                <label for="author" class="form-label">Autor(es):</label>
+                                <label for="author" class="form-label">
+                                    <i class="bi bi-person-fill mr-2"></i>Autor:
+                                </label>
                                 <div class="input-group mb-3">
                                     <select class="custom-select" id="inputGroupSelect01" name="id_patient" required>
-                                        <option disabled value="N/A">Selecciona el autor...</option>
+                                        <option disabled selected value="N/A">Selecciona el autor...</option>
                                         @foreach($patients as $patient)
                                             <option value="{{$patient->id}}">{{$patient->name}}</option>
                                         @endforeach
                                     </select>
                                 </div>
                                     <a href="{{route('patients.index')}}">
-                                        <button class="btn btn-principal btn-sm" type="button">Agregar autores</button>
+                                        <button class="btn btn-principal btn-sm" type="button">Registrar otro autor</button>
                                     </a>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="mb-3">
-                                    <label for="workshop" class="form-label">Taller(es):</label>
+                                    <label for="workshop" class="form-label">
+                                        <i class="bi bi-easel-fill mr-2"></i>Taller:
+                                    </label>
                                     <div class="input-group mb-3">
                                     <select class="custom-select" id="inputGroupSelect01" name="id_workshop" required>
-                                        <option disabled value="N/A">Selecciona un taller...</option>
+                                        <option disabled selected value="N/A">Selecciona un taller...</option>
                                         @foreach($workshops as $workshop)
                                             <option value="{{$workshop->id}}">{{$workshop->name}}</option>
                                         @endforeach
                                     </select>
                                 </div>
                                     <a href="{{route('workshop.index')}}">
-                                        <button class="btn btn-principal btn-sm" type="button">Agregar Taller</button>
+                                        <button class="btn btn-principal btn-sm" type="button">Registrar otro taller</button>
                                     </a>
                                 </div>
                             </div>
                         </div>
                         <div class="modal-footer justify-content-center">
-                            <button type="submit" class="btn btn-principal pl-5 pr-5">Registrar</button>
+                            <button type="submit" class="btn btn-principal px-5">Registrar</button>
                         </div>
                     </form>
                 </div>
@@ -150,7 +162,7 @@
                         <tr>
                             <th class="text-center">ID</th>
                             <th>Nombre del producto</th>
-                            <th>Autor(es)</th>
+                            <th>Autor</th>
                             <th>Acciones</th>
                         </tr>
                     </thead>
@@ -160,14 +172,10 @@
                             <td class="text-center">{{$product->id}}</td>
                             <td>{{$product->title}}</td>
                             <td>
-                                @foreach($authors as $author)
-                                    @if ($product->id == $author->id_product)
-                                        @foreach($patients as $patient)
-                                            @if ($author->id_patient == $patient->id)
-                                                {{$patient->name}}
-                                                <br>
-                                            @endif
-                                        @endforeach
+                                @foreach($patients as $patient)
+                                    @if(($product->id_patient) == $patient->id) 
+                                        {{$patient->name}} 
+                                        @break
                                     @endif
                                 @endforeach
                             </td>
@@ -236,7 +244,7 @@
                                     </div>
                                     <div class="modal-body">
                                         <div class="row">
-                                            <div class="col-lg-6 mb-4 text-center text-lg-left">
+                                            <div class="col-lg-6 mb-4 text-center text-lg-center">
                                                 <img src="{{asset($product->image)}}"
                                                     alt="{{$product->title}}-{{$product->title}}"
                                                     class="product-images-ver-mas rounded" 
@@ -244,27 +252,19 @@
                                             </div>
                                             <div class="col-lg-6 mb-3">
                                                 <div class="mb-4">
-                                                <p><strong>Precio mínimo: </strong>{{$product->price}}</p>
-                                                <p><strong>Descripción: </strong>{{$product->description}}</p>
-                                                <p><strong>Taller(es):</strong>
+                                                <p><strong><i class="bi bi-cash-stack mr-2"></i>Precio mínimo: </strong>${{$product->price}}</p>
+                                                <p><strong><i class="bi bi-text-left mr-2"></i>Descripción: </strong>{{$product->description}}</p>
+                                                <p><strong><i class="bi bi-easel-fill mr-2"></i>Taller:</strong>
                                                 @foreach($workshops as $workshop)
                                                     @if(($product->id_workshop) == $workshop->id) {{$workshop->name}} @endif
                                                 @endforeach</p>
-                                                <p><strong>Autor(es):</strong>
-                                                @foreach($authors as $author)
-                                                    @if ($product->id == $author->id_product)
-                                                        @foreach($patients as $patient)
-                                                            @if ($author->id_patient == $patient->id)
-                                                                {{$patient->name}}
-                                                                @if($patient === end($patients))
-                                                                    &#46;
-                                                                @else
-                                                                    &#44;
-                                                                @endif
-                                                            @endif
-                                                        @endforeach
+                                                <p><strong><i class="bi bi-person-fill mr-2"></i>Autor:</strong>
+                                                @foreach($patients as $patient)
+                                                    @if(($product->id_patient) == $patient->id) 
+                                                        {{$patient->name}} 
+                                                        @break
                                                     @endif
-                                                @endforeach</p>
+                                                @endforeach
                                                 </div>
                                                 @if(($product->file) != null)
                                                 <div class="row">

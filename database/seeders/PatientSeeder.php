@@ -15,15 +15,15 @@ class PatientSeeder extends Seeder
     public function run()
     {
         DB::table('patient')->insert([
-            'name' => 'Pedro Picapiedra'
+            'name' => 'Sara Ojeda'
 
         ]);
         DB::table('patient')->insert([
-            'name' => 'Elcerresiete'
+            'name' => 'Francisco Fuerte'
 
         ]);
         DB::table('patient')->insert([
-            'name' => 'El Nubes'
+            'name' => 'Mario Canchola'
 
         ]);
     }
