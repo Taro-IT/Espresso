@@ -101,7 +101,7 @@
                         <div class="row text-left">
                             <div class="col-md-6">
                                 <div class="mb-3">
-                                <label for="author" class="form-label">Autor(es):</label>
+                                <label for="author" class="form-label">Autor:</label>
                                 <div class="input-group mb-3">
                                     <select class="custom-select" id="inputGroupSelect01" name="id_patient" required>
                                         <option disabled value="N/A">Selecciona el autor...</option>
@@ -111,7 +111,7 @@
                                     </select>
                                 </div>
                                     <a href="{{route('patients.index')}}">
-                                        <button class="btn btn-principal btn-sm" type="button">Agregar autores</button>
+                                        <button class="btn btn-principal btn-sm" type="button">Registrar otro autor</button>
                                     </a>
                                 </div>
                             </div>
@@ -127,7 +127,7 @@
                                     </select>
                                 </div>
                                     <a href="{{route('workshop.index')}}">
-                                        <button class="btn btn-principal btn-sm" type="button">Agregar Taller</button>
+                                        <button class="btn btn-principal btn-sm" type="button">Registrar otro taller</button>
                                     </a>
                                 </div>
                             </div>
@@ -150,7 +150,7 @@
                         <tr>
                             <th class="text-center">ID</th>
                             <th>Nombre del producto</th>
-                            <th>Autor(es)</th>
+                            <th>Autor</th>
                             <th>Acciones</th>
                         </tr>
                     </thead>
@@ -160,14 +160,10 @@
                             <td class="text-center">{{$product->id}}</td>
                             <td>{{$product->title}}</td>
                             <td>
-                                @foreach($authors as $author)
-                                    @if ($product->id == $author->id_product)
-                                        @foreach($patients as $patient)
-                                            @if ($author->id_patient == $patient->id)
-                                                {{$patient->name}}
-                                                <br>
-                                            @endif
-                                        @endforeach
+                                @foreach($patients as $patient)
+                                    @if(($product->id_patient) == $patient->id) 
+                                        {{$patient->name}} 
+                                        @break
                                     @endif
                                 @endforeach
                             </td>
@@ -246,25 +242,17 @@
                                                 <div class="mb-4">
                                                 <p><strong>Precio mínimo: </strong>{{$product->price}}</p>
                                                 <p><strong>Descripción: </strong>{{$product->description}}</p>
-                                                <p><strong>Taller(es):</strong>
+                                                <p><strong>Taller:</strong>
                                                 @foreach($workshops as $workshop)
                                                     @if(($product->id_workshop) == $workshop->id) {{$workshop->name}} @endif
                                                 @endforeach</p>
-                                                <p><strong>Autor(es):</strong>
-                                                @foreach($authors as $author)
-                                                    @if ($product->id == $author->id_product)
-                                                        @foreach($patients as $patient)
-                                                            @if ($author->id_patient == $patient->id)
-                                                                {{$patient->name}}
-                                                                @if($patient === end($patients))
-                                                                    &#46;
-                                                                @else
-                                                                    &#44;
-                                                                @endif
-                                                            @endif
-                                                        @endforeach
+                                                <p><strong>Autor:</strong>
+                                                @foreach($patients as $patient)
+                                                    @if(($product->id_patient) == $patient->id) 
+                                                        {{$patient->name}} 
+                                                        @break
                                                     @endif
-                                                @endforeach</p>
+                                                @endforeach
                                                 </div>
                                                 @if(($product->file) != null)
                                                 <div class="row">

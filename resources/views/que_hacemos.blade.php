@@ -236,7 +236,7 @@
                 sostener enlaces sociales que le generen cierta autonomía económica.
                 Los talleres que realizamos en Casa Loohl están dirigidos a contrarrestar la sintomatología negativa que
                 presentan los huéspedes, guiándolos en el fortalecimiento de sus habilidades sociales y cognitivas que
-                le permita tener un mejor funcionamiento en cualquier ámbito.</p>
+                les permitan tener un mejor funcionamiento en cualquier ámbito.</p>
             <p class="subtitle text-center" data-aos="fade-up" data-aos-delay="300">
                 La estructuración de los talleres y el contenido de estos se ajustan a la medida de los integrantes del
                 grupo y persiguen el objetivo de desarrollar funciones cognoscitivas, conductuales y creativas en los

@@ -78,7 +78,7 @@
             <div class="row">
                 <div class="col-md-6">
                     <div class="mb-3">
-                        <label for="author" class="form-label">Autor(es):</label>
+                        <label for="author" class="form-label">Autor:</label>
                         <div class="input-group mb-3">
                             <select class="custom-select" name="id_patient" required>
                                 <option disabled value="N/A">Selecciona el autor...</option>
@@ -98,7 +98,7 @@
 
                 <div class="col-md-6">
                     <div class="mb-3">
-                        <label for="workshop" class="form-label">Taller(es):</label>
+                        <label for="workshop" class="form-label">Taller:</label>
                         <div class="input-group mb-3">
                             <select class="custom-select" name="id_workshop" required>
                                 <option disabled>Selecciona un taller...</option>
