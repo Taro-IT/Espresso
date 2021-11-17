@@ -29,7 +29,7 @@ class ProductSeeder extends Seeder
             'description' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
             'price' => 10,
             'image' => '/var/folders/3n/8_lw500x30dc1b3s38dsnxd00000gp/T/6a83643674c3f8f7a2745c9f3ed29529.png',
-            'id_patient' => 1,
+            'id_patient' => 2,
 
         ]);
         DB::table('product')->insert([
@@ -38,7 +38,7 @@ class ProductSeeder extends Seeder
             'description' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
             'price' => 56,
             'image' => '/var/folders/3n/8_lw500x30dc1b3s38dsnxd00000gp/T/6a83643674c3f8f7a2745c9f3ed29529.png',
-            'id_patient' => 1,
+            'id_patient' => 3,
 
         ]);
     }

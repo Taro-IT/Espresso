@@ -41,7 +41,7 @@
                         <div class="mb-2">
                             <label for="name" class="form-label">Nombre:</label>
                             <input type="text" class="form-control" id="name" name="name" required
-                                   value="{{old('name')}}" placeholder="Mario Sandoval">
+                                   value="{{old('name')}}">
                             @error('name')
                             <span class="invalid-feedback" role="alert">
                             <strong>{{ $message }}</strong>

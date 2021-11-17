@@ -41,7 +41,7 @@
                     <div class="form-group">
                         <label for="name">Nombre:</label>
                         <input type="text" class="form-control" id="name" aria-describedby="Titulo"
-                                maxlength="255" placeholder="Titulo" name="name" value="{{old('title',$workshop->name)}}">
+                                maxlength="255" name="name" value="{{old('title',$workshop->name)}}">
                     </div>
                     <div class="form-group">
                         <label for="title">Descripción:</label>

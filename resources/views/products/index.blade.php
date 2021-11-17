@@ -42,7 +42,7 @@
                                 <div class="mb-3">
                                     <label for="title" class="form-label">Nombre del producto:</label>
                                     <input type="text" class="form-control" id="title" name="title" required
-                                           value="{{old('title')}}" placeholder="Diversas voces">
+                                           value="{{old('title')}}">
                                     @error('title')
                                         <span class="invalid-feedback" role="alert">
                                             <strong>{{ $message }}</strong>
@@ -55,7 +55,7 @@
                                     <label for="price" class="form-label">Precio mínimo:</label>
                                     <div class="input-group mb-3">
                                         <span class="input-group-text">$</span>
-                                        <input type="number" min="0" step="1" class="form-control" required="true" name="price" value="{{old('price')}}" placeholder="100">
+                                        <input type="number" min="0" step="1" class="form-control" required="true" name="price" value="{{old('price')}}">
                                         <span class="input-group-text">.00</span>
                                     </div>
                                     @error('price')
@@ -104,7 +104,7 @@
                                 <label for="author" class="form-label">Autor:</label>
                                 <div class="input-group mb-3">
                                     <select class="custom-select" id="inputGroupSelect01" name="id_patient" required>
-                                        <option disabled value="N/A">Selecciona el autor...</option>
+                                        <option disabled selected value="N/A">Selecciona el autor...</option>
                                         @foreach($patients as $patient)
                                             <option value="{{$patient->id}}">{{$patient->name}}</option>
                                         @endforeach
@@ -120,7 +120,7 @@
                                     <label for="workshop" class="form-label">Taller(es):</label>
                                     <div class="input-group mb-3">
                                     <select class="custom-select" id="inputGroupSelect01" name="id_workshop" required>
-                                        <option disabled value="N/A">Selecciona un taller...</option>
+                                        <option disabled selected value="N/A">Selecciona un taller...</option>
                                         @foreach($workshops as $workshop)
                                             <option value="{{$workshop->id}}">{{$workshop->name}}</option>
                                         @endforeach

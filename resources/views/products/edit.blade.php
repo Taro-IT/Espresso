@@ -32,7 +32,7 @@
                     <div class="form-group">
                         <label for="title">Nombre:</label>
                         <input type="text" class="form-control" id="title" aria-describedby="Titulo"
-                            placeholder="Titulo" name="title" value="{{old('title',$product->title)}}">
+                            name="title" value="{{old('title',$product->title)}}">
                     </div>
                     <div class="form-group">
                         <label for="title">Descripción:</label>
@@ -46,7 +46,7 @@
                                 <span class="input-group-text">$</span>
                             </div>
                             <input type="number" step="1" min="0" class="form-control" id="price"
-                                aria-describedby="Precio" placeholder="100" name="price"
+                                aria-describedby="Precio" name="price"
                                 value="{{old('price',$product->price)}}">
                             <div class="input-group-append">
                                 <span class="input-group-text">.00</span>

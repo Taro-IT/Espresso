@@ -18,7 +18,7 @@
                 <div class="col-md-12 mb-12 text-center">
                     <div class="form-group">
                         <label for="name">Nombre:</label>
-                        <input type="text" class="form-control" id="name" aria-describedby="Nombre" placeholder="Nombre" name="name" value="{{old('name',$paciente->name)}}">
+                        <input type="text" class="form-control" id="name" aria-describedby="Nombre" name="name" value="{{old('name',$paciente->name)}}">
                     </div>
                 </div>
             </div>
