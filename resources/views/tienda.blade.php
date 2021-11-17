@@ -3,11 +3,7 @@
 @section('title') Casa Medio Camino | Tienda @endsection
 @section('content')
 
-    <section id="carrousel" class="margin-navbar">
-        <img class="d-block w-100" src="{{asset('images/slider-1.png')}}" alt="First slide">
-    </section>
-
-    <section class="container">
+    <section class="container margin-navbar">
         <h1 class="header text-center" data-aos="fade-up" data-aos-delay="100">
             <span class="underline">&nbsp;&nbsp;APOYA NUESTRA MISIÓN&nbsp;&nbsp;</span>
         </h1>
