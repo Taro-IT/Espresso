@@ -71,7 +71,7 @@
                         personal que le permita hacerse responsable de sus acciones.
                     </p>
                     <p class="subtitle text-center">
-                        Por lo tanto, quienes integran la comunidad terapéutica tenemos la firme convicción de que el
+                        Por lo tanto, quienes integran la Comunidad Terapéutica tenemos la firme convicción de que el
                         trabajo dirigido y centrado en el paciente, debe ser interdisciplinario e integral para el
                         beneficio de éste y su familia.
                     </p>

@@ -100,13 +100,13 @@
                     <span class="underline">&nbsp;&nbsp;NUESTRA FORMA DE TRABAJO&nbsp;&nbsp;</span>
                 </h1>
                 <p class="subtitle text-center" data-aos="fade-up" data-aos-delay="200">Utilizamos el modelo terapéutico
-                    Casa de Medio Camino, un modelo integral para el tratamiento de la salud mental. En este modelo el
+                    Casa de Medio Camino, un modelo integral para el tratamiento de la salud mental, en el que
                     paciente vive en una comunidad que les permite establecer puentes de interacción de manera
                     controlada y segura, aprender de manera colaborativa y hacerse responsable de sus acciones. </p>
                 <p class="subtitle text-center" data-aos="fade-up" data-aos-delay="200">Esta forma de atención es una
                     alternativa que se distingue de las instituciones de hospitalización psiquiátrica convencionales por
                     el seguimiento continuo y personalizado al tratamiento de cada paciente, así como por la
-                    introducción a una comunidad terapéutica.</p>
+                    introducción a una Comunidad Terapéutica.</p>
             </div>
         </section>
 
@@ -183,7 +183,7 @@
             <span class="underline">&nbsp;&nbsp;UN DÍA EN CASA LOOHL&nbsp;&nbsp;</span>
         </h1>
         <p class="subtitle text-center" data-aos="fade-up" data-aos-delay="300">
-            Casa Loohl es una comunidad terapeútica donde residen personas con experiencias psiquiátricas, su día a día
+            Casa Loohl es una Comunidad Terapeútica donde residen personas con experiencias psiquiátricas, su día a día
             se organiza entre actividades rutinarias, actividades terapeúticas, talleres, clínica y actividades de ocio.
         </p>
         <div class="row activities">
