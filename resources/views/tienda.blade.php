@@ -21,7 +21,7 @@
             @foreach($productos as $product)
                 <div class="col-md-4 mt-5">
                     <div class="card product-animation rounded h-100">
-                        <div class="text-center">
+                        <div class="w-100 text-center">
                             <img class="product-showcase-img rounded" src="{{asset($product->image)}}" alt="{{$product->title}}"
                                 onerror="this.onerror=null;this.src='{{asset('images/image-not-found.png')}}';">
                         </div>
@@ -120,7 +120,7 @@
                                             <div class="form-group">
                                                 <label for="email">Email</label>
                                                 <input type="email" class="form-control" id="email"
-                                                       aria-describedby="email" placeholder="Ingresa tu email Ejemplo: espresso@gmail.com" name="email" required>
+                                                       aria-describedby="email" name="email" required>
                                                 <small id="emailHelp" class="form-text text-muted">Tu correo no será compartido con nadie.</small>
                                             </div>
                                         </div>
@@ -137,7 +137,7 @@
                                             <input type="hidden" value="1" name="payment_plataform">
                                             <input type="hidden" value="{{$product->id}}" name="product_id">
                                             <div class="d-flex justify-content-center">
-                                                <button type="submit" class="btn-read-more pl-3 pr-3 pt-2 pb-2 mb-2">
+                                                <button type="submit" class="btn btn-read-more pl-3 pr-3 pt-2 pb-2 mb-2">
                                                     <span>Pagar</span>
                                                     <i class="bi bi-paypal"></i>
                                                 </button>

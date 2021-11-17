@@ -471,7 +471,7 @@ section {
 }
 
 .product-showcase-img {
-    max-width: 100%; 
+    max-width: calc(100% - 40px); 
     max-height: 260px; 
     margin-left: 20px;
     margin-right: 20px;

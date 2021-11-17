@@ -43,7 +43,7 @@
                                                 required
                                             />
                                             <small class="form-text text-muted">Utilice valores con decimales separados
-                                                por puntos "."</small>
+                                                por punto.</small>
                                         </div>
                                         <div class="col-md-6 text-left">
                                             <label>Moneda:</label>
