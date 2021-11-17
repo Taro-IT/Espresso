@@ -28,9 +28,12 @@
                     <label>
                         <i class="bi bi-image-fill mr-2"></i>Imagen del producto:
                     </label>
-                    <img src="{{asset($workshop->image)}}" alt="{{$workshop->name}}" width="100%"
-                         class="rounded"
-                         onerror="this.onerror=null;this.src='{{asset('images/image-not-found.png')}}';">
+                    <br>
+                    <div class="w-100 text-center">
+                        <img src="{{asset($workshop->image)}}" alt="{{$workshop->name}}" style="max-width: 100%; max-height: 350px"
+                            class="rounded mb-3"
+                            onerror="this.onerror=null;this.src='{{asset('images/image-not-found.png')}}';">
+                    </div>
                     <div class="input-group">
                         <div class="custom-file" id="customFile">
                             <input type="file" name="image" class="custom-file-input" id="inputGroupFile01"

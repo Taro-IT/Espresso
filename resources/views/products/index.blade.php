@@ -244,7 +244,7 @@
                                     </div>
                                     <div class="modal-body">
                                         <div class="row">
-                                            <div class="col-lg-6 mb-4 text-center text-lg-left">
+                                            <div class="col-lg-6 mb-4 text-center text-lg-center">
                                                 <img src="{{asset($product->image)}}"
                                                     alt="{{$product->title}}-{{$product->title}}"
                                                     class="product-images-ver-mas rounded" 
@@ -252,7 +252,7 @@
                                             </div>
                                             <div class="col-lg-6 mb-3">
                                                 <div class="mb-4">
-                                                <p><strong><i class="bi bi-cash-stack mr-2"></i>Precio mínimo: </strong>{{$product->price}}</p>
+                                                <p><strong><i class="bi bi-cash-stack mr-2"></i>Precio mínimo: </strong>${{$product->price}}</p>
                                                 <p><strong><i class="bi bi-text-left mr-2"></i>Descripción: </strong>{{$product->description}}</p>
                                                 <p><strong><i class="bi bi-easel-fill mr-2"></i>Taller:</strong>
                                                 @foreach($workshops as $workshop)
