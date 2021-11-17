@@ -13,7 +13,7 @@
             Las ganancias de cada artículo nos permiten seguir con nuestra labor, motivar a los huéspedes y eliminar
             poco a poco el estigma sobre las enfermedades mentales.
         </p>
-        <div class="row">
+        <div class="row" data-aos="fade-up" data-aos-delay="400">
             @foreach($productos as $product)
                 <div class="col-md-4 mt-5">
                     <div class="card product-animation rounded h-100">
