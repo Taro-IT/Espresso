@@ -71,7 +71,7 @@
                             </div>
                         </div>
                         <div class="modal-footer justify-content-center">
-                            <button type="submit" class="btn btn-principal">Registrar</button>
+                            <button type="submit" class="btn btn-principal px-5">Registrar</button>
                         </div>
                     </form>
                 </div>

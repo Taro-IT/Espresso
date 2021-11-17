@@ -15,7 +15,7 @@
             @csrf
             @method('put')
             <div class="row">
-                <div class="col-md-12 mb-12 text-center">
+                <div class="col-md-12 mb-12">
                     <div class="form-group">
                         <label for="name">Nombre:</label>
                         <input type="text" class="form-control" id="name" aria-describedby="Nombre" name="name" value="{{old('name',$paciente->name)}}">
