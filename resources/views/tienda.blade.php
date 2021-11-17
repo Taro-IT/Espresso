@@ -17,13 +17,14 @@
             Las ganancias de cada artículo nos permiten seguir con nuestra labor, motivar a los huéspedes y eliminar
             poco a poco el estigma sobre las enfermedades mentales.
         </p>
-
         <div class="row">
             @foreach($productos as $product)
                 <div class="col-md-4 mt-5">
                     <div class="card product-animation rounded h-100">
-                        <img class="product-showcase-img card-img-top" src="{{asset($product->image)}}" alt="{{$product->title}}"
-                             onerror="this.onerror=null;this.src='{{asset('images/image-not-found.png')}}';">
+                        <div class="text-center">
+                            <img class="product-showcase-img rounded" src="{{asset($product->image)}}" alt="{{$product->title}}"
+                                onerror="this.onerror=null;this.src='{{asset('images/image-not-found.png')}}';">
+                        </div>
                         <div class="card-body">
                             <h5 class="card-title">{{$product->title}}</h5>
                             <div class="row card-text ml-1">
@@ -64,8 +65,8 @@
                                 </div>
                                 <div class="modal-body">
                                     <div class="row">
-                                        <div class="col-md-5">
-                                            <img class="img-fluid" src="{{asset($product->image)}}"
+                                        <div class="col-md-5 text-center">
+                                            <img class="rounded" style="max-width: 100%; max-height: 350px" src="{{asset($product->image)}}"
                                                  alt="{{$product->title}}"
                                                  onerror="this.onerror=null;this.src='{{asset('images/image-not-found.png')}}';">
                                         </div>
@@ -107,12 +108,11 @@
                                                 <span class="input-group-text">.00</span>
                                             </div>
                                         </div>
-                                        <div class="col-md-2 ml-1 mt-5">
-                                            <a data-toggle="tooltip" data-placement="right"
-                                               title="Una vez realizado el pago se te enviará a tu correo una URL para la descarga de tu artículo digital."><i
-                                                    class="bi bi-info-circle-fill mr-2"
-                                                    style="font-size: 1rem; color:black;"></i></a>
-                                        </div>
+                                    </div>
+                                    <div class="row-md mt-n3">
+                                        <small class="form-text text-muted">Este artículo tiene un precio mínimo de ${{$product->price}}, pero puedes
+                                            apoyar el trabajo de los
+                                            huéspedes pagando otra cantidad que creas justa.</small>
                                     </div>
                                     <br>
                                     <div class="row">
@@ -121,26 +121,28 @@
                                                 <label for="email">Email</label>
                                                 <input type="email" class="form-control" id="email"
                                                        aria-describedby="email" placeholder="Ingresa tu email Ejemplo: espresso@gmail.com" name="email" required>
-                                                <small id="emailHelp" class="form-text text-muted">No compartiremos tu
-                                                    correo con nadie.</small>
+                                                <small id="emailHelp" class="form-text text-muted">Tu correo no será compartido con nadie.</small>
                                             </div>
+                                        </div>
+                                        <div class="col-md-2 ml-1 d-flex">
+                                            <a data-toggle="tooltip" data-placement="right" class="align-self-center pb-1"
+                                               title="Una vez realizado el pago se te enviará a tu correo una URL para la descarga de tu artículo digital."><i
+                                                    class="bi bi-info-circle-fill mr-2"
+                                                    style="font-size: 1rem; color:black;"></i>
+                                            </a>
                                         </div>
                                     </div>
                                     <div class="row">
                                         <div class="col-md-12">
                                             <input type="hidden" value="1" name="payment_plataform">
                                             <input type="hidden" value="{{$product->id}}" name="product_id">
-                                            <button type="submit" class="btn-read-more pl-3 pr-3 pt-2 pb-2">
-                                                <span>Pagar</span>
-                                                <i class="bi bi-paypal"></i>
-                                            </button>
+                                            <div class="d-flex justify-content-center">
+                                                <button type="submit" class="btn-read-more pl-3 pr-3 pt-2 pb-2 mb-2">
+                                                    <span>Pagar</span>
+                                                    <i class="bi bi-paypal"></i>
+                                                </button>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <br>
-                                    <div class="row-md">
-                                        <p>Este artículo tiene un precio mínimo de ${{$product->price}}, pero puedes
-                                            apoyar el trabajo de los
-                                            huéspedes pagando otra cantidad que creas justa.</p>
                                     </div>
                                 </div>
                             </div>

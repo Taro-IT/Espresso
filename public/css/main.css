@@ -473,10 +473,9 @@ section {
 .product-showcase-img {
     max-width: 100%; 
     max-height: 260px; 
-    object-fit: contain;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
 }
 
 @media (max-width: 991px) {
