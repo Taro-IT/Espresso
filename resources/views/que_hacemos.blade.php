@@ -403,7 +403,7 @@
                 <div class="card-header faq-header" id="heading7">
                     <a class="btn faq-link faq-btn font-weight-bold w-100 text-left" data-toggle="collapse"
                        data-target="#collapse7" aria-expanded="true" aria-controls="collapse7">
-                       ¿Atienden a personas en situación de suicidio?
+                       ¿Atienden a personas con tendencias suicidas?
                     </a>
                 </div>
                 <div id="collapse7" class="collapse" aria-labelledby="heading7" data-parent="#faq-accordion">
