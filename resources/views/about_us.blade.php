@@ -29,19 +29,19 @@
                 <div class="d-flex justify-content-center">
                     <div class="carousel slide carrousel-sizing" id="main-carousel" data-ride="carousel">
                         <div class="carousel-inner">
-                            <div style="display: none">{{$i = false}}</div>
+                            {{$i = false}}
                             @foreach($images as $image)
                                 @if($i == false)
                                     <div class="carousel-item active">
                                         <img class="d-block about-us-img" src="{{asset($image->image)}}" alt="{{$image->image}}">
                                     </div>
-                                    <div style="display: none">{{$i = true}}</div>
-                                @endif
+                                    {{$i = true}}
+                                @else
                                     <div class="carousel-item">
                                         <img class="d-block about-us-img" src="{{asset($image->image)}}" alt="{{$image->image}}">
                                     </div>
+                                @endif
                             @endforeach
-
                         </div><!-- /.carousel-inner -->
 
                         <a href="#main-carousel" class="carousel-control-prev" data-slide="prev">
