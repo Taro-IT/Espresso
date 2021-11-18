@@ -100,7 +100,7 @@
                     <span class="underline">&nbsp;&nbsp;NUESTRA FORMA DE TRABAJO&nbsp;&nbsp;</span>
                 </h1>
                 <p class="subtitle text-center" data-aos="fade-up" data-aos-delay="200">Utilizamos el modelo terapéutico
-                    Casa de Medio Camino, un modelo integral para el tratamiento de la salud mental, en el que
+                    Casa de Medio Camino, un modelo integral para el tratamiento de la salud mental, en el que el
                     paciente vive en una comunidad que les permite establecer puentes de interacción de manera
                     controlada y segura, aprender de manera colaborativa y hacerse responsable de sus acciones. </p>
                 <p class="subtitle text-center" data-aos="fade-up" data-aos-delay="200">Esta forma de atención es una
@@ -351,7 +351,7 @@
                 <div class="card-header faq-header" id="heading3">
                     <a class="btn faq-link faq-btn font-weight-bold w-100 text-left" data-toggle="collapse"
                        data-target="#collapse3" aria-expanded="true" aria-controls="collapse3">
-                       ¿Cada cuanto puedo ver y hablar con mi familiar si ingresa a Casa Loohl?
+                       ¿Cada cuánto puedo ver y hablar con mi familiar si ingresa a Casa Loohl?
                     </a>
                 </div>
                 <div id="collapse3" class="collapse" aria-labelledby="heading3" data-parent="#faq-accordion">
@@ -408,7 +408,7 @@
                 </div>
                 <div id="collapse7" class="collapse" aria-labelledby="heading7" data-parent="#faq-accordion">
                     <div class="card-body faq-body">
-                    Sí. Sin embargo, para ello es indispensable que la persona cuente previamente con un cuadro farmacológico establecido por su médico tratante.
+                    Si, sin embargo, para ello es indispensable que la persona cuente previamente con un cuadro farmacológico establecido por su médico tratante.
                     </div>
                 </div>
             </div>
@@ -447,7 +447,7 @@
                 </div>
                 <div id="collapse10" class="collapse" aria-labelledby="heading10" data-parent="#faq-accordion">
                     <div class="card-body faq-body">
-                    La mayoría de su estancia, sí. Sin embargo, como parte de su proceso de inclusión social, también tienen tiempo de esparcimiento y actividades personales. Se sale a la tienda o a realizar actividades personales, siempre y cuando el huésped y su familia le den seguimiento. Así mismo, de lunes a viernes, como parte de la estructura cotidiana se imparten 2 talleres. Uno por la mañana y otro por la tarde.
+                    La mayoría de su estancia, sí, sin embargo, como parte de su proceso de inclusión social, también tienen tiempo de esparcimiento y actividades personales. Se sale a la tienda o a realizar actividades personales, siempre y cuando el huésped y su familia le den seguimiento. Así mismo, de lunes a viernes, como parte de la estructura cotidiana se imparten 2 talleres. Uno por la mañana y otro por la tarde.
                     </div>
                 </div>
             </div>
