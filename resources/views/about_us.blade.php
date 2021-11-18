@@ -28,7 +28,7 @@
             <div class="contaifner" data-aos="fade-up" data-aos-delay="600">
                 <div class="d-flex justify-content-center">
                     <div class="carousel slide carrousel-sizing" id="main-carousel" data-ride="carousel">
-                        <div class="carousel-inner">
+                    <div class="carousel-inner">
                             <div style="display: none">{{$i = false}}</div>
                             @foreach($images as $image)
                                 @if($i == false)
@@ -36,14 +36,14 @@
                                         <img class="d-block about-us-img" src="{{asset($image->image)}}" alt="{{$image->image}}">
                                     </div>
                                     <div style="display: none">{{$i = true}}</div>
-                                @endif
+                                @else
                                     <div class="carousel-item">
                                         <img class="d-block about-us-img" src="{{asset($image->image)}}" alt="{{$image->image}}">
                                     </div>
+                                @endif
                             @endforeach
-
                         </div><!-- /.carousel-inner -->
-
+                        
                         <a href="#main-carousel" class="carousel-control-prev" data-slide="prev">
                             <span class="carousel-control-prev-icon"></span>
                             <span class="sr-only" aria-hidden="true">Prev</span>
@@ -65,8 +65,8 @@
                 </h1>
                 <div data-aos="fade-up" data-aos-delay="400">
                     <p class="subtitle text-center">
-                        En este modelo el paciente vive en una comunidad que les permite establecer puentes
-                        de interacción de manera controlada y segura, y aprender de manera colaborativa con
+                        En este modelo el paciente vive en una comunidad que le permite establecer puentes
+                        de interacción de manera controlada y segura, al mismo tiempo que aprende de manera colaborativa con
                         el objetivo de brindarle herramientas para su autonomía a través de un proceso
                         personal que le permita hacerse responsable de sus acciones.
                     </p>
