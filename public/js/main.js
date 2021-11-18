@@ -123,7 +123,7 @@ function scrollToUrlHash() {
      let whats = select('.whatsapp-bubble')
      if (whats) {
          const toggleWhats = () => {
-             if (window.scrollY > 1500) {
+             if (window.scrollY > whats.dataset.scrolly) {
                  whats.classList.add('active')
              } else {
                  whats.classList.remove('active')
