@@ -104,7 +104,7 @@
                     paciente vive en una comunidad que les permite establecer puentes de interacción de manera
                     controlada y segura, aprender de manera colaborativa y hacerse responsable de sus acciones. </p>
                 <p class="subtitle text-center" data-aos="fade-up" data-aos-delay="200">Esta forma de atención es una
-                    alternativa que se distingue de las instituciones de hospitalización psiquiátrica convencionales por
+                    alternativa que se distingue de las instituciones de hospitalización e internamiento psiquiátrico convencionales por
                     el seguimiento continuo y personalizado al tratamiento de cada paciente, así como por la
                     introducción a una Comunidad Terapéutica.</p>
             </div>
@@ -159,12 +159,12 @@
                         </li>
                         <li> El huésped realiza actividades en comunidad para fortalecer sus habilidades interpersonales.
                         </li>
-                        <li> El huésped realiza actividades de manera individual que le permiten sentirse independiente y
-                            enfocar su energía en cosas de su total agrado.
+                        <li> El huésped realiza actividades de manera individual que le permiten sentirse funcional y autónomo. Su energía se enfoca en cosas de su agrado e interés.
                         </li>
                         <li> En la casa se cuentan con reglas definidas para lograr un ambiente armonioso y una sana
                             convivencia.
                         </li>
+                        <li>Se trabaja a puertas abiertas y giratorias. Para ello, es indispensable que el huésped y su familia se involucren en el proceso de inclusión social.</li>
                     </ul>
                 </div>
             </div>
