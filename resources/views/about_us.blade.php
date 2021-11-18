@@ -28,7 +28,7 @@
             <div class="contaifner" data-aos="fade-up" data-aos-delay="600">
                 <div class="d-flex justify-content-center">
                     <div class="carousel slide carrousel-sizing" id="main-carousel" data-ride="carousel">
-                        <div class="carousel-inner">
+                    <div class="carousel-inner">
                             <div style="display: none">{{$i = false}}</div>
                             @foreach($images as $image)
                                 @if($i == false)
@@ -41,9 +41,8 @@
                                         <img class="d-block about-us-img" src="{{asset($image->image)}}" alt="{{$image->image}}">
                                     </div>
                             @endforeach
-
                         </div><!-- /.carousel-inner -->
-
+                        
                         <a href="#main-carousel" class="carousel-control-prev" data-slide="prev">
                             <span class="carousel-control-prev-icon"></span>
                             <span class="sr-only" aria-hidden="true">Prev</span>
