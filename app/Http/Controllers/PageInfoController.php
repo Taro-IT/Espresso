@@ -89,7 +89,12 @@ class PageInfoController extends Controller
     }
 
     public function download($id){
-        $file = Products::find($id);
-        return response()->download(public_path($file->file));
+        $product = Products::find($id);
+        if($product != null && ($product->file) != null) {
+            return response()->download(public_path($product->file));
+        }
+        else {
+            return redirect()->route('donation.index')->with('error', 'Ocurrio un error al descargar el archivo');
+        }
     }
 }

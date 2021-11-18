@@ -127,6 +127,11 @@
         </ul>
     </div>
 </section>
+
+<!-- ======= WHATSAPP FLOATING BUTTON ======= -->
+<a data-scrolly="-1" href="https://api.whatsapp.com/send/?phone={{$home->whatsapp}}&text=Tengo%20una%20duda%20sobre%20la%20casa%20Loohl,%20%C2%BFme%20pueden%20ayudar%3F" class="whatsapp-bubble d-flex align-items-center justify-content-center">
+    <i class="bi bi-whatsapp"></i>
+</a>
 @endsection
 
 @push('css')

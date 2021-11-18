@@ -17,8 +17,10 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-6 position-static">
-                <img src="{{asset('images/img-sala.jpg')}}" class="main-img fixed-img" id="home-img" alt="Imagen de sala casa medio camino">
+            <div class="col-lg-6 main-img-container">
+                <img id="main-img-0" src="{{asset('images/img-sala.jpg')}}" class="main-img home-img fixed-img">
+                <img id="main-img-1" src="{{asset('images/football.jpg')}}" class="main-img home-img fixed-img home-img-hidden">
+                <img id="main-img-2" src="{{asset('images/music_event.jpg')}}" class="main-img home-img fixed-img home-img-hidden">
             </div>
             <div class="col-lg-6">
                 <div class="intro-text b">
@@ -176,7 +178,7 @@
     </a>
 
     <!-- ======= WHATSAPP FLOATING BUTTON ======= -->
-    <a href="https://api.whatsapp.com/send/?phone={{$home->whatsapp}}&text=Tengo%20una%20duda%20sobre%20la%20casa%20Loohl,%20%C2%BFme%20pueden%20ayudar%3F" class="whatsapp-bubble d-flex align-items-center justify-content-center">
+    <a data-scrolly="1500" href="https://api.whatsapp.com/send/?phone={{$home->whatsapp}}&text=Tengo%20una%20duda%20sobre%20la%20casa%20Loohl,%20%C2%BFme%20pueden%20ayudar%3F" class="whatsapp-bubble d-flex align-items-center justify-content-center">
         <i class="bi bi-whatsapp"></i>
     </a>
 @endsection

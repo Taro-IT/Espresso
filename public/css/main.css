@@ -146,7 +146,7 @@ section {
     visibility: hidden;
     opacity: 0;
     right: 20px;
-    bottom: 400px;
+    bottom: 50%;
     z-index: 99999;
     background: #25D366;
     width: 50px;
