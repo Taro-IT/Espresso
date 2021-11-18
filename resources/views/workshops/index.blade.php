@@ -9,7 +9,7 @@
 @section('content')
     <div class="row">
         <div class="col-md-6 text-left">
-            <h1 class="section-header mt-5 mb-4 mb-md-5"> 
+            <h1 class="section-header mt-5 mb-4 mb-md-5">
                 <span class="underline">&nbsp;&nbsp;TALLERES&nbsp;&nbsp;</span>
             </h1>
         </div>
@@ -60,7 +60,7 @@
                         </div>
                         <div class="row text-left">
                             <div class="col-md-12">
-                                <label><i class="bi bi-image-fill mr-2"></i>Imagen del producto:</label>
+                                <label><i class="bi bi-image-fill mr-2"></i>Imagen del taller:</label>
                                 <div class="input-group mb-2">
                                     <div class="custom-file" id="customFile">
                                         <input name="image" type="file" value="{{old('image')}}" class="custom-file-input" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01" lang="es" data-browse="Subir" accept="image/*">
@@ -68,6 +68,7 @@
                                     </div>
                                 </div>
                                 <small class="text-muted">Se recomienda usar una imagen de 600 x 450px.</small>
+                                <small class="text-muted">se recomienda agregar la imagen del taller</small>
                             </div>
                         </div>
                         <div class="modal-footer justify-content-center">
@@ -114,7 +115,7 @@
                                 <div class="modal-content">
                                     <div class="modal-header">
                                         <div class="row col-md-12 justify-content-center text-center">
-                                            <h2 class="section-header modal-title" id="eliminar-{{$workshop->id}}-Label"> 
+                                            <h2 class="section-header modal-title" id="eliminar-{{$workshop->id}}-Label">
                                                 <span class="underline text-uppercase">&nbsp;&nbsp;ELIMINAR TALLER&nbsp;&nbsp;</span>
                                             </h2>
                                         </div>
