@@ -261,7 +261,7 @@
                                                 @endif
                                                 <div class="col-md-4 mb-3">
                                                     <div class="card">
-                                                        <img style="max-width: 100%; max-height: 260px; object-fit: cover;" src="{{asset($talleres[$i + $j]->image)}}" onerror="this.onerror=null;this.src='{{asset('images/image-not-found.png')}}';">
+                                                        <img style="max-width: 100%; max-height: 260px; object-fit: cover;" src="{{asset($talleres[$i*3 + $j]->image)}}" onerror="this.onerror=null;this.src='{{asset('images/image-not-found.png')}}';">
                                                         <div class="card-body justify-content-center">
                                                             <h4 class="card-title text-center">{{strtoupper($talleres[$i*3 + $j]->name) }}</h4>
                                                             <p class="card-text text-center">{{$talleres[$i*3 + $j]->description}} </p>
@@ -281,7 +281,7 @@
                                                 @endif
                                                 <div class="col-md-4 mb-3">
                                                     <div class="card">
-                                                        <img class="img-fluid" src="{{asset($talleres[$i + $j]->image)}}" onerror="this.onerror=null;this.src='{{asset('images/image-not-found.png')}}';">
+                                                        <img class="img-fluid" src="{{asset($talleres[$i*3 + $j]->image)}}" onerror="this.onerror=null;this.src='{{asset('images/image-not-found.png')}}';">
                                                         <div class="card-body justify-content-center">
                                                             <h4 class="card-title text-center">{{strtoupper($talleres[$i*3 + $j]->name)}}</h4>
                                                             <p class="card-text text-center">{{$talleres[$i*3 + $j]->description}} </p>
