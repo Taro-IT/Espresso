@@ -1,6 +1,15 @@
 /*--------------------------------------------------------------
 # Intro
 --------------------------------------------------------------*/
+.home-img {
+    opacity: 1;
+    transition: opacity 1.5s linear;
+}
+
+.home-img-hidden {
+    opacity: 0;
+}
+
 @media query and (max-width:992px) {
     .top-section-with-fixed-bg {
         background-attachment:fixed;
@@ -33,17 +42,27 @@
         padding-right: 50px;
     }
     
+    .main-img-container {
+        position: static;
+    }
 }
 @media only screen and (max-width: 991px) {
     .main-img {
-        margin-left: -15px;
-        width: 100vw;
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        width: 100%;
         height: 400px;
         object-fit: cover;
     }
 
     .intro-text {
         padding: 70px 50px;
+    }
+
+    .main-img-container {
+        position: relative;
+        height: 400px;
     }
 }
 

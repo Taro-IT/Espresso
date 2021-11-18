@@ -25,6 +25,14 @@
                                         </button>
                                     </div>
                                 @endif
+                                @if (session('error'))
+                                    <div class="alert alert-danger">
+                                        {{ session('error') }}
+                                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                @endif
                                 <form action="{{route('donation.pay')}}" method="post" id="paymentForm">
                                     @csrf
                                     <h2 class="subheader text-center mt-3">
@@ -70,4 +78,7 @@
             </div>
         </section><!-- End Contact Section -->
     </div>
+    <a data-scrolly="-1" href="https://api.whatsapp.com/send/?phone={{$home->whatsapp}}&text=Tengo%20una%20duda%20sobre%20la%20casa%20Loohl,%20%C2%BFme%20pueden%20ayudar%3F" class="whatsapp-bubble d-flex align-items-center justify-content-center">
+        <i class="bi bi-whatsapp"></i>
+    </a>
 @endsection
