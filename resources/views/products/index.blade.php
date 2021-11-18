@@ -9,7 +9,7 @@
 @section('content')
     <div class="row">
         <div class="col-md-6 text-left">
-            <h1 class="section-header mt-5 mb-4 mb-md-5"> 
+            <h1 class="section-header mt-5 mb-4 mb-md-5">
                 <span class="underline">&nbsp;&nbsp;PRODUCTOS DIGITALES&nbsp;&nbsp;</span>
             </h1>
         </div>
@@ -87,7 +87,7 @@
                                 </label>
                                 <div class="input-group mb-2">
                                     <div class="custom-file" id="customFile">
-                                        <input name="image" type="file" class="custom-file-input" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01" lang="es" data-browse="Subir" accept="image/*">
+                                        <input name="image" type="file" class="custom-file-input" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01" lang="es" data-browse="Subir" accept="image/*" required>
                                         <label class="custom-file-label" for="inputGroupFile01">Seleccionar archivo...</label>
                                     </div>
                                 </div>
@@ -99,7 +99,7 @@
                                 </label>
                                 <div class="input-group mb-2">
                                     <div class="custom-file" id="customFile">
-                                        <input type="file" name="file" class="custom-file-input" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01" lang="es" data-browse="Subir">
+                                        <input type="file" name="file" class="custom-file-input" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01" lang="es" data-browse="Subir" required>
                                         <label class="custom-file-label" for="inputGroupFile01">Seleccionar archivo...</label>
                                     </div>
                                 </div>
@@ -173,8 +173,8 @@
                             <td>{{$product->title}}</td>
                             <td>
                                 @foreach($patients as $patient)
-                                    @if(($product->id_patient) == $patient->id) 
-                                        {{$patient->name}} 
+                                    @if(($product->id_patient) == $patient->id)
+                                        {{$patient->name}}
                                         @break
                                     @endif
                                 @endforeach
@@ -202,7 +202,7 @@
                                 <div class="modal-content">
                                     <div class="modal-header">
                                         <div class="row col-md-12 justify-content-center text-center">
-                                            <h2 class="section-header modal-title" id="eliminar-{{$product->id}}-Label"> 
+                                            <h2 class="section-header modal-title" id="eliminar-{{$product->id}}-Label">
                                                 <span class="underline text-uppercase">&nbsp;&nbsp;ELIMINAR PRODUCTO&nbsp;&nbsp;</span>
                                             </h2>
                                         </div>
@@ -234,7 +234,7 @@
                                 <div class="modal-content">
                                     <div class="modal-header">
                                         <div class="row col-md-12 justify-content-center text-center">
-                                            <h2 class="section-header modal-title" id="ver-mas-{{$product->id}}-Title"> 
+                                            <h2 class="section-header modal-title" id="ver-mas-{{$product->id}}-Title">
                                                 <span class="underline text-uppercase">&nbsp;&nbsp;{{strtoupper($product->title)}}&nbsp;&nbsp;</span>
                                             </h2>
                                         </div>
@@ -247,7 +247,7 @@
                                             <div class="col-lg-6 mb-4 text-center text-lg-center">
                                                 <img src="{{asset($product->image)}}"
                                                     alt="{{$product->title}}-{{$product->title}}"
-                                                    class="product-images-ver-mas rounded" 
+                                                    class="product-images-ver-mas rounded"
                                                     onerror="this.onerror=null;this.src='{{asset('images/image-not-found.png')}}';">
                                             </div>
                                             <div class="col-lg-6 mb-3">
@@ -260,8 +260,8 @@
                                                 @endforeach</p>
                                                 <p><strong><i class="bi bi-person-fill mr-2"></i>Autor:</strong>
                                                 @foreach($patients as $patient)
-                                                    @if(($product->id_patient) == $patient->id) 
-                                                        {{$patient->name}} 
+                                                    @if(($product->id_patient) == $patient->id)
+                                                        {{$patient->name}}
                                                         @break
                                                     @endif
                                                 @endforeach
