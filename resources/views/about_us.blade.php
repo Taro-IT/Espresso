@@ -36,10 +36,11 @@
                                         <img class="d-block about-us-img" src="{{asset($image->image)}}" alt="{{$image->image}}">
                                     </div>
                                     <div style="display: none">{{$i = true}}</div>
-                                @endif
+                                @else
                                     <div class="carousel-item">
                                         <img class="d-block about-us-img" src="{{asset($image->image)}}" alt="{{$image->image}}">
                                     </div>
+                                @endif
                             @endforeach
                         </div><!-- /.carousel-inner -->
                         
