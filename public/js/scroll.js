@@ -46,6 +46,4 @@ function changeMainImage() {
 
     let fade_in_img = document.getElementById(`main-img-${current_img}`);
     fade_in_img.classList.remove("home-img-hidden");
-
-    console.log("change" + current_img);
 }

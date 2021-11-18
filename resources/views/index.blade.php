@@ -17,7 +17,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-6 position-static">
+            <div class="col-lg-6 main-img-container">
                 <img id="main-img-0" src="{{asset('images/img-sala.jpg')}}" class="main-img home-img fixed-img">
                 <img id="main-img-1" src="{{asset('images/football.jpg')}}" class="main-img home-img fixed-img home-img-hidden">
                 <img id="main-img-2" src="{{asset('images/music_event.jpg')}}" class="main-img home-img fixed-img home-img-hidden">
