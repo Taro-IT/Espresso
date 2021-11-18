@@ -1,6 +1,15 @@
 /*--------------------------------------------------------------
 # Intro
 --------------------------------------------------------------*/
+.home-img {
+    opacity: 1;
+    transition: opacity 1.5s linear;
+}
+
+.home-img-hidden {
+    opacity: 0;
+}
+
 @media query and (max-width:992px) {
     .top-section-with-fixed-bg {
         background-attachment:fixed;

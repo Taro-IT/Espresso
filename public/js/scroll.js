@@ -18,13 +18,34 @@ function adjustImage() {
 }
 
 function makeImageRelative() {
-    var target = document.getElementById("home-img");
-    target.classList.remove("fixed-img");
-    target.classList.add("unfixed-img");
+    var target = document.getElementsByClassName("home-img");
+    for(let i = 0; i < target.length; i++) {
+        target[i].classList.remove("fixed-img");
+        target[i].classList.add("unfixed-img");
+    }
 }
 
 function makeImageFixed() {
-    var target = document.getElementById("home-img");
-    target.classList.remove("unfixed-img");
-    target.classList.add("fixed-img");
+    var target = document.getElementsByClassName("home-img");
+    for(let i = 0; i < target.length; i++) {
+        target[i].classList.remove("unfixed-img");
+        target[i].classList.add("fixed-img");
+    }
+}
+
+setInterval(changeMainImage, 4000);
+
+let total_img = document.getElementsByClassName("main-img").length;
+let current_img = 0;
+
+function changeMainImage() {
+    let fade_out_img = document.getElementById(`main-img-${current_img}`);
+    fade_out_img.classList.add("home-img-hidden");
+
+    current_img = (current_img + 1) % total_img;
+
+    let fade_in_img = document.getElementById(`main-img-${current_img}`);
+    fade_in_img.classList.remove("home-img-hidden");
+
+    console.log("change" + current_img);
 }

@@ -18,7 +18,9 @@
                 </div>
             </div>
             <div class="col-lg-6 position-static">
-                <img src="{{asset('images/img-sala.jpg')}}" class="main-img fixed-img" id="home-img" alt="Imagen de sala casa medio camino">
+                <img id="main-img-0" src="{{asset('images/img-sala.jpg')}}" class="main-img home-img fixed-img">
+                <img id="main-img-1" src="{{asset('images/football.jpg')}}" class="main-img home-img fixed-img home-img-hidden">
+                <img id="main-img-2" src="{{asset('images/music_event.jpg')}}" class="main-img home-img fixed-img home-img-hidden">
             </div>
             <div class="col-lg-6">
                 <div class="intro-text b">
