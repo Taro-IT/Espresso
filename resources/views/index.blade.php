@@ -123,10 +123,10 @@
             
             <div class="row">
                 <div class="col-12 col-lg-6 d-flex flex-column justify-content-center align-items-center">
-                    <p class="text-center subtitle" data-aos="fade-right" data-aos-delay="200">Entérate de todos los eventos y noticias sobre la Casa Loohl con nuestras publicaciones en facebook.</p>
+                    <p class="text-center subtitle" data-aos="fade-right" data-aos-delay="200">Entérate de todos los eventos y noticias sobre la Casa Loohl con nuestras publicaciones en Facebook.</p>
                     <div data-aos="fade-right" data-aos-delay="400" class="d-flex justify-content-center d-block d-sm-none d-lg-block" data-aos="zoom-out" data-aos-delay="250">
                         <a href="https://www.facebook.com/Casa-de-Medio-Camino-Quer%C3%A9taro-Casa-Loohl-313251725496600/" class="btn-read-more d-inline-flex align-items-center justify-content-center align-self-center">
-                            <span id="medium-posts-see-more">DESCUBRE NUESTRO PERFIL</span>
+                            <span id="medium-posts-see-more">VISITA NUESTRO PERFIL</span>
                             <i class="bi bi-arrow-right"></i>
                         </a>
                     </div>

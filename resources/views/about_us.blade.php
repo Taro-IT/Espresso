@@ -64,8 +64,8 @@
                 </h1>
                 <div data-aos="fade-up" data-aos-delay="400">
                     <p class="subtitle text-center">
-                        En este modelo el paciente vive en una comunidad que les permite establecer puentes
-                        de interacción de manera controlada y segura, y aprender de manera colaborativa con
+                        En este modelo el paciente vive en una comunidad que le permite establecer puentes
+                        de interacción de manera controlada y segura, al mismo tiempo que aprende de manera colaborativa con
                         el objetivo de brindarle herramientas para su autonomía a través de un proceso
                         personal que le permita hacerse responsable de sus acciones.
                     </p>
