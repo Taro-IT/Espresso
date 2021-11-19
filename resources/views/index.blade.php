@@ -95,7 +95,7 @@
     <!-- ======= CONTRIBUTE SECTION ======= -->
     <section class="container" data-aos="fade-up" id="contribute">
         <h1 class="header text-center" data-aos="fade-up" data-aos-delay="100">
-            <span class="underline">&nbsp;&nbsp;¿PORQUÉ CONTRIBUIR?&nbsp;&nbsp;</span>
+            <span class="underline">&nbsp;&nbsp;¿POR QUÉ CONTRIBUIR?&nbsp;&nbsp;</span>
         </h1>
         <p class="text-center subtitle" data-aos="fade-up" data-aos-delay="200">Todas las contribuciones recibidas se dedican al beneficio de la comunidad, tu contribución nos hace posible dar vida a proyectos de huéspedes y realizar eventos, tanto internos como externos, donde se demuestra el crecimiento de cada uno de ellos.</p>
         <div class="row">
