@@ -101,7 +101,7 @@
                 </h1>
                 <p class="subtitle text-center" data-aos="fade-up" data-aos-delay="200">Utilizamos el modelo terapéutico
                     Casa de Medio Camino, un modelo integral para el tratamiento de la salud mental, en el que el
-                    paciente vive en una comunidad que les permite establecer puentes de interacción de manera
+                    paciente vive en una comunidad que le permite establecer puentes de interacción de manera
                     controlada y segura, aprender de manera colaborativa y hacerse responsable de sus acciones. </p>
                 <p class="subtitle text-center" data-aos="fade-up" data-aos-delay="200">Esta forma de atención es una
                     alternativa que se distingue de las instituciones de hospitalización e internamiento psiquiátrico convencionales por
