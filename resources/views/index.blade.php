@@ -22,8 +22,7 @@
                 <img id="main-img-1" src="{{asset('images/convivencia.jpeg')}}" class="main-img home-img fixed-img home-img-hidden">
                 <img id="main-img-2" src="{{asset('images/discucion.jpeg')}}" class="main-img home-img fixed-img home-img-hidden">
                 <img id="main-img-3" src="{{asset('images/jardin.jpeg')}}" class="main-img home-img fixed-img home-img-hidden">
-                <img id="main-img-4" src="{{asset('images/patio.jpeg')}}" class="main-img home-img fixed-img home-img-hidden">
-                <img id="main-img-5" src="{{asset('images/restaurant.jpeg')}}" class="main-img home-img fixed-img home-img-hidden">
+                <img id="main-img-4" src="{{asset('images/restaurant.jpeg')}}" class="main-img home-img fixed-img home-img-hidden">
             </div>
             <div class="col-lg-6">
                 <div class="intro-text b">
