@@ -248,50 +248,28 @@
             <div class="col-12">
                 <div id="talleresActividades" class="carousel slide" data-ride="carousel">
                     <div class="carousel-inner">
-
-                        <div style="display: none">{{$flag = false}}</div>
+                        {{$flag = false}}
                         @if($talleres != null)
                             @for($i = 0; $i < count($talleres)/3; $i++)
-                                @if($flag == false)
-                                    <div class="carousel-item active">
-                                        <div class="row justify-content-center">
-                                            @for($j = 0; $j < 3; $j++)
-                                                @if($i*3 + $j >= count($talleres))
-                                                    @break
-                                                @endif
-                                                <div class="col-md-4 mb-3">
-                                                    <div class="card">
-                                                        <img class="workshop-img" src="{{asset($talleres[$i*3 + $j]->image)}}" onerror="this.onerror=null;this.src='{{asset('images/image-not-found.png')}}';">
-                                                        <div class="card-body justify-content-center">
-                                                            <h4 class="card-title text-center">{{strtoupper($talleres[$i*3 + $j]->name) }}</h4>
-                                                            <p class="card-text text-center">{{$talleres[$i*3 + $j]->description}} </p>
-                                                        </div>
+                                <div class="carousel-item @if($flag == false) active @endif">
+                                    <div class="row justify-content-center">
+                                        @for($j = 0; $j < 3; $j++)
+                                            @if($i*3 + $j >= count($talleres))
+                                                @break
+                                            @endif
+                                            <div class="col-md-4 mb-3">
+                                                <div class="card">
+                                                    <img class="workshop-img" src="{{asset($talleres[$i*3 + $j]->image)}}" onerror="this.onerror=null;this.src='{{asset('images/image-not-found.png')}}';">
+                                                    <div class="card-body justify-content-center">
+                                                        <h4 class="card-title text-center">{{strtoupper($talleres[$i*3 + $j]->name) }}</h4>
+                                                        <p class="card-text text-center">{{$talleres[$i*3 + $j]->description}} </p>
                                                     </div>
                                                 </div>
-                                            @endfor
-                                        </div>
+                                            </div>
+                                        @endfor
                                     </div>
-                                    <div style="display: none">{{$flag = true}}</div>
-                                @else
-                                    <div class="carousel-item">
-                                        <div class="row justify-content-center">
-                                            @for($j = 0; $j < 3; $j++)
-                                                @if($i*3 + $j >= count($talleres))
-                                                    @break
-                                                @endif
-                                                <div class="col-md-4 mb-3">
-                                                    <div class="card">
-                                                        <img class="workshop-img" src="{{asset($talleres[$i*3 + $j]->image)}}" onerror="this.onerror=null;this.src='{{asset('images/image-not-found.png')}}';">
-                                                        <div class="card-body justify-content-center">
-                                                            <h4 class="card-title text-center">{{strtoupper($talleres[$i*3 + $j]->name)}}</h4>
-                                                            <p class="card-text text-center">{{$talleres[$i*3 + $j]->description}} </p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            @endfor
-                                        </div>
-                                    </div>
-                                @endif
+                                </div>
+                                {{$flag = true}}
                             @endfor
                         @endif
 
