@@ -20,8 +20,8 @@
                     experiencias psiquiátricas quienes tomamos iniciativa frente a la realidad
                     social en México de las personas que han sido diagnosticadas con padecimientos
                     psiquiátricos o que han tenido dificultades para reintegrarse a sus actividades
-                    sociales, familiares y ocupacionales después de una crisis. Con ello buscamos
-                    brindar un espacio de integración, interacción y de inclusión en un ambiente
+                    sociales y ocupacionales después de una crisis. Con ello buscamos
+                    brindar un espacio de integración, interacción e inclusión en un ambiente
                     de aceptación y comunidad.
                 </p>
             </div>
@@ -78,7 +78,7 @@
                     <p class="subtitle text-center">
                         Al ser un programa integral, contamos con talleres dirigidos para el huésped, que le permiten
                         revitalizar sus habilidades cognitivas, psicomotrices, intelectuales, afectivas y sociales,
-                        lo que deriva en una reinserción social total.
+                        lo que deriva en una reinserción social.
                     </p>
                 </div>
             </div>
