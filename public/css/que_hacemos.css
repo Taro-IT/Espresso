@@ -48,3 +48,9 @@
     width: 100%;
     object-fit: cover;
 }
+
+.workshop-img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+}
