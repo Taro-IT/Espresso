@@ -117,7 +117,7 @@
                 </div>
             </div>
             <div class="row justify-content-center" data-aos="fade-left" data-aos-delay="500">
-                <img class="d-block img-fluid wide" src="/images/lavender.jpeg" alt="">
+                <img class="d-block img-fluid wide" style="object-fit: cover" src="/images/lavender.jpeg" alt="">
             </div>
         </section>
 
