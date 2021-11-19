@@ -43,13 +43,13 @@
             <div class="row">
                 <div class="col-md-3 text-center">
                     <i class="bi bi-x-circle-fill mr-2 inadmissible"></i>
-                    <p class="subtitle">Personas con adicción</p>
-                    <p class="">Las adicciones y las enfermedades mentales se tratan de diferente manera.</p>
+                    <p class="subtitle">Personas con adicciónes</p>
+                    <p class="">Las adicciones y las enfermedades mentales se tratan de manera diferente.</p>
                 </div>
                 <div class="col-md-3 text-center">
                     <i class="bi bi-x-circle-fill mr-2 inadmissible"></i>
                     <p class="subtitle">Personas agresivas</p>
-                    <p class="">Ponen en peligro la seguridad de los huéspedes y todas las personas dentro de la
+                    <p class="">Ponen en peligro la seguridad de los huéspedes y las otras personas dentro de la
                         casa.</p>
                 </div>
                 <div class="col-md-3 text-center">
@@ -161,7 +161,7 @@
                         </li>
                         <li> El huésped realiza actividades de manera individual que le permiten sentirse funcional y autónomo. Su energía se enfoca en cosas de su agrado e interés.
                         </li>
-                        <li> En la casa se cuentan con reglas definidas para lograr un ambiente armonioso y una sana
+                        <li> En la casa se cuenta con reglas definidas para lograr un ambiente armonioso y una sana
                             convivencia.
                         </li>
                         <li>Se trabaja a puertas abiertas y giratorias. Para ello, es indispensable que el huésped y su familia se involucren en el proceso de inclusión social.</li>

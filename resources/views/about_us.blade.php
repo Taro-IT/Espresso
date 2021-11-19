@@ -65,9 +65,9 @@
                 </h1>
                 <div data-aos="fade-up" data-aos-delay="400">
                     <p class="subtitle text-center">
-                        En este modelo el paciente vive en una comunidad que le permite establecer puentes
+                        En Casa Loohl, el huésped vive en una comunidad que le permite establecer puentes
                         de interacción de manera controlada y segura, al mismo tiempo que aprende de manera colaborativa con
-                        el objetivo de brindarle herramientas para su autonomía a través de un proceso
+                        el objetivo de desarrollar herramientas para su autonomía a través de un proceso
                         personal que le permita hacerse responsable de sus acciones.
                     </p>
                     <p class="subtitle text-center">
@@ -92,13 +92,12 @@
             <div class="row">
                 <div class="col-md-8" data-aos="fade-left" data-aos-delay="400">
                     <h2 class="subheader text-left">
-                        <span>¿De dónde surge nuestro nombre?</span>
+                        <span>¿Cómo surge Casa Loohl?</span>
                     </h2>
-                    <p>Casa Loohl, recibe su nombre por su significado en maya que quiere decir “Flor”. Retomamos
-                        nuestras raíces mexicanas, pero sobre todo, teniendo en cuenta que el eje de nuestro trabajo es
-                        el de hacer crear una comunidad, trabajando de manera colaborativa y a través de un diálogo
-                        abierto entre disciplinas (medicina, psicología, psicoterapia, terapia ocupacional y
-                        sociología).</p>
+                    <p>Casa Loohl, surge como iniciativa de un grupo de colegas psicólogos con experiencia en las áreas de
+                        trabajo social, clínico y de investigación sobre pacientes con enfermedades mentales a partir de
+                        la inquietud de que en México las enfermedades mentales son razón de exclusión social y por lo
+                        tanto afectan a las familias y personas que han sido diagnosticadas psiquiátricamente.</p>
                 </div>
                 <div class="col-md-4" data-aos="fade-left" data-aos-delay="500">
                     <img class="d-block img-fluid" src="{{asset('images/about_us.jpg')}}" alt="Pacientes frente a letrero de Querétaro">
@@ -108,12 +107,13 @@
             <div class="row">
                 <div class="col" data-aos="fade-left" data-aos-delay="200">
                     <h2 class="subheader text-left">
-                        <span>¿Cómo surge Casa Loohl?</span>
+                        <span>¿De dónde surge nuestro nombre?</span>
                     </h2>
-                    <p>Loohl, surge como iniciativa de un grupo de colegas psicólogos con experiencia en las áreas de
-                        trabajo social, clínico y de investigación sobre pacientes con enfermedades mentales a partir de
-                        la inquietud de que en México las enfermedades mentales son razón de exclusión social y por lo
-                        tanto afectan a las familias y personas que han sido diagnosticadas psiquiátricamente.</p>
+                    <p>Casa Loohl, recibe su nombre por su significado en maya que quiere decir “Flor”. Retomamos
+                        nuestras raíces mexicanas, pero sobre todo, teniendo en cuenta que el eje de nuestro trabajo es
+                        el de crear una comunidad, trabajando de manera colaborativa y a través de un diálogo
+                        abierto entre las disciplinas de medicina, psicología, psicoterapia, terapia ocupacional y
+                        sociología.</p>
                 </div>
             </div>
             <div class="row justify-content-center" data-aos="fade-left" data-aos-delay="500">
