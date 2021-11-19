@@ -43,13 +43,13 @@
             <div class="row">
                 <div class="col-md-3 text-center">
                     <i class="bi bi-x-circle-fill mr-2 inadmissible"></i>
-                    <p class="subtitle">Personas con adicción</p>
-                    <p class="">Las adicciones y las enfermedades mentales se tratan de diferente manera.</p>
+                    <p class="subtitle">Personas con adicciónes</p>
+                    <p class="">Las adicciones y las enfermedades mentales se tratan de manera diferente.</p>
                 </div>
                 <div class="col-md-3 text-center">
                     <i class="bi bi-x-circle-fill mr-2 inadmissible"></i>
                     <p class="subtitle">Personas agresivas</p>
-                    <p class="">Ponen en peligro la seguridad de los huéspedes y todas las personas dentro de la
+                    <p class="">Ponen en peligro la seguridad de los huéspedes y las otras personas dentro de la
                         casa.</p>
                 </div>
                 <div class="col-md-3 text-center">
@@ -161,7 +161,7 @@
                         </li>
                         <li> El huésped realiza actividades de manera individual que le permiten sentirse funcional y autónomo. Su energía se enfoca en cosas de su agrado e interés.
                         </li>
-                        <li> En la casa se cuentan con reglas definidas para lograr un ambiente armonioso y una sana
+                        <li> En la casa se cuenta con reglas definidas para lograr un ambiente armonioso y una sana
                             convivencia.
                         </li>
                         <li>Se trabaja a puertas abiertas y giratorias. Para ello, es indispensable que el huésped y su familia se involucren en el proceso de inclusión social.</li>
@@ -248,50 +248,28 @@
             <div class="col-12">
                 <div id="talleresActividades" class="carousel slide" data-ride="carousel">
                     <div class="carousel-inner">
-
-                        <div style="display: none">{{$flag = false}}</div>
+                        {{$flag = false}}
                         @if($talleres != null)
                             @for($i = 0; $i < count($talleres)/3; $i++)
-                                @if($flag == false)
-                                    <div class="carousel-item active">
-                                        <div class="row justify-content-center">
-                                            @for($j = 0; $j < 3; $j++)
-                                                @if($i*3 + $j >= count($talleres))
-                                                    @break
-                                                @endif
-                                                <div class="col-md-4 mb-3">
-                                                    <div class="card">
-                                                        <img style="max-width: 100%; max-height: 260px; object-fit: cover;" src="{{asset($talleres[$i*3 + $j]->image)}}" onerror="this.onerror=null;this.src='{{asset('images/image-not-found.png')}}';">
-                                                        <div class="card-body justify-content-center">
-                                                            <h4 class="card-title text-center">{{strtoupper($talleres[$i*3 + $j]->name) }}</h4>
-                                                            <p class="card-text text-center">{{$talleres[$i*3 + $j]->description}} </p>
-                                                        </div>
+                                <div class="carousel-item @if($flag == false) active @endif">
+                                    <div class="row justify-content-center">
+                                        @for($j = 0; $j < 3; $j++)
+                                            @if($i*3 + $j >= count($talleres))
+                                                @break
+                                            @endif
+                                            <div class="col-md-4 mb-3">
+                                                <div class="card">
+                                                    <img class="workshop-img" src="{{asset($talleres[$i*3 + $j]->image)}}" onerror="this.onerror=null;this.src='{{asset('images/image-not-found.png')}}';">
+                                                    <div class="card-body justify-content-center">
+                                                        <h4 class="card-title text-center">{{strtoupper($talleres[$i*3 + $j]->name) }}</h4>
+                                                        <p class="card-text text-center">{{$talleres[$i*3 + $j]->description}} </p>
                                                     </div>
                                                 </div>
-                                            @endfor
-                                        </div>
+                                            </div>
+                                        @endfor
                                     </div>
-                                    <div style="display: none">{{$flag = true}}</div>
-                                @else
-                                    <div class="carousel-item">
-                                        <div class="row justify-content-center">
-                                            @for($j = 0; $j < 3; $j++)
-                                                @if($i*3 + $j >= count($talleres))
-                                                    @break
-                                                @endif
-                                                <div class="col-md-4 mb-3">
-                                                    <div class="card">
-                                                        <img class="img-fluid" src="{{asset($talleres[$i*3 + $j]->image)}}" onerror="this.onerror=null;this.src='{{asset('images/image-not-found.png')}}';">
-                                                        <div class="card-body justify-content-center">
-                                                            <h4 class="card-title text-center">{{strtoupper($talleres[$i*3 + $j]->name)}}</h4>
-                                                            <p class="card-text text-center">{{$talleres[$i*3 + $j]->description}} </p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            @endfor
-                                        </div>
-                                    </div>
-                                @endif
+                                </div>
+                                {{$flag = true}}
                             @endfor
                         @endif
 

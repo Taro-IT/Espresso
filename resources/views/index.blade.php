@@ -26,7 +26,7 @@
             </div>
             <div class="col-lg-6">
                 <div class="intro-text b">
-                    <h1 class="mb-4" data-aos="fade-left" data-aos-delay="200">Brindamos un espacio apto para el<l class="text-purple"> crecimiento personal </l>de personas con trastornos psicosociales</h1>
+                    <h1 class="mb-4" data-aos="fade-left" data-aos-delay="200">Brindamos un espacio apto para el<l class="text-purple"> crecimiento personal </l>de individuos con trastornos psicosociales</h1>
                     <h2 class="mb-4" data-aos="fade-left" data-aos-delay="400">Ayudamos a nuestros huéspedes a tener una mejor calidad de vida con un modelo terapéutico innovador.</h2>
                     <div data-aos="fade-left" data-aos-delay="600" class="text-center text-lg-start">
                         <a href="{{route('que-hacemos')}}" class="btn-read-more d-inline-flex align-items-center justify-content-center align-self-center">
@@ -52,7 +52,7 @@
                 <h1 class="header" data-aos="fade-up" data-aos-delay="200">
                     <span>NUESTRA MISIÓN</span>
                 </h1>
-                <p class="subtitle text-center" data-aos="fade-up" data-aos-delay="400">Restablecer los vínculos interpersonales, sociales y ocupacionales de los huéspedes y brindarles herramientas que les permitan sobrellevar sus padecimientos permitiéndoles alcanzar una mejor calidad de vida.</p>
+                <p class="subtitle text-center" data-aos="fade-up" data-aos-delay="400">Restablecer los vínculos interpersonales, sociales y ocupacionales de los huéspedes y brindarles herramientas que les permitan sobrellevar sus padecimientos y alcanzar una mejor calidad de vida.</p>
             </div>
         </div>
     </section>
@@ -95,9 +95,9 @@
     <!-- ======= CONTRIBUTE SECTION ======= -->
     <section class="container" data-aos="fade-up" id="contribute">
         <h1 class="header text-center" data-aos="fade-up" data-aos-delay="100">
-            <span class="underline">&nbsp;&nbsp;¿PORQUÉ CONTRIBUIR?&nbsp;&nbsp;</span>
+            <span class="underline">&nbsp;&nbsp;¿POR QUÉ CONTRIBUIR?&nbsp;&nbsp;</span>
         </h1>
-        <p class="text-center subtitle" data-aos="fade-up" data-aos-delay="200">Todas las contribuciones recibidas se dedican al beneficio de la comunidad, tu contribución nos hace posible dar vida a proyectos de huéspedes y realizar eventos, tanto internos como externos, donde se demuestra el crecimiento de cada uno de ellos.</p>
+        <p class="text-center subtitle" data-aos="fade-up" data-aos-delay="200">Todas las contribuciones recibidas se dedican al beneficio de la comunidad, tu contribución nos hace posible dar vida a los proyectos de los huéspedes y realizar eventos, tanto internos como externos, donde se demuestra el crecimiento de cada uno de ellos.</p>
         <div class="row">
 
             <div class="col-md mb-3 mb-md-0" data-aos="fade-up" data-aos-delay="300">
@@ -127,7 +127,7 @@
             
             <div class="row">
                 <div class="col-12 col-lg-6 d-flex flex-column justify-content-center align-items-center">
-                    <p class="text-center subtitle" data-aos="fade-right" data-aos-delay="200">Entérate de todos los eventos y noticias sobre la Casa Loohl con nuestras publicaciones en Facebook.</p>
+                    <p class="text-center subtitle" data-aos="fade-right" data-aos-delay="200">Entérate de todos los eventos y noticias sobre Casa Loohl con nuestras publicaciones en Facebook.</p>
                     <div data-aos="fade-right" data-aos-delay="400" class="d-flex justify-content-center d-block d-sm-none d-lg-block" data-aos="zoom-out" data-aos-delay="250">
                         <a href="https://www.facebook.com/Casa-de-Medio-Camino-Quer%C3%A9taro-Casa-Loohl-313251725496600/" class="btn-read-more d-inline-flex align-items-center justify-content-center align-self-center">
                             <span id="medium-posts-see-more">VISITA NUESTRO PERFIL</span>
