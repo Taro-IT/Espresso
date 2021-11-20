@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.login_layout')
 @push('css')
     <link href="{{asset('css/login.css')}}" rel="stylesheet">
 @endpush
@@ -27,6 +27,7 @@
 
                     <div class="wrap-input100 validate-input" data-validate="Valid email is required: ex@abc.xyz">
                         <div class="col-auto">
+                            <label for="email">Correo</label>
                             <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ $email ?? old('email') }}" required autocomplete="email" autofocus>
 
                             @error('email')
@@ -39,6 +40,7 @@
 
                     <div class="wrap-input100">
                         <div class="col-auto">
+                            <label for="password">Contraseña</label>
                             <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="new-password">
 
                             @error('password')
@@ -51,13 +53,14 @@
 
                     <div class="wrap-input100">
                         <div class="col-auto">
+                            <label for="password-confirm">Confirmar Contraseña</label>
                             <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required autocomplete="new-password">
                         </div>
                     </div>
                     <br><br>
                     <div class="wrap-input100">
                         <div class="col-auto">
-                            <button type="submit" class="btn btn-primary">
+                            <button type="submit" class="btn btn-read-more">
                                 Resetear contraseña
                             </button>
                         </div>
