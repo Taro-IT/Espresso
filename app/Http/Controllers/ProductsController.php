@@ -10,6 +10,10 @@ use Illuminate\Http\Request;
 
 class ProductsController extends Controller
 {
+
+    // MATRIZ DE TRAZABILIDAD DE REQUISITOS:
+    //https://docs.google.com/spreadsheets/d/1dJc2e5C2nm2MUsvmy3gHFZHLYUieNLE-spPpbuIZyN8/edit#gid=1570316564
+
     public function __construct()
     {
         $this->middleware('auth');
@@ -19,6 +23,8 @@ class ProductsController extends Controller
      * Display a listing of the resource.
      *
      * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View|\Illuminate\Http\Response
+     * ES-10 Yo como administrador quiero ver una lista de los productos digitales para ver las opciones de manejo de cada uno
+     * ES-11 Yo como administrador quiero subir un producto digital para que los visitantes lo descarguen
      */
     public function index()
     {
@@ -30,21 +36,13 @@ class ProductsController extends Controller
         ]);
     }
 
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View|\Illuminate\Http\Response
-     */
-    public function create()
-    {
-        return view('products.create');
-    }
 
     /**
      * Store a newly created resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\RedirectResponse
+     * ES-11 Yo como administrador quiero subir un producto digital para que los visitantes lo descarguen
      */
     public function store(Request $request)
     {
@@ -107,6 +105,7 @@ class ProductsController extends Controller
      *
      * @param  \App\Models\products  $products
      * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View|\Illuminate\Http\Response
+     * ES-13 Yo como administrador quiero editar un producto digital para corregir sus datos
      */
     public function edit($id)
     {
@@ -125,6 +124,7 @@ class ProductsController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @param  \App\Models\products  $products
      * @return \Illuminate\Http\RedirectResponse
+     * ES-13 Yo como administrador quiero editar un producto digital para corregir sus datos
      */
     public function update(Request $request, $id)
     {
@@ -174,6 +174,7 @@ class ProductsController extends Controller
      *
      * @param  \App\Models\products  $products
      * @return \Illuminate\Http\RedirectResponse
+     * ES-12 Yo como administrador quiero eliminar un producto digital para que ya no este disponible en la pagina
      */
     public function destroy($id)
     {

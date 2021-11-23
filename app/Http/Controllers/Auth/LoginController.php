@@ -19,12 +19,16 @@ class LoginController extends Controller
     |
     */
 
+    // MATRIZ DE TRAZABILIDAD DE REQUISITOS:
+    //https://docs.google.com/spreadsheets/d/1dJc2e5C2nm2MUsvmy3gHFZHLYUieNLE-spPpbuIZyN8/edit#gid=1570316564
+
     use AuthenticatesUsers;
 
     /**
      * Where to redirect users after login.
      *
      * @var string
+     * ES-19 Yo como administrador quiero iniciar sesión con mi email y passworrd para usar las funciones de adminsitrador
      */
     protected $redirectTo = RouteServiceProvider::HOME;
 
@@ -32,6 +36,7 @@ class LoginController extends Controller
      * Create a new controller instance.
      *
      * @return void
+     * ES-20	Yo como administrador quiero cerrar sesión para proteger el acceso al sistema
      */
     public function __construct()
     {

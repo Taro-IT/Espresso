@@ -19,12 +19,16 @@ class ResetPasswordController extends Controller
     |
     */
 
+    // MATRIZ DE TRAZABILIDAD DE REQUISITOS:
+    //https://docs.google.com/spreadsheets/d/1dJc2e5C2nm2MUsvmy3gHFZHLYUieNLE-spPpbuIZyN8/edit#gid=1570316564
+
     use ResetsPasswords;
 
     /**
      * Where to redirect users after resetting their password.
      *
      * @var string
+     * ES-21 Yo como administrador quiero recuperar mi contraseña para iniciar sesion
      */
     protected $redirectTo = RouteServiceProvider::HOME;
 }
