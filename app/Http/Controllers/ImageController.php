@@ -7,6 +7,9 @@ use Illuminate\Http\Request;
 
 class ImageController extends Controller
 {
+    // MATRIZ DE TRAZABILIDAD DE REQUISITOS:
+    //https://docs.google.com/spreadsheets/d/1dJc2e5C2nm2MUsvmy3gHFZHLYUieNLE-spPpbuIZyN8/edit#gid=1570316564
+
     public function __construct()
     {
         $this->middleware('auth');
@@ -16,27 +19,20 @@ class ImageController extends Controller
      * Display a listing of the resource.
      *
      * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View|\Illuminate\Http\Response
+     * ES-17 Yo como administrador quiero subir una foto para que se muestre en el carrusel
      */
     public function index()
     {
         return view('images.index')->with(['images'=>Image::all()]);
     }
 
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function create()
-    {
-        //
-    }
 
     /**
      * Store a newly created resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\RedirectResponse
+     * ES-17 Yo como administrador quiero subir una foto para que se muestre en el carrusel
      */
     public function store(Request $request)
     {
@@ -66,45 +62,13 @@ class ImageController extends Controller
 
     }
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  \App\Models\Image  $image
-     * @return \Illuminate\Http\Response
-     */
-    public function show(Image $image)
-    {
-        //
-    }
-
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  \App\Models\Image  $image
-     * @return \Illuminate\Http\Response
-     */
-    public function edit(Image $image)
-    {
-        //
-    }
-
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\Image  $image
-     * @return \Illuminate\Http\Response
-     */
-    public function update(Request $request, Image $image)
-    {
-        //
-    }
 
     /**
      * Remove the specified resource from storage.
      *
      * @param  \App\Models\Image  $image
      * @return \Illuminate\Http\RedirectResponse
+     * ES-18 Yo como administrador quiero borrar una foto para que se deje de mostrar en el carrusel
      */
     public function destroy($id)
     {

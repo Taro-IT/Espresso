@@ -10,27 +10,22 @@ use App\Models\ProductPatient;
 use App\Models\products;
 use App\Models\Workshop;
 use Illuminate\Http\Request;
+use Illuminate\Http\Response;
 use Illuminate\Support\Facades\Http;
 use App\Models\PageInfo;
 
 class PageInfoController extends Controller
 {
+    // MATRIZ DE TRAZABILIDAD DE REQUISITOS:
+    //https://docs.google.com/spreadsheets/d/1dJc2e5C2nm2MUsvmy3gHFZHLYUieNLE-spPpbuIZyN8/edit#gid=1570316564
+
     /**
      * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
+     * @return Response
+     * ES-1	Yo como visitante quiero ver información básica sobre la casa Loohl para conocerlos
+     * ES-4	Yo como visitante quiero ver las últimas publicaciones de facebook para conocer sus actividades recientes
+     * ES-5	Yo como visitante quiero abrir el chat de WhatsApp de la casa Loohl para ponerme en contacto con ellos
      */
-
-    public function index($url)
-    {
-        // Check the url & redirect to the page.
-        if($url == "que-hacemos"){
-            return view('que_hacemos');
-        }
-
-        return redirect("/");
-    }
-
     public function main()
     {
         $base_url = "https://graph.facebook.com/v12.0/oembed_page";
@@ -49,6 +44,27 @@ class PageInfoController extends Controller
         return view('index')->with(['fb_page'=>$fb_page, 'home'=>Home::get()->first()]);
     }
 
+    /**
+     * Display a listing of the resource.
+     * @return Response
+     * ES-2 Yo como visitante quiero ver respuestas a preguntas frecuentes sobre la Casa Loohl para saberlas rapidamente
+     */
+
+    public function index($url)
+    {
+        // Check the url & redirect to the page.
+        if($url == "que-hacemos"){
+            return view('que_hacemos');
+        }
+
+        return redirect("/");
+    }
+
+    /**
+     * Display a listing of the resource.
+     * @return \Illuminate\Http\JsonResponse
+     * ES-3 Yo como visitante quiero ver enlaces a los últimos artículos publicados en medium por la casa Loohl para leerlos en su página de medium
+     */
     public function getMediumPosts() {
         $response = Http::get('https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@sabesan96');
         $posts = json_decode($response);
@@ -68,6 +84,13 @@ class PageInfoController extends Controller
         ]);
     }
 
+    /**
+     * Display a listing of the resource.
+     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View
+     * ES-6	Yo como visitante quiero ver una lista de los productos digitales de la casa Loohl para conocerlos
+     * ES-7	Yo como visitante quiero ver el detalle de un producto digital de la casa Loohl para conocer su historia
+     * ES-9	Yo como visitante quiero comprar un producto digital para apoyar a la casa Loohl
+     */
     public function tienda() {
 
         return view('tienda')->with([
