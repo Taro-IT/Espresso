@@ -73,7 +73,7 @@ class PayPalService
             }
             return redirect('/hacer-una-donacion')->with('status', 'Muchas Gracias por tu donación');
         }
-        return redirect('/hacer-una-donacion')->withErrors('No pudimos capturar tu donación :c');
+        return redirect('/hacer-una-donacion')->withErrors('No pudimos capturar tu donación');
     }
 
     public function createOrder($value, $currency)
