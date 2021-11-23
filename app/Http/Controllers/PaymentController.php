@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Services\PayPalService;
+use App\services\PayPalService;
 use Illuminate\Http\Request;
 
 class PaymentController extends Controller
