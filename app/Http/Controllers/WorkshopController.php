@@ -7,6 +7,9 @@ use Illuminate\Http\Request;
 
 class WorkshopController extends Controller
 {
+    // MATRIZ DE TRAZABILIDAD DE REQUISITOS:
+    //https://docs.google.com/spreadsheets/d/1dJc2e5C2nm2MUsvmy3gHFZHLYUieNLE-spPpbuIZyN8/edit#gid=1570316564
+
     public function __construct()
     {
         $this->middleware('auth');
@@ -25,20 +28,11 @@ class WorkshopController extends Controller
     }
 
     /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function create()
-    {
-
-    }
-
-    /**
      * Store a newly created resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\RedirectResponse
+     * ES-15 Yo como administrador quiero agregar un taller a la lista de talleres para actualizarla con nuevos talleres
      */
     public function store(Request $request)
     {
@@ -73,6 +67,7 @@ class WorkshopController extends Controller
      *
      * @param  \App\Models\products  $products
      * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View|\Illuminate\Http\Response
+     * ES-16 Yo como administrador quiero editar la lista de talleres para mantenerla al corriente
      */
     public function edit($id)
     {
@@ -85,6 +80,7 @@ class WorkshopController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @param  \App\Models\products  $products
      * @return \Illuminate\Http\RedirectResponse
+     * ES-16 Yo como administrador quiero editar la lista de talleres para mantenerla al corriente
      */
     public function update(Request $request, $id)
     {

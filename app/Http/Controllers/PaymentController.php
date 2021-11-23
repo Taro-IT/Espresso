@@ -7,6 +7,14 @@ use Illuminate\Http\Request;
 
 class PaymentController extends Controller
 {
+
+    // MATRIZ DE TRAZABILIDAD DE REQUISITOS:
+    //https://docs.google.com/spreadsheets/d/1dJc2e5C2nm2MUsvmy3gHFZHLYUieNLE-spPpbuIZyN8/edit#gid=1570316564
+
+
+    /*
+     * ES-9	Yo como visitante quiero comprar un producto digital para apoyar a la casa Loohl
+     */
     public function pay(Request $request){
         $rules = [
             'value' =>['required','numeric','min:5'],
