@@ -125,19 +125,38 @@
             </div>
             <div class="row" data-aos="fade-up" data-aos-delay="300">
                 <div class="col-md-6 mb-3">
+                    <!-- About us carrousel -->
                     <div class="carousel slide carrousel-sizing" id="main-carousel" data-ride="carousel">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <img class="d-block services-img" src="/images/img-sala-2.png" alt="">
+                                <img class="d-block services-img" src="{{asset('images/img-sala-2.png')}}">
                             </div>
                             <div class="carousel-item">
-                                <img class="d-block services-img" src="/images/img-sala.jpg" alt="">
+                                <img class="d-block services-img" src="{{asset('images/img-sala.jpg')}}">
                             </div>
                             <div class="carousel-item">
-                                <img class="d-block services-img" src="/images/carrousel-1.jpg" alt="">
+                                <img class="d-block services-img" src="{{asset('images/carrousel-1.jpg')}}">
                             </div>
                             <div class="carousel-item">
-                                <img class="d-block services-img" src="/images/carrousel-3.jpg" alt="">
+                                <img class="d-block services-img" src="{{asset('images/carrousel-3.jpg')}}">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block services-img" src="{{asset('images/banca-suculenta.jpeg')}}">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block services-img" src="{{asset('images/escaleras.jpeg')}}">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block services-img" src="{{asset('images/escritorio.jpeg')}}">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block services-img" src="{{asset('images/patio3.jpeg')}}">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block services-img" src="{{asset('images/patio2.jpeg')}}">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block services-img" src="{{asset('images/frente.jpeg')}}">
                             </div>
                         </div><!-- /.carousel-inner -->
 
