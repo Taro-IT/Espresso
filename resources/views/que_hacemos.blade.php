@@ -43,7 +43,7 @@
             <div class="row">
                 <div class="col-md-3 text-center">
                     <i class="bi bi-x-circle-fill mr-2 inadmissible"></i>
-                    <p class="subtitle">Personas con adicciónes</p>
+                    <p class="subtitle">Personas con adicciones</p>
                     <p class="">Las adicciones y las enfermedades mentales se tratan de manera diferente.</p>
                 </div>
                 <div class="col-md-3 text-center">
@@ -425,7 +425,7 @@
                 </div>
                 <div id="collapse10" class="collapse" aria-labelledby="heading10" data-parent="#faq-accordion">
                     <div class="card-body faq-body">
-                    La mayoría de su estancia, sí, sin embargo, como parte de su proceso de inclusión social, también tienen tiempo de esparcimiento y actividades personales. Se sale a la tienda o a realizar actividades personales, siempre y cuando el huésped y su familia le den seguimiento. Así mismo, de lunes a viernes, como parte de la estructura cotidiana se imparten 2 talleres. Uno por la mañana y otro por la tarde.
+                    La mayoría de su estancia, sí, sin embargo, como parte de su proceso de inclusión social, también tienen tiempo de esparcimiento y actividades personales. Se sale a la tienda o a realizar actividades personales, siempre y cuando el huésped y su familia le den seguimiento. Así mismo, de lunes a viernes como parte de la estructura cotidiana se imparten dos talleres, uno por la mañana y otro por la tarde.
                     </div>
                 </div>
             </div>
