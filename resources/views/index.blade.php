@@ -126,7 +126,7 @@
             <h1 class="header text-center font-weight-bold pb-lg-3 mb-lg-3">
                 <span class="underline">&nbsp;&nbsp;MANTENTE AL DÍA&nbsp;&nbsp;</span>
             </h1>
-            
+
             <div class="row">
                 <div class="col-12 col-lg-6 d-flex flex-column justify-content-center align-items-center">
                     <p class="text-center subtitle" data-aos="fade-right" data-aos-delay="200">Entérate de todos los eventos y noticias sobre Casa Loohl con nuestras publicaciones en Facebook.</p>
@@ -139,7 +139,6 @@
                 </div>
                 <div class="col-12 col-lg-6 d-none d-sm-flex justify-content-center" data-aos="fade-left" data-aos-delay="200" style="height: 400px">
                     <div class="post-box d-inline-block shadow-sm text-center">
-                        {!! $fb_page !!}
                     </div>
                 </div>
             </div>

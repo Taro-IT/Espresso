@@ -39,9 +39,8 @@ class PageInfoController extends Controller
             'adapt_container_width' => false
         ]);
         $data = json_decode($response);
-        $fb_page = $data->html;
 
-        return view('index')->with(['fb_page'=>$fb_page, 'home'=>Home::get()->first()]);
+        return view('index')->with([ 'home'=>Home::get()->first()]);
     }
 
     /**
